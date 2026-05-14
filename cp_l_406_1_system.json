@@ -1,0 +1,453 @@
+{
+  "assetAdministrationShells": [
+    {
+      "modelType": "AssetAdministrationShell",
+      "id": "urn:festo:cp-factory:aas:CP-L-406-1",
+      "idShort": "AAS_CP_L_406_1",
+      "displayName": [{ "language": "en", "text": "Complete System 406-1 - CP Factory Lab" }],
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:festo:cp-factory:asset:CP-L-406-1"
+      },
+      "submodels": [
+        { "type": "ModelReference", "keys": [{ "type": "Submodel", "value": "urn:festo:cp-factory:sm:CP-L-406-1:Nameplate" }] },
+        { "type": "ModelReference", "keys": [{ "type": "Submodel", "value": "urn:festo:cp-factory:sm:CP-L-406-1:TechnicalData" }] },
+        { "type": "ModelReference", "keys": [{ "type": "Submodel", "value": "urn:festo:cp-factory:sm:CP-L-406-1:Hierarchy" }] },
+        { "type": "ModelReference", "keys": [{ "type": "Submodel", "value": "urn:festo:cp-factory:sm:CP-L-406-1:Documentation" }] },
+        { "type": "ModelReference", "keys": [{ "type": "Submodel", "value": "urn:festo:cp-factory:sm:CP-L-406-1:ProductionProcess" }] },
+        { "type": "ModelReference", "keys": [{ "type": "Submodel", "value": "urn:festo:cp-factory:sm:CP-L-406-1:Maintenance" }] }
+      ]
+    }
+  ],
+  "submodels": [
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-L-406-1:Nameplate",
+      "idShort": "Nameplate",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/zvei/nameplate/2/0/Nameplate" }]
+      },
+      "submodelElements": [
+        { "modelType": "Property", "idShort": "ManufacturerName", "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "0173-1#02-AAO677#002" }] }, "valueType": "xs:string", "value": "Festo Didactic SE" },
+        { "modelType": "Property", "idShort": "ManufacturerProductDesignation", "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "0173-1#02-AAW338#001" }] }, "valueType": "xs:string", "value": "Complete System 406-1" },
+        { "modelType": "Property", "idShort": "ManufacturerArticleNumber", "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "0173-1#02-AAO676#003" }] }, "valueType": "xs:string", "value": "8092834" },
+        { "modelType": "Property", "idShort": "ManufacturerOrderCode", "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "0173-1#02-AAO227#002" }] }, "valueType": "xs:string", "value": "CP-L-406-1" }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-L-406-1:TechnicalData",
+      "idShort": "TechnicalData",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/ZVEI/TechnicalData/Submodel/1/2" }]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "GeneralInformation",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "ProductFamily", "valueType": "xs:string", "value": "CP Lab" },
+            { "modelType": "Property", "idShort": "ProductCategory", "valueType": "xs:string", "value": "Complete system" },
+            { "modelType": "Property", "idShort": "SystemDesignation", "valueType": "xs:string", "value": "SC CP LAB STD CFG 6" },
+            { "modelType": "Property", "idShort": "Description", "valueType": "xs:string", "value": "Networked production platform with six pallet transfer systems. Executes: material provisioning, quality inspection, machining, assembly, pressing, and output." },
+            { "modelType": "Property", "idShort": "NumberOfStations", "valueType": "xs:int", "value": "6" },
+            { "modelType": "Property", "idShort": "BatchSize1_Support", "valueType": "xs:boolean", "value": "true" },
+            { "modelType": "Property", "idShort": "CountryOfOrigin", "valueType": "xs:string", "value": "Canada" },
+            { "modelType": "Property", "idShort": "ServicePortal", "valueType": "xs:string", "value": "https://ip.festo-didactic.com" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Electrics",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "OperatingVoltage_AC", "valueType": "xs:string", "value": "1-phase 230 V AC ±10%, 50 Hz" },
+            { "modelType": "Property", "idShort": "PowerSupplySystem", "valueType": "xs:string", "value": "TNC-S (L1, L2, L3, N, PE)" },
+            { "modelType": "Property", "idShort": "FullLoadPower_A", "valueType": "xs:float", "value": "1.0" },
+            { "modelType": "Property", "idShort": "ControlVoltage_DC", "valueType": "xs:string", "value": "24 V DC PELV (Protective extra-low voltage)" },
+            { "modelType": "Property", "idShort": "PowerSupplyConnector", "valueType": "xs:string", "value": "IEC 60309, CEE 16 A" },
+            { "modelType": "Property", "idShort": "MaxBackupFuse_A", "valueType": "xs:int", "value": "16" },
+            { "modelType": "Property", "idShort": "LeakageCurrent_mA_max", "valueType": "xs:float", "value": "18.0" },
+            { "modelType": "Property", "idShort": "ProtectionClass", "valueType": "xs:string", "value": "I — protective grounding required" },
+            { "modelType": "Property", "idShort": "OvervoltageCategory", "valueType": "xs:string", "value": "CAT II — building installation only" },
+            { "modelType": "Property", "idShort": "SCCR_kA", "valueType": "xs:int", "value": "10" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "CompressedAir",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "SupplyPressure_bar", "valueType": "xs:float", "value": "6.0" },
+            { "modelType": "Property", "idShort": "SupplyPressure_psi", "valueType": "xs:int", "value": "90" },
+            { "modelType": "Property", "idShort": "SupplyRate_lmin_min", "valueType": "xs:int", "value": "40" },
+            { "modelType": "Property", "idShort": "AirQualityStandard", "valueType": "xs:string", "value": "EN ISO 8573-1" },
+            { "modelType": "Property", "idShort": "PressureDewPoint_Class", "valueType": "xs:string", "value": "Class 4 (≤ +3°C)" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "AmbientConditions",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "OperatingEnvironment", "valueType": "xs:string", "value": "Indoor use only" },
+            { "modelType": "Property", "idShort": "AmbientTemp_min_degC", "valueType": "xs:int", "value": "5" },
+            { "modelType": "Property", "idShort": "AmbientTemp_max_degC", "valueType": "xs:int", "value": "40" },
+            { "modelType": "Property", "idShort": "RelHumidity_pct_at_31C", "valueType": "xs:int", "value": "80" },
+            { "modelType": "Property", "idShort": "PollutionDegree", "valueType": "xs:string", "value": "2 — Dry, non-conductive contamination" },
+            { "modelType": "Property", "idShort": "MaxOperatingHeight_m", "valueType": "xs:int", "value": "2000" },
+            { "modelType": "Property", "idShort": "NoiseEmission_LpA_dB_max", "valueType": "xs:int", "value": "70" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Certification",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "CEMarking", "valueType": "xs:boolean", "value": "true" },
+            { "modelType": "Property", "idShort": "Directive_MachineryDirective", "valueType": "xs:string", "value": "2006/42/EC — EN 60204-1:2018" },
+            { "modelType": "Property", "idShort": "Directive_EMC", "valueType": "xs:string", "value": "2014/30/EU — EN 61326-1:2013-01" },
+            { "modelType": "Property", "idShort": "Directive_RoHS", "valueType": "xs:string", "value": "2011/65/EU — EN 63000:2016-10" },
+            { "modelType": "Property", "idShort": "EMC_Environment", "valueType": "xs:string", "value": "Industrial, Class A (EN 55011)" },
+            { "modelType": "Property", "idShort": "UKCAMarking", "valueType": "xs:boolean", "value": "true" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "ProcessCapabilities",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "FeedingComponents", "valueType": "xs:boolean", "value": "true" },
+            { "modelType": "Property", "idShort": "QualityInspection_SPC", "valueType": "xs:boolean", "value": "true" },
+            { "modelType": "Property", "idShort": "FlexibleProduction_Parameters", "valueType": "xs:boolean", "value": "true" },
+            { "modelType": "Property", "idShort": "FeedingComponents_Assembly", "valueType": "xs:boolean", "value": "true" },
+            { "modelType": "Property", "idShort": "ConnectingComponents_Assembly", "valueType": "xs:boolean", "value": "true" },
+            { "modelType": "Property", "idShort": "FlexibleHandling_Logistics", "valueType": "xs:boolean", "value": "true" },
+            { "modelType": "Property", "idShort": "RFID_ProductTracking", "valueType": "xs:boolean", "value": "true" },
+            { "modelType": "Property", "idShort": "MES_Integration", "valueType": "xs:boolean", "value": "true" }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-L-406-1:Hierarchy",
+      "idShort": "Hierarchy",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/1/0/Submodel" }]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "ArchiveNode",
+          "submodelElements": [
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "SelfReference",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/SelfManagedEntity/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-L-406-1" }] }
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Station_01_MAGFRONT",
+          "description": [{ "language": "en", "text": "Station 1: Front cover feed (MAGFRONT)" }],
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "StationNumber", "valueType": "xs:int", "value": "1" },
+            { "modelType": "Property", "idShort": "StationName", "valueType": "xs:string", "value": "MAGFRONT" },
+            { "modelType": "Property", "idShort": "StationRole", "valueType": "xs:string", "value": "Material Provisioning - Front Covers" },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Conveyor",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-MAGFRONT" }] }
+            },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "ApplicationModule",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-AM-MAG-FRONT" }] }
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Station_02_MEAS",
+          "description": [{ "language": "en", "text": "Station 2: Quality inspection (MEAS)" }],
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "StationNumber", "valueType": "xs:int", "value": "2" },
+            { "modelType": "Property", "idShort": "StationName", "valueType": "xs:string", "value": "MEAS" },
+            { "modelType": "Property", "idShort": "StationRole", "valueType": "xs:string", "value": "Quality Inspection" },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Conveyor",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-MEAS" }] }
+            },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "ApplicationModule",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-AM-MEASURE-V2" }] }
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Station_03_iDRILL",
+          "description": [{ "language": "en", "text": "Station 3: Machining - drilling (iDRILL)" }],
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "StationNumber", "valueType": "xs:int", "value": "3" },
+            { "modelType": "Property", "idShort": "StationName", "valueType": "xs:string", "value": "iDRILL" },
+            { "modelType": "Property", "idShort": "StationRole", "valueType": "xs:string", "value": "Machining / Drilling" },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Conveyor",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-iDRILL" }] }
+            },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "ApplicationModule",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-AM-iDRILL" }] }
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Station_04_MAGBACK",
+          "description": [{ "language": "en", "text": "Station 4: Back cover feed (MAGBACK)" }],
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "StationNumber", "valueType": "xs:int", "value": "4" },
+            { "modelType": "Property", "idShort": "StationName", "valueType": "xs:string", "value": "MAGBACK" },
+            { "modelType": "Property", "idShort": "StationRole", "valueType": "xs:string", "value": "Material Provisioning - Back Covers" },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Conveyor",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-MAGBACK" }] }
+            },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "ApplicationModule",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-AM-MAG-BACK" }] }
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Station_05_MPRESS",
+          "description": [{ "language": "en", "text": "Station 5: Assembly - pressing (MPRESS)" }],
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "StationNumber", "valueType": "xs:int", "value": "5" },
+            { "modelType": "Property", "idShort": "StationName", "valueType": "xs:string", "value": "MPRESS" },
+            { "modelType": "Property", "idShort": "StationRole", "valueType": "xs:string", "value": "Assembly / Pressing" },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Conveyor",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-MPRESS" }] }
+            },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "ApplicationModule",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-AM-MPRESS" }] }
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Station_06_OUT",
+          "description": [{ "language": "en", "text": "Station 6: Finished workpiece output (OUT)" }],
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "StationNumber", "valueType": "xs:int", "value": "6" },
+            { "modelType": "Property", "idShort": "StationName", "valueType": "xs:string", "value": "OUT" },
+            { "modelType": "Property", "idShort": "StationRole", "valueType": "xs:string", "value": "Output / Retrieval" },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Conveyor",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-OUT" }] }
+            },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "ApplicationModule",
+              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0" }] },
+              "value": { "type": "ModelReference", "keys": [{ "type": "AssetAdministrationShell", "value": "urn:festo:cp-factory:aas:CP-AM-OUT" }] }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-L-406-1:ProductionProcess",
+      "idShort": "ProductionProcess",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/ProductionProcess/1/0" }]
+      },
+      "submodelElements": [
+        { "modelType": "Property", "idShort": "ProcessName", "valueType": "xs:string", "value": "Housing Assembly Batch-1" },
+        { "modelType": "Property", "idShort": "BatchSize", "valueType": "xs:int", "value": "1" },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "ProcessSteps",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Step_01_MAGFRONT", "valueType": "xs:string", "value": "[MAGFRONT] Magazine feeds front cover onto conveyor pallet" },
+            { "modelType": "Property", "idShort": "Step_02_MEAS", "valueType": "xs:string", "value": "[MEAS] Measuring station performs length-difference QC; signals result via signal light" },
+            { "modelType": "Property", "idShort": "Step_03_iDRILL", "valueType": "xs:string", "value": "[iDRILL] Drilling station drills 4 holes based on order data (CPS)" },
+            { "modelType": "Property", "idShort": "Step_04_MAGBACK", "valueType": "xs:string", "value": "[MAGBACK] Magazine feeds back cover onto front cover on pallet" },
+            { "modelType": "Property", "idShort": "Step_05_MPRESS", "valueType": "xs:string", "value": "[MPRESS] Press station presses back cover onto front cover" },
+            { "modelType": "Property", "idShort": "Step_06_OUT", "valueType": "xs:string", "value": "[OUT] Output station transfers finished workpiece to roller slide" }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-L-406-1:Documentation",
+      "idShort": "Documentation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/DigiWin/ManufacturerDocumentation/0/1/Documentation" }]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "SystemManual",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Title", "valueType": "xs:string", "value": "CP-L-406-1 System Operating Manual" },
+            { "modelType": "File", "idShort": "ManualFile", "mimeType": "application/pdf", "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-406-1/files/manual_en.pdf" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "MaintenanceManual",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Title", "valueType": "xs:string", "value": "CP Factory Maintenance Manual 2023" },
+            { "modelType": "File", "idShort": "MaintenanceFile", "mimeType": "application/pdf", "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf" }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-L-406-1:Maintenance",
+      "idShort": "Maintenance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/Maintenance/1/0" }]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "VisualInspection_Daily",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Activity", "valueType": "xs:string", "value": "Visual inspection of all components: damage, pollution, cable condition, connectors, safety markings" },
+            { "modelType": "Property", "idShort": "Interval", "valueType": "xs:string", "value": "1 day" },
+            { "modelType": "Property", "idShort": "Criteria", "valueType": "xs:string", "value": "visual inspection" },
+            { "modelType": "Property", "idShort": "Standard", "valueType": "xs:string", "value": "DIN EN 50699" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "SafetyChecklist_EmergencyStop",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Activity", "valueType": "xs:string", "value": "Cyclical function test of each emergency stop button. Press button, verify chain triggers, acknowledge with reset, verify all components unlock." },
+            { "modelType": "Property", "idShort": "Interval", "valueType": "xs:string", "value": "1 month" },
+            { "modelType": "Property", "idShort": "Criteria", "valueType": "xs:string", "value": "function test" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "SafetyChecklist_OperatorSafety",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Activity", "valueType": "xs:string", "value": "Cyclical function test of each safety door switch and safe inductive proximity sensor. Open safety door during operation to trigger safety stop." },
+            { "modelType": "Property", "idShort": "Interval", "valueType": "xs:string", "value": "1 month" },
+            { "modelType": "Property", "idShort": "Criteria", "valueType": "xs:string", "value": "function test" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "RCD_Test_NonStationary",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Activity", "valueType": "xs:string", "value": "RCD functional test by pressing test button in non-stationary operation" },
+            { "modelType": "Property", "idShort": "Interval", "valueType": "xs:string", "value": "1 day" },
+            { "modelType": "Property", "idShort": "Criteria", "valueType": "xs:string", "value": "function test" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "RCD_Test_Stationary",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Activity", "valueType": "xs:string", "value": "RCD functional test by pressing test button in stationary operation" },
+            { "modelType": "Property", "idShort": "Interval", "valueType": "xs:string", "value": "6 months" },
+            { "modelType": "Property", "idShort": "Criteria", "valueType": "xs:string", "value": "function test" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "RCD_Effectiveness_Test",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Activity", "valueType": "xs:string", "value": "RCD effectiveness test by qualified electrician using RCD testing equipment" },
+            { "modelType": "Property", "idShort": "Interval", "valueType": "xs:string", "value": "1 month" },
+            { "modelType": "Property", "idShort": "Criteria", "valueType": "xs:string", "value": "effectiveness" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "ConveyorBelts_Inspection",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Activity", "valueType": "xs:string", "value": "Visually inspect belt condition for erosion (fraying/small cracks). Check centering between guide rails. Align if necessary using adjustment screws on deflection heads." },
+            { "modelType": "Property", "idShort": "Interval", "valueType": "xs:string", "value": "3 weeks" },
+            { "modelType": "Property", "idShort": "Criteria", "valueType": "xs:string", "value": "visual inspection" },
+            { "modelType": "Property", "idShort": "AppliesTo", "valueType": "xs:string", "value": "CP-L-LINEAR-V2 (all conveyor stations)" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Stopper_Inspection",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Activity", "valueType": "xs:string", "value": "Check stopper reaches end positions in approx. 200 ms (verify via HMI). Adjust pressure or throttling if needed. Clean cylinder surface and seal with dry cloth." },
+            { "modelType": "Property", "idShort": "Interval", "valueType": "xs:string", "value": "3 weeks" },
+            { "modelType": "Property", "idShort": "Criteria", "valueType": "xs:string", "value": "visual inspection" },
+            { "modelType": "Property", "idShort": "StopperResponseTime_ms_target", "valueType": "xs:int", "value": "200" },
+            { "modelType": "Property", "idShort": "AppliesTo", "valueType": "xs:string", "value": "CP-L-LINEAR-V2 (all conveyor stations)" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "LinearAxes_Inspection",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Activity", "valueType": "xs:string", "value": "Check linear axes for pollution and clean with dry cloth if necessary" },
+            { "modelType": "Property", "idShort": "Interval", "valueType": "xs:string", "value": "3 weeks" },
+            { "modelType": "Property", "idShort": "Criteria", "valueType": "xs:string", "value": "visual inspection" },
+            { "modelType": "Property", "idShort": "AppliesTo", "valueType": "xs:string", "value": "CP-AM-iDRILL (axes X and Z)" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Fan_Cleaning",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Activity", "valueType": "xs:string", "value": "Clean ventilation grilles of all fans (robot controller, MES-PC, etc.)" },
+            { "modelType": "Property", "idShort": "Interval", "valueType": "xs:string", "value": "6 months" },
+            { "modelType": "Property", "idShort": "Criteria", "valueType": "xs:string", "value": "visual inspection" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Compressor_CondensateDrain",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Activity", "valueType": "xs:string", "value": "Drain condensation water from compressor/service unit" },
+            { "modelType": "Property", "idShort": "Interval", "valueType": "xs:string", "value": "1 week" },
+            { "modelType": "Property", "idShort": "Criteria", "valueType": "xs:string", "value": "period" }
+          ]
+        }
+      ]
+    }
+  ],
+  "conceptDescriptions": []
+}

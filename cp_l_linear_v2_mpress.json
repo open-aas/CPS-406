@@ -1,0 +1,1044 @@
+{
+  "assetAdministrationShells": [
+    {
+      "modelType": "AssetAdministrationShell",
+      "id": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-MPRESS",
+      "idShort": "AAS_CP_L_LINEAR_V2_MPRESS",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Linear V2 - Conveyor for station MPRESS"
+        }
+      ],
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:festo:cp-factory:asset:CP-L-LINEAR-V2-MPRESS"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-MPRESS:Nameplate"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-MPRESS:TechnicalData"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-MPRESS:Documentation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "submodels": [
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-MPRESS:Nameplate",
+      "idShort": "Nameplate",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/zvei/nameplate/2/0/Nameplate"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerName",
+          "valueType": "xs:string",
+          "value": "Festo Didactic SE",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO677#002"
+              }
+            ]
+          }
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerProductDesignation",
+          "valueType": "xs:string",
+          "value": "Linear V2 Conveyor"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerArticleNumber",
+          "valueType": "xs:string",
+          "value": "D12501"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerOrderCode",
+          "valueType": "xs:string",
+          "value": "CP-L-LINEAR-V2-C11M0"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "InstanceName",
+          "valueType": "xs:string",
+          "value": "LINEAR-MPRESS"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "StationNumber",
+          "valueType": "xs:int",
+          "value": "5"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "StationRole",
+          "valueType": "xs:string",
+          "value": "Assembly - Press Fitting"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "CountryOfOrigin",
+          "valueType": "xs:string",
+          "value": "Canada"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ServicePortal",
+          "valueType": "xs:string",
+          "value": "https://ip.festo-didactic.com"
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-MPRESS:TechnicalData",
+      "idShort": "TechnicalData",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/ZVEI/TechnicalData/Submodel/1/2"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "GeneralInformation",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "ProductFamily",
+              "valueType": "xs:string",
+              "value": "CP Lab"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ProductCategory",
+              "valueType": "xs:string",
+              "value": "Base module / Conveyor"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "SchematicsDocument",
+              "valueType": "xs:string",
+              "value": "8167762 Rev V08"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "TechnicalProperties",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "OperatingVoltage_DC",
+              "valueType": "xs:string",
+              "value": "24 VDC"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "OperatingPressure_bar",
+              "valueType": "xs:float",
+              "value": "6.0"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DimensionHeight_mm",
+              "valueType": "xs:int",
+              "value": "700"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DimensionWidth_mm",
+              "valueType": "xs:int",
+              "value": "350"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DimensionDepth_mm",
+              "valueType": "xs:int",
+              "value": "205"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "PLCHardware",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "CPU_Model",
+              "valueType": "xs:string",
+              "value": "Siemens ET200SP CPU 1512SP F-1PN"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CPU_OrderCode",
+              "valueType": "xs:string",
+              "value": "6ES7512-1SK00-0AB0"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CPU_NetworkAddress",
+              "valueType": "xs:string",
+              "value": "192.168.0.1"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DI_Module_1",
+              "valueType": "xs:string",
+              "value": "Siemens DI 8x24VDC (6ES7131-6BF00-0CA0)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DI_Module_2",
+              "valueType": "xs:string",
+              "value": "Siemens DI 8x24VDC (6ES7131-6BF00-0CA0)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DQ_Module_1",
+              "valueType": "xs:string",
+              "value": "Siemens DQ 8x24VDC 0.5A (6ES7132-6BF00-0CA0)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DQ_Module_2",
+              "valueType": "xs:string",
+              "value": "Siemens DQ 8x24VDC 0.5A (6ES7132-6BF00-0CA0)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "IOLink_CM",
+              "valueType": "xs:string",
+              "value": "Siemens CM 4x IO-Link ST (6ES7137-6BD00-0BA0)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "EthernetSwitch",
+              "valueType": "xs:string",
+              "value": "Siemens Scalance XB008 - 8x RJ45 10/100Mbit unmanaged"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "PowerSupply",
+              "valueType": "xs:string",
+              "value": "24 VDC / 2 A"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "HMI",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Model",
+              "valueType": "xs:string",
+              "value": "Siemens SIMATIC MTP700"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ArticleNumber",
+              "valueType": "xs:string",
+              "value": "8189692"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Interface",
+              "valueType": "xs:string",
+              "value": "Ethernet (X5), USB (X6)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Buttons",
+              "valueType": "xs:string",
+              "value": "SF1-SF5 (Start, Stop, F1, F2, Reset)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Indicators",
+              "valueType": "xs:string",
+              "value": "PF1-PF4 (signal lamps)"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "RFID",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Model",
+              "valueType": "xs:string",
+              "value": "Siemens RF210R"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Protocol",
+              "valueType": "xs:string",
+              "value": "IO-Link V1.1"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "IOLink_Port",
+              "valueType": "xs:int",
+              "value": "1"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "IO_ByteSize",
+              "valueType": "xs:int",
+              "value": "32"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ReadPayload_B",
+              "valueType": "xs:int",
+              "value": "28"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StatusBits",
+              "valueType": "xs:string",
+              "value": "TagPresent (%I40.0), Error (%I40.1), Done (%I40.2)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CmdWrite",
+              "valueType": "xs:string",
+              "value": "%Q40.0 + 28 byte payload"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CmdRead",
+              "valueType": "xs:string",
+              "value": "%Q40.1"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "MotorEncoder",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Motor_Model",
+              "valueType": "xs:string",
+              "value": "OTT#SWM4033438-3"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Motor_Voltage",
+              "valueType": "xs:string",
+              "value": "24 VDC bidirectional (normal/reduced speed)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Encoder_Model",
+              "valueType": "xs:string",
+              "value": "Festo FES.102796"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Encoder_PulsesPerCh",
+              "valueType": "xs:int",
+              "value": "8"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Encoder_mmPerRotation",
+              "valueType": "xs:float",
+              "value": "94.2"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Encoder_Calculation",
+              "valueType": "xs:string",
+              "value": "30mm dia × π = 94.2 mm/rotation at 8 pulses/ch"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Encoder_Connector_A",
+              "valueType": "xs:string",
+              "value": "BNC X18 (channel A - BG7)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Encoder_Connector_B",
+              "valueType": "xs:string",
+              "value": "BNC X19 (channel B - BG8)"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Pneumatics",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "StopperValve_Model",
+              "valueType": "xs:string",
+              "value": "VUVG-L10-M52-MT-M5-1P3"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StopperValve_FestoPN",
+              "valueType": "xs:string",
+              "value": "FES.574351"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StopperValve_Type",
+              "valueType": "xs:string",
+              "value": "5/2 monostable, 24 VDC solenoid"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StopperSensor_BG9",
+              "valueType": "xs:string",
+              "value": "Lower/press position sensor → %I42.7"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "IO_Configuration",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "DigitalInputs_Byte0",
+              "valueType": "xs:int",
+              "value": "8",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "App inputs DI0-DI7 from KF2"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalInputs_Byte1",
+              "valueType": "xs:int",
+              "value": "8",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "Control panel inputs from KF3"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalInputs_Byte42",
+              "valueType": "xs:int",
+              "value": "8",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "IO-Link sensors BG1-BG4, KG1-KG2, GF1, BG9"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalOutputs_Byte0",
+              "valueType": "xs:int",
+              "value": "8",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "App outputs DQ0-DQ7 from KF4"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalOutputs_Byte1",
+              "valueType": "xs:int",
+              "value": "8",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "Control panel outputs from KF5"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalOutputs_Byte42",
+              "valueType": "xs:int",
+              "value": "8",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "IO-Link actuator outputs"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AnalogInputs_WordIW43",
+              "valueType": "xs:int",
+              "value": "1",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "App_AI0 (IO-Link analog)"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AnalogInputs_WordIW46",
+              "valueType": "xs:int",
+              "value": "1",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "App_AI1 (IO-Link analog)"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AnalogOutputs_WordQW43",
+              "valueType": "xs:int",
+              "value": "1",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "App_AO0 (IO-Link analog)"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AnalogOutputs_WordQW45",
+              "valueType": "xs:int",
+              "value": "1",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "App_AO1 (IO-Link analog)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "IO_Mapping",
+          "submodelElements": [
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Byte0_ApplicationInterface",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_0_App_DI0",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_1_App_DI1",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_2_App_DI2",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_3_App_DI3",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_4_App_DI4",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_5_App_DI5",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_6_App_DI6",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_7_App_DI7",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_0_App_DQ0",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_1_App_DQ1",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_2_App_DQ2",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_3_App_DQ3",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_4_App_DQ4",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_5_App_DQ5",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_6_App_DQ6",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_7_App_DQ7",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Byte1_ControlPanel",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_0_Start",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_1_Stop",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_2_F1",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_3_F2",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_4_Reset",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_5_Automatic",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_6_RI",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_7_Auto",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_0_IO_Lamp",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_1_PF1_Lamp",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_2_PF2_Lamp",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_3_PF3_Lamp",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_4_PF4_Lamp",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_5_Conveyor_Fwd",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_6_Conveyor_Bwd",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_7_MB1",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Byte42_IOLink_Sensors",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_0_BG1_CarrierPos1",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_1_BG2_CarrierPos2",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_2_BG3_CarrierPos3",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_3_BG4_CarrierPos4",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_4_KG1_CouplingIn",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_5_KG2_CouplingOut",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_6_GF1_CouplingSet",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_7_BG9_StopperDown",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_0_BG1_BCDDisplay_b0",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_1_BG2_BCDDisplay_b0",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_2_BG3_BCDDisplay_b0",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_3_BG4_BCDDisplay_b0",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_4_CouplingIn_Act",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_5_CouplingOut_Act",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_6_GF1_Release",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_7_Stopper_Retract",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Words_AnalogInterface",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "IW43_App_AI0",
+                  "valueType": "xs:int",
+                  "value": "0"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "IW46_App_AI1",
+                  "valueType": "xs:int",
+                  "value": "0"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "QW43_App_AO0",
+                  "valueType": "xs:int",
+                  "value": "0"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "QW45_App_AO1",
+                  "valueType": "xs:int",
+                  "value": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "CommunicationProtocols",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "PROFINET",
+              "valueType": "xs:string",
+              "value": "Siemens ET200SP via Scalance XB008 switch"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "IOLink",
+              "valueType": "xs:string",
+              "value": "IO-Link V1.1 via CM 4x IO-Link ST (4 ports)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "InterModuleCoupling",
+              "valueType": "xs:string",
+              "value": "Optical 2-bit coupling (KG1/KG2 in, GF1/GF2 out)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-MPRESS:Documentation",
+      "idShort": "Documentation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/DigiWin/ManufacturerDocumentation/0/1/Documentation"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "OperatingManual",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Title",
+              "valueType": "xs:string",
+              "value": "CP-L-LINEAR-V2 Operating Manual"
+            },
+            {
+              "modelType": "File",
+              "idShort": "ManualFile",
+              "mimeType": "application/pdf",
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-LINEAR-V2/files/manual_en.pdf"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Schematics",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Title",
+              "valueType": "xs:string",
+              "value": "CP-L-LINEAR-V2 Electrical Schematics (8167762 Rev V08)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "SchematicsRevision",
+              "valueType": "xs:string",
+              "value": "V08"
+            },
+            {
+              "modelType": "File",
+              "idShort": "SchematicsFile",
+              "mimeType": "application/pdf",
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-LINEAR-V2/files_C11M0/schematics.pdf"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "MaintenanceManual",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Title",
+              "valueType": "xs:string",
+              "value": "CP Factory Maintenance Manual 2023"
+            },
+            {
+              "modelType": "File",
+              "idShort": "MaintenanceFile",
+              "mimeType": "application/pdf",
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conceptDescriptions": []
+}

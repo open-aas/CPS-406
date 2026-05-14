@@ -1,0 +1,138 @@
+{
+  "assetAdministrationShells": [
+    {
+      "modelType": "AssetAdministrationShell",
+      "id": "urn:festo:cp-factory:aas:CP-AM-MPRESS",
+      "idShort": "AAS_CP_AM_MPRESS",
+      "displayName": [{ "language": "en", "text": "Muscle Press (MPRESS) - Pneumatic Muscle Assembly Module" }],
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:festo:cp-factory:asset:CP-AM-MPRESS"
+      },
+      "submodels": [
+        { "type": "ModelReference", "keys": [{ "type": "Submodel", "value": "urn:festo:cp-factory:sm:CP-AM-MPRESS:Nameplate" }] },
+        { "type": "ModelReference", "keys": [{ "type": "Submodel", "value": "urn:festo:cp-factory:sm:CP-AM-MPRESS:TechnicalData" }] },
+        { "type": "ModelReference", "keys": [{ "type": "Submodel", "value": "urn:festo:cp-factory:sm:CP-AM-MPRESS:Documentation" }] }
+      ]
+    }
+  ],
+  "submodels": [
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-AM-MPRESS:Nameplate",
+      "idShort": "Nameplate",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/zvei/nameplate/2/0/Nameplate" }]
+      },
+      "submodelElements": [
+        { "modelType": "Property", "idShort": "ManufacturerName", "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "0173-1#02-AAO677#002" }] }, "valueType": "xs:string", "value": "Festo Didactic SE" },
+        { "modelType": "Property", "idShort": "ManufacturerProductDesignation", "valueType": "xs:string", "value": "Muscle Press (MPRESS)" },
+        { "modelType": "Property", "idShort": "ManufacturerArticleNumber", "valueType": "xs:string", "value": "8038567" },
+        { "modelType": "Property", "idShort": "ManufacturerOrderCode", "valueType": "xs:string", "value": "CP-AM-MPRESS" },
+        { "modelType": "Property", "idShort": "InstanceName", "valueType": "xs:string", "value": "MPRESS" }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-AM-MPRESS:TechnicalData",
+      "idShort": "TechnicalData",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/ZVEI/TechnicalData/Submodel/1/2" }]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "GeneralInformation",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "ProductFamily", "valueType": "xs:string", "value": "CP Systems" },
+            { "modelType": "Property", "idShort": "ProductCategory", "valueType": "xs:string", "value": "Application module" },
+            { "modelType": "Property", "idShort": "Function", "valueType": "xs:string", "value": "Presses back covers onto front covers via pneumatic muscle actuator (Complexity: simple, electro-pneumatic)" },
+            { "modelType": "Property", "idShort": "ActuatorType", "valueType": "xs:string", "value": "Pneumatic muscle (fluidic muscle)" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "TechnicalProperties",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "OperatingVoltage", "valueType": "xs:string", "value": "24 VDC" },
+            { "modelType": "Property", "idShort": "OperatingPressure", "valueType": "xs:string", "value": "6 bar" },
+            { "modelType": "Property", "idShort": "ElectricalConnector", "valueType": "xs:string", "value": "24-pin IEEE 488 female (SysLink)" },
+            { "modelType": "Property", "idShort": "PneumaticConnector", "valueType": "xs:string", "value": "4 mm OD tube" },
+            { "modelType": "Property", "idShort": "DimensionHeight_mm", "valueType": "xs:int", "value": "525" },
+            { "modelType": "Property", "idShort": "DimensionWidth_mm", "valueType": "xs:int", "value": "240" },
+            { "modelType": "Property", "idShort": "DimensionDepth_mm", "valueType": "xs:int", "value": "180" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "IO_Configuration",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "DigitalInputs", "valueType": "xs:int", "value": "3" },
+            { "modelType": "Property", "idShort": "DigitalOutputs", "valueType": "xs:int", "value": "2" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "IO_Mapping",
+          "submodelElements": [
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Inputs",
+              "submodelElements": [
+                { "modelType": "Property", "idShort": "DI_Cylinder_TopPosition", "valueType": "xs:boolean", "value": "false" },
+                { "modelType": "Property", "idShort": "DI_Cylinder_PressPosition", "valueType": "xs:boolean", "value": "false" },
+                { "modelType": "Property", "idShort": "DI_BackCoverPresent", "valueType": "xs:boolean", "value": "false" }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Outputs",
+              "submodelElements": [
+                { "modelType": "Property", "idShort": "DO_Cylinder_MoveUp", "valueType": "xs:boolean", "value": "false" },
+                { "modelType": "Property", "idShort": "DO_Cylinder_MoveDown", "valueType": "xs:boolean", "value": "false" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-AM-MPRESS:Documentation",
+      "idShort": "Documentation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/DigiWin/ManufacturerDocumentation/0/1/Documentation" }]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "OperatingManual",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Title", "valueType": "xs:string", "value": "CP-AM-PRESS Operating Manual" },
+            { "modelType": "File", "idShort": "ManualFile", "mimeType": "application/pdf", "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-PRESS/files/manual_en.pdf" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Schematics",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Title", "valueType": "xs:string", "value": "CP-AM-PRESS Electrical Schematics" },
+            { "modelType": "File", "idShort": "SchematicsFile", "mimeType": "application/pdf", "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-PRESS/files/schematics.pdf" }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "MaintenanceManual",
+          "submodelElements": [
+            { "modelType": "Property", "idShort": "Title", "valueType": "xs:string", "value": "CP Factory Maintenance Manual 2023" },
+            { "modelType": "File", "idShort": "MaintenanceFile", "mimeType": "application/pdf", "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf" }
+          ]
+        }
+      ]
+    }
+  ],
+  "conceptDescriptions": []
+}
