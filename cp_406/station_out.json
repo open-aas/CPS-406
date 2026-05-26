@@ -2,8 +2,8 @@
   "assetAdministrationShells": [
     {
       "modelType": "AssetAdministrationShell",
-      "id": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-OUT",
-      "idShort": "AAS_CP_L_LINEAR_V2_OUT",
+      "id": "urn:festo:cp-factory:aas:STATION-OUT",
+      "idShort": "AAS_STATION_OUT",
       "displayName": [
         {
           "language": "en",
@@ -12,7 +12,7 @@
       ],
       "assetInformation": {
         "assetKind": "Instance",
-        "globalAssetId": "urn:festo:cp-factory:asset:CP-L-LINEAR-V2-OUT"
+        "globalAssetId": "urn:festo:cp-factory:asset:STATION-OUT"
       },
       "submodels": [
         {
@@ -41,24 +41,7 @@
               "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-OUT:Documentation"
             }
           ]
-        }
-      ]
-    },
-    {
-      "modelType": "AssetAdministrationShell",
-      "id": "urn:festo:cp-factory:aas:CP-AM-OUT",
-      "idShort": "AAS_CP_AM_OUT",
-      "displayName": [
-        {
-          "language": "en",
-          "text": "Output - Workpiece Output Module"
-        }
-      ],
-      "assetInformation": {
-        "assetKind": "Instance",
-        "globalAssetId": "urn:festo:cp-factory:asset:CP-AM-OUT"
-      },
-      "submodels": [
+        },
         {
           "type": "ModelReference",
           "keys": [
@@ -93,7 +76,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-OUT:Nameplate",
-      "idShort": "Nameplate",
+      "idShort": "Conveyor_Nameplate",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -172,7 +155,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-OUT:TechnicalData",
-      "idShort": "TechnicalData",
+      "idShort": "Conveyor_TechnicalData",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1010,7 +993,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-OUT:Documentation",
-      "idShort": "Documentation",
+      "idShort": "Conveyor_Documentation",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1086,7 +1069,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-AM-OUT:Nameplate",
-      "idShort": "Nameplate",
+      "idShort": "Module_Nameplate",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1135,7 +1118,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-AM-OUT:TechnicalData",
-      "idShort": "TechnicalData",
+      "idShort": "Module_TechnicalData",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1379,7 +1362,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-AM-OUT:Documentation",
-      "idShort": "Documentation",
+      "idShort": "Module_Documentation",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [

@@ -2,8 +2,8 @@
   "assetAdministrationShells": [
     {
       "modelType": "AssetAdministrationShell",
-      "id": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-MPRESS",
-      "idShort": "AAS_CP_L_LINEAR_V2_MPRESS",
+      "id": "urn:festo:cp-factory:aas:STATION-MPRESS",
+      "idShort": "AAS_STATION_MPRESS",
       "displayName": [
         {
           "language": "en",
@@ -12,7 +12,7 @@
       ],
       "assetInformation": {
         "assetKind": "Instance",
-        "globalAssetId": "urn:festo:cp-factory:asset:CP-L-LINEAR-V2-MPRESS"
+        "globalAssetId": "urn:festo:cp-factory:asset:STATION-MPRESS"
       },
       "submodels": [
         {
@@ -41,24 +41,7 @@
               "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-MPRESS:Documentation"
             }
           ]
-        }
-      ]
-    },
-    {
-      "modelType": "AssetAdministrationShell",
-      "id": "urn:festo:cp-factory:aas:CP-AM-MPRESS",
-      "idShort": "AAS_CP_AM_MPRESS",
-      "displayName": [
-        {
-          "language": "en",
-          "text": "Muscle Press (MPRESS) - Pneumatic Muscle Assembly Module"
-        }
-      ],
-      "assetInformation": {
-        "assetKind": "Instance",
-        "globalAssetId": "urn:festo:cp-factory:asset:CP-AM-MPRESS"
-      },
-      "submodels": [
+        },
         {
           "type": "ModelReference",
           "keys": [
@@ -93,7 +76,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-MPRESS:Nameplate",
-      "idShort": "Nameplate",
+      "idShort": "Conveyor_Nameplate",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -172,7 +155,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-MPRESS:TechnicalData",
-      "idShort": "TechnicalData",
+      "idShort": "Conveyor_TechnicalData",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1010,7 +993,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-MPRESS:Documentation",
-      "idShort": "Documentation",
+      "idShort": "Conveyor_Documentation",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1086,7 +1069,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-AM-MPRESS:Nameplate",
-      "idShort": "Nameplate",
+      "idShort": "Module_Nameplate",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1141,7 +1124,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-AM-MPRESS:TechnicalData",
-      "idShort": "TechnicalData",
+      "idShort": "Module_TechnicalData",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1301,7 +1284,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-AM-MPRESS:Documentation",
-      "idShort": "Documentation",
+      "idShort": "Module_Documentation",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [

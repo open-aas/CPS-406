@@ -537,7 +537,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Conveyor",
+              "idShort": "Station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -552,29 +552,7 @@
                 "keys": [
                   {
                     "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-MAGFRONT"
-                  }
-                ]
-              }
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "ApplicationModule",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-AM-MAG-FRONT"
+                    "value": "urn:festo:cp-factory:aas:STATION-MAGFRONT"
                   }
                 ]
               }
@@ -611,7 +589,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Conveyor",
+              "idShort": "Station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -626,29 +604,7 @@
                 "keys": [
                   {
                     "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-MEAS"
-                  }
-                ]
-              }
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "ApplicationModule",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-AM-MEASURE-V2"
+                    "value": "urn:festo:cp-factory:aas:STATION-MEAS"
                   }
                 ]
               }
@@ -685,7 +641,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Conveyor",
+              "idShort": "Station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -700,29 +656,7 @@
                 "keys": [
                   {
                     "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-iDRILL"
-                  }
-                ]
-              }
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "ApplicationModule",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-AM-iDRILL"
+                    "value": "urn:festo:cp-factory:aas:STATION-IDRILL"
                   }
                 ]
               }
@@ -759,7 +693,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Conveyor",
+              "idShort": "Station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -774,29 +708,7 @@
                 "keys": [
                   {
                     "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-MAGBACK"
-                  }
-                ]
-              }
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "ApplicationModule",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-AM-MAG-BACK"
+                    "value": "urn:festo:cp-factory:aas:STATION-MAGBACK"
                   }
                 ]
               }
@@ -833,7 +745,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Conveyor",
+              "idShort": "Station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -848,29 +760,7 @@
                 "keys": [
                   {
                     "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-MPRESS"
-                  }
-                ]
-              }
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "ApplicationModule",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-AM-MPRESS"
+                    "value": "urn:festo:cp-factory:aas:STATION-MPRESS"
                   }
                 ]
               }
@@ -907,7 +797,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Conveyor",
+              "idShort": "Station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -922,29 +812,7 @@
                 "keys": [
                   {
                     "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-OUT"
-                  }
-                ]
-              }
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "ApplicationModule",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-AM-OUT"
+                    "value": "urn:festo:cp-factory:aas:STATION-OUT"
                   }
                 ]
               }
