@@ -12,7 +12,11 @@
       ],
       "assetInformation": {
         "assetKind": "Instance",
-        "globalAssetId": "urn:festo:cp-factory:asset:STATION-MEAS"
+        "globalAssetId": "urn:festo:cp-factory:asset:STATION-MEAS",
+        "defaultThumbnail": {
+          "path": "https://raw.githubusercontent.com/open-aas/CPS-406/main/cp_406/thumbnails/measure.png",
+          "contentType": "image/png"
+        }
       },
       "submodels": [
         {
