@@ -1,0 +1,2393 @@
+{
+  "assetAdministrationShells": [
+    {
+      "modelType": "AssetAdministrationShell",
+      "id": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2-iDRILL",
+      "idShort": "AAS_CP_L_LINEAR_V2_iDRILL",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Linear V2 - Conveyor for station iDRILL"
+        }
+      ],
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:festo:cp-factory:asset:CP-L-LINEAR-V2-iDRILL"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-iDRILL:Nameplate"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-iDRILL:TechnicalData"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-iDRILL:Documentation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "AssetAdministrationShell",
+      "id": "urn:festo:cp-factory:aas:CP-AM-iDRILL",
+      "idShort": "AAS_CP_AM_iDRILL",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "CP-AM-iDRILL - CPS Drilling Application Module"
+        },
+        {
+          "language": "pt",
+          "text": "CP-AM-iDRILL - Módulo de aplicação furadeira CPS"
+        }
+      ],
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:festo:cp-factory:asset:CP-AM-iDRILL"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:CP-AM-iDRILL:Nameplate"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:CP-AM-iDRILL:TechnicalData"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:CP-AM-iDRILL:Documentation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "submodels": [
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-iDRILL:Nameplate",
+      "idShort": "Nameplate",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/zvei/nameplate/2/0/Nameplate"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerName",
+          "valueType": "xs:string",
+          "value": "Festo Didactic SE",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO677#002"
+              }
+            ]
+          }
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerProductDesignation",
+          "valueType": "xs:string",
+          "value": "Linear V2 Conveyor"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerArticleNumber",
+          "valueType": "xs:string",
+          "value": "D12501"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerOrderCode",
+          "valueType": "xs:string",
+          "value": "CP-L-LINEAR-V2-C11M0"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "InstanceName",
+          "valueType": "xs:string",
+          "value": "LINEAR-iDRILL"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "StationNumber",
+          "valueType": "xs:int",
+          "value": "3"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "StationRole",
+          "valueType": "xs:string",
+          "value": "Assembly - Drilling"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "CountryOfOrigin",
+          "valueType": "xs:string",
+          "value": "Canada"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ServicePortal",
+          "valueType": "xs:string",
+          "value": "https://ip.festo-didactic.com"
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-iDRILL:TechnicalData",
+      "idShort": "TechnicalData",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/ZVEI/TechnicalData/Submodel/1/2"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "GeneralInformation",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "ProductFamily",
+              "valueType": "xs:string",
+              "value": "CP Lab"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ProductCategory",
+              "valueType": "xs:string",
+              "value": "Base module / Conveyor"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "SchematicsDocument",
+              "valueType": "xs:string",
+              "value": "8167762 Rev V08"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "TechnicalProperties",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "OperatingVoltage_DC",
+              "valueType": "xs:string",
+              "value": "24 VDC"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "OperatingPressure_bar",
+              "valueType": "xs:float",
+              "value": "6.0"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DimensionHeight_mm",
+              "valueType": "xs:int",
+              "value": "700"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DimensionWidth_mm",
+              "valueType": "xs:int",
+              "value": "350"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DimensionDepth_mm",
+              "valueType": "xs:int",
+              "value": "205"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "PLCHardware",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "CPU_Model",
+              "valueType": "xs:string",
+              "value": "Siemens ET200SP CPU 1512SP F-1PN"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CPU_OrderCode",
+              "valueType": "xs:string",
+              "value": "6ES7512-1SK00-0AB0"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CPU_NetworkAddress",
+              "valueType": "xs:string",
+              "value": "192.168.0.1"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DI_Module_1",
+              "valueType": "xs:string",
+              "value": "Siemens DI 8x24VDC (6ES7131-6BF00-0CA0)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DI_Module_2",
+              "valueType": "xs:string",
+              "value": "Siemens DI 8x24VDC (6ES7131-6BF00-0CA0)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DQ_Module_1",
+              "valueType": "xs:string",
+              "value": "Siemens DQ 8x24VDC 0.5A (6ES7132-6BF00-0CA0)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DQ_Module_2",
+              "valueType": "xs:string",
+              "value": "Siemens DQ 8x24VDC 0.5A (6ES7132-6BF00-0CA0)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "IOLink_CM",
+              "valueType": "xs:string",
+              "value": "Siemens CM 4x IO-Link ST (6ES7137-6BD00-0BA0)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "EthernetSwitch",
+              "valueType": "xs:string",
+              "value": "Siemens Scalance XB008 - 8x RJ45 10/100Mbit unmanaged"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "PowerSupply",
+              "valueType": "xs:string",
+              "value": "24 VDC / 2 A"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "HMI",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Model",
+              "valueType": "xs:string",
+              "value": "Siemens SIMATIC MTP700"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ArticleNumber",
+              "valueType": "xs:string",
+              "value": "8189692"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Interface",
+              "valueType": "xs:string",
+              "value": "Ethernet (X5), USB (X6)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Buttons",
+              "valueType": "xs:string",
+              "value": "SF1-SF5 (Start, Stop, F1, F2, Reset)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Indicators",
+              "valueType": "xs:string",
+              "value": "PF1-PF4 (signal lamps)"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "RFID",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Model",
+              "valueType": "xs:string",
+              "value": "Siemens RF210R"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Protocol",
+              "valueType": "xs:string",
+              "value": "IO-Link V1.1"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "IOLink_Port",
+              "valueType": "xs:int",
+              "value": "1"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "IO_ByteSize",
+              "valueType": "xs:int",
+              "value": "32"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ReadPayload_B",
+              "valueType": "xs:int",
+              "value": "28"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StatusBits",
+              "valueType": "xs:string",
+              "value": "TagPresent (%I40.0), Error (%I40.1), Done (%I40.2)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CmdWrite",
+              "valueType": "xs:string",
+              "value": "%Q40.0 + 28 byte payload"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CmdRead",
+              "valueType": "xs:string",
+              "value": "%Q40.1"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "MotorEncoder",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Motor_Model",
+              "valueType": "xs:string",
+              "value": "OTT#SWM4033438-3"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Motor_Voltage",
+              "valueType": "xs:string",
+              "value": "24 VDC bidirectional (normal/reduced speed)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Encoder_Model",
+              "valueType": "xs:string",
+              "value": "Festo FES.102796"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Encoder_PulsesPerCh",
+              "valueType": "xs:int",
+              "value": "8"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Encoder_mmPerRotation",
+              "valueType": "xs:float",
+              "value": "94.2"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Encoder_Calculation",
+              "valueType": "xs:string",
+              "value": "30mm dia × π = 94.2 mm/rotation at 8 pulses/ch"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Encoder_Connector_A",
+              "valueType": "xs:string",
+              "value": "BNC X18 (channel A - BG7)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Encoder_Connector_B",
+              "valueType": "xs:string",
+              "value": "BNC X19 (channel B - BG8)"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Pneumatics",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "StopperValve_Model",
+              "valueType": "xs:string",
+              "value": "VUVG-L10-M52-MT-M5-1P3"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StopperValve_FestoPN",
+              "valueType": "xs:string",
+              "value": "FES.574351"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StopperValve_Type",
+              "valueType": "xs:string",
+              "value": "5/2 monostable, 24 VDC solenoid"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StopperSensor_BG9",
+              "valueType": "xs:string",
+              "value": "Lower/press position sensor → %I42.7"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "IO_Configuration",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "DigitalInputs_Byte0",
+              "valueType": "xs:int",
+              "value": "8",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "App inputs DI0-DI7 from KF2"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalInputs_Byte1",
+              "valueType": "xs:int",
+              "value": "8",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "Control panel inputs from KF3"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalInputs_Byte42",
+              "valueType": "xs:int",
+              "value": "8",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "IO-Link sensors BG1-BG4, KG1-KG2, GF1, BG9"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalOutputs_Byte0",
+              "valueType": "xs:int",
+              "value": "8",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "App outputs DQ0-DQ7 from KF4"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalOutputs_Byte1",
+              "valueType": "xs:int",
+              "value": "8",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "Control panel outputs from KF5"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalOutputs_Byte42",
+              "valueType": "xs:int",
+              "value": "8",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "IO-Link actuator outputs"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AnalogInputs_WordIW43",
+              "valueType": "xs:int",
+              "value": "1",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "App_AI0 (IO-Link analog)"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AnalogInputs_WordIW46",
+              "valueType": "xs:int",
+              "value": "1",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "App_AI1 (IO-Link analog)"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AnalogOutputs_WordQW43",
+              "valueType": "xs:int",
+              "value": "1",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "App_AO0 (IO-Link analog)"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AnalogOutputs_WordQW45",
+              "valueType": "xs:int",
+              "value": "1",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "App_AO1 (IO-Link analog)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "IO_Mapping",
+          "submodelElements": [
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Byte0_ApplicationInterface",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_0_App_DI0",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_1_App_DI1",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_2_App_DI2",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_3_App_DI3",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_4_App_DI4",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_5_App_DI5",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_6_App_DI6",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_7_App_DI7",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_0_App_DQ0",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_1_App_DQ1",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_2_App_DQ2",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_3_App_DQ3",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_4_App_DQ4",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_5_App_DQ5",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_6_App_DQ6",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_7_App_DQ7",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Byte1_ControlPanel",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_0_Start",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_1_Stop",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_2_F1",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_3_F2",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_4_Reset",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_5_Automatic",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_6_RI",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I1_7_Auto",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_0_IO_Lamp",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_1_PF1_Lamp",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_2_PF2_Lamp",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_3_PF3_Lamp",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_4_PF4_Lamp",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_5_Conveyor_Fwd",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_6_Conveyor_Bwd",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q1_7_MB1",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Byte42_IOLink_Sensors",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_0_BG1_CarrierPos1",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_1_BG2_CarrierPos2",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_2_BG3_CarrierPos3",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_3_BG4_CarrierPos4",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_4_KG1_CouplingIn",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_5_KG2_CouplingOut",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_6_GF1_CouplingSet",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I42_7_BG9_StopperDown",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_0_BG1_BCDDisplay_b0",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_1_BG2_BCDDisplay_b0",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_2_BG3_BCDDisplay_b0",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_3_BG4_BCDDisplay_b0",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_4_CouplingIn_Act",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_5_CouplingOut_Act",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_6_GF1_Release",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q42_7_Stopper_Retract",
+                  "valueType": "xs:boolean",
+                  "value": "false"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Words_AnalogInterface",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "IW43_App_AI0",
+                  "valueType": "xs:int",
+                  "value": "0"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "IW46_App_AI1",
+                  "valueType": "xs:int",
+                  "value": "0"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "QW43_App_AO0",
+                  "valueType": "xs:int",
+                  "value": "0"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "QW45_App_AO1",
+                  "valueType": "xs:int",
+                  "value": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "CommunicationProtocols",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "PROFINET",
+              "valueType": "xs:string",
+              "value": "Siemens ET200SP via Scalance XB008 switch"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "IOLink",
+              "valueType": "xs:string",
+              "value": "IO-Link V1.1 via CM 4x IO-Link ST (4 ports)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "InterModuleCoupling",
+              "valueType": "xs:string",
+              "value": "Optical 2-bit coupling (KG1/KG2 in, GF1/GF2 out)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-iDRILL:Documentation",
+      "idShort": "Documentation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/DigiWin/ManufacturerDocumentation/0/1/Documentation"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "OperatingManual",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Title",
+              "valueType": "xs:string",
+              "value": "CP-L-LINEAR-V2 Operating Manual"
+            },
+            {
+              "modelType": "File",
+              "idShort": "ManualFile",
+              "mimeType": "application/pdf",
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-LINEAR-V2/files/manual_en.pdf"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Schematics",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Title",
+              "valueType": "xs:string",
+              "value": "CP-L-LINEAR-V2 Electrical Schematics (8167762 Rev V08)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "SchematicsRevision",
+              "valueType": "xs:string",
+              "value": "V08"
+            },
+            {
+              "modelType": "File",
+              "idShort": "SchematicsFile",
+              "mimeType": "application/pdf",
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-LINEAR-V2/files_C11M0/schematics.pdf"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "MaintenanceManual",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Title",
+              "valueType": "xs:string",
+              "value": "CP Factory Maintenance Manual 2023"
+            },
+            {
+              "modelType": "File",
+              "idShort": "MaintenanceFile",
+              "mimeType": "application/pdf",
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-AM-iDRILL:Nameplate",
+      "idShort": "Nameplate",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/zvei/nameplate/2/0/Nameplate"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerName",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO677#002"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "Festo Didactic SE"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerProductDesignation",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAW338#001"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "iDrilling - Application module Drilling CPS"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerArticleNumber",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO676#003"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "8043598"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerOrderCode",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO227#002"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "CP-AM-iDRILL-C21"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "InstanceName",
+          "valueType": "xs:string",
+          "value": "iDRILL"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "ManufacturerWebsite",
+          "valueType": "xs:string",
+          "value": "https://www.festo-didactic.com"
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-AM-iDRILL:TechnicalData",
+      "idShort": "TechnicalData",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/ZVEI/TechnicalData/Submodel/1/2"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "GeneralInformation",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "ProductFamily",
+              "valueType": "xs:string",
+              "value": "CP Systems"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ProductCategory",
+              "valueType": "xs:string",
+              "value": "Application module"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Function",
+              "valueType": "xs:string",
+              "value": "Drills 4 holes into lower housing part; position-based via CPS technology (X+Z pneumatic axes, dual drill unit)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Controller",
+              "valueType": "xs:string",
+              "value": "Festo CECC-LK (art. 574418), 14 DI / 8 DQ"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "SchematicsDoc",
+              "valueType": "xs:string",
+              "value": "D13001 / 8043598, Version V, 10.03.2021"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ManualDoc",
+              "valueType": "xs:string",
+              "value": "8043598, Edition 05/2023"
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "CEDeclaration",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Directive_Machinery",
+                  "valueType": "xs:string",
+                  "value": "2006/42/EC"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Directive_EMC",
+                  "valueType": "xs:string",
+                  "value": "2014/30/EU"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Directive_RoHS",
+                  "valueType": "xs:string",
+                  "value": "2011/65/EU"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "TechnicalProperties",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "OperatingVoltage_V",
+              "valueType": "xs:string",
+              "value": "24 VDC"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CurrentConsumption_A",
+              "valueType": "xs:float",
+              "value": "4.5"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "OperatingPressure_bar",
+              "valueType": "xs:float",
+              "value": "6.0"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "MinAirFlow_l_min",
+              "valueType": "xs:int",
+              "value": "40"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DimensionLength_mm",
+              "valueType": "xs:int",
+              "value": "382"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DimensionWidth_mm",
+              "valueType": "xs:int",
+              "value": "219"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DimensionHeight_mm",
+              "valueType": "xs:int",
+              "value": "525"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Weight_kg",
+              "valueType": "xs:float",
+              "value": "8.3"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AmbientTempMin_degC",
+              "valueType": "xs:int",
+              "value": "5"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AmbientTempMax_degC",
+              "valueType": "xs:int",
+              "value": "40"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RelativeHumidityMax_pct",
+              "valueType": "xs:string",
+              "value": "80% up to 31°C, no condensation"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "NoiseLevelLpA_dB",
+              "valueType": "xs:string",
+              "value": "< 70 dB(A)"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Components",
+          "submodelElements": [
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "KF1_Controller",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "KF1"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Festo CECC-LK programmable controller"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "574418"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "OrderCode",
+                  "valueType": "xs:string",
+                  "value": "CECC-LK"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "IO_DI",
+                  "valueType": "xs:int",
+                  "value": "14"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "IO_DQ",
+                  "valueType": "xs:int",
+                  "value": "8"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Communication",
+                  "valueType": "xs:string",
+                  "value": "Ethernet RJ45, CPS protocol"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "BG1_X_LeftEndstop",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "BG1"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "X-axis left end position sensor"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "551373"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "OrderCode",
+                  "valueType": "xs:string",
+                  "value": "SMT-10M-PS-24V-E-2,5-L-OE"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Type",
+                  "valueType": "xs:string",
+                  "value": "Cylinder switch, magnetic proximity"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Signal",
+                  "valueType": "xs:string",
+                  "value": "Digital, PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "CeccLK_Input",
+                  "valueType": "xs:string",
+                  "value": "%I0.0"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "BG2_X_RightEndstop",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "BG2"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "X-axis right end position sensor"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "551373"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "OrderCode",
+                  "valueType": "xs:string",
+                  "value": "SMT-10M-PS-24V-E-2,5-L-OE"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Type",
+                  "valueType": "xs:string",
+                  "value": "Cylinder switch, magnetic proximity"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Signal",
+                  "valueType": "xs:string",
+                  "value": "Digital, PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "CeccLK_Input",
+                  "valueType": "xs:string",
+                  "value": "%I0.1"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "BG3_FrontCover_Orientation",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "BG3"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Front cover orientation detection sensor"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "MountingArticle",
+                  "valueType": "xs:string",
+                  "value": "552812 (SOOC-TB-M4-2-R25)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "SensorArticle",
+                  "valueType": "xs:string",
+                  "value": "8127556 (SOEG-L-Q30-P-A-S-2L)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Type",
+                  "valueType": "xs:string",
+                  "value": "Light guide proximity sensor, 30mm diffuse"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Signal",
+                  "valueType": "xs:string",
+                  "value": "Digital, PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "CeccLK_Input",
+                  "valueType": "xs:string",
+                  "value": "%I0.2"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "BG4_FrontCover_Present",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "BG4"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Front cover workpiece present sensor"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "MountingArticle",
+                  "valueType": "xs:string",
+                  "value": "552812 (SOOC-TB-M4-2-R25)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "SensorArticle",
+                  "valueType": "xs:string",
+                  "value": "8127556 (SOEG-L-Q30-P-A-S-2L)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Type",
+                  "valueType": "xs:string",
+                  "value": "Light guide proximity sensor, 30mm diffuse"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Signal",
+                  "valueType": "xs:string",
+                  "value": "Digital, PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "CeccLK_Input",
+                  "valueType": "xs:string",
+                  "value": "%I0.3"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "BG5_Z_UpperEndstop",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "BG5"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Z-axis upper end position sensor (drill retracted)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "551373"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "OrderCode",
+                  "valueType": "xs:string",
+                  "value": "SMT-10M-PS-24V-E-2,5-L-OE"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Type",
+                  "valueType": "xs:string",
+                  "value": "Cylinder switch, magnetic proximity"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Signal",
+                  "valueType": "xs:string",
+                  "value": "Digital, PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "CeccLK_Input",
+                  "valueType": "xs:string",
+                  "value": "%I0.4"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "BG6_Z_LowerEndstop",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "BG6"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Z-axis lower end position sensor (drill advanced)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "551373"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "OrderCode",
+                  "valueType": "xs:string",
+                  "value": "SMT-10M-PS-24V-E-2,5-L-OE"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Type",
+                  "valueType": "xs:string",
+                  "value": "Cylinder switch, magnetic proximity"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Signal",
+                  "valueType": "xs:string",
+                  "value": "Digital, PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "CeccLK_Input",
+                  "valueType": "xs:string",
+                  "value": "%I0.5"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "BG8_BackCover_Present",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "BG8"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Back cover workpiece present sensor"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "MountingArticle",
+                  "valueType": "xs:string",
+                  "value": "552812 (SOOC-TB-M4-2-R25)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "SensorArticle",
+                  "valueType": "xs:string",
+                  "value": "8127556 (SOEG-L-Q30-P-A-S-2L)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Type",
+                  "valueType": "xs:string",
+                  "value": "Light guide proximity sensor, 30mm diffuse"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Signal",
+                  "valueType": "xs:string",
+                  "value": "Digital, PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "CeccLK_Input",
+                  "valueType": "xs:string",
+                  "value": "%I0.6"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "MA1_DrillUnit1",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "MA1"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Drill unit 1 (double drill assembly, left pair)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "656874"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "OrderCode",
+                  "valueType": "xs:string",
+                  "value": "Bausatz Bohrmaschine"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Voltage_V",
+                  "valueType": "xs:string",
+                  "value": "24 VDC"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "CeccLK_Output",
+                  "valueType": "xs:string",
+                  "value": "%Q0.5"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "MA2_DrillUnit2",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "MA2"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Drill unit 2 (double drill assembly, right pair)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "656874"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "OrderCode",
+                  "valueType": "xs:string",
+                  "value": "Bausatz Bohrmaschine"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Voltage_V",
+                  "valueType": "xs:string",
+                  "value": "24 VDC"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "CeccLK_Output",
+                  "valueType": "xs:string",
+                  "value": "%Q0.6"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "QA4_InrushLimiter1",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "QA4"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Inrush current limiter for drill MA1"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "150768"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "QA5_InrushLimiter2",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "QA5"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Inrush current limiter for drill MA2"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "150768"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Pneumatics",
+          "submodelElements": [
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "CPVSC1_ValveTerminal",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Designation",
+                  "valueType": "xs:string",
+                  "value": "CPVSC1"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Compact valve terminal — controls X and Z axis pneumatics + Z-axis lock"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "525675"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ValveType",
+                  "valueType": "xs:string",
+                  "value": "CPVSC1-K-M5C (art. 548899)"
+                },
+                {
+                  "modelType": "SubmodelElementCollection",
+                  "idShort": "ValveCoils",
+                  "submodelElements": [
+                    {
+                      "modelType": "SubmodelElementCollection",
+                      "idShort": "MB1_X_Left",
+                      "submodelElements": [
+                        {
+                          "modelType": "Property",
+                          "idShort": "Designation",
+                          "valueType": "xs:string",
+                          "value": "MB1"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "Function",
+                          "valueType": "xs:string",
+                          "value": "X-axis move to left (home) position"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "CeccLK_Output",
+                          "valueType": "xs:string",
+                          "value": "%Q0.0"
+                        }
+                      ]
+                    },
+                    {
+                      "modelType": "SubmodelElementCollection",
+                      "idShort": "MB2_X_Right",
+                      "submodelElements": [
+                        {
+                          "modelType": "Property",
+                          "idShort": "Designation",
+                          "valueType": "xs:string",
+                          "value": "MB2"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "Function",
+                          "valueType": "xs:string",
+                          "value": "X-axis move to right (drill) position"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "CeccLK_Output",
+                          "valueType": "xs:string",
+                          "value": "%Q0.1"
+                        }
+                      ]
+                    },
+                    {
+                      "modelType": "SubmodelElementCollection",
+                      "idShort": "MB5_Z_Up",
+                      "submodelElements": [
+                        {
+                          "modelType": "Property",
+                          "idShort": "Designation",
+                          "valueType": "xs:string",
+                          "value": "MB5"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "Function",
+                          "valueType": "xs:string",
+                          "value": "Z-axis retract drill (up)"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "CeccLK_Output",
+                          "valueType": "xs:string",
+                          "value": "%Q0.2"
+                        }
+                      ]
+                    },
+                    {
+                      "modelType": "SubmodelElementCollection",
+                      "idShort": "MB6_Z_Down",
+                      "submodelElements": [
+                        {
+                          "modelType": "Property",
+                          "idShort": "Designation",
+                          "valueType": "xs:string",
+                          "value": "MB6"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "Function",
+                          "valueType": "xs:string",
+                          "value": "Z-axis advance drill (down)"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "CeccLK_Output",
+                          "valueType": "xs:string",
+                          "value": "%Q0.3"
+                        }
+                      ]
+                    },
+                    {
+                      "modelType": "SubmodelElementCollection",
+                      "idShort": "MB7_Z_LockOpen",
+                      "submodelElements": [
+                        {
+                          "modelType": "Property",
+                          "idShort": "Designation",
+                          "valueType": "xs:string",
+                          "value": "MB7"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "Function",
+                          "valueType": "xs:string",
+                          "value": "Z-axis lock release (open)"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "CeccLK_Output",
+                          "valueType": "xs:string",
+                          "value": "%Q0.4"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "X_Axis_LinearDrive",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "X-axis pneumatic linear drive — positions drill over workpiece"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "530907"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "OrderCode",
+                  "valueType": "xs:string",
+                  "value": "DGC-12-120"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Stroke_mm",
+                  "valueType": "xs:int",
+                  "value": "120"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "BoreSize_mm",
+                  "valueType": "xs:int",
+                  "value": "12"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Z_Axis_MiniSlide",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Z-axis mini slide — lowers/raises drill units"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "543905"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "OrderCode",
+                  "valueType": "xs:string",
+                  "value": "DGSL-10-40-E3-Y3A"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Stroke_mm",
+                  "valueType": "xs:int",
+                  "value": "40"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "BoreSize_mm",
+                  "valueType": "xs:int",
+                  "value": "10"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "FlowControls",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "Exhaust flow control valves (×4) — speed regulation for X and Z axes"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ArticleNumber",
+                  "valueType": "xs:string",
+                  "value": "175053"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "OrderCode",
+                  "valueType": "xs:string",
+                  "value": "GRLA-M5-QS-3-LF-C"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Quantity",
+                  "valueType": "xs:int",
+                  "value": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "IO_Configuration",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "DigitalInputs",
+              "valueType": "xs:int",
+              "value": "7"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalOutputs",
+              "valueType": "xs:int",
+              "value": "7"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AnalogInputs",
+              "valueType": "xs:int",
+              "value": "0"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AnalogOutputs",
+              "valueType": "xs:int",
+              "value": "0"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CommunicationPort",
+              "valueType": "xs:string",
+              "value": "Ethernet RJ45 (CPS + PROFINET via conveyor)"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "InterfaceConnector",
+              "valueType": "xs:string",
+              "value": "SysLink E/A-Modul"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "IO_Mapping",
+          "submodelElements": [
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "DigitalInputs_CECC_LK",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_0",
+                  "valueType": "xs:string",
+                  "value": "BG1 — X-axis left endstop (SMT-10M, art.551373); PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_1",
+                  "valueType": "xs:string",
+                  "value": "BG2 — X-axis right endstop (SMT-10M, art.551373); PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_2",
+                  "valueType": "xs:string",
+                  "value": "BG3 — Front cover orientation sensor (SOEG-L-Q30, art.8127556); PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_3",
+                  "valueType": "xs:string",
+                  "value": "BG4 — Front cover workpiece present (SOEG-L-Q30, art.8127556); PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_4",
+                  "valueType": "xs:string",
+                  "value": "BG5 — Z-axis upper endstop / drill retracted (SMT-10M, art.551373); PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_5",
+                  "valueType": "xs:string",
+                  "value": "BG6 — Z-axis lower endstop / drill advanced (SMT-10M, art.551373); PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_6",
+                  "valueType": "xs:string",
+                  "value": "BG8 — Back cover workpiece present (SOEG-L-Q30, art.8127556); PNP NO"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "I0_7",
+                  "valueType": "xs:string",
+                  "value": "— reserved —"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "DigitalOutputs_CECC_LK",
+              "submodelElements": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_0",
+                  "valueType": "xs:string",
+                  "value": "MB1 — CPVSC1 valve: X-axis move to left (home)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_1",
+                  "valueType": "xs:string",
+                  "value": "MB2 — CPVSC1 valve: X-axis move to right (drill position)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_2",
+                  "valueType": "xs:string",
+                  "value": "MB5 — CPVSC1 valve: Z-axis retract drill (up)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_3",
+                  "valueType": "xs:string",
+                  "value": "MB6 — CPVSC1 valve: Z-axis advance drill (down)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_4",
+                  "valueType": "xs:string",
+                  "value": "MB7 — CPVSC1 valve: Z-axis lock open"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_5",
+                  "valueType": "xs:string",
+                  "value": "MA1 — Drill unit 1 motor ON (art.656874)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_6",
+                  "valueType": "xs:string",
+                  "value": "MA2 — Drill unit 2 motor ON (art.656874)"
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Q0_7",
+                  "valueType": "xs:string",
+                  "value": "— reserved —"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:CP-AM-iDRILL:Documentation",
+      "idShort": "Documentation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/DigiWin/ManufacturerDocumentation/0/1/Documentation"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "OperatingManual",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Title",
+              "valueType": "xs:string",
+              "value": "CP-AM-iDRILL Operating Manual"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DocumentNumber",
+              "valueType": "xs:string",
+              "value": "8043598"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Edition",
+              "valueType": "xs:string",
+              "value": "05/2023"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Language",
+              "valueType": "xs:string",
+              "value": "en"
+            },
+            {
+              "modelType": "File",
+              "idShort": "ManualFile",
+              "mimeType": "application/pdf",
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-iDRILL/files/manual_en.pdf"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Schematics",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Title",
+              "valueType": "xs:string",
+              "value": "CP-AM-iDRILL Electrical and Pneumatic Schematics"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DocumentNumber",
+              "valueType": "xs:string",
+              "value": "D13001 / 8043598"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Version",
+              "valueType": "xs:string",
+              "value": "V"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Date",
+              "valueType": "xs:string",
+              "value": "2021-03-10"
+            },
+            {
+              "modelType": "File",
+              "idShort": "SchematicsFile",
+              "mimeType": "application/pdf",
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-iDRILL/files/schematics.pdf"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "MaintenanceManual",
+          "submodelElements": [
+            {
+              "modelType": "Property",
+              "idShort": "Title",
+              "valueType": "xs:string",
+              "value": "CP Factory Maintenance Manual 2023"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Edition",
+              "valueType": "xs:string",
+              "value": "2023-07"
+            },
+            {
+              "modelType": "File",
+              "idShort": "MaintenanceFile",
+              "mimeType": "application/pdf",
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

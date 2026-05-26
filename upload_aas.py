@@ -22,20 +22,14 @@ DEFAULT_BASE_URL = "http://localhost:8081"
 
 # Ordem de upload: sistema pai por último (garante que sub-assets já existem)
 UPLOAD_ORDER = [
-    # Esteiras (6)
-    "cp_l_linear_v2_magfront.json",
-    "cp_l_linear_v2_meas.json",
-    "cp_l_linear_v2_idrill.json",
-    "cp_l_linear_v2_magback.json",
-    "cp_l_linear_v2_mpress.json",
-    "cp_l_linear_v2_out.json",
-    # Módulos de aplicação (7)
-    "cp_am_mag_front.json",
-    "cp_am_measure_v2.json",
-    "cp_am_idrill.json",
-    "cp_am_mag_back.json",
-    "cp_am_press.json",
-    "cp_am_out.json",
+    # Estações (esteira + equipamento juntos)
+    "station_magfront.json",
+    "station_meas.json",
+    "station_idrill.json",
+    "station_magback.json",
+    "station_mpress.json",
+    "station_out.json",
+    # Magazine solto (sem esteira dedicada)
     "cp_am_mag.json",
     # Esteira genérica (tipo)
     "cp_l_linear_v2.json",
