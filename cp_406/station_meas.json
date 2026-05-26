@@ -186,7 +186,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "GeneralInformation",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "ProductFamily",
@@ -210,7 +210,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "TechnicalProperties",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "OperatingVoltage_DC",
@@ -246,7 +246,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "PLCHardware",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "CPU_Model",
@@ -312,7 +312,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "HMI",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Model",
@@ -348,7 +348,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "RFID",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Model",
@@ -402,7 +402,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "MotorEncoder",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Motor_Model",
@@ -456,7 +456,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "Pneumatics",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "StopperValve_Model",
@@ -486,7 +486,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "IO_Configuration",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "DigitalInputs_Byte0",
@@ -642,11 +642,11 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "IO_Mapping",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "Byte0_ApplicationInterface",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "I0_0_App_DI0",
@@ -748,7 +748,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "Byte1_ControlPanel",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "I1_0_Start",
@@ -850,7 +850,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "Byte42_IOLink_Sensors",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "I42_0_BG1_CarrierPos1",
@@ -952,7 +952,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "Words_AnalogInterface",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "IW43_App_AI0",
@@ -984,7 +984,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "CommunicationProtocols",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "PROFINET",
@@ -1024,7 +1024,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "OperatingManual",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",
@@ -1042,7 +1042,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "Schematics",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",
@@ -1066,7 +1066,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "MaintenanceManual",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",
@@ -1155,7 +1155,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "GeneralInformation",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "ProductFamily",
@@ -1197,7 +1197,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "TechnicalProperties",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "OperatingVoltage",
@@ -1245,11 +1245,11 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "Components",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "BG1_WorkpieceSensor",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designator",
@@ -1291,7 +1291,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "BG2_HeightSensor_Left",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designator",
@@ -1369,7 +1369,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "BG3_HeightSensor_Right",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designator",
@@ -1447,7 +1447,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "P1_SignalLight",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designator",
@@ -1501,7 +1501,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "XD1_IOModule",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designator",
@@ -1531,7 +1531,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "XD2A_AnalogTerminal",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designator",
@@ -1563,7 +1563,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "IO_Configuration",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "DigitalInputs_Total",
@@ -1605,11 +1605,11 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "IO_Mapping",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "DigitalInputs",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "IN0_BG1_WorkpiecePresent",
@@ -1663,7 +1663,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "DigitalOutputs",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "OUT0_24VA_Reference",
@@ -1717,7 +1717,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "AnalogInputs",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "AI_BG2_HeightLeft_0to10V",
@@ -1753,7 +1753,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "OperatingManual",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",
@@ -1771,7 +1771,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "Schematics",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",
@@ -1801,7 +1801,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "FrontCoverLabel",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",
@@ -1819,7 +1819,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "MaintenanceManual",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",

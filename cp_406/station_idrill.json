@@ -190,7 +190,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "GeneralInformation",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "ProductFamily",
@@ -214,7 +214,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "TechnicalProperties",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "OperatingVoltage_DC",
@@ -250,7 +250,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "PLCHardware",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "CPU_Model",
@@ -316,7 +316,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "HMI",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Model",
@@ -352,7 +352,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "RFID",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Model",
@@ -406,7 +406,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "MotorEncoder",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Motor_Model",
@@ -460,7 +460,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "Pneumatics",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "StopperValve_Model",
@@ -490,7 +490,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "IO_Configuration",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "DigitalInputs_Byte0",
@@ -646,11 +646,11 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "IO_Mapping",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "Byte0_ApplicationInterface",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "I0_0_App_DI0",
@@ -752,7 +752,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "Byte1_ControlPanel",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "I1_0_Start",
@@ -854,7 +854,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "Byte42_IOLink_Sensors",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "I42_0_BG1_CarrierPos1",
@@ -956,7 +956,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "Words_AnalogInterface",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "IW43_App_AI0",
@@ -988,7 +988,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "CommunicationProtocols",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "PROFINET",
@@ -1028,7 +1028,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "OperatingManual",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",
@@ -1046,7 +1046,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "Schematics",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",
@@ -1070,7 +1070,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "MaintenanceManual",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",
@@ -1192,7 +1192,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "GeneralInformation",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "ProductFamily",
@@ -1232,7 +1232,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "CEDeclaration",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Directive_Machinery",
@@ -1258,7 +1258,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "TechnicalProperties",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "OperatingVoltage_V",
@@ -1336,11 +1336,11 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "Components",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "KF1_Controller",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1388,7 +1388,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "BG1_X_LeftEndstop",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1436,7 +1436,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "BG2_X_RightEndstop",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1484,7 +1484,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "BG3_FrontCover_Orientation",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1532,7 +1532,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "BG4_FrontCover_Present",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1580,7 +1580,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "BG5_Z_UpperEndstop",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1628,7 +1628,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "BG6_Z_LowerEndstop",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1676,7 +1676,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "BG8_BackCover_Present",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1724,7 +1724,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "MA1_DrillUnit1",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1766,7 +1766,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "MA2_DrillUnit2",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1808,7 +1808,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "QA4_InrushLimiter1",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1832,7 +1832,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "QA5_InrushLimiter2",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1858,11 +1858,11 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "Pneumatics",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "CPVSC1_ValveTerminal",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Designation",
@@ -1890,11 +1890,11 @@
                 {
                   "modelType": "SubmodelElementCollection",
                   "idShort": "ValveCoils",
-                  "submodelElements": [
+                  "value": [
                     {
                       "modelType": "SubmodelElementCollection",
                       "idShort": "MB1_X_Left",
-                      "submodelElements": [
+                      "value": [
                         {
                           "modelType": "Property",
                           "idShort": "Designation",
@@ -1918,7 +1918,7 @@
                     {
                       "modelType": "SubmodelElementCollection",
                       "idShort": "MB2_X_Right",
-                      "submodelElements": [
+                      "value": [
                         {
                           "modelType": "Property",
                           "idShort": "Designation",
@@ -1942,7 +1942,7 @@
                     {
                       "modelType": "SubmodelElementCollection",
                       "idShort": "MB5_Z_Up",
-                      "submodelElements": [
+                      "value": [
                         {
                           "modelType": "Property",
                           "idShort": "Designation",
@@ -1966,7 +1966,7 @@
                     {
                       "modelType": "SubmodelElementCollection",
                       "idShort": "MB6_Z_Down",
-                      "submodelElements": [
+                      "value": [
                         {
                           "modelType": "Property",
                           "idShort": "Designation",
@@ -1990,7 +1990,7 @@
                     {
                       "modelType": "SubmodelElementCollection",
                       "idShort": "MB7_Z_LockOpen",
-                      "submodelElements": [
+                      "value": [
                         {
                           "modelType": "Property",
                           "idShort": "Designation",
@@ -2018,7 +2018,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "X_Axis_LinearDrive",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Description",
@@ -2054,7 +2054,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "Z_Axis_MiniSlide",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Description",
@@ -2090,7 +2090,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "FlowControls",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Description",
@@ -2122,7 +2122,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "IO_Configuration",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "DigitalInputs",
@@ -2164,11 +2164,11 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "IO_Mapping",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "DigitalInputs_CECC_LK",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "I0_0",
@@ -2222,7 +2222,7 @@
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "DigitalOutputs_CECC_LK",
-              "submodelElements": [
+              "value": [
                 {
                   "modelType": "Property",
                   "idShort": "Q0_0",
@@ -2294,7 +2294,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "OperatingManual",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",
@@ -2330,7 +2330,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "Schematics",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",
@@ -2366,7 +2366,7 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "MaintenanceManual",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "Title",

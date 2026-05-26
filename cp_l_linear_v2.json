@@ -4,15 +4,44 @@
       "modelType": "AssetAdministrationShell",
       "id": "urn:festo:cp-factory:aas:CP-L-LINEAR-V2",
       "idShort": "AAS_CP_L_LINEAR_V2",
-      "displayName": [{ "language": "en", "text": "Linear v2 - Conveyor Base Module" }],
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Linear v2 - Conveyor Base Module"
+        }
+      ],
       "assetInformation": {
         "assetKind": "Instance",
         "globalAssetId": "urn:festo:cp-factory:asset:CP-L-LINEAR-V2"
       },
       "submodels": [
-        { "type": "ModelReference", "keys": [{ "type": "Submodel", "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2:Nameplate" }] },
-        { "type": "ModelReference", "keys": [{ "type": "Submodel", "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2:TechnicalData" }] },
-        { "type": "ModelReference", "keys": [{ "type": "Submodel", "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2:Documentation" }] }
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2:Nameplate"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2:TechnicalData"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2:Documentation"
+            }
+          ]
+        }
       ]
     }
   ],
@@ -23,34 +52,71 @@
       "idShort": "Nameplate",
       "semanticId": {
         "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/zvei/nameplate/2/0/Nameplate" }]
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/zvei/nameplate/2/0/Nameplate"
+          }
+        ]
       },
       "submodelElements": [
         {
           "modelType": "Property",
           "idShort": "ManufacturerName",
-          "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "0173-1#02-AAO677#002" }] },
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO677#002"
+              }
+            ]
+          },
           "valueType": "xs:string",
           "value": "Festo Didactic SE"
         },
         {
           "modelType": "Property",
           "idShort": "ManufacturerProductDesignation",
-          "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "0173-1#02-AAW338#001" }] },
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAW338#001"
+              }
+            ]
+          },
           "valueType": "xs:string",
           "value": "Linear v2"
         },
         {
           "modelType": "Property",
           "idShort": "ManufacturerArticleNumber",
-          "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "0173-1#02-AAO676#003" }] },
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO676#003"
+              }
+            ]
+          },
           "valueType": "xs:string",
           "value": "D12501"
         },
         {
           "modelType": "Property",
           "idShort": "ManufacturerOrderCode",
-          "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "0173-1#02-AAO227#002" }] },
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "0173-1#02-AAO227#002"
+              }
+            ]
+          },
           "valueType": "xs:string",
           "value": "CP-L-LINEAR-V2-C11M0"
         }
@@ -62,72 +128,195 @@
       "idShort": "TechnicalData",
       "semanticId": {
         "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/ZVEI/TechnicalData/Submodel/1/2" }]
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/ZVEI/TechnicalData/Submodel/1/2"
+          }
+        ]
       },
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "GeneralInformation",
-          "submodelElements": [
-            { "modelType": "Property", "idShort": "ProductFamily", "valueType": "xs:string", "value": "CP Lab" },
-            { "modelType": "Property", "idShort": "ProductCategory", "valueType": "xs:string", "value": "Base module" },
-            { "modelType": "Property", "idShort": "Controller", "valueType": "xs:string", "value": "Siemens CPU 1512SP" },
-            { "modelType": "Property", "idShort": "HMI", "valueType": "xs:string", "value": "Siemens Simatic TP700 Comfort" }
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "ProductFamily",
+              "valueType": "xs:string",
+              "value": "CP Lab"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "ProductCategory",
+              "valueType": "xs:string",
+              "value": "Base module"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Controller",
+              "valueType": "xs:string",
+              "value": "Siemens CPU 1512SP"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "HMI",
+              "valueType": "xs:string",
+              "value": "Siemens Simatic TP700 Comfort"
+            }
           ]
         },
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "TechnicalProperties",
-          "submodelElements": [
+          "value": [
             {
               "modelType": "Property",
               "idShort": "OperatingVoltage",
-              "semanticId": { "type": "ExternalReference", "keys": [{ "type": "GlobalReference", "value": "0173-1#02-AAZ932#001" }] },
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "0173-1#02-AAZ932#001"
+                  }
+                ]
+              },
               "valueType": "xs:string",
               "value": "24 VDC"
             },
-            { "modelType": "Property", "idShort": "OperatingPressure", "valueType": "xs:string", "value": "6 bar" },
-            { "modelType": "Property", "idShort": "DimensionHeight_mm", "valueType": "xs:int", "value": "700" },
-            { "modelType": "Property", "idShort": "DimensionWidth_mm", "valueType": "xs:int", "value": "350" },
-            { "modelType": "Property", "idShort": "DimensionDepth_mm", "valueType": "xs:int", "value": "205" }
+            {
+              "modelType": "Property",
+              "idShort": "OperatingPressure",
+              "valueType": "xs:string",
+              "value": "6 bar"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DimensionHeight_mm",
+              "valueType": "xs:int",
+              "value": "700"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DimensionWidth_mm",
+              "valueType": "xs:int",
+              "value": "350"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DimensionDepth_mm",
+              "valueType": "xs:int",
+              "value": "205"
+            }
           ]
         },
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "IO_Configuration",
-          "submodelElements": [
-            { "modelType": "Property", "idShort": "DigitalInputs_Onboard", "valueType": "xs:int", "value": "8" },
-            { "modelType": "Property", "idShort": "DigitalInputs_IOLink", "valueType": "xs:int", "value": "7" },
-            { "modelType": "Property", "idShort": "DigitalOutputs_Onboard", "valueType": "xs:int", "value": "8" },
-            { "modelType": "Property", "idShort": "DigitalOutputs_IOLink", "valueType": "xs:int", "value": "2" },
-            { "modelType": "Property", "idShort": "AnalogInputs_IOLink", "valueType": "xs:int", "value": "2" }
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "DigitalInputs_Onboard",
+              "valueType": "xs:int",
+              "value": "8"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalInputs_IOLink",
+              "valueType": "xs:int",
+              "value": "7"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalOutputs_Onboard",
+              "valueType": "xs:int",
+              "value": "8"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "DigitalOutputs_IOLink",
+              "valueType": "xs:int",
+              "value": "2"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "AnalogInputs_IOLink",
+              "valueType": "xs:int",
+              "value": "2"
+            }
           ]
         },
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "Sensors",
-          "submodelElements": [
-            { "modelType": "Property", "idShort": "CapacitiveSensors", "valueType": "xs:int", "value": "2" },
-            { "modelType": "Property", "idShort": "InductiveSensors", "valueType": "xs:int", "value": "4" },
-            { "modelType": "Property", "idShort": "OpticalCouplerSensors", "valueType": "xs:int", "value": "2" },
-            { "modelType": "Property", "idShort": "RFIDReader", "valueType": "xs:string", "value": "Siemens RF210R via IO-Link" }
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "CapacitiveSensors",
+              "valueType": "xs:int",
+              "value": "2"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "InductiveSensors",
+              "valueType": "xs:int",
+              "value": "4"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "OpticalCouplerSensors",
+              "valueType": "xs:int",
+              "value": "2"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "RFIDReader",
+              "valueType": "xs:string",
+              "value": "Siemens RF210R via IO-Link"
+            }
           ]
         },
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "Actuators",
-          "submodelElements": [
-            { "modelType": "Property", "idShort": "ConveyorMotor", "valueType": "xs:string", "value": "24 VDC bidirectional with normal and reduced speed" },
-            { "modelType": "Property", "idShort": "StopperCylinder", "valueType": "xs:string", "value": "Pneumatic cylinder" }
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "ConveyorMotor",
+              "valueType": "xs:string",
+              "value": "24 VDC bidirectional with normal and reduced speed"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StopperCylinder",
+              "valueType": "xs:string",
+              "value": "Pneumatic cylinder"
+            }
           ]
         },
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "CommunicationProtocols",
-          "submodelElements": [
-            { "modelType": "Property", "idShort": "Protocol_1", "valueType": "xs:string", "value": "IO-Link" },
-            { "modelType": "Property", "idShort": "Protocol_2", "valueType": "xs:string", "value": "PROFINET" },
-            { "modelType": "Property", "idShort": "Protocol_3", "valueType": "xs:string", "value": "Optical 2-bit inter-module communication" }
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Protocol_1",
+              "valueType": "xs:string",
+              "value": "IO-Link"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Protocol_2",
+              "valueType": "xs:string",
+              "value": "PROFINET"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Protocol_3",
+              "valueType": "xs:string",
+              "value": "Optical 2-bit inter-module communication"
+            }
           ]
         }
       ]
@@ -138,15 +327,30 @@
       "idShort": "Documentation",
       "semanticId": {
         "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/DigiWin/ManufacturerDocumentation/0/1/Documentation" }]
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/DigiWin/ManufacturerDocumentation/0/1/Documentation"
+          }
+        ]
       },
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "OperatingManual",
-          "submodelElements": [
-            { "modelType": "Property", "idShort": "Title", "valueType": "xs:string", "value": "CP-L-LINEAR-V2 Operating Manual" },
-            { "modelType": "Property", "idShort": "Language", "valueType": "xs:string", "value": "en" },
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Title",
+              "valueType": "xs:string",
+              "value": "CP-L-LINEAR-V2 Operating Manual"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Language",
+              "valueType": "xs:string",
+              "value": "en"
+            },
             {
               "modelType": "File",
               "idShort": "ManualFile",
@@ -158,8 +362,13 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "Schematics",
-          "submodelElements": [
-            { "modelType": "Property", "idShort": "Title", "valueType": "xs:string", "value": "CP-L-LINEAR-V2 Electrical Schematics" },
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Title",
+              "valueType": "xs:string",
+              "value": "CP-L-LINEAR-V2 Electrical Schematics"
+            },
             {
               "modelType": "File",
               "idShort": "SchematicsFile",
@@ -171,8 +380,13 @@
         {
           "modelType": "SubmodelElementCollection",
           "idShort": "MaintenanceManual",
-          "submodelElements": [
-            { "modelType": "Property", "idShort": "Title", "valueType": "xs:string", "value": "CP Factory Maintenance Manual 2023" },
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "Title",
+              "valueType": "xs:string",
+              "value": "CP Factory Maintenance Manual 2023"
+            },
             {
               "modelType": "File",
               "idShort": "MaintenanceFile",
