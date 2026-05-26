@@ -1034,8 +1034,8 @@
             {
               "modelType": "File",
               "idShort": "ManualFile",
-              "mimeType": "application/pdf",
-              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-LINEAR-V2/files/manual_en.pdf"
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-LINEAR-V2/files/manual_en.pdf",
+              "contentType": "application/pdf"
             }
           ]
         },
@@ -1058,8 +1058,8 @@
             {
               "modelType": "File",
               "idShort": "SchematicsFile",
-              "mimeType": "application/pdf",
-              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-LINEAR-V2/files_C11M0/schematics.pdf"
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-LINEAR-V2/files_C11M0/schematics.pdf",
+              "contentType": "application/pdf"
             }
           ]
         },
@@ -1076,8 +1076,8 @@
             {
               "modelType": "File",
               "idShort": "MaintenanceFile",
-              "mimeType": "application/pdf",
-              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf"
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf",
+              "contentType": "application/pdf"
             }
           ]
         }
@@ -1763,8 +1763,8 @@
             {
               "modelType": "File",
               "idShort": "ManualFile",
-              "mimeType": "application/pdf",
-              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MEASURE-V2/files/manual_en.pdf"
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MEASURE-V2/files/manual_en.pdf",
+              "contentType": "application/pdf"
             }
           ]
         },
@@ -1793,8 +1793,8 @@
             {
               "modelType": "File",
               "idShort": "SchematicsFile",
-              "mimeType": "application/pdf",
-              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MEASURE-V2/files/schematics.pdf"
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MEASURE-V2/files/schematics.pdf",
+              "contentType": "application/pdf"
             }
           ]
         },
@@ -1811,8 +1811,8 @@
             {
               "modelType": "File",
               "idShort": "LabelFile",
-              "mimeType": "application/pdf",
-              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MEASURE-V2/files/front_cover_label.pdf"
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MEASURE-V2/files/front_cover_label.pdf",
+              "contentType": "application/pdf"
             }
           ]
         },
@@ -1829,8 +1829,8 @@
             {
               "modelType": "File",
               "idShort": "MaintenanceFile",
-              "mimeType": "application/pdf",
-              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf"
+              "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf",
+              "contentType": "application/pdf"
             }
           ]
         }
