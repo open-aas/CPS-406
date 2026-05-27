@@ -14,7 +14,7 @@
         "assetKind": "Instance",
         "globalAssetId": "urn:festo:cp-factory:asset:STATION-MAGFRONT",
         "defaultThumbnail": {
-          "path": "L3RodW1ibmFpbHMvbWFnX2Zyb250LnBuZw==",
+          "path": "https://raw.githubusercontent.com/open-aas/CPS-406/main/cp_406/thumbnails/mag_front.png",
           "contentType": "image/png"
         }
       },
