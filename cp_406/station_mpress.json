@@ -1381,12 +1381,20 @@
         {
           "language": "en",
           "text": "I/O Interface — Station MPRESS"
+        },
+        {
+          "language": "pt",
+          "text": "Interface E/S — Estação MPRESS"
         }
       ],
       "description": [
         {
           "language": "en",
           "text": "Sensor and actuator signals for conveyor belt and application module"
+        },
+        {
+          "language": "pt",
+          "text": "Sinais de sensores e atuadores da esteira transportadora e do módulo de aplicação"
         }
       ],
       "semanticId": {
@@ -1416,6 +1424,10 @@
                     {
                       "language": "en",
                       "text": "Inductive sensor: workpiece carrier present at stopper"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Sensor indutivo: portador de peça presente na posição de parada"
                     }
                   ]
                 },
@@ -1427,7 +1439,11 @@
                   "description": [
                     {
                       "language": "en",
-                      "text": "Inductive sensor: stopper cylinder position 1 (up/blocked)"
+                      "text": "Inductive sensor: stopper cylinder position 1 (up / blocking)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Sensor indutivo: cilindro de parada posição 1 (cima / bloqueando)"
                     }
                   ]
                 },
@@ -1440,6 +1456,10 @@
                     {
                       "language": "en",
                       "text": "Inductive sensor: stopper cylinder position 2"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Sensor indutivo: cilindro de parada posição 2"
                     }
                   ]
                 },
@@ -1452,6 +1472,10 @@
                     {
                       "language": "en",
                       "text": "Inductive sensor: stopper cylinder position 3"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Sensor indutivo: cilindro de parada posição 3"
                     }
                   ]
                 },
@@ -1463,7 +1487,11 @@
                   "description": [
                     {
                       "language": "en",
-                      "text": "Inductive sensor: stopper cylinder position 4 (down/released)"
+                      "text": "Inductive sensor: stopper cylinder position 4 (down / released)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Sensor indutivo: cilindro de parada posição 4 (baixo / liberado)"
                     }
                   ]
                 },
@@ -1476,6 +1504,10 @@
                     {
                       "language": "en",
                       "text": "RFID reader: pallet carrier tag detected"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Leitor RFID: tag do portador de pallete detectada"
                     }
                   ]
                 },
@@ -1488,6 +1520,10 @@
                     {
                       "language": "en",
                       "text": "RFID: pallet carrier identifier"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "RFID: identificador do portador de pallete"
                     }
                   ]
                 },
@@ -1500,6 +1536,10 @@
                     {
                       "language": "en",
                       "text": "RFID: current state code of the carrier"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "RFID: código de estado atual do portador"
                     }
                   ]
                 }
@@ -1508,6 +1548,10 @@
                 {
                   "language": "en",
                   "text": "CP-L-LINEAR-V2 conveyor belt sensors"
+                },
+                {
+                  "language": "pt",
+                  "text": "Sensores da esteira transportadora CP-L-LINEAR-V2"
                 }
               ]
             },
@@ -1524,6 +1568,10 @@
                     {
                       "language": "en",
                       "text": "Belt motor: conveyor drive on/off"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Motor da correia: acionamento da esteira ligado/desligado"
                     }
                   ]
                 },
@@ -1535,7 +1583,11 @@
                   "description": [
                     {
                       "language": "en",
-                      "text": "Stopper cylinder: false=up/stop, true=down/release carrier"
+                      "text": "Stopper cylinder: false=up/stop carrier, true=down/release carrier"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Cilindro de parada: false=cima/bloquear portador, true=baixo/liberar portador"
                     }
                   ]
                 }
@@ -1544,6 +1596,10 @@
                 {
                   "language": "en",
                   "text": "CP-L-LINEAR-V2 conveyor belt actuators"
+                },
+                {
+                  "language": "pt",
+                  "text": "Atuadores da esteira transportadora CP-L-LINEAR-V2"
                 }
               ]
             }
@@ -1552,6 +1608,10 @@
             {
               "language": "en",
               "text": "CP-L-LINEAR-V2 conveyor common I/O"
+            },
+            {
+              "language": "pt",
+              "text": "E/S comum da esteira transportadora CP-L-LINEAR-V2"
             }
           ]
         },
@@ -1572,6 +1632,10 @@
                     {
                       "language": "en",
                       "text": "Sensor: press in upper (home) position"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Sensor: prensa na posição superior (inicial)"
                     }
                   ]
                 },
@@ -1584,6 +1648,10 @@
                     {
                       "language": "en",
                       "text": "Sensor: press at maximum lower position"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Sensor: prensa na posição inferior máxima"
                     }
                   ]
                 },
@@ -1595,7 +1663,11 @@
                   "description": [
                     {
                       "language": "en",
-                      "text": "Sensor: workpiece present under press"
+                      "text": "Sensor: workpiece present on pallet under press"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Sensor: peça presente no pallete sob a prensa"
                     }
                   ]
                 },
@@ -1608,6 +1680,10 @@
                     {
                       "language": "en",
                       "text": "Analog input: measured pressing force [N]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Entrada analógica: força de prensagem medida [N]"
                     }
                   ]
                 }
@@ -1616,6 +1692,10 @@
                 {
                   "language": "en",
                   "text": "Muscle press sensors"
+                },
+                {
+                  "language": "pt",
+                  "text": "Sensores da prensa pneumática (músculo)"
                 }
               ]
             },
@@ -1632,6 +1712,10 @@
                     {
                       "language": "en",
                       "text": "Pneumatic muscle: contract to press back cover onto front cover"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Músculo pneumático: contrair para prensar a tampa traseira sobre a frontal"
                     }
                   ]
                 },
@@ -1644,6 +1728,10 @@
                     {
                       "language": "en",
                       "text": "Clamp cylinder: secure pallet during pressing"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Cilindro de fixação: travar pallete durante a prensagem"
                     }
                   ]
                 }
@@ -1652,6 +1740,10 @@
                 {
                   "language": "en",
                   "text": "Muscle press actuators"
+                },
+                {
+                  "language": "pt",
+                  "text": "Atuadores da prensa pneumática (músculo)"
                 }
               ]
             }
@@ -1659,7 +1751,11 @@
           "description": [
             {
               "language": "en",
-              "text": "CP-AM-MPRESS module I/O"
+              "text": "CP-AM-MPRESS application module I/O"
+            },
+            {
+              "language": "pt",
+              "text": "E/S do módulo de aplicação CP-AM-MPRESS"
             }
           ]
         }
@@ -1673,12 +1769,20 @@
         {
           "language": "en",
           "text": "Production Order — Station MPRESS"
+        },
+        {
+          "language": "pt",
+          "text": "Ordem de Produção — Estação MPRESS"
         }
       ],
       "description": [
         {
           "language": "en",
           "text": "Active MES production order and workpiece currently on pallet carrier"
+        },
+        {
+          "language": "pt",
+          "text": "Ordem de produção MES ativa e peça atualmente no portador de pallete"
         }
       ],
       "semanticId": {
@@ -1704,6 +1808,10 @@
                 {
                   "language": "en",
                   "text": "MES order number (ONo)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Número da ordem de produção no MES (ONo)"
                 }
               ]
             },
@@ -1716,6 +1824,10 @@
                 {
                   "language": "en",
                   "text": "Position within the order (OPos)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Posição dentro da ordem de produção (OPos)"
                 }
               ]
             },
@@ -1728,6 +1840,10 @@
                 {
                   "language": "en",
                   "text": "Operation at this station: Pressing with force regulation"
+                },
+                {
+                  "language": "pt",
+                  "text": "Operação nesta estação: Prensagem com regulação de força"
                 }
               ]
             },
@@ -1740,6 +1856,10 @@
                 {
                   "language": "en",
                   "text": "Human-readable operation description"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição legível da operação"
                 }
               ]
             },
@@ -1751,7 +1871,11 @@
               "description": [
                 {
                   "language": "en",
-                  "text": "MES resource identifier"
+                  "text": "MES resource identifier for this station"
+                },
+                {
+                  "language": "pt",
+                  "text": "Identificador de recurso MES para esta estação"
                 }
               ]
             },
@@ -1763,7 +1887,11 @@
               "description": [
                 {
                   "language": "en",
-                  "text": "Current carrier state code (read/written via RFID)"
+                  "text": "Current carrier state code read from RFID transponder"
+                },
+                {
+                  "language": "pt",
+                  "text": "Código de estado atual do portador lido do transponder RFID"
                 }
               ]
             },
@@ -1775,7 +1903,11 @@
               "description": [
                 {
                   "language": "en",
-                  "text": "Pallet carrier identifier (RFID)"
+                  "text": "Pallet carrier identifier read from RFID transponder"
+                },
+                {
+                  "language": "pt",
+                  "text": "Identificador do portador de pallete lido do transponder RFID"
                 }
               ]
             },
@@ -1787,7 +1919,11 @@
               "description": [
                 {
                   "language": "en",
-                  "text": "Operation parameter 1 (application-specific)"
+                  "text": "Operation parameter 1 (application-specific, see manual §8.13)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Parâmetro de operação 1 (específico da aplicação, ver manual §8.13)"
                 }
               ]
             },
@@ -1800,6 +1936,10 @@
                 {
                   "language": "en",
                   "text": "Operation parameter 2 (application-specific)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Parâmetro de operação 2 (específico da aplicação)"
                 }
               ]
             },
@@ -1812,6 +1952,10 @@
                 {
                   "language": "en",
                   "text": "Operation parameter 3 (application-specific)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Parâmetro de operação 3 (específico da aplicação)"
                 }
               ]
             },
@@ -1824,6 +1968,10 @@
                 {
                   "language": "en",
                   "text": "Operation parameter 4 (application-specific)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Parâmetro de operação 4 (específico da aplicação)"
                 }
               ]
             }
@@ -1832,6 +1980,10 @@
             {
               "language": "en",
               "text": "Active production order data from MES / RFID carrier"
+            },
+            {
+              "language": "pt",
+              "text": "Dados da ordem de produção ativa do MES / portador RFID"
             }
           ]
         },
@@ -1847,7 +1999,11 @@
               "description": [
                 {
                   "language": "en",
-                  "text": "Part number on pallet (PNo)"
+                  "text": "Part number of workpiece on pallet (PNo)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Número da peça no pallete (PNo)"
                 }
               ]
             },
@@ -1855,11 +2011,15 @@
               "modelType": "Property",
               "idShort": "PartDescription",
               "valueType": "xs:string",
-              "value": "CP assembly (front+back)",
+              "value": "CP assembly (front + back cover)",
               "description": [
                 {
                   "language": "en",
-                  "text": "Workpiece description"
+                  "text": "CP assembly (front + back cover)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Montagem CP (tampa frontal + traseira)"
                 }
               ]
             },
@@ -1872,6 +2032,10 @@
                 {
                   "language": "en",
                   "text": "Result of last quality operation: pending / OK / NOK"
+                },
+                {
+                  "language": "pt",
+                  "text": "Resultado da última operação de qualidade: pendente / OK / NOK"
                 }
               ]
             }
@@ -1880,6 +2044,10 @@
             {
               "language": "en",
               "text": "Workpiece currently on the pallet carrier at this station"
+            },
+            {
+              "language": "pt",
+              "text": "Peça atualmente no portador de pallete nesta estação"
             }
           ]
         },
@@ -1900,20 +2068,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP raw material black",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP matéria-prima preta",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP raw material black"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP matéria-prima preta"
                 }
               ]
             },
@@ -1930,20 +2132,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP raw material grey",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP matéria-prima cinza",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP raw material grey"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP matéria-prima cinza"
                 }
               ]
             },
@@ -1960,20 +2196,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP raw material blue",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP matéria-prima azul",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP raw material blue"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP matéria-prima azul"
                 }
               ]
             },
@@ -1990,20 +2260,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP raw material red",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP matéria-prima vermelha",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP raw material red"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP matéria-prima vermelha"
                 }
               ]
             },
@@ -2020,20 +2324,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover red",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa frontal vermelha",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP front cover red"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa frontal vermelha"
                 }
               ]
             },
@@ -2050,20 +2388,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover blue",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa frontal azul",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP front cover blue"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa frontal azul"
                 }
               ]
             },
@@ -2080,20 +2452,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover grey",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa frontal cinza",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP front cover grey"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa frontal cinza"
                 }
               ]
             },
@@ -2110,20 +2516,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover black",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa frontal preta",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP front cover black"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa frontal preta"
                 }
               ]
             },
@@ -2140,20 +2580,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP back cover black",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa traseira preta",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP back cover black"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa traseira preta"
                 }
               ]
             },
@@ -2170,20 +2644,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP back cover grey",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa traseira cinza",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP back cover grey"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa traseira cinza"
                 }
               ]
             },
@@ -2200,20 +2708,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP back cover blue",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa traseira azul",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP back cover blue"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa traseira azul"
                 }
               ]
             },
@@ -2230,20 +2772,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP back cover red",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa traseira vermelha",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP back cover red"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa traseira vermelha"
                 }
               ]
             },
@@ -2260,20 +2836,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP board",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP placa de circuito",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP board"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP placa de circuito"
                 }
               ]
             },
@@ -2290,20 +2900,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP fuse",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP fusível",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP fuse"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP fusível"
                 }
               ]
             },
@@ -2320,20 +2964,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover black (production part)",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa frontal preta (peça produzida)",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP front cover black (production part)"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa frontal preta (peça produzida)"
                 }
               ]
             },
@@ -2350,20 +3028,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover black without fuses",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa frontal preta sem fusíveis",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP front cover black without fuses"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa frontal preta sem fusíveis"
                 }
               ]
             },
@@ -2380,20 +3092,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover black with fuse left",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa frontal preta com fusível esquerdo",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP front cover black with fuse left"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa frontal preta com fusível esquerdo"
                 }
               ]
             },
@@ -2410,20 +3156,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover black with fuse right",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa frontal preta com fusível direito",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP front cover black with fuse right"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa frontal preta com fusível direito"
                 }
               ]
             },
@@ -2440,20 +3220,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover black with both fuses",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP tampa frontal preta com ambos fusíveis",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP front cover black with both fuses"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP tampa frontal preta com ambos fusíveis"
                 }
               ]
             },
@@ -2470,20 +3284,54 @@
                     {
                       "language": "en",
                       "text": "MES part number"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Número da peça no MES"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "Description",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP black complete without board",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Workpiece description"
+                      "text": "Workpiece description (English)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (inglês)"
                     }
                   ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "DescriptionPT",
+                  "valueType": "xs:string",
+                  "value": "CP preto completo sem placa",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description (Portuguese)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Descrição da peça (português)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP black complete without board"
+                },
+                {
+                  "language": "pt",
+                  "text": "CP preto completo sem placa"
                 }
               ]
             }
@@ -2491,7 +3339,11 @@
           "description": [
             {
               "language": "en",
-              "text": "Reference catalog of all CP-406 workpieces (from manual table p.42)"
+              "text": "Reference catalog of all workpieces used in CP-406 (manual p.42)"
+            },
+            {
+              "language": "pt",
+              "text": "Catálogo de referência de todas as peças usadas no CP-406 (manual p.42)"
             }
           ]
         }
