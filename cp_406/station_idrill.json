@@ -72,6 +72,24 @@
               "value": "urn:festo:cp-factory:sm:CP-AM-iDRILL:Documentation"
             }
           ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:STATION-IDRILL:IOInterface"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:STATION-IDRILL:ProductionOrder"
+            }
+          ]
         }
       ]
     }
@@ -2367,6 +2385,1166 @@
               "idShort": "MaintenanceFile",
               "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf",
               "contentType": "application/pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:STATION-IDRILL:IOInterface",
+      "idShort": "IOInterface",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "I/O Interface — Station IDRILL"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Sensor and actuator signals for conveyor belt and application module"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/IOInterface/1/0"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Conveyor",
+          "value": [
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Sensors",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "BG1_CarrierPresence",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Inductive sensor: workpiece carrier present at stopper"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "BG21_StopperPos1",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Inductive sensor: stopper cylinder position 1 (up/blocked)"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "BG22_StopperPos2",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Inductive sensor: stopper cylinder position 2"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "BG23_StopperPos3",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Inductive sensor: stopper cylinder position 3"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "BG24_StopperPos4",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Inductive sensor: stopper cylinder position 4 (down/released)"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "TF80_RFID_TagPresent",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "RFID reader: pallet carrier tag detected"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "TF80_RFID_CarrierID",
+                  "valueType": "xs:string",
+                  "value": "0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "RFID: pallet carrier identifier"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "TF80_RFID_StateCode",
+                  "valueType": "xs:int",
+                  "value": "0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "RFID: current state code of the carrier"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP-L-LINEAR-V2 conveyor belt sensors"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Actuators",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "MB20_BeltMotor",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Belt motor: conveyor drive on/off"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Y1_StopperCylinder",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Stopper cylinder: false=up/stop, true=down/release carrier"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CP-L-LINEAR-V2 conveyor belt actuators"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "CP-L-LINEAR-V2 conveyor common I/O"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Module",
+          "value": [
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Sensors",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "B1_WorkpieceClamp",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Sensor: workpiece clamp closed (part secured)"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "B2_AxisX_Home",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Sensor: X-axis at home position"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "B3_AxisZ_Home",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Sensor: Z-axis (drill) at home / up position"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "B4_DrillLeft_Pos",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Sensor: X-axis positioned at left drilling hole"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "B5_DrillRight_Pos",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Sensor: X-axis positioned at right drilling hole"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "iDRILL station sensors"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Actuators",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "M1_MotorX",
+                  "valueType": "xs:int",
+                  "value": "0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Servo motor X-axis: target position (1=left, 2=right, 3=both sides)"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "M2_MotorZ",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Servo motor Z-axis: drill depth advance on/off"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Y1_DrillSpindle",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Drill spindle motor: on/off"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Y2_ClampCylinder",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Clamp cylinder: secure workpiece for drilling"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "iDRILL station actuators"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "CP-AM-iDRILL module I/O"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:STATION-IDRILL:ProductionOrder",
+      "idShort": "ProductionOrder",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Production Order — Station IDRILL"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Active MES production order and workpiece currently on pallet carrier"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/ProductionOrder/1/0"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "CurrentOrder",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "OrderNumber",
+              "valueType": "xs:string",
+              "value": "0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "MES order number (ONo)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "OrderPosition",
+              "valueType": "xs:int",
+              "value": "0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Position within the order (OPos)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "OperationNumber",
+              "valueType": "xs:int",
+              "value": "120",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Operation at this station: Drilling"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "OperationName",
+              "valueType": "xs:string",
+              "value": "Drilling",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Human-readable operation description"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Resource",
+              "valueType": "xs:string",
+              "value": "0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "MES resource identifier"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StateCode",
+              "valueType": "xs:int",
+              "value": "0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Current carrier state code (read/written via RFID)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "CarrierID",
+              "valueType": "xs:string",
+              "value": "0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Pallet carrier identifier (RFID)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Parameter1",
+              "valueType": "xs:int",
+              "value": "0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Operation parameter 1 (application-specific)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Parameter2",
+              "valueType": "xs:int",
+              "value": "0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Operation parameter 2 (application-specific)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Parameter3",
+              "valueType": "xs:int",
+              "value": "0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Operation parameter 3 (application-specific)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "Parameter4",
+              "valueType": "xs:int",
+              "value": "0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Operation parameter 4 (application-specific)"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Active production order data from MES / RFID carrier"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "CurrentWorkpiece",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "PartNumber",
+              "valueType": "xs:int",
+              "value": "0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Part number on pallet (PNo)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "PartDescription",
+              "valueType": "xs:string",
+              "value": "Any front cover",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Workpiece description"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "QualityResult",
+              "valueType": "xs:string",
+              "value": "pending",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Result of last quality operation: pending / OK / NOK"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Workpiece currently on the pallet carrier at this station"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "WorkpieceCatalog",
+          "value": [
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_101",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "101",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP raw material black",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_102",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "102",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP raw material grey",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_103",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "103",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP raw material blue",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_104",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "104",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP raw material red",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_107",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "107",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP front cover red",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_108",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "108",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP front cover blue",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_109",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "109",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP front cover grey",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_110",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "110",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP front cover black",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_111",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "111",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP back cover black",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_112",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "112",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP back cover grey",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_113",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "113",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP back cover blue",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_114",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "114",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP back cover red",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_120",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "120",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP board",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_130",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "130",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP fuse",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_210",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "210",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP front cover black (production part)",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_211",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "211",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP front cover black without fuses",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_212",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "212",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP front cover black with fuse left",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_213",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "213",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP front cover black with fuse right",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_214",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "214",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP front cover black with both fuses",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Part_1200",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "PartNumber",
+                  "valueType": "xs:int",
+                  "value": "1200",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "MES part number"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Description",
+                  "valueType": "xs:string",
+                  "value": "CP black complete without board",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Workpiece description"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Reference catalog of all CP-406 workpieces (from manual table p.42)"
             }
           ]
         }
