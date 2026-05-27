@@ -1,213 +1,227 @@
 # CPS-406 — Asset Administration Shell
 
-Digital twin do sistema de manufatura **Festo CP-L-406-1** modelado em **AAS V3** (IEC 63278 / Parte 2 v3.0).
+![AAS Version](https://img.shields.io/badge/AAS-V3%20(IEC%2063278)-blue)
+![Standard](https://img.shields.io/badge/Standard-IEC%2063278%20Part%202%20v3.0-informational)
+![Language](https://img.shields.io/badge/Languages-EN%20%7C%20PT-green)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-## Autores
+Digital twin do sistema de manufatura **Festo CP-L-406-1** implementado segundo o padrão **Asset Administration Shell V3** (IEC 63278 / Parte 2 v3.0). O projeto modela cada componente da linha de produção como um AAS independente, contendo submodelos padronizados de identificação, dados técnicos, documentação, interface de E/S e ordem de produção.
 
-| GitHub | |
-|--------|-|
-| [@Evaldoes](https://github.com/Evaldoes) | Modelagem AAS |
-| [@alisonsalmeida](https://github.com/alisonsalmeida) | Modelagem AAS |
+---
 
-O sistema CP-L-406-1 é uma linha de produção didática modular do laboratório Festo CP Factory composta por 7 estações interligadas por esteiras transportadoras, responsável por montar capas de controladores programáveis (CP). Cada estação é representada como um AAS independente contendo submodelos de identificação, dados técnicos, documentação, interface de E/S e ordem de produção.
+## Índice
+
+1. [Visão geral do sistema](#visão-geral-do-sistema)
+2. [Estrutura do repositório](#estrutura-do-repositório)
+3. [AAS do sistema](#aas-do-sistema-cp_lab_406_systemjson)
+4. [Estações](#estações)
+5. [Estrutura de submodelos](#estrutura-de-submodelos)
+6. [Catálogo de peças](#catálogo-de-peças)
+7. [Esquema de identificadores URN](#esquema-de-identificadores-urn)
+8. [Conformidade AAS V3](#conformidade-aas-v3)
+9. [Autores](#autores)
+
+---
+
+## Visão geral do sistema
+
+O **CP-L-406-1** é uma linha de produção didática modular do Festo CP Factory composta por **7 estações** interligadas por esteiras transportadoras lineares. A linha realiza a montagem completa de capas de controladores programáveis (CP), desde a alimentação da matéria-prima até a entrega da peça acabada.
+
+| Atributo | Valor |
+|----------|-------|
+| Fabricante | Festo Didactic SE |
+| Código de pedido | CP-L-406-1 |
+| Artigo | 8092834 |
+| Tensão de operação | 24 VDC |
+| Pressão de operação | 6 bar |
+| Número de estações | 7 |
+| Padrão AAS | IEC 63278 Parte 2 v3.0 |
+| Idiomas | Inglês (en) + Português (pt) |
 
 ---
 
 ## Estrutura do repositório
 
 ```
-cp_406/
-├── cp_lab_406_system.json     # AAS do sistema completo (CP-LAB-406)
-├── station_magfront.json      # Estação 1 — Magazine frente (MAGFRONT)
-├── station_meas.json          # Estação 2 — Medição (MEAS)
-├── station_idrill.json        # Estação 3 — Furadeira inteligente (iDRILL)
-├── station_magback.json       # Estação 4 — Magazine trás (MAGBACK)
-├── station_mpress.json        # Estação 5 — Prensa pneumática (MPRESS)
-├── station_out.json           # Estação 6 — Saída (OUT)
-├── station_cobot.json         # Estação 7 — Robô colaborativo UR5e (COBOT)
-├── thumbnails/
-│   ├── system_406_1.png
-│   ├── mag_front.png
-│   ├── measure.png
-│   ├── drill.png
-│   ├── mag_back.png
-│   ├── press.png
-│   ├── output.png
-│   └── cobot.png
-└── docs/
-    ├── manual_en_cp_406.pdf   # Manual completo do sistema CP-406
-    ├── workpieces.txt         # Catálogo de peças produzidas
-    └── documens_links.txt     # Links para manuais e esquemáticos por estação
+CPS-406/
+├── README.md
+└── cp_406/
+    ├── cp_lab_406_system.json       # AAS do sistema completo
+    ├── station_magfront.json        # Estação 1 — Magazine (frente)
+    ├── station_meas.json            # Estação 2 — Medição
+    ├── station_idrill.json          # Estação 3 — Furadeira inteligente
+    ├── station_magback.json         # Estação 4 — Magazine (trás)
+    ├── station_mpress.json          # Estação 5 — Prensa pneumática
+    ├── station_out.json             # Estação 6 — Saída
+    ├── station_cobot.json           # Estação 7 — Robô colaborativo UR5e
+    ├── thumbnails/
+    │   ├── system_406_1.png
+    │   ├── mag_front.png
+    │   ├── measure.png
+    │   ├── drill.png
+    │   ├── mag_back.png
+    │   ├── press.png
+    │   ├── output.png
+    │   └── cobot.png
+    └── docs/
+        ├── manual_en_cp_406.pdf     # Manual completo do sistema
+        ├── workpieces.txt           # Catálogo de peças produzidas
+        └── documens_links.txt       # Links para manuais por estação
 ```
 
 ---
 
-## Sistema — `cp_lab_406_system.json`
+## AAS do sistema (`cp_lab_406_system.json`)
 
-**AAS ID:** `urn:festo:cp-factory:aas:CP-LAB-406`  
-**Asset ID:** `urn:festo:cp-factory:asset:CP-LAB-406`  
-**Fabricante:** Festo Didactic SE  
-**Código de pedido:** CP-L-406-1  
-**Artigo:** 8092834
+Representa o sistema como um todo e agrega referências hierárquicas a todas as estações.
 
-### Submodelos do sistema
+```
+AAS ID:   urn:festo:cp-factory:aas:CP-LAB-406
+Asset ID: urn:festo:cp-factory:asset:CP-LAB-406
+```
 
 | Submodelo | ID | Descrição |
-|-----------|-----|-----------|
-| `Nameplate` | `urn:festo:cp-factory:sm:CP-LAB-406:Nameplate` | Placa de identificação do sistema (fabricante, artigo, código de pedido) |
-| `TechnicalData` | `urn:festo:cp-factory:sm:CP-LAB-406:TechnicalData` | Dados técnicos gerais: tensão, pressão, dimensões, número de estações |
-| `Hierarchy` | `urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy` | Referências hierárquicas às 7 estações via `ReferenceElement` |
-| `Documentation` | `urn:festo:cp-factory:sm:CP-LAB-406:Documentation` | Manual do sistema em PDF |
-| `ProductionProcess` | `urn:festo:cp-factory:sm:CP-LAB-406:ProductionProcess` | Sequência completa de operações de produção por estação |
-| `Maintenance` | `urn:festo:cp-factory:sm:CP-LAB-406:Maintenance` | Plano de manutenção preventiva e corretiva |
+|-----------|----|-----------|
+| `Nameplate` | `…:CP-LAB-406:Nameplate` | Placa de identificação — fabricante, artigo, código de pedido |
+| `TechnicalData` | `…:CP-LAB-406:TechnicalData` | Dados técnicos — tensão, pressão, dimensões, número de estações |
+| `Hierarchy` | `…:CP-LAB-406:Hierarchy` | Referências hierárquicas às 7 estações via `ReferenceElement` |
+| `Documentation` | `…:CP-LAB-406:Documentation` | Manual do sistema em PDF |
+| `ProductionProcess` | `…:CP-LAB-406:ProductionProcess` | Sequência de operações por estação |
+| `Maintenance` | `…:CP-LAB-406:Maintenance` | Plano de manutenção preventiva e corretiva |
 
 ---
 
 ## Estações
 
-### Estação 1 — MAGFRONT (Magazine Frente)
-**Arquivo:** `station_magfront.json`  
-**AAS ID:** `urn:festo:cp-factory:aas:STATION-MAGFRONT`  
-**Função:** Alimentação de peças brutas na linha de produção. O magazine empilha as matérias-primas e injeta uma a uma nos portadores de pallete via cilindro pneumático.
+### Visão geral
 
-**Equipamentos:**
-- Esteira: Festo CP-L-LINEAR-V2 (código CP-L-LINEAR-V2-C11M0, artigo D12501)
-- Módulo: Festo CP-AM-MAG (magazine de alimentação)
-- PLC: Siemens ET200SP CPU 1512SP F-1PN
-- HMI: Siemens SIMATIC MTP700
-- RFID: Siemens RF210R (IO-Link V1.1)
+| # | ID | Arquivo | Módulo de aplicação | Função |
+|---|----|---------|---------------------|--------|
+| 1 | `STATION-MAGFRONT` | `station_magfront.json` | CP-AM-MAG | Alimentação de matéria-prima |
+| 2 | `STATION-MEAS` | `station_meas.json` | CP-AM-MEASURE-V2 | Medição e classificação da peça |
+| 3 | `STATION-iDRILL` | `station_idrill.json` | CP-AM-iDRILL | Furação CNC da tampa frontal |
+| 4 | `STATION-MAGBACK` | `station_magback.json` | CP-AM-MAG | Alimentação da tampa traseira |
+| 5 | `STATION-MPRESS` | `station_mpress.json` | CP-AM-MPRESS | Prensagem das tampas |
+| 6 | `STATION-OUT` | `station_out.json` | CP-AM-OUT | Saída e entrega da peça acabada |
+| 7 | `STATION-COBOT` | `station_cobot.json` | Universal Robots UR5e | Pick and place / montagem colaborativa |
 
-**Documentação:**
-- [Manual do módulo MAG](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MAG/files/manual_en.pdf)
-- [Esquemáticos MAG](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MAG/files/schematics.pdf)
+Todas as estações 1–6 utilizam a esteira **Festo CP-L-LINEAR-V2** (artigo D12501, código CP-L-LINEAR-V2-C11M0) como módulo base com PLC **Siemens ET200SP CPU 1512SP F-1PN**, HMI **Siemens SIMATIC MTP700** e leitor RFID **Siemens RF210R** (IO-Link V1.1).
 
 ---
 
-### Estação 2 — MEAS (Medição)
-**Arquivo:** `station_meas.json`  
-**AAS ID:** `urn:festo:cp-factory:aas:STATION-MEAS`  
-**Função:** Medição da altura da peça bruta para detectar cor/tipo e verificar conformidade dimensional. Sensores analógicos de deslocamento medem e classificam a peça.
+### Estação 1 — MAGFRONT
 
-**Equipamentos:**
-- Esteira: Festo CP-L-LINEAR-V2
-- Módulo: Festo CP-AM-MEASURE-V2
-- PLC: Siemens ET200SP CPU 1512SP F-1PN
-- Sensor de medição: analógico por deslocamento (IO-Link)
+**Função:** Alimentação de peças brutas na linha. O magazine empilha as matérias-primas e insere uma a uma nos portadores de pallete via cilindro pneumático ejetor.
 
-**Documentação:**
-- [Manual do módulo MEASURE V2](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MEASURE-V2/files/manual_en.pdf)
-- [Esquemáticos MEASURE V2](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MEASURE-V2/files/schematics.pdf)
+**Documentação oficial:**
+- [Manual CP-AM-MAG](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MAG/files/manual_en.pdf)
+- [Esquemáticos CP-AM-MAG](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MAG/files/schematics.pdf)
+
+---
+
+### Estação 2 — MEAS
+
+**Função:** Medição da altura da peça bruta por sensor de deslocamento analógico (IO-Link) para detectar cor/tipo e verificar conformidade dimensional. O resultado determina o roteamento da peça nas estações seguintes.
+
+**Documentação oficial:**
+- [Manual CP-AM-MEASURE-V2](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MEASURE-V2/files/manual_en.pdf)
+- [Esquemáticos CP-AM-MEASURE-V2](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MEASURE-V2/files/schematics.pdf)
 - [Label da tampa frontal](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MEASURE-V2/files/front_cover_label.pdf)
 
 ---
 
-### Estação 3 — iDRILL (Furadeira Inteligente)
-**Arquivo:** `station_idrill.json`  
-**AAS ID:** `urn:festo:cp-factory:aas:STATION-iDRILL`  
-**Função:** Furação CNC da tampa frontal quando requerida pela ordem de produção (peça No. 210). Fresa/furadeira controlada por servo com controle de força e posição.
+### Estação 3 — iDRILL
 
-**Equipamentos:**
-- Esteira: Festo CP-L-LINEAR-V2
-- Módulo: Festo CP-AM-iDRILL
-- PLC: Siemens ET200SP CPU 1512SP F-1PN
-- Acionamento: servo motor com encoder
+**Função:** Furação CNC da tampa frontal quando requerida pela ordem de produção (peça No. 210). O spindle é controlado por servo com monitoramento de força e posição.
 
-**Documentação:**
-- [Manual do módulo iDRILL](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-iDRILL/files/manual_en.pdf)
-- [Esquemáticos iDRILL](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-iDRILL/files/schematics.pdf)
+**Documentação oficial:**
+- [Manual CP-AM-iDRILL](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-iDRILL/files/manual_en.pdf)
+- [Esquemáticos CP-AM-iDRILL](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-iDRILL/files/schematics.pdf)
 
 ---
 
-### Estação 4 — MAGBACK (Magazine Trás)
-**Arquivo:** `station_magback.json`  
-**AAS ID:** `urn:festo:cp-factory:aas:STATION-MAGBACK`  
-**Função:** Alimentação da tampa traseira (back cover) sobre a peça já posicionada no portador de pallete, preparando para a prensagem.
+### Estação 4 — MAGBACK
 
-**Equipamentos:**
-- Esteira: Festo CP-L-LINEAR-V2
-- Módulo: Festo CP-AM-MAG (magazine de alimentação — tampa traseira)
-- PLC: Siemens ET200SP CPU 1512SP F-1PN
+**Função:** Alimentação da tampa traseira (back cover) sobre a peça já posicionada no portador de pallete, preparando-a para a etapa de prensagem.
 
-**Documentação:**
-- [Manual do módulo MAG](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MAG/files/manual_en.pdf)
-- [Esquemáticos MAG](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MAG/files/schematics.pdf)
+**Documentação oficial:**
+- [Manual CP-AM-MAG](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MAG/files/manual_en.pdf)
+- [Esquemáticos CP-AM-MAG](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-MAG/files/schematics.pdf)
 
 ---
 
-### Estação 5 — MPRESS (Prensa Pneumática)
-**Arquivo:** `station_mpress.json`  
-**AAS ID:** `urn:festo:cp-factory:aas:STATION-MPRESS`  
-**Função:** Prensagem da tampa traseira sobre a tampa frontal utilizando músculo pneumático (fluidic muscle) com regulação de força. A força de prensagem é monitorada por sensor analógico.
+### Estação 5 — MPRESS
 
-**Equipamentos:**
-- Esteira: Festo CP-L-LINEAR-V2
-- Módulo: Festo CP-AM-MPRESS (artigo 8038567)
-- Atuador: músculo pneumático (fluidic muscle) + cilindro de fixação
-- Sensor: força analógica + 2 sensores de posição do cilindro + sensor de peça presente
-- PLC: Siemens ET200SP CPU 1512SP F-1PN
+**Função:** Prensagem da tampa traseira sobre a frontal utilizando músculo pneumático (fluidic muscle) com regulação de força. A força de prensagem é monitorada continuamente por sensor analógico.
 
-**Documentação:**
-- [Manual do módulo PRESS](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-PRESS/files/manual_en.pdf)
-- [Esquemáticos PRESS](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-PRESS/files/schematics.pdf)
+**Artigo:** 8038567 | **Código:** CP-AM-MPRESS
 
----
+| Atuador | Tipo |
+|---------|------|
+| Músculo pneumático | Fluidic muscle — contração para prensagem |
+| Cilindro de fixação | Pneumático — trava o pallete durante a prensagem |
 
-### Estação 6 — OUT (Saída)
-**Arquivo:** `station_out.json`  
-**AAS ID:** `urn:festo:cp-factory:aas:STATION-OUT`  
-**Função:** Retirada da peça acabada do portador de pallete e entrega ao operador ou sistema downstream. Pode incluir teste final e separação de peças OK/NOK.
+**Sensores:** posição do cilindro (cima/baixo), presença de tampa traseira, força de prensagem analógica.
 
-**Equipamentos:**
-- Esteira: Festo CP-L-LINEAR-V2
-- Módulo: Festo CP-AM-OUT
-- PLC: Siemens ET200SP CPU 1512SP F-1PN
-
-**Documentação:**
-- [Manual do módulo OUT](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-OUT/files/manual_en.pdf)
-- [Esquemáticos OUT](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-OUT/files/schematics.pdf)
+**Documentação oficial:**
+- [Manual CP-AM-PRESS](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-PRESS/files/manual_en.pdf)
+- [Esquemáticos CP-AM-PRESS](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-PRESS/files/schematics.pdf)
 
 ---
 
-### Estação 7 — COBOT (Robô Colaborativo UR5e)
-**Arquivo:** `station_cobot.json`  
-**AAS ID:** `urn:festo:cp-factory:aas:STATION-COBOT`  
-**Função:** Pick and place e operações de montagem colaborativas. O robô interage diretamente com os portadores de pallete da esteira, podendo realizar alimentação, montagem ou inspeção de peças.
+### Estação 6 — OUT
 
-**Equipamento:** Universal Robots UR5e (e-Series)
+**Função:** Retirada da peça acabada do portador de pallete e entrega ao operador ou sistema downstream, com possibilidade de triagem OK/NOK.
+
+**Documentação oficial:**
+- [Manual CP-AM-OUT](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-OUT/files/manual_en.pdf)
+- [Esquemáticos CP-AM-OUT](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-OUT/files/schematics.pdf)
+
+---
+
+### Estação 7 — COBOT (Universal Robots UR5e)
+
+**Função:** Operações de pick and place e montagem colaborativa. O robô interage com portadores de pallete da linha, podendo realizar alimentação, montagem ou inspeção de peças em colaboração segura com operadores humanos.
+
+#### Especificações técnicas
 
 | Especificação | Valor |
 |---------------|-------|
 | Graus de liberdade | 6 |
 | Payload máximo | 5 kg |
-| Alcance | 850 mm |
+| Alcance máximo | 850 mm |
 | Repetibilidade | ± 0,03 mm |
 | Velocidade TCP máx. | 1,0 m/s |
 | Peso do braço | 20,6 kg |
+| Controlador | CB5 (e-Series) |
 | Alimentação | 100–240 VAC, 50/60 Hz |
 | Consumo típico | 200 W |
-| Controlador | CB5 (e-Series) |
-| Segurança | PLd Cat.3 (ISO 13849) |
-| Sensor F/T | 6 eixos integrado no pulso |
+| Temperatura de operação | 0–50 °C |
+| Certificação de segurança | PLd Cat.3 (ISO 13849) |
+| Sensor de força/torque | 6 eixos integrado no pulso |
 
-**Interfaces de comunicação:**
-- Modbus TCP (porta 502)
-- PROFINET IO (via URCap)
-- EtherNet/IP
-- OPC UA (porta 4840)
-- RTDE — Real-Time Data Exchange (porta 30004)
+#### Interfaces de comunicação
 
-**E/S do controlador CB5:**
-- 8 entradas digitais (DI0–DI7)
-- 8 saídas digitais (DO0–DO7)
-- 2 entradas analógicas (AI0–AI1, 0–10V / 4–20mA)
-- 2 saídas analógicas (AO0–AO1, 0–10V / 4–20mA)
-- 8 entradas de segurança + 4 saídas de segurança
+| Protocolo | Detalhe |
+|-----------|---------|
+| Modbus TCP | Porta 502 — cliente/servidor |
+| PROFINET IO | Dispositivo IO via URCap |
+| EtherNet/IP | Adaptador |
+| OPC UA | Servidor — porta 4840 |
+| RTDE | Real-Time Data Exchange — porta 30004 |
 
-**E/S na flange da ferramenta:**
-- 2 entradas digitais + 2 saídas digitais
-- 2 entradas analógicas
+#### Entradas e saídas
 
-**Documentação:**
+| Interface | Entradas | Saídas |
+|-----------|----------|--------|
+| Controlador CB5 — digital | 8 (DI0–DI7) | 8 (DO0–DO7) |
+| Controlador CB5 — analógico | 2 (0–10V / 4–20mA) | 2 (0–10V / 4–20mA) |
+| Segurança | 8 | 4 |
+| Flange da ferramenta — digital | 2 | 2 |
+| Flange da ferramenta — analógico | 2 | — |
+
+#### Documentação oficial
+
 - [Manual do usuário UR5e (EN) — SW5.19](https://www.universal-robots.com/manuals/EN/PDF/SW5_19/user-manual-UR5e-PDF_online/710-965-00_UR5e_User_Manual_en_Global.pdf)
 - [Manual do usuário UR5e (PT) — PolyScopeX SW10.12](https://www.universal-robots.com/manuals/pt/PDF/SW10_12/user-manual-UR5e-PolyX-PDF_online/718-749-00_UR5e%20PolyScope%20X_User_Manual_PolyScopeX_pt_Global.pdf)
 - [Datasheet UR5e e-Series](https://www.universal-robots.com/media/1807465/ur5e_e-series_datasheets_web.pdf)
@@ -215,47 +229,77 @@ cp_406/
 
 ---
 
-## Submodelos por estação (estações 1–6)
+## Estrutura de submodelos
 
-Cada arquivo de estação (exceto COBOT) contém 8 submodelos:
+### Estações 1–6 (8 submodelos por estação)
 
-| Submodelo | Prefixo de ID | Conteúdo |
-|-----------|--------------|----------|
-| `Conveyor_Nameplate` | `CP-L-LINEAR-V2-{STATION}` | Fabricante, artigo, código de pedido, número e papel da estação |
-| `Conveyor_TechnicalData` | `CP-L-LINEAR-V2-{STATION}` | PLC (ET200SP), HMI (MTP700), RFID (RF210R), motor+encoder, pneumática, mapeamento de I/O |
-| `Conveyor_Documentation` | `CP-L-LINEAR-V2-{STATION}` | Manual de operação e esquemáticos elétricos da esteira |
-| `Module_Nameplate` | `CP-AM-{STATION}` | Fabricante, artigo, código de pedido do módulo de aplicação |
-| `Module_TechnicalData` | `CP-AM-{STATION}` | Função, atuadores, sensores, dimensões, mapeamento de I/O do módulo |
-| `Module_Documentation` | `CP-AM-{STATION}` | Manual e esquemáticos do módulo de aplicação |
-| `IOInterface` | `STATION-{STATION}` | Todos os sinais de sensores e atuadores da esteira e do módulo com descrição bilíngue |
-| `ProductionOrder` | `STATION-{STATION}` | Ordem MES ativa (ONo, OPos, operação, resource), peça no portador e catálogo de peças |
+```
+station_{name}.json
+│
+├── Conveyor_Nameplate          # Identificação da esteira CP-L-LINEAR-V2
+├── Conveyor_TechnicalData      # PLC, HMI, RFID, motor, encoder, pneumática, I/O
+├── Conveyor_Documentation      # Manual e esquemáticos da esteira
+│
+├── Module_Nameplate            # Identificação do módulo de aplicação
+├── Module_TechnicalData        # Função, atuadores, sensores, dimensões, I/O do módulo
+├── Module_Documentation        # Manual e esquemáticos do módulo
+│
+├── IOInterface                 # Todos os sinais de sensores e atuadores
+│   ├── Conveyor/
+│   │   ├── Sensors             # BG1_CarrierPresence, BG21–BG24_StopperPos,
+│   │   │                       # TF80_RFID_TagPresent, TF80_RFID_CarrierID,
+│   │   │                       # TF80_RFID_StateCode
+│   │   └── Actuators           # MB20_BeltMotor, Y1_StopperCylinder
+│   └── Module/
+│       ├── Sensors             # Específicos do módulo de aplicação
+│       └── Actuators           # Específicos do módulo de aplicação
+│
+└── ProductionOrder             # Ordem MES ativa e peça no portador
+    ├── CurrentOrder            # OrderNumber, OrderPosition, OperationNumber,
+    │                           # OperationName, Resource, CarrierID, StateCode,
+    │                           # Parameter1–Parameter4
+    ├── CurrentWorkpiece        # PartNumber, PartDescription, QualityResult
+    └── WorkpieceCatalog        # Catálogo de todas as peças possíveis
+```
 
-### Detalhes do `IOInterface`
+### Estação 7 — COBOT (5 submodelos)
 
-Cada `IOInterface` é dividido em duas seções:
+```
+station_cobot.json
+│
+├── Robot_Nameplate             # Identificação do UR5e (Universal Robots A/S)
+├── Robot_TechnicalData         # Cinemática, elétrica, comunicação, segurança
+├── Robot_Documentation         # Manuais oficiais Universal Robots (EN + PT)
+│
+├── IOInterface
+│   ├── ControllerIO/
+│   │   ├── DigitalInputs       # DI0–DI7 (e-stop, safeguard, start, pallet, gripper…)
+│   │   ├── DigitalOutputs      # DO0–DO7 (ready, cycle complete, gripper, fault…)
+│   │   ├── AnalogInputs        # AI0–AI1
+│   │   └── AnalogOutputs       # AO0–AO1
+│   ├── ToolIO                  # TDI0–TDI1, TDO0–TDO1, TAI0–TAI1
+│   └── RobotState              # RobotMode, SafetyMode, TCPForce_N, ProgramRunning
+│
+└── ProductionOrder
+    ├── CurrentOrder            # OrderNumber, OperationNumber, CarrierID, StateCode…
+    ├── CurrentWorkpiece        # PartNumber, PartDescription, QualityResult
+    └── WorkpieceCatalog        # Peças manipuláveis pelo robô
+```
 
-**`Conveyor`** — sinais da esteira CP-L-LINEAR-V2:
-- *Sensors:* `BG1_CarrierPresence`, posições do stopper (BG21–BG24), `TF80_RFID_TagPresent`, `TF80_RFID_CarrierID`, `TF80_RFID_StateCode`
-- *Actuators:* `MB20_BeltMotor`, `Y1_StopperCylinder`
+### Semântica dos submodelos
 
-**`Module`** — sinais específicos de cada módulo de aplicação (varia por estação):
-- *MAG:* presença de peça, cilindro ejetor, sensor de magazine vazio
-- *MEAS:* sensor de deslocamento analógico, resultado de medição
-- *iDRILL:* posição do spindle, força de furação, sensor de peça
-- *MPRESS:* posição do cilindro (cima/baixo), presença de tampa traseira, força de prensagem, músculo pneumático, cilindro de fixação
-- *OUT:* sensor de peça presente, cilindro de saída
-
-### Detalhes do `ProductionOrder`
-
-| Coleção | Propriedades |
-|---------|-------------|
-| `CurrentOrder` | `OrderNumber` (ONo), `OrderPosition` (OPos), `OperationNumber`, `OperationName`, `Resource`, `CarrierID`, `StateCode`, `Parameter1`–`Parameter4` |
-| `CurrentWorkpiece` | `PartNumber` (PNo), `PartDescription`, `QualityResult` |
-| `WorkpieceCatalog` | Todas as peças possíveis naquela estação com número, descrição em EN e PT |
+| Submodelo | Semantic ID |
+|-----------|-------------|
+| Nameplate | `https://admin-shell.io/zvei/nameplate/2/0/Nameplate` |
+| TechnicalData | `https://admin-shell.io/ZVEI/TechnicalData/Submodel/1/2` |
+| Documentation | `https://admin-shell.io/DigiWin/ManufacturerDocumentation/0/1/Documentation` |
+| IOInterface | `https://admin-shell.io/idta/IOInterface/1/0` |
+| ProductionOrder | `https://admin-shell.io/idta/ProductionOrder/1/0` |
+| Hierarchy | `https://admin-shell.io/idta/HierarchicalStructures/1/0` |
 
 ---
 
-## Catálogo de peças (WorkpieceCatalog)
+## Catálogo de peças
 
 | Nº | Descrição (EN) | Descrição (PT) |
 |----|----------------|----------------|
@@ -266,68 +310,78 @@ Cada `IOInterface` é dividido em duas seções:
 | 107 | CP front cover red | CP tampa frontal vermelha |
 | 108 | CP front cover blue | CP tampa frontal azul |
 | 109 | CP front cover grey | CP tampa frontal cinza |
-| 110 | CP front cover black (No. 110) | CP tampa frontal preta |
-| 111 | CP back cover black (No. 111) | CP tampa traseira preta |
-| 210 | CP front cover black with CNC hole (No. 210) | CP tampa frontal preta com furo CNC |
-| 1200 | CP black complete without board (No. 1200) | CP preto completo sem placa |
+| 110 | CP front cover black | CP tampa frontal preta |
+| 111 | CP back cover black | CP tampa traseira preta |
+| 210 | CP front cover black with CNC hole | CP tampa frontal preta com furo CNC |
+| 1200 | CP black complete without board | CP preto completo sem placa |
 
 ---
 
-## Esquema de identificadores (URNs)
+## Esquema de identificadores URN
 
 ```
-Sistema
-  AAS:    urn:festo:cp-factory:aas:CP-LAB-406
-  Asset:  urn:festo:cp-factory:asset:CP-LAB-406
-  SM:     urn:festo:cp-factory:sm:CP-LAB-406:{SubmodelName}
+# Sistema
+urn:festo:cp-factory:aas:CP-LAB-406
+urn:festo:cp-factory:asset:CP-LAB-406
+urn:festo:cp-factory:sm:CP-LAB-406:{SubmodelName}
 
-Estações
-  AAS:    urn:festo:cp-factory:aas:STATION-{NAME}
-  Asset:  urn:festo:cp-factory:asset:STATION-{NAME}
+# Estações
+urn:festo:cp-factory:aas:STATION-{NAME}
+urn:festo:cp-factory:asset:STATION-{NAME}
 
-Submodelos da esteira
-  SM:     urn:festo:cp-factory:sm:CP-L-LINEAR-V2-{STATION}:{SubmodelName}
+# Submodelos da esteira
+urn:festo:cp-factory:sm:CP-L-LINEAR-V2-{STATION}:{SubmodelName}
 
-Submodelos do módulo de aplicação
-  SM:     urn:festo:cp-factory:sm:CP-AM-{STATION}:{SubmodelName}
+# Submodelos do módulo de aplicação
+urn:festo:cp-factory:sm:CP-AM-{STATION}:{SubmodelName}
 
-Submodelos IOInterface e ProductionOrder
-  SM:     urn:festo:cp-factory:sm:STATION-{STATION}:{SubmodelName}
+# Submodelos IOInterface e ProductionOrder
+urn:festo:cp-factory:sm:STATION-{STATION}:{SubmodelName}
 
-Submodelos do COBOT UR5e
-  SM:     urn:festo:cp-factory:sm:UR5e-COBOT:{SubmodelName}
+# Submodelos do COBOT
+urn:festo:cp-factory:sm:UR5e-COBOT:{SubmodelName}
 ```
 
-Nomes usados para `{NAME}` / `{STATION}`:
-
-| Estação | Nome |
-|---------|------|
+| Estação | `{NAME}` / `{STATION}` |
+|---------|------------------------|
 | Magazine frente | `MAGFRONT` |
 | Medição | `MEAS` |
 | Furadeira | `iDRILL` |
 | Magazine trás | `MAGBACK` |
 | Prensa | `MPRESS` |
 | Saída | `OUT` |
-| Cobot | `COBOT` |
+| Robô colaborativo | `COBOT` |
 
 ---
 
 ## Conformidade AAS V3
 
-Todos os arquivos seguem a especificação **IEC 63278 Parte 2 v3.0**:
+Todos os arquivos atendem integralmente à especificação **IEC 63278 Parte 2 v3.0**:
 
-- `modelType` presente em todos os elementos (AAS, Submodel, Property, File, SubmodelElementCollection, ReferenceElement)
-- `SubmodelElementCollection.value` — chave correta (não `submodelElements`)
-- `File.contentType` — chave correta (não `mimeType`)
-- `globalAssetId` como string simples
-- `ExternalReference` e `ModelReference` com tipagem explícita
-- Descrições bilíngues (`en` + `pt`) em todos os submodelos e propriedades
-- `conceptDescriptions: []` presente em todos os arquivos JSON
-- `defaultThumbnail` com `path` e `contentType` em todos os AAS de estação
+| Requisito | Status |
+|-----------|--------|
+| `modelType` em todos os elementos | Implementado |
+| `SubmodelElementCollection.value` (não `submodelElements`) | Implementado |
+| `File.contentType` (não `mimeType`) | Implementado |
+| `globalAssetId` como string simples | Implementado |
+| `ExternalReference` e `ModelReference` com tipagem explícita | Implementado |
+| Descrições bilíngues `en` + `pt` em todos os submodelos e propriedades | Implementado |
+| `conceptDescriptions: []` em todos os arquivos | Implementado |
+| `defaultThumbnail` com `path` e `contentType` em todos os AAS | Implementado |
 
 ---
 
 ## Manutenção
 
-Manual de manutenção comum a todas as estações Festo:  
-[CP Factory Maintenance Manual 2023](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf)
+Manual de manutenção comum a todas as estações Festo CP Factory:
+
+- [CP Factory Maintenance Manual — 2023.07 (EN)](https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf)
+
+---
+
+## Autores
+
+| Autor | GitHub |
+|-------|--------|
+| Evaldo Cardoso | [@Evaldoes](https://github.com/Evaldoes) |
+| Alison Almeida | [@alisonsalmeida](https://github.com/alisonsalmeida) |
