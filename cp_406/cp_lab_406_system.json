@@ -2,8 +2,8 @@
   "assetAdministrationShells": [
     {
       "modelType": "AssetAdministrationShell",
-      "id": "urn:festo:cp-factory:aas:CP-L-406-1",
-      "idShort": "AAS_CP_L_406_1",
+      "id": "urn:festo:cp-factory:aas:CP-LAB-406",
+      "idShort": "AAS_CP_LAB_406",
       "displayName": [
         {
           "language": "en",
@@ -16,7 +16,7 @@
       ],
       "assetInformation": {
         "assetKind": "Instance",
-        "globalAssetId": "urn:festo:cp-factory:asset:CP-L-406-1",
+        "globalAssetId": "urn:festo:cp-factory:asset:CP-LAB-406",
         "defaultThumbnail": {
           "path": "https://raw.githubusercontent.com/open-aas/CPS-406/main/cp_406/thumbnails/system_406_1.png",
           "contentType": "image/png"
@@ -28,7 +28,7 @@
           "keys": [
             {
               "type": "Submodel",
-              "value": "urn:festo:cp-factory:sm:CP-L-406-1:Nameplate"
+              "value": "urn:festo:cp-factory:sm:CP-LAB-406:Nameplate"
             }
           ]
         },
@@ -37,7 +37,7 @@
           "keys": [
             {
               "type": "Submodel",
-              "value": "urn:festo:cp-factory:sm:CP-L-406-1:TechnicalData"
+              "value": "urn:festo:cp-factory:sm:CP-LAB-406:TechnicalData"
             }
           ]
         },
@@ -46,7 +46,7 @@
           "keys": [
             {
               "type": "Submodel",
-              "value": "urn:festo:cp-factory:sm:CP-L-406-1:Hierarchy"
+              "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
             }
           ]
         },
@@ -55,7 +55,7 @@
           "keys": [
             {
               "type": "Submodel",
-              "value": "urn:festo:cp-factory:sm:CP-L-406-1:Documentation"
+              "value": "urn:festo:cp-factory:sm:CP-LAB-406:Documentation"
             }
           ]
         },
@@ -64,7 +64,7 @@
           "keys": [
             {
               "type": "Submodel",
-              "value": "urn:festo:cp-factory:sm:CP-L-406-1:ProductionProcess"
+              "value": "urn:festo:cp-factory:sm:CP-LAB-406:ProductionProcess"
             }
           ]
         },
@@ -73,7 +73,7 @@
           "keys": [
             {
               "type": "Submodel",
-              "value": "urn:festo:cp-factory:sm:CP-L-406-1:Maintenance"
+              "value": "urn:festo:cp-factory:sm:CP-LAB-406:Maintenance"
             }
           ]
         }
@@ -83,7 +83,7 @@
   "submodels": [
     {
       "modelType": "Submodel",
-      "id": "urn:festo:cp-factory:sm:CP-L-406-1:Nameplate",
+      "id": "urn:festo:cp-factory:sm:CP-LAB-406:Nameplate",
       "idShort": "Nameplate",
       "semanticId": {
         "type": "ExternalReference",
@@ -215,7 +215,7 @@
     },
     {
       "modelType": "Submodel",
-      "id": "urn:festo:cp-factory:sm:CP-L-406-1:TechnicalData",
+      "id": "urn:festo:cp-factory:sm:CP-LAB-406:TechnicalData",
       "idShort": "TechnicalData",
       "semanticId": {
         "type": "ExternalReference",
@@ -1047,7 +1047,7 @@
     },
     {
       "modelType": "Submodel",
-      "id": "urn:festo:cp-factory:sm:CP-L-406-1:Hierarchy",
+      "id": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy",
       "idShort": "Hierarchy",
       "semanticId": {
         "type": "ExternalReference",
@@ -1080,7 +1080,7 @@
                 "keys": [
                   {
                     "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-L-406-1"
+                    "value": "urn:festo:cp-factory:aas:CP-LAB-406"
                   }
                 ]
               },
@@ -1799,7 +1799,7 @@
     },
     {
       "modelType": "Submodel",
-      "id": "urn:festo:cp-factory:sm:CP-L-406-1:ProductionProcess",
+      "id": "urn:festo:cp-factory:sm:CP-LAB-406:ProductionProcess",
       "idShort": "ProductionProcess",
       "semanticId": {
         "type": "ExternalReference",
@@ -1975,7 +1975,7 @@
     },
     {
       "modelType": "Submodel",
-      "id": "urn:festo:cp-factory:sm:CP-L-406-1:Documentation",
+      "id": "urn:festo:cp-factory:sm:CP-LAB-406:Documentation",
       "idShort": "Documentation",
       "semanticId": {
         "type": "ExternalReference",
@@ -2103,7 +2103,7 @@
     },
     {
       "modelType": "Submodel",
-      "id": "urn:festo:cp-factory:sm:CP-L-406-1:Maintenance",
+      "id": "urn:festo:cp-factory:sm:CP-LAB-406:Maintenance",
       "idShort": "Maintenance",
       "semanticId": {
         "type": "ExternalReference",
