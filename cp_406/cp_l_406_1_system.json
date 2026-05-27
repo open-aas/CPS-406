@@ -8,6 +8,10 @@
         {
           "language": "en",
           "text": "Complete System 406-1 - CP Factory Lab"
+        },
+        {
+          "language": "pt",
+          "text": "Sistema Completo 406-1 - CP Factory Lab"
         }
       ],
       "assetInformation": {
@@ -104,7 +108,17 @@
             ]
           },
           "valueType": "xs:string",
-          "value": "Festo Didactic SE"
+          "value": "Festo Didactic SE",
+          "description": [
+            {
+              "language": "en",
+              "text": "Name of the manufacturer"
+            },
+            {
+              "language": "pt",
+              "text": "Nome do fabricante"
+            }
+          ]
         },
         {
           "modelType": "Property",
@@ -119,7 +133,17 @@
             ]
           },
           "valueType": "xs:string",
-          "value": "Complete System 406-1"
+          "value": "Complete System 406-1",
+          "description": [
+            {
+              "language": "en",
+              "text": "Product designation by the manufacturer"
+            },
+            {
+              "language": "pt",
+              "text": "Designação do produto pelo fabricante"
+            }
+          ]
         },
         {
           "modelType": "Property",
@@ -134,7 +158,17 @@
             ]
           },
           "valueType": "xs:string",
-          "value": "8092834"
+          "value": "8092834",
+          "description": [
+            {
+              "language": "en",
+              "text": "Article number assigned by the manufacturer"
+            },
+            {
+              "language": "pt",
+              "text": "Número de artigo atribuído pelo fabricante"
+            }
+          ]
         },
         {
           "modelType": "Property",
@@ -149,7 +183,33 @@
             ]
           },
           "valueType": "xs:string",
-          "value": "CP-L-406-1"
+          "value": "CP-L-406-1",
+          "description": [
+            {
+              "language": "en",
+              "text": "Order code for this product"
+            },
+            {
+              "language": "pt",
+              "text": "Código de pedido deste produto"
+            }
+          ]
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturer nameplate with identification data"
+        },
+        {
+          "language": "pt",
+          "text": "Placa de identificação do fabricante com dados de identificação"
+        }
+      ],
+      "displayName": [
+        {
+          "language": "pt",
+          "text": "Placa de identificação do fabricante com dados de identificação"
         }
       ]
     },
@@ -175,49 +235,139 @@
               "modelType": "Property",
               "idShort": "ProductFamily",
               "valueType": "xs:string",
-              "value": "CP Lab"
+              "value": "CP Lab",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Product family"
+                },
+                {
+                  "language": "pt",
+                  "text": "Família de produtos"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "ProductCategory",
               "valueType": "xs:string",
-              "value": "Complete system"
+              "value": "Complete system",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Product category"
+                },
+                {
+                  "language": "pt",
+                  "text": "Categoria do produto"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "SystemDesignation",
               "valueType": "xs:string",
-              "value": "SC CP LAB STD CFG 6"
+              "value": "SC CP LAB STD CFG 6",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "System designation code"
+                },
+                {
+                  "language": "pt",
+                  "text": "Código de designação do sistema"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Description",
               "valueType": "xs:string",
-              "value": "Networked production platform with six pallet transfer systems. Executes: material provisioning, quality inspection, machining, assembly, pressing, and output."
+              "value": "Networked production platform with six pallet transfer systems. Executes: material provisioning, quality inspection, machining, assembly, pressing, and output.",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "System description"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição do sistema"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "NumberOfStations",
               "valueType": "xs:int",
-              "value": "6"
+              "value": "6",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Total number of stations in the system"
+                },
+                {
+                  "language": "pt",
+                  "text": "Número total de estações no sistema"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "BatchSize1_Support",
               "valueType": "xs:boolean",
-              "value": "true"
+              "value": "true",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Supports batch size 1 (single-piece flow)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Suporta tamanho de lote 1 (fluxo peça a peça)"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "CountryOfOrigin",
               "valueType": "xs:string",
-              "value": "Canada"
+              "value": "Canada",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Country of origin"
+                },
+                {
+                  "language": "pt",
+                  "text": "País de origem"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "ServicePortal",
               "valueType": "xs:string",
-              "value": "https://ip.festo-didactic.com"
+              "value": "https://ip.festo-didactic.com",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "URL of the manufacturer service portal"
+                },
+                {
+                  "language": "pt",
+                  "text": "URL do portal de serviço do fabricante"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "General product information"
+            },
+            {
+              "language": "pt",
+              "text": "Informações gerais do produto"
             }
           ]
         },
@@ -229,61 +379,171 @@
               "modelType": "Property",
               "idShort": "OperatingVoltage_AC",
               "valueType": "xs:string",
-              "value": "1-phase 230 V AC ±10%, 50 Hz"
+              "value": "1-phase 230 V AC ±10%, 50 Hz",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "AC operating voltage"
+                },
+                {
+                  "language": "pt",
+                  "text": "Tensão de operação CA"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "PowerSupplySystem",
               "valueType": "xs:string",
-              "value": "TNC-S (L1, L2, L3, N, PE)"
+              "value": "TNC-S (L1, L2, L3, N, PE)",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Power supply system type"
+                },
+                {
+                  "language": "pt",
+                  "text": "Tipo de sistema de alimentação elétrica"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "FullLoadPower_A",
               "valueType": "xs:float",
-              "value": "1.0"
+              "value": "1.0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Full load current [A]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Corrente em plena carga [A]"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "ControlVoltage_DC",
               "valueType": "xs:string",
-              "value": "24 V DC PELV (Protective extra-low voltage)"
+              "value": "24 V DC PELV (Protective extra-low voltage)",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Control voltage DC (PELV)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Tensão de controle CC (PELV)"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "PowerSupplyConnector",
               "valueType": "xs:string",
-              "value": "IEC 60309, CEE 16 A"
+              "value": "IEC 60309, CEE 16 A",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Power supply connector type"
+                },
+                {
+                  "language": "pt",
+                  "text": "Tipo de conector de alimentação"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "MaxBackupFuse_A",
               "valueType": "xs:int",
-              "value": "16"
+              "value": "16",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maximum backup fuse rating [A]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Fusível de proteção máximo [A]"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "LeakageCurrent_mA_max",
               "valueType": "xs:float",
-              "value": "18.0"
+              "value": "18.0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maximum leakage current [mA]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Corrente de fuga máxima [mA]"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "ProtectionClass",
               "valueType": "xs:string",
-              "value": "I — protective grounding required"
+              "value": "I — protective grounding required",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Electrical protection class"
+                },
+                {
+                  "language": "pt",
+                  "text": "Classe de proteção elétrica"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "OvervoltageCategory",
               "valueType": "xs:string",
-              "value": "CAT II — building installation only"
+              "value": "CAT II — building installation only",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Overvoltage category (installation zone)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Categoria de sobretensão (zona de instalação)"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "SCCR_kA",
               "valueType": "xs:int",
-              "value": "10"
+              "value": "10",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Short-circuit current rating [kA]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Capacidade de interrupção de curto-circuito [kA]"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Electrical specifications"
+            },
+            {
+              "language": "pt",
+              "text": "Especificações elétricas"
             }
           ]
         },
@@ -295,31 +555,91 @@
               "modelType": "Property",
               "idShort": "SupplyPressure_bar",
               "valueType": "xs:float",
-              "value": "6.0"
+              "value": "6.0",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Required supply pressure [bar]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Pressão de fornecimento necessária [bar]"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "SupplyPressure_psi",
               "valueType": "xs:int",
-              "value": "90"
+              "value": "90",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Required supply pressure [psi]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Pressão de fornecimento necessária [psi]"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "SupplyRate_lmin_min",
               "valueType": "xs:int",
-              "value": "40"
+              "value": "40",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Minimum air flow rate [l/min]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Vazão mínima de ar [l/min]"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "AirQualityStandard",
               "valueType": "xs:string",
-              "value": "EN ISO 8573-1"
+              "value": "EN ISO 8573-1",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Air quality standard"
+                },
+                {
+                  "language": "pt",
+                  "text": "Norma de qualidade do ar"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "PressureDewPoint_Class",
               "valueType": "xs:string",
-              "value": "Class 4 (≤ +3°C)"
+              "value": "Class 4 (≤ +3°C)",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Pressure dew point class per ISO 8573-1"
+                },
+                {
+                  "language": "pt",
+                  "text": "Classe do ponto de orvalho sob pressão conforme ISO 8573-1"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Compressed air requirements"
+            },
+            {
+              "language": "pt",
+              "text": "Requisitos de ar comprimido"
             }
           ]
         },
@@ -331,43 +651,123 @@
               "modelType": "Property",
               "idShort": "OperatingEnvironment",
               "valueType": "xs:string",
-              "value": "Indoor use only"
+              "value": "Indoor use only",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Required operating environment"
+                },
+                {
+                  "language": "pt",
+                  "text": "Ambiente de operação necessário"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "AmbientTemp_min_degC",
               "valueType": "xs:int",
-              "value": "5"
+              "value": "5",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Minimum ambient temperature [°C]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Temperatura ambiente mínima [°C]"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "AmbientTemp_max_degC",
               "valueType": "xs:int",
-              "value": "40"
+              "value": "40",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maximum ambient temperature [°C]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Temperatura ambiente máxima [°C]"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "RelHumidity_pct_at_31C",
               "valueType": "xs:int",
-              "value": "80"
+              "value": "80",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maximum relative humidity at 31°C [%]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Umidade relativa máxima a 31°C [%]"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "PollutionDegree",
               "valueType": "xs:string",
-              "value": "2 — Dry, non-conductive contamination"
+              "value": "2 — Dry, non-conductive contamination",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Pollution degree of operating environment"
+                },
+                {
+                  "language": "pt",
+                  "text": "Grau de poluição do ambiente de operação"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "MaxOperatingHeight_m",
               "valueType": "xs:int",
-              "value": "2000"
+              "value": "2000",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maximum operating altitude above sea level [m]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Altitude máxima de operação acima do nível do mar [m]"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "NoiseEmission_LpA_dB_max",
               "valueType": "xs:int",
-              "value": "70"
+              "value": "70",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maximum sound pressure level [dB(A)]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Nível máximo de pressão sonora [dB(A)]"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Permitted ambient conditions for operation"
+            },
+            {
+              "language": "pt",
+              "text": "Condições ambientais permitidas para operação"
             }
           ]
         },
@@ -379,37 +779,107 @@
               "modelType": "Property",
               "idShort": "CEMarking",
               "valueType": "xs:boolean",
-              "value": "true"
+              "value": "true",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "CE marking present"
+                },
+                {
+                  "language": "pt",
+                  "text": "Marcação CE presente"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Directive_MachineryDirective",
               "valueType": "xs:string",
-              "value": "2006/42/EC — EN 60204-1:2018"
+              "value": "2006/42/EC — EN 60204-1:2018",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Applicable machinery directive"
+                },
+                {
+                  "language": "pt",
+                  "text": "Diretiva de máquinas aplicável"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Directive_EMC",
               "valueType": "xs:string",
-              "value": "2014/30/EU — EN 61326-1:2013-01"
+              "value": "2014/30/EU — EN 61326-1:2013-01",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Applicable EMC directive"
+                },
+                {
+                  "language": "pt",
+                  "text": "Diretiva de compatibilidade eletromagnética aplicável"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Directive_RoHS",
               "valueType": "xs:string",
-              "value": "2011/65/EU — EN 63000:2016-10"
+              "value": "2011/65/EU — EN 63000:2016-10",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Applicable RoHS directive"
+                },
+                {
+                  "language": "pt",
+                  "text": "Diretiva RoHS aplicável"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "EMC_Environment",
               "valueType": "xs:string",
-              "value": "Industrial, Class A (EN 55011)"
+              "value": "Industrial, Class A (EN 55011)",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "EMC environment classification"
+                },
+                {
+                  "language": "pt",
+                  "text": "Classificação de ambiente EMC"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "UKCAMarking",
               "valueType": "xs:boolean",
-              "value": "true"
+              "value": "true",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "UKCA marking present (UK market)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Marcação UKCA presente (mercado britânico)"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Certifications and applicable directives"
+            },
+            {
+              "language": "pt",
+              "text": "Certificações e diretivas aplicáveis"
             }
           ]
         },
@@ -421,51 +891,157 @@
               "modelType": "Property",
               "idShort": "FeedingComponents",
               "valueType": "xs:boolean",
-              "value": "true"
+              "value": "true",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Component feeding capability"
+                },
+                {
+                  "language": "pt",
+                  "text": "Capacidade de alimentação de componentes"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "QualityInspection_SPC",
               "valueType": "xs:boolean",
-              "value": "true"
+              "value": "true",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Quality inspection with statistical process control"
+                },
+                {
+                  "language": "pt",
+                  "text": "Inspeção de qualidade com controle estatístico de processo"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "FlexibleProduction_Parameters",
               "valueType": "xs:boolean",
-              "value": "true"
+              "value": "true",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Flexible production with configurable parameters"
+                },
+                {
+                  "language": "pt",
+                  "text": "Produção flexível com parâmetros configuráveis"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "FeedingComponents_Assembly",
               "valueType": "xs:boolean",
-              "value": "true"
+              "value": "true",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Component feeding for assembly operations"
+                },
+                {
+                  "language": "pt",
+                  "text": "Alimentação de componentes para operações de montagem"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "ConnectingComponents_Assembly",
               "valueType": "xs:boolean",
-              "value": "true"
+              "value": "true",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Connecting components during assembly"
+                },
+                {
+                  "language": "pt",
+                  "text": "Conexão de componentes durante a montagem"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "FlexibleHandling_Logistics",
               "valueType": "xs:boolean",
-              "value": "true"
+              "value": "true",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Flexible material handling and logistics"
+                },
+                {
+                  "language": "pt",
+                  "text": "Manuseio de material e logística flexíveis"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "RFID_ProductTracking",
               "valueType": "xs:boolean",
-              "value": "true"
+              "value": "true",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "RFID-based product tracking across stations"
+                },
+                {
+                  "language": "pt",
+                  "text": "Rastreamento de produto por RFID entre estações"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "MES_Integration",
               "valueType": "xs:boolean",
-              "value": "true"
+              "value": "true",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Integration with Manufacturing Execution System (MES)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Integração com Sistema de Execução de Manufatura (MES)"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Process capabilities supported by the system"
+            },
+            {
+              "language": "pt",
+              "text": "Capacidades de processo suportadas pelo sistema"
             }
           ]
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Technical specifications of the complete system"
+        },
+        {
+          "language": "pt",
+          "text": "Especificações técnicas do sistema completo"
+        }
+      ],
+      "displayName": [
+        {
+          "language": "pt",
+          "text": "Especificações técnicas do sistema completo"
         }
       ]
     },
@@ -507,7 +1083,27 @@
                     "value": "urn:festo:cp-factory:aas:CP-L-406-1"
                   }
                 ]
-              }
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Self-reference to the system AAS"
+                },
+                {
+                  "language": "pt",
+                  "text": "Autorreferência ao AAS do sistema"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "System root reference node (self-managed entity)"
+            },
+            {
+              "language": "pt",
+              "text": "Nó raiz de referência do sistema (entidade autogerenciada)"
             }
           ]
         },
@@ -518,6 +1114,10 @@
             {
               "language": "en",
               "text": "Station 1: Front cover feed (MAGFRONT)"
+            },
+            {
+              "language": "pt",
+              "text": "Estação 1: Alimentação de tampa frontal (MAGFRONT)"
             }
           ],
           "value": [
@@ -525,19 +1125,49 @@
               "modelType": "Property",
               "idShort": "StationNumber",
               "valueType": "xs:int",
-              "value": "1"
+              "value": "1",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station number in the production sequence"
+                },
+                {
+                  "language": "pt",
+                  "text": "Número da estação na sequência de produção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StationName",
               "valueType": "xs:string",
-              "value": "MAGFRONT"
+              "value": "MAGFRONT",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station identifier (used in MES and HMI)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Identificador da estação (usado no MES e HMI)"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StationRole",
               "valueType": "xs:string",
-              "value": "Material Provisioning - Front Covers"
+              "value": "Material Provisioning - Front Covers",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Functional role of the station in the process"
+                },
+                {
+                  "language": "pt",
+                  "text": "Função da estação no processo"
+                }
+              ]
             },
             {
               "modelType": "ReferenceElement",
@@ -559,7 +1189,17 @@
                     "value": "urn:festo:cp-factory:aas:STATION-MAGFRONT"
                   }
                 ]
-              }
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Reference to the station AAS"
+                },
+                {
+                  "language": "pt",
+                  "text": "Referência ao AAS da estação"
+                }
+              ]
             }
           ]
         },
@@ -570,6 +1210,10 @@
             {
               "language": "en",
               "text": "Station 2: Quality inspection (MEAS)"
+            },
+            {
+              "language": "pt",
+              "text": "Estação 2: Inspeção de qualidade (MEAS)"
             }
           ],
           "value": [
@@ -577,19 +1221,49 @@
               "modelType": "Property",
               "idShort": "StationNumber",
               "valueType": "xs:int",
-              "value": "2"
+              "value": "2",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station number in the production sequence"
+                },
+                {
+                  "language": "pt",
+                  "text": "Número da estação na sequência de produção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StationName",
               "valueType": "xs:string",
-              "value": "MEAS"
+              "value": "MEAS",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station identifier (used in MES and HMI)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Identificador da estação (usado no MES e HMI)"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StationRole",
               "valueType": "xs:string",
-              "value": "Quality Inspection"
+              "value": "Quality Inspection",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Functional role of the station in the process"
+                },
+                {
+                  "language": "pt",
+                  "text": "Função da estação no processo"
+                }
+              ]
             },
             {
               "modelType": "ReferenceElement",
@@ -611,7 +1285,17 @@
                     "value": "urn:festo:cp-factory:aas:STATION-MEAS"
                   }
                 ]
-              }
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Reference to the station AAS"
+                },
+                {
+                  "language": "pt",
+                  "text": "Referência ao AAS da estação"
+                }
+              ]
             }
           ]
         },
@@ -622,6 +1306,10 @@
             {
               "language": "en",
               "text": "Station 3: Machining - drilling (iDRILL)"
+            },
+            {
+              "language": "pt",
+              "text": "Estação 3: Usinagem — furação (iDRILL)"
             }
           ],
           "value": [
@@ -629,19 +1317,49 @@
               "modelType": "Property",
               "idShort": "StationNumber",
               "valueType": "xs:int",
-              "value": "3"
+              "value": "3",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station number in the production sequence"
+                },
+                {
+                  "language": "pt",
+                  "text": "Número da estação na sequência de produção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StationName",
               "valueType": "xs:string",
-              "value": "iDRILL"
+              "value": "iDRILL",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station identifier (used in MES and HMI)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Identificador da estação (usado no MES e HMI)"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StationRole",
               "valueType": "xs:string",
-              "value": "Machining / Drilling"
+              "value": "Machining / Drilling",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Functional role of the station in the process"
+                },
+                {
+                  "language": "pt",
+                  "text": "Função da estação no processo"
+                }
+              ]
             },
             {
               "modelType": "ReferenceElement",
@@ -663,7 +1381,17 @@
                     "value": "urn:festo:cp-factory:aas:STATION-IDRILL"
                   }
                 ]
-              }
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Reference to the station AAS"
+                },
+                {
+                  "language": "pt",
+                  "text": "Referência ao AAS da estação"
+                }
+              ]
             }
           ]
         },
@@ -674,6 +1402,10 @@
             {
               "language": "en",
               "text": "Station 4: Back cover feed (MAGBACK)"
+            },
+            {
+              "language": "pt",
+              "text": "Estação 4: Alimentação de tampa traseira (MAGBACK)"
             }
           ],
           "value": [
@@ -681,19 +1413,49 @@
               "modelType": "Property",
               "idShort": "StationNumber",
               "valueType": "xs:int",
-              "value": "4"
+              "value": "4",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station number in the production sequence"
+                },
+                {
+                  "language": "pt",
+                  "text": "Número da estação na sequência de produção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StationName",
               "valueType": "xs:string",
-              "value": "MAGBACK"
+              "value": "MAGBACK",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station identifier (used in MES and HMI)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Identificador da estação (usado no MES e HMI)"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StationRole",
               "valueType": "xs:string",
-              "value": "Material Provisioning - Back Covers"
+              "value": "Material Provisioning - Back Covers",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Functional role of the station in the process"
+                },
+                {
+                  "language": "pt",
+                  "text": "Função da estação no processo"
+                }
+              ]
             },
             {
               "modelType": "ReferenceElement",
@@ -715,7 +1477,17 @@
                     "value": "urn:festo:cp-factory:aas:STATION-MAGBACK"
                   }
                 ]
-              }
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Reference to the station AAS"
+                },
+                {
+                  "language": "pt",
+                  "text": "Referência ao AAS da estação"
+                }
+              ]
             }
           ]
         },
@@ -726,6 +1498,10 @@
             {
               "language": "en",
               "text": "Station 5: Assembly - pressing (MPRESS)"
+            },
+            {
+              "language": "pt",
+              "text": "Estação 5: Montagem — prensagem (MPRESS)"
             }
           ],
           "value": [
@@ -733,19 +1509,49 @@
               "modelType": "Property",
               "idShort": "StationNumber",
               "valueType": "xs:int",
-              "value": "5"
+              "value": "5",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station number in the production sequence"
+                },
+                {
+                  "language": "pt",
+                  "text": "Número da estação na sequência de produção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StationName",
               "valueType": "xs:string",
-              "value": "MPRESS"
+              "value": "MPRESS",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station identifier (used in MES and HMI)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Identificador da estação (usado no MES e HMI)"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StationRole",
               "valueType": "xs:string",
-              "value": "Assembly / Pressing"
+              "value": "Assembly / Pressing",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Functional role of the station in the process"
+                },
+                {
+                  "language": "pt",
+                  "text": "Função da estação no processo"
+                }
+              ]
             },
             {
               "modelType": "ReferenceElement",
@@ -767,7 +1573,17 @@
                     "value": "urn:festo:cp-factory:aas:STATION-MPRESS"
                   }
                 ]
-              }
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Reference to the station AAS"
+                },
+                {
+                  "language": "pt",
+                  "text": "Referência ao AAS da estação"
+                }
+              ]
             }
           ]
         },
@@ -778,6 +1594,10 @@
             {
               "language": "en",
               "text": "Station 6: Finished workpiece output (OUT)"
+            },
+            {
+              "language": "pt",
+              "text": "Estação 6: Saída de peça acabada (OUT)"
             }
           ],
           "value": [
@@ -785,19 +1605,49 @@
               "modelType": "Property",
               "idShort": "StationNumber",
               "valueType": "xs:int",
-              "value": "6"
+              "value": "6",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station number in the production sequence"
+                },
+                {
+                  "language": "pt",
+                  "text": "Número da estação na sequência de produção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StationName",
               "valueType": "xs:string",
-              "value": "OUT"
+              "value": "OUT",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station identifier (used in MES and HMI)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Identificador da estação (usado no MES e HMI)"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StationRole",
               "valueType": "xs:string",
-              "value": "Output / Retrieval"
+              "value": "Output / Retrieval",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Functional role of the station in the process"
+                },
+                {
+                  "language": "pt",
+                  "text": "Função da estação no processo"
+                }
+              ]
             },
             {
               "modelType": "ReferenceElement",
@@ -819,9 +1669,35 @@
                     "value": "urn:festo:cp-factory:aas:STATION-OUT"
                   }
                 ]
-              }
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Reference to the station AAS"
+                },
+                {
+                  "language": "pt",
+                  "text": "Referência ao AAS da estação"
+                }
+              ]
             }
           ]
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Hierarchical structure of the system and its stations"
+        },
+        {
+          "language": "pt",
+          "text": "Estrutura hierárquica do sistema e suas estações"
+        }
+      ],
+      "displayName": [
+        {
+          "language": "pt",
+          "text": "Estrutura hierárquica do sistema e suas estações"
         }
       ]
     },
@@ -843,13 +1719,33 @@
           "modelType": "Property",
           "idShort": "ProcessName",
           "valueType": "xs:string",
-          "value": "Housing Assembly Batch-1"
+          "value": "Housing Assembly Batch-1",
+          "description": [
+            {
+              "language": "en",
+              "text": "Name of the production process"
+            },
+            {
+              "language": "pt",
+              "text": "Nome do processo de produção"
+            }
+          ]
         },
         {
           "modelType": "Property",
           "idShort": "BatchSize",
           "valueType": "xs:int",
-          "value": "1"
+          "value": "1",
+          "description": [
+            {
+              "language": "en",
+              "text": "Batch size — number of workpieces per production cycle"
+            },
+            {
+              "language": "pt",
+              "text": "Tamanho do lote — número de peças por ciclo de produção"
+            }
+          ]
         },
         {
           "modelType": "SubmodelElementCollection",
@@ -859,39 +1755,125 @@
               "modelType": "Property",
               "idShort": "Step_01_MAGFRONT",
               "valueType": "xs:string",
-              "value": "[MAGFRONT] Magazine feeds front cover onto conveyor pallet"
+              "value": "[MAGFRONT] Magazine feeds front cover onto conveyor pallet",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Step 1: Magazine front feeds front cover onto conveyor pallet"
+                },
+                {
+                  "language": "pt",
+                  "text": "Passo 1: Magazine frontal alimenta tampa frontal no pallete da esteira"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Step_02_MEAS",
               "valueType": "xs:string",
-              "value": "[MEAS] Measuring station performs length-difference QC; signals result via signal light"
+              "value": "[MEAS] Measuring station performs length-difference QC; signals result via signal light",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Step 2: Measuring station performs length-difference quality check"
+                },
+                {
+                  "language": "pt",
+                  "text": "Passo 2: Estação de medição realiza verificação de qualidade dimensional"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Step_03_iDRILL",
               "valueType": "xs:string",
-              "value": "[iDRILL] Drilling station drills 4 holes based on order data (CPS)"
+              "value": "[iDRILL] Drilling station drills 4 holes based on order data (CPS)",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Step 3: iDRILL drills holes according to order parameters"
+                },
+                {
+                  "language": "pt",
+                  "text": "Passo 3: iDRILL perfura furos conforme parâmetros do pedido"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Step_04_MAGBACK",
               "valueType": "xs:string",
-              "value": "[MAGBACK] Magazine feeds back cover onto front cover on pallet"
+              "value": "[MAGBACK] Magazine feeds back cover onto front cover on pallet",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Step 4: Magazine back feeds back cover onto front cover on pallet"
+                },
+                {
+                  "language": "pt",
+                  "text": "Passo 4: Magazine traseiro alimenta tampa traseira sobre a frontal no pallete"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Step_05_MPRESS",
               "valueType": "xs:string",
-              "value": "[MPRESS] Press station presses back cover onto front cover"
+              "value": "[MPRESS] Press station presses back cover onto front cover",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Step 5: Muscle press joins front and back covers with regulated force"
+                },
+                {
+                  "language": "pt",
+                  "text": "Passo 5: Prensa muscular une tampas frontal e traseira com força regulada"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Step_06_OUT",
               "valueType": "xs:string",
-              "value": "[OUT] Output station transfers finished workpiece to roller slide"
+              "value": "[OUT] Output station transfers finished workpiece to roller slide",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Step 6: Output station delivers finished workpiece to roller slide"
+                },
+                {
+                  "language": "pt",
+                  "text": "Passo 6: Estação de saída entrega a peça acabada ao escorregador"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Ordered sequence of production steps"
+            },
+            {
+              "language": "pt",
+              "text": "Sequência ordenada das etapas de produção"
             }
           ]
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Description of the production process executed by the system"
+        },
+        {
+          "language": "pt",
+          "text": "Descrição do processo de produção executado pelo sistema"
+        }
+      ],
+      "displayName": [
+        {
+          "language": "pt",
+          "text": "Descrição do processo de produção executado pelo sistema"
         }
       ]
     },
@@ -917,13 +1899,43 @@
               "modelType": "Property",
               "idShort": "Title",
               "valueType": "xs:string",
-              "value": "CP-L-406-1 System Operating Manual"
+              "value": "CP-L-406-1 System Operating Manual",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Document title"
+                },
+                {
+                  "language": "pt",
+                  "text": "Título do documento"
+                }
+              ]
             },
             {
               "modelType": "File",
               "idShort": "ManualFile",
               "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-406-1/files/manual_en.pdf",
-              "contentType": "application/pdf"
+              "contentType": "application/pdf",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "PDF file of the system operating manual"
+                },
+                {
+                  "language": "pt",
+                  "text": "Arquivo PDF do manual de operação do sistema"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "System operating manual"
+            },
+            {
+              "language": "pt",
+              "text": "Manual de operação do sistema"
             }
           ]
         },
@@ -935,15 +1947,61 @@
               "modelType": "Property",
               "idShort": "Title",
               "valueType": "xs:string",
-              "value": "CP Factory Maintenance Manual 2023"
+              "value": "CP Factory Maintenance Manual 2023",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Document title"
+                },
+                {
+                  "language": "pt",
+                  "text": "Título do documento"
+                }
+              ]
             },
             {
               "modelType": "File",
               "idShort": "MaintenanceFile",
               "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf",
-              "contentType": "application/pdf"
+              "contentType": "application/pdf",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "PDF file of the maintenance manual"
+                },
+                {
+                  "language": "pt",
+                  "text": "Arquivo PDF do manual de manutenção"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Maintenance manual"
+            },
+            {
+              "language": "pt",
+              "text": "Manual de manutenção"
             }
           ]
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Technical documentation and manuals"
+        },
+        {
+          "language": "pt",
+          "text": "Documentação técnica e manuais"
+        }
+      ],
+      "displayName": [
+        {
+          "language": "pt",
+          "text": "Documentação técnica e manuais"
         }
       ]
     },
@@ -969,25 +2027,75 @@
               "modelType": "Property",
               "idShort": "Activity",
               "valueType": "xs:string",
-              "value": "Visual inspection of all components: damage, pollution, cable condition, connectors, safety markings"
+              "value": "Visual inspection of all components: damage, pollution, cable condition, connectors, safety markings",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Description of the maintenance activity"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição da atividade de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Interval",
               "valueType": "xs:string",
-              "value": "1 day"
+              "value": "1 day",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maintenance interval"
+                },
+                {
+                  "language": "pt",
+                  "text": "Intervalo de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Criteria",
               "valueType": "xs:string",
-              "value": "visual inspection"
+              "value": "visual inspection",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Acceptance criteria for the maintenance task"
+                },
+                {
+                  "language": "pt",
+                  "text": "Critério de aceitação da tarefa de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Standard",
               "valueType": "xs:string",
-              "value": "DIN EN 50699"
+              "value": "DIN EN 50699",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Applicable standard or regulation"
+                },
+                {
+                  "language": "pt",
+                  "text": "Norma ou regulamentação aplicável"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Daily visual inspection of all components"
+            },
+            {
+              "language": "pt",
+              "text": "Inspeção visual diária de todos os componentes"
             }
           ]
         },
@@ -999,19 +2107,59 @@
               "modelType": "Property",
               "idShort": "Activity",
               "valueType": "xs:string",
-              "value": "Cyclical function test of each emergency stop button. Press button, verify chain triggers, acknowledge with reset, verify all components unlock."
+              "value": "Cyclical function test of each emergency stop button. Press button, verify chain triggers, acknowledge with reset, verify all components unlock.",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Description of the maintenance activity"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição da atividade de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Interval",
               "valueType": "xs:string",
-              "value": "1 month"
+              "value": "1 month",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maintenance interval"
+                },
+                {
+                  "language": "pt",
+                  "text": "Intervalo de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Criteria",
               "valueType": "xs:string",
-              "value": "function test"
+              "value": "function test",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Acceptance criteria for the maintenance task"
+                },
+                {
+                  "language": "pt",
+                  "text": "Critério de aceitação da tarefa de manutenção"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Monthly emergency stop function test"
+            },
+            {
+              "language": "pt",
+              "text": "Teste mensal de função do botão de parada de emergência"
             }
           ]
         },
@@ -1023,19 +2171,59 @@
               "modelType": "Property",
               "idShort": "Activity",
               "valueType": "xs:string",
-              "value": "Cyclical function test of each safety door switch and safe inductive proximity sensor. Open safety door during operation to trigger safety stop."
+              "value": "Cyclical function test of each safety door switch and safe inductive proximity sensor. Open safety door during operation to trigger safety stop.",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Description of the maintenance activity"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição da atividade de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Interval",
               "valueType": "xs:string",
-              "value": "1 month"
+              "value": "1 month",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maintenance interval"
+                },
+                {
+                  "language": "pt",
+                  "text": "Intervalo de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Criteria",
               "valueType": "xs:string",
-              "value": "function test"
+              "value": "function test",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Acceptance criteria for the maintenance task"
+                },
+                {
+                  "language": "pt",
+                  "text": "Critério de aceitação da tarefa de manutenção"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Monthly operator safety device function test"
+            },
+            {
+              "language": "pt",
+              "text": "Teste mensal de função dos dispositivos de segurança do operador"
             }
           ]
         },
@@ -1047,19 +2235,59 @@
               "modelType": "Property",
               "idShort": "Activity",
               "valueType": "xs:string",
-              "value": "RCD functional test by pressing test button in non-stationary operation"
+              "value": "RCD functional test by pressing test button in non-stationary operation",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Description of the maintenance activity"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição da atividade de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Interval",
               "valueType": "xs:string",
-              "value": "1 day"
+              "value": "1 day",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maintenance interval"
+                },
+                {
+                  "language": "pt",
+                  "text": "Intervalo de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Criteria",
               "valueType": "xs:string",
-              "value": "function test"
+              "value": "function test",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Acceptance criteria for the maintenance task"
+                },
+                {
+                  "language": "pt",
+                  "text": "Critério de aceitação da tarefa de manutenção"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Daily RCD test for non-stationary operation"
+            },
+            {
+              "language": "pt",
+              "text": "Teste diário de DR para operação não estacionária"
             }
           ]
         },
@@ -1071,19 +2299,59 @@
               "modelType": "Property",
               "idShort": "Activity",
               "valueType": "xs:string",
-              "value": "RCD functional test by pressing test button in stationary operation"
+              "value": "RCD functional test by pressing test button in stationary operation",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Description of the maintenance activity"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição da atividade de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Interval",
               "valueType": "xs:string",
-              "value": "6 months"
+              "value": "6 months",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maintenance interval"
+                },
+                {
+                  "language": "pt",
+                  "text": "Intervalo de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Criteria",
               "valueType": "xs:string",
-              "value": "function test"
+              "value": "function test",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Acceptance criteria for the maintenance task"
+                },
+                {
+                  "language": "pt",
+                  "text": "Critério de aceitação da tarefa de manutenção"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Semi-annual RCD test for stationary operation"
+            },
+            {
+              "language": "pt",
+              "text": "Teste semestral de DR para operação estacionária"
             }
           ]
         },
@@ -1095,19 +2363,59 @@
               "modelType": "Property",
               "idShort": "Activity",
               "valueType": "xs:string",
-              "value": "RCD effectiveness test by qualified electrician using RCD testing equipment"
+              "value": "RCD effectiveness test by qualified electrician using RCD testing equipment",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Description of the maintenance activity"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição da atividade de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Interval",
               "valueType": "xs:string",
-              "value": "1 month"
+              "value": "1 month",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maintenance interval"
+                },
+                {
+                  "language": "pt",
+                  "text": "Intervalo de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Criteria",
               "valueType": "xs:string",
-              "value": "effectiveness"
+              "value": "effectiveness",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Acceptance criteria for the maintenance task"
+                },
+                {
+                  "language": "pt",
+                  "text": "Critério de aceitação da tarefa de manutenção"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Monthly RCD effectiveness test by qualified electrician"
+            },
+            {
+              "language": "pt",
+              "text": "Teste mensal de eficácia do DR por eletricista qualificado"
             }
           ]
         },
@@ -1119,25 +2427,75 @@
               "modelType": "Property",
               "idShort": "Activity",
               "valueType": "xs:string",
-              "value": "Visually inspect belt condition for erosion (fraying/small cracks). Check centering between guide rails. Align if necessary using adjustment screws on deflection heads."
+              "value": "Visually inspect belt condition for erosion (fraying/small cracks). Check centering between guide rails. Align if necessary using adjustment screws on deflection heads.",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Description of the maintenance activity"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição da atividade de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Interval",
               "valueType": "xs:string",
-              "value": "3 weeks"
+              "value": "3 weeks",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maintenance interval"
+                },
+                {
+                  "language": "pt",
+                  "text": "Intervalo de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Criteria",
               "valueType": "xs:string",
-              "value": "visual inspection"
+              "value": "visual inspection",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Acceptance criteria for the maintenance task"
+                },
+                {
+                  "language": "pt",
+                  "text": "Critério de aceitação da tarefa de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "AppliesTo",
               "valueType": "xs:string",
-              "value": "CP-L-LINEAR-V2 (all conveyor stations)"
+              "value": "CP-L-LINEAR-V2 (all conveyor stations)",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Equipment this maintenance task applies to"
+                },
+                {
+                  "language": "pt",
+                  "text": "Equipamento ao qual esta tarefa de manutenção se aplica"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "3-weekly conveyor belt visual inspection and alignment check"
+            },
+            {
+              "language": "pt",
+              "text": "Inspeção visual e verificação de alinhamento da correia a cada 3 semanas"
             }
           ]
         },
@@ -1149,31 +2507,91 @@
               "modelType": "Property",
               "idShort": "Activity",
               "valueType": "xs:string",
-              "value": "Check stopper reaches end positions in approx. 200 ms (verify via HMI). Adjust pressure or throttling if needed. Clean cylinder surface and seal with dry cloth."
+              "value": "Check stopper reaches end positions in approx. 200 ms (verify via HMI). Adjust pressure or throttling if needed. Clean cylinder surface and seal with dry cloth.",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Description of the maintenance activity"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição da atividade de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Interval",
               "valueType": "xs:string",
-              "value": "3 weeks"
+              "value": "3 weeks",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maintenance interval"
+                },
+                {
+                  "language": "pt",
+                  "text": "Intervalo de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Criteria",
               "valueType": "xs:string",
-              "value": "visual inspection"
+              "value": "visual inspection",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Acceptance criteria for the maintenance task"
+                },
+                {
+                  "language": "pt",
+                  "text": "Critério de aceitação da tarefa de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "StopperResponseTime_ms_target",
               "valueType": "xs:int",
-              "value": "200"
+              "value": "200",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Target stopper response time [ms]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Tempo de resposta alvo do cilindro de parada [ms]"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "AppliesTo",
               "valueType": "xs:string",
-              "value": "CP-L-LINEAR-V2 (all conveyor stations)"
+              "value": "CP-L-LINEAR-V2 (all conveyor stations)",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Equipment this maintenance task applies to"
+                },
+                {
+                  "language": "pt",
+                  "text": "Equipamento ao qual esta tarefa de manutenção se aplica"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "3-weekly stopper cylinder inspection and cleaning"
+            },
+            {
+              "language": "pt",
+              "text": "Inspeção e limpeza do cilindro de parada a cada 3 semanas"
             }
           ]
         },
@@ -1185,25 +2603,75 @@
               "modelType": "Property",
               "idShort": "Activity",
               "valueType": "xs:string",
-              "value": "Check linear axes for pollution and clean with dry cloth if necessary"
+              "value": "Check linear axes for pollution and clean with dry cloth if necessary",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Description of the maintenance activity"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição da atividade de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Interval",
               "valueType": "xs:string",
-              "value": "3 weeks"
+              "value": "3 weeks",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maintenance interval"
+                },
+                {
+                  "language": "pt",
+                  "text": "Intervalo de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Criteria",
               "valueType": "xs:string",
-              "value": "visual inspection"
+              "value": "visual inspection",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Acceptance criteria for the maintenance task"
+                },
+                {
+                  "language": "pt",
+                  "text": "Critério de aceitação da tarefa de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "AppliesTo",
               "valueType": "xs:string",
-              "value": "CP-AM-iDRILL (axes X and Z)"
+              "value": "CP-AM-iDRILL (axes X and Z)",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Equipment this maintenance task applies to"
+                },
+                {
+                  "language": "pt",
+                  "text": "Equipamento ao qual esta tarefa de manutenção se aplica"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "3-weekly linear axis pollution inspection (iDRILL)"
+            },
+            {
+              "language": "pt",
+              "text": "Inspeção de sujeira nos eixos lineares a cada 3 semanas (iDRILL)"
             }
           ]
         },
@@ -1215,19 +2683,59 @@
               "modelType": "Property",
               "idShort": "Activity",
               "valueType": "xs:string",
-              "value": "Clean ventilation grilles of all fans (robot controller, MES-PC, etc.)"
+              "value": "Clean ventilation grilles of all fans (robot controller, MES-PC, etc.)",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Description of the maintenance activity"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição da atividade de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Interval",
               "valueType": "xs:string",
-              "value": "6 months"
+              "value": "6 months",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maintenance interval"
+                },
+                {
+                  "language": "pt",
+                  "text": "Intervalo de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Criteria",
               "valueType": "xs:string",
-              "value": "visual inspection"
+              "value": "visual inspection",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Acceptance criteria for the maintenance task"
+                },
+                {
+                  "language": "pt",
+                  "text": "Critério de aceitação da tarefa de manutenção"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Semi-annual fan and ventilation grille cleaning"
+            },
+            {
+              "language": "pt",
+              "text": "Limpeza semestral de ventoinhas e grades de ventilação"
             }
           ]
         },
@@ -1239,21 +2747,77 @@
               "modelType": "Property",
               "idShort": "Activity",
               "valueType": "xs:string",
-              "value": "Drain condensation water from compressor/service unit"
+              "value": "Drain condensation water from compressor/service unit",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Description of the maintenance activity"
+                },
+                {
+                  "language": "pt",
+                  "text": "Descrição da atividade de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Interval",
               "valueType": "xs:string",
-              "value": "1 week"
+              "value": "1 week",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Maintenance interval"
+                },
+                {
+                  "language": "pt",
+                  "text": "Intervalo de manutenção"
+                }
+              ]
             },
             {
               "modelType": "Property",
               "idShort": "Criteria",
               "valueType": "xs:string",
-              "value": "period"
+              "value": "period",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Acceptance criteria for the maintenance task"
+                },
+                {
+                  "language": "pt",
+                  "text": "Critério de aceitação da tarefa de manutenção"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Weekly condensate drain from compressor / service unit"
+            },
+            {
+              "language": "pt",
+              "text": "Drenagem semanal de condensado do compressor / unidade de serviço"
             }
           ]
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Maintenance plan with tasks, intervals and criteria"
+        },
+        {
+          "language": "pt",
+          "text": "Plano de manutenção com tarefas, intervalos e critérios"
+        }
+      ],
+      "displayName": [
+        {
+          "language": "pt",
+          "text": "Plano de manutenção com tarefas, intervalos e critérios"
         }
       ]
     }
