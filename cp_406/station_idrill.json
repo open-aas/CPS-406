@@ -14,7 +14,7 @@
         "assetKind": "Instance",
         "globalAssetId": "urn:festo:cp-factory:asset:STATION-IDRILL",
         "defaultThumbnail": {
-          "path": "https://raw.githubusercontent.com/open-aas/CPS-406/main/cp_406/thumbnails/drill.png",
+          "path": "L3RodW1ibmFpbHMvZHJpbGwucG5n",
           "contentType": "image/png"
         }
       },

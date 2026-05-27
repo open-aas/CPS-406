@@ -14,7 +14,7 @@
         "assetKind": "Instance",
         "globalAssetId": "urn:festo:cp-factory:asset:STATION-MPRESS",
         "defaultThumbnail": {
-          "path": "https://raw.githubusercontent.com/open-aas/CPS-406/main/cp_406/thumbnails/press.png",
+          "path": "L3RodW1ibmFpbHMvcHJlc3MucG5n",
           "contentType": "image/png"
         }
       },
