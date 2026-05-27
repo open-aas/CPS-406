@@ -1682,6 +1682,102 @@
               ]
             }
           ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "Station_07_COBOT",
+          "description": [
+            {
+              "language": "en",
+              "text": "Station 7: Collaborative Robot UR5e (COBOT)"
+            },
+            {
+              "language": "pt",
+              "text": "Estação 7: Robô Colaborativo UR5e (COBOT)"
+            }
+          ],
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "StationNumber",
+              "valueType": "xs:int",
+              "value": "7",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station number in the production sequence"
+                },
+                {
+                  "language": "pt",
+                  "text": "Número da estação na sequência de produção"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StationName",
+              "valueType": "xs:string",
+              "value": "COBOT",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Station identifier (used in MES and HMI)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Identificador da estação (usado no MES e HMI)"
+                }
+              ]
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StationRole",
+              "valueType": "xs:string",
+              "value": "Pick and Place / Assembly",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Functional role of the station in the process"
+                },
+                {
+                  "language": "pt",
+                  "text": "Função da estação no processo"
+                }
+              ]
+            },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Station",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
+                  }
+                ]
+              },
+              "value": {
+                "type": "ModelReference",
+                "keys": [
+                  {
+                    "type": "AssetAdministrationShell",
+                    "value": "urn:festo:cp-factory:aas:STATION-COBOT"
+                  }
+                ]
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Reference to the station AAS"
+                },
+                {
+                  "language": "pt",
+                  "text": "Referência ao AAS da estação"
+                }
+              ]
+            }
+          ]
         }
       ],
       "description": [
