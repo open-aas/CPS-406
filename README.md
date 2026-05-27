@@ -2,6 +2,13 @@
 
 Digital twin do sistema de manufatura **Festo CP-L-406-1** modelado em **AAS V3** (IEC 63278 / Parte 2 v3.0).
 
+## Autores
+
+| GitHub | |
+|--------|-|
+| [@Evaldoes](https://github.com/Evaldoes) | Modelagem AAS |
+| [@alisonsalmeida](https://github.com/alisonsalmeida) | Modelagem AAS |
+
 O sistema CP-L-406-1 é uma linha de produção didática modular do laboratório Festo CP Factory composta por 7 estações interligadas por esteiras transportadoras, responsável por montar capas de controladores programáveis (CP). Cada estação é representada como um AAS independente contendo submodelos de identificação, dados técnicos, documentação, interface de E/S e ordem de produção.
 
 ---
