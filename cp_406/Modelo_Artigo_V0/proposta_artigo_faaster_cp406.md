@@ -8,9 +8,24 @@
 
 ## Título Principal (recomendado)
 
+### 🇧🇷 Português
+
+**"Gêmeos Digitais Orientados por AAS para Manufatura Modular: Geração Automatizada de Runtime OPC UA a partir de Modelos Asset Administration Shell V3 Aplicada ao Sistema de Produção Festo CP-406"**
+
+### Títulos Alternativos — Português
+
+- *"De Modelos AAS V3 Estáticos a Servidores OPC UA Vivos: O Framework Faaster Aplicado a uma Planta de Manufatura Modular com Sete Estações"*
+- *"Geração de Gêmeo Digital por Módulo com Asset Administration Shell V3 e Faaster: Um Estudo de Caso na Fábrica Didática Festo CP-406"*
+- *"Rumo a Gêmeos Digitais Interoperáveis na Indústria 4.0: Mapeamento Automatizado AAS V3 para OPC UA via Faaster no Sistema Ciber-Físico de Produção CP-406"*
+- *"Geração Automática de Gêmeos Digitais por Módulo com AAS V3 e OPC UA: Projeto e Avaliação no Sistema de Manufatura Modular Festo CP-406"*
+
+---
+
+### 🇺🇸 English
+
 **"AAS-Driven Digital Twins for Modular Manufacturing: Automated OPC UA Runtime Generation from Asset Administration Shell V3 Models Applied to the Festo CP-406 Production System"**
 
-### Títulos Alternativos
+### Títulos Alternativos — English
 
 - *"From Static AAS V3 Models to Live OPC UA Servers: The Faaster Framework Applied to a Seven-Station Modular Manufacturing Plant"*
 - *"Per-Module Digital Twin Generation Using Asset Administration Shell V3 and Faaster: A Case Study on the Festo CP-406 Didactic Factory"*
@@ -18,7 +33,15 @@
 
 ---
 
-## Abstract (rascunho)
+## Abstract — Rascunho em Português
+
+Os gêmeos digitais (GD) são um elemento central da Indústria 4.0, permitindo monitoramento em tempo real, simulação e suporte à decisão em sistemas de manufatura. No entanto, as implementações existentes de GD frequentemente dependem de plataformas proprietárias, carecem de modelos de dados padronizados e não oferecem granularidade por módulo em ambientes de produção modular. Este artigo apresenta um framework baseado em padrões abertos para a geração automatizada de gêmeos digitais, aplicado ao sistema de manufatura modular Festo CP-406, composto por sete estações heterogêneas incluindo um robô colaborativo Universal Robots UR5e. Cada módulo físico é modelado como um documento JSON independente e conforme ao padrão Asset Administration Shell (AAS) V3 (IEC 63278), contemplando oito submodelos por estação: Nameplate, TechnicalData, Documentation, IOInterface e ProductionOrder, tanto para a esteira linear quanto para o módulo de aplicação. O runtime Faaster analisa automaticamente esses documentos AAS V3 e expõe um servidor OPC UA Type 2 totalmente reativo por estação, com Acesso a Dados Históricos (HDA) sustentado pelo TimescaleDB. A avaliação experimental demonstra latência de sincronização abaixo de X ms (p95), fidelidade do modelo acima de Y% e escalabilidade linear para até sete servidores OPC UA simultâneos. A avaliação de maturidade utilizando os critérios de fábrica inteligente do RAMI 4.0 demonstra melhorias do Nível Z (legado) para o Nível W (atualizado) em todos os cinco critérios. O conjunto completo de modelos AAS e o runtime Faaster são disponibilizados como artefatos de código aberto, viabilizando reprodutibilidade e reutilização em ambientes de manufatura modular similares.
+
+**Palavras-chave:** Shell de Administração de Ativos, Gêmeo Digital, OPC UA, Indústria 4.0, RAMI 4.0, Manufatura Modular, Faaster, Sistema Ciber-Físico, Interoperabilidade, Acesso a Dados Históricos
+
+---
+
+## Abstract — Draft in English
 
 Digital twins (DTs) are a cornerstone of Industry 4.0, enabling real-time monitoring, simulation, and decision support in manufacturing systems. However, existing DT implementations often rely on proprietary platforms, lack standardized data models, and fail to provide per-module granularity in modular production environments. This paper presents a standards-based framework for automated DT generation applied to the Festo CP-406 modular manufacturing system, comprising seven heterogeneous stations including a Universal Robots UR5e collaborative robot. Each physical module is modeled as a standalone Asset Administration Shell (AAS) V3 compliant JSON document, encompassing eight submodels per station: Nameplate, TechnicalData, Documentation, IOInterface, and ProductionOrder for both the linear conveyor and the application module. The Faaster runtime automatically parses these AAS V3 documents and exposes a fully reactive OPC UA Type 2 server per station, with Historical Data Access (HDA) backed by TimescaleDB. Experimental evaluation demonstrates synchronization latency below X ms (p95), model fidelity above Y%, and linear scalability up to seven simultaneous OPC UA servers. Maturity assessment using RAMI 4.0 smart factory criteria shows improvements from Level Z (legacy) to Level W (updated) across all five criteria. The complete AAS model set and Faaster runtime are made available as open-source artifacts, enabling reproducibility and reuse across similar modular manufacturing environments.
 
