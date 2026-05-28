@@ -24,3 +24,13 @@ https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-PRESS/files/man
 https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-PRESS/files/schematics.pdf
 https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf
 
+COBOT UR5e
+https://www.universal-robots.com/media/1820977/07_2021_ur5e_fact_sheet_pt_web.pdf
+https://www.universal-robots.com/manuals/EN/HTML/SW10_6/Content/prod-usr-man/hardware/arm_e-Series/UR5e/H_g5_sections/appendix_g5/tech_spec_sheet.htm
+https://www.universal-robots.com/media/1807465/ur5e_e-series_datasheets_web.pdf
+https://www.universal-robots.com/manuals/EN/PDF/SW5_19/user-manual-UR5e-PDF_online/710-965-00_UR5e_User_Manual_en_Global.pdf
+https://www.universal-robots.com/manuals/pt/PDF/SW10_12/user-manual-UR5e-PolyX-PDF_online/718-749-00_UR5e%20PolyScope%20X_User_Manual_PolyScopeX_pt_Global.pdf
+
+ROBOT SUBMODEL
+https://github.com/admin-shell-io/submodel-templates/tree/main/published/Control%20Component%20Instance/2/0
+https://industrialdigitaltwin.org/en/wp-content/uploads/sites/2/2025/02/IDTA-02016-2-0-_Submodel_CCInstance.pdf

@@ -1,0 +1,18 @@
+Não usa AAS (Asset Administration Shell) — sem modelo de dados padronizado ISO/IEC
+OPC via EasyPort não é OPC UA nativo — limitado à plataforma Festo
+Sem HDA (Historical Data Access) — sem registro histórico de processo
+Sem edge computing ou cloud
+Sem integração com robô colaborativo
+Avaliação RAMI é qualitativa subjetiva, sem evidências quantitativas robustas(vamos resolver)
+
+
+temas de artigos
+
+Opção 1
+"Gêmeos Digitais Orientados por AAS para Manufatura Modular: Uma Abordagem Baseada em Padrões Usando o Runtime OPC UA Faaster na Fábrica Festo CP-406"
+
+Opção 2
+"De AAS V3 a OPC UA em Tempo Real: Geração Automatizada de Gêmeos Digitais para Cada Módulo do Sistema Didático de Produção CP-406 Usando Faaster"
+
+Opção 3
+"Rumo a Gêmeos Digitais Interoperáveis na Indústria 4.0: Integração entre Asset Administration Shell V3 e OPC UA via Faaster na Planta Modular CP-406"
