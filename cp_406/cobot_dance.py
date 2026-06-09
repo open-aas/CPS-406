@@ -88,16 +88,10 @@ def dance(rtde_c, rtde_io_, loops):
             if rtde_io_ is None:
                 continue
 
-            # sincroniza garra com o aceno
             if name == "wave_a":
-                rtde_io_.setStandardDigitalOut(2, True)   # GripperOpen
-                rtde_io_.setStandardDigitalOut(3, False)
+                rtde_io_.setToolDigitalOut(0, True)
             elif name == "wave_b":
-                rtde_io_.setStandardDigitalOut(2, False)
-                rtde_io_.setStandardDigitalOut(3, True)   # GripperClose
-            elif name == "home":
-                rtde_io_.setStandardDigitalOut(2, False)
-                rtde_io_.setStandardDigitalOut(3, False)
+                rtde_io_.setToolDigitalOut(0, False)
 
     print("\n  ♪ Dança concluída!")
 

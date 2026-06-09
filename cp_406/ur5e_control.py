@@ -36,8 +36,8 @@ HELP = """
 Exemplos:
   movej 0 -90 0 -90 0 0      home canônico
   movel 0.3 -0.2 0.4         mover TCP (mantém orientação)
-  dout 2 1                   ativar DO2 (GripperOpen)
-  dout 3 1                   ativar DO3 (GripperClose)
+  tdout 0 1                  abrir garra  (TDO0)
+  tdout 0 0                  fechar garra (TDO0)
   aout 0 5.0                 saída analógica 0 = 5V
   sync                       atualizar station_cobot.json
 """
@@ -68,7 +68,7 @@ def print_io(rtde_r):
 
     DI_LABELS = ["EmergencyStop", "SafeguardStop", "ProgramStart", "ProgramPause",
                  "PalletPresent", "GripperFeedback", "ConveyorReady", "UserDefined"]
-    DO_LABELS = ["RobotReady", "CycleComplete", "GripperOpen", "GripperClose",
+    DO_LABELS = ["RobotReady", "CycleComplete", "UserDefined2", "UserDefined3",
                  "ReleasePallet", "FaultSignal", "UserDefined6", "UserDefined7"]
 
     print("\n  ── Entradas Digitais (Controller) ───────────────")
@@ -129,9 +129,9 @@ def sync_aas(rtde_r):
         for i, idshort in enumerate(di_ids):
             set_prop(els, idshort, bool((di >> i) & 1))
 
-        do_ids = ["DO0_RobotReady", "DO1_CycleComplete", "DO2_GripperOpen",
-                  "DO3_GripperClose", "DO4_ReleasePallet", "DO5_FaultSignal",
-                  "DO6_UserDefined",  "DO7_UserDefined"]
+        do_ids = ["DO0_RobotReady", "DO1_CycleComplete", "DO2_UserDefined",
+                  "DO3_UserDefined", "DO4_ReleasePallet", "DO5_FaultSignal",
+                  "DO6_UserDefined", "DO7_UserDefined"]
         for i, idshort in enumerate(do_ids):
             set_prop(els, idshort, bool((do_ >> i) & 1))
 

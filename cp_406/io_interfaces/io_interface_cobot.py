@@ -125,8 +125,8 @@ _DI_AAS: Dict[int, str] = {
 _DO_AAS: Dict[int, str] = {
     0: "ControllerIO/DigitalOutputs/DO0_RobotReady",
     1: "ControllerIO/DigitalOutputs/DO1_CycleComplete",
-    2: "ControllerIO/DigitalOutputs/DO2_GripperOpen",
-    3: "ControllerIO/DigitalOutputs/DO3_GripperClose",
+    2: "ControllerIO/DigitalOutputs/DO2_UserDefined",
+    3: "ControllerIO/DigitalOutputs/DO3_UserDefined",
     4: "ControllerIO/DigitalOutputs/DO4_ReleasePallet",
     5: "ControllerIO/DigitalOutputs/DO5_FaultSignal",
     6: "ControllerIO/DigitalOutputs/DO6_UserDefined",
