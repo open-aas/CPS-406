@@ -7,50 +7,24 @@ Execute a partir do diretório aas/:
 
 import curses
 import math
+import time
 import argparse
 import threading
 import rtde_control
 import rtde_receive
 from pymodbus.client import ModbusTcpClient
 
-def gripper_write(mb: ModbusTcpClient, cmd: int):
-    try:
-        if not mb.is_socket_open():
-            mb.connect()
-        mb.write_register(GRIPPER_REG, cmd)
-    except Exception:
-        mb.close()
-        mb.connect()
-        mb.write_register(GRIPPER_REG, cmd)
+# ── Constantes ────────────────────────────────────────────────────────────────
+ROBOT_IP   = "192.168.1.100"
+SPEED      = 0.1          # rad/s inicial — use + para aumentar
+ACCEL      = 0.5          # rad/s²
+DT         = 1.0 / 125    # período do loop de controle (125 Hz)
+STOP_AFTER = 0.6          # s sem tecla antes de parar
+GRIPPER_OPEN  = 0x0500
+GRIPPER_CLOSE = 0x0200
+GRIPPER_REG   = 1
 
-ROBOT_IP     = "192.168.1.100"
-SPEED        = 0.5   # rad/s inicial
-ACCEL        = 1.0   # rad/s²
-POLL_MS      = 80    # ms — período de polling do curses
-GRIPPER_OPEN  = 0x0500   # Schunk EGP Co-act: abrir
-GRIPPER_CLOSE = 0x0200   # Schunk EGP Co-act: fechar
-GRIPPER_REG   = 1        # holding register do control word
-
-LAYOUT = """\
- ┌─────────────────────────────────────────────────┐
- │         Controle Manual UR5e — Teclado           │
- ├───────────────┬─────────────────────────────────┤
- │  q / a        │  J1  +/−   base                 │
- │  w / s        │  J2  +/−   ombro                │
- │  e / d        │  J3  +/−   cotovelo             │
- │  r / f        │  J4  +/−   pulso 1              │
- │  t / g        │  J5  +/−   pulso 2              │
- │  y / h        │  J6  +/−   pulso 3 (ferramenta) │
- ├───────────────┼─────────────────────────────────┤
- │  o            │  garra abrir  (TDO0=1)          │
- │  c            │  garra fechar (TDO0=0)          │
- ├───────────────┼─────────────────────────────────┤
- │  + / -        │  aumentar / reduzir velocidade  │
- │  0  (zero)    │  ir para HOME                   │
- │  ESC          │  sair                           │
- └───────────────┴─────────────────────────────────┘"""
-
-# direção de cada junta para cada tecla
+# ── Mapa de teclas → direção de junta ─────────────────────────────────────────
 KEY_VEL = {
     ord('q'): ( 1, 0, 0, 0, 0, 0),
     ord('a'): (-1, 0, 0, 0, 0, 0),
@@ -68,7 +42,27 @@ KEY_VEL = {
 
 HOME = [j * math.pi / 180 for j in [0, -90, 0, -90, 0, 0]]
 
+LAYOUT = """\
+ ┌─────────────────────────────────────────────────┐
+ │         Controle Manual UR5e — Teclado           │
+ ├───────────────┬─────────────────────────────────┤
+ │  q / a        │  J1  +/−   base                 │
+ │  w / s        │  J2  +/−   ombro                │
+ │  e / d        │  J3  +/−   cotovelo             │
+ │  r / f        │  J4  +/−   pulso 1              │
+ │  t / g        │  J5  +/−   pulso 2              │
+ │  y / h        │  J6  +/−   pulso 3 (ferramenta) │
+ ├───────────────┼─────────────────────────────────┤
+ │  o            │  garra abrir                    │
+ │  c            │  garra fechar                   │
+ ├───────────────┼─────────────────────────────────┤
+ │  + / -        │  aumentar / reduzir velocidade  │
+ │  0  (zero)    │  ir para HOME                   │
+ │  ESC          │  sair                           │
+ └───────────────┴─────────────────────────────────┘"""
 
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
 def safe_addstr(stdscr, row, col, text):
     h, w = stdscr.getmaxyx()
     if row >= h or col >= w:
@@ -79,6 +73,17 @@ def safe_addstr(stdscr, row, col, text):
         pass
 
 
+def gripper_write(mb, cmd):
+    try:
+        if not mb.is_socket_open():
+            mb.connect()
+        mb.write_register(GRIPPER_REG, cmd)
+    except Exception:
+        mb.close()
+        mb.connect()
+        mb.write_register(GRIPPER_REG, cmd)
+
+
 def redraw(stdscr, rtde_r, speed, gripper_state, msg=""):
     joints = rtde_r.getActualQ()
     pose   = rtde_r.getActualTCPPose()
@@ -86,71 +91,98 @@ def redraw(stdscr, rtde_r, speed, gripper_state, msg=""):
     for i, line in enumerate(LAYOUT.splitlines()):
         safe_addstr(stdscr, i, 0, line)
     row = LAYOUT.count('\n') + 2
-    safe_addstr(stdscr, row,   0, f"  Velocidade: {speed:.2f} rad/s   Garra: {gripper_state}")
+    safe_addstr(stdscr, row, 0,
+        f"  Velocidade: {speed:.2f} rad/s   Garra: {gripper_state}")
     safe_addstr(stdscr, row+1, 0,
         "  Juntas:  " + "  ".join(
-            f"J{i+1}={math.degrees(j):+.1f}°" for i, j in enumerate(joints)
-        )
-    )
+            f"J{i+1}={math.degrees(j):+.1f}°" for i, j in enumerate(joints)))
     safe_addstr(stdscr, row+2, 0,
-        f"  TCP:     X={pose[0]:+.4f}  Y={pose[1]:+.4f}  Z={pose[2]:+.4f}"
-        f"  Rx={pose[3]:+.4f}  Ry={pose[4]:+.4f}  Rz={pose[5]:+.4f}"
-    )
+        f"  TCP:  X={pose[0]:+.4f}  Y={pose[1]:+.4f}  Z={pose[2]:+.4f}"
+        f"  Rx={pose[3]:+.4f}  Ry={pose[4]:+.4f}  Rz={pose[5]:+.4f}")
     if msg:
         safe_addstr(stdscr, row+4, 0, f"  {msg}")
     stdscr.refresh()
 
 
+# ── Loop principal curses ─────────────────────────────────────────────────────
 def run(stdscr, rtde_c, rtde_r, mb, speed):
+    """
+    Loop de controle a 125 Hz usando initPeriod/speedJ/waitPeriod
+    conforme padrão oficial ur-rtde (single-thread, não há conflito).
+    """
     curses.curs_set(0)
-    stdscr.timeout(POLL_MS)
-    gripper_state = "---"
+    stdscr.timeout(0)          # getch não-bloqueante
+
+    gripper_state  = "---"
+    last_key_time  = 0.0
+    current_dir    = [0.0] * 6  # direção atual (sem escala)
+    jogging        = False
+    redraw_counter = 0
+
     redraw(stdscr, rtde_r, speed, gripper_state)
 
-    while True:
-        key = stdscr.getch()
+    try:
+        while True:
+            t_start = rtde_c.initPeriod()
+            now     = time.monotonic()
+            key     = stdscr.getch()
 
-        if key == 27:           # ESC — sair
-            rtde_c.stopJ(ACCEL)
-            break
+            # ── Teclas de movimento ──────────────────────────────────────
+            if key == 27:                           # ESC
+                break
 
-        elif key in KEY_VEL:
-            step = speed * (POLL_MS / 1000)
-            current_q = list(rtde_r.getActualQ())
-            target_q  = [q + d * step for q, d in zip(current_q, KEY_VEL[key])]
-            rtde_c.moveJ(target_q, speed, ACCEL, asynchronous=True)
+            elif key in KEY_VEL:
+                last_key_time = now
+                current_dir   = list(KEY_VEL[key])
+                jogging       = True
 
-        elif key in (ord('+'), ord('=')):
-            speed = min(speed + 0.1, 2.0)
-            redraw(stdscr, rtde_r, speed, gripper_state, f"Velocidade: {speed:.2f} rad/s")
-            continue
+            elif key in (ord('+'), ord('=')):
+                speed = min(speed + 0.1, 2.0)
 
-        elif key == ord('-'):
-            speed = max(speed - 0.1, 0.1)
-            redraw(stdscr, rtde_r, speed, gripper_state, f"Velocidade: {speed:.2f} rad/s")
-            continue
+            elif key == ord('-'):
+                speed = max(speed - 0.1, 0.1)
 
-        elif key == ord('0'):
-            rtde_c.stopJ(ACCEL)
-            redraw(stdscr, rtde_r, speed, gripper_state, "Movendo para HOME...")
-            rtde_c.moveJ(HOME, 0.5, 0.8)
+            elif key == ord('0'):
+                if jogging:
+                    rtde_c.speedStop(ACCEL)
+                    jogging = False
+                redraw(stdscr, rtde_r, speed, gripper_state, "→ HOME...")
+                rtde_c.moveJ(HOME, 0.3, 0.5)
 
-        elif key == ord('o'):
-            gripper_write(mb, GRIPPER_OPEN)
-            gripper_state = "ABERTA"
+            elif key == ord('o'):
+                gripper_write(mb, GRIPPER_OPEN)
+                gripper_state = "ABERTA"
 
-        elif key == ord('c'):
-            gripper_write(mb, GRIPPER_CLOSE)
-            gripper_state = "FECHADA"
+            elif key == ord('c'):
+                gripper_write(mb, GRIPPER_CLOSE)
+                gripper_state = "FECHADA"
 
-        else:
-            rtde_c.stopJ(ACCEL)
+            # ── Timeout de parada ────────────────────────────────────────
+            if jogging and (now - last_key_time) > STOP_AFTER:
+                rtde_c.speedStop(ACCEL)
+                jogging       = False
+                current_dir   = [0.0] * 6
+                last_key_time = 0.0
 
-        redraw(stdscr, rtde_r, speed, gripper_state)
+            # ── Comando de velocidade (125 Hz) ───────────────────────────
+            if jogging:
+                vel = [d * speed for d in current_dir]
+                rtde_c.speedJ(vel, ACCEL, DT)
 
-    return speed
+            # ── Redesenho a ~5 Hz ────────────────────────────────────────
+            redraw_counter += 1
+            if redraw_counter >= 25:
+                redraw(stdscr, rtde_r, speed, gripper_state)
+                redraw_counter = 0
+
+            rtde_c.waitPeriod(t_start)
+
+    finally:
+        if jogging:
+            rtde_c.speedStop(ACCEL)
 
 
+# ── Main ──────────────────────────────────────────────────────────────────────
 def _call_with_timeout(fn, timeout=2.0):
     t = threading.Thread(target=fn, daemon=True)
     t.start()
@@ -166,9 +198,11 @@ def _cleanup(rtde_c, rtde_r, mb):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Controle manual do UR5e via teclado")
-    parser.add_argument("--ip",    default=ROBOT_IP, help="IP do robô")
-    parser.add_argument("--speed", type=float, default=SPEED, help="Velocidade inicial (rad/s)")
+    parser = argparse.ArgumentParser(
+        description="Controle manual do UR5e via teclado")
+    parser.add_argument("--ip",    default=ROBOT_IP)
+    parser.add_argument("--speed", type=float, default=SPEED,
+                        help="Velocidade inicial (rad/s)")
     args = parser.parse_args()
 
     print(f"Conectando ao UR5e em {args.ip} ...")
