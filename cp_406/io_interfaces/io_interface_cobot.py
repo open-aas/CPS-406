@@ -139,7 +139,7 @@ _TDI_AAS: Dict[int, str] = {
     1: "ToolIO/TDI1_UserDefined",
 }
 _TDO_AAS: Dict[int, str] = {
-    0: "ToolIO/TDO0_GripperControl",
+    0: "ToolIO/TDO0_GripperEnable",
     1: "ToolIO/TDO1_UserDefined",
 }
 

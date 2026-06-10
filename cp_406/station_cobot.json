@@ -1192,33 +1192,33 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO2_GripperOpen",
+                  "idShort": "DO2_UserDefined",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Output: command to open the gripper"
+                      "text": "Digital output 2: user defined"
                     },
                     {
                       "language": "pt",
-                      "text": "Saída: comando para abrir a garra"
+                      "text": "Saída digital 2: uso livre"
                     }
                   ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO3_GripperClose",
+                  "idShort": "DO3_UserDefined",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Output: command to close the gripper"
+                      "text": "Digital output 3: user defined"
                     },
                     {
                       "language": "pt",
-                      "text": "Saída: comando para fechar a garra"
+                      "text": "Saída digital 3: uso livre"
                     }
                   ]
                 },
@@ -1434,17 +1434,17 @@
             },
             {
               "modelType": "Property",
-              "idShort": "TDO0_GripperControl",
+              "idShort": "TDO0_GripperEnable",
               "valueType": "xs:boolean",
               "value": "false",
               "description": [
                 {
                   "language": "en",
-                  "text": "Tool digital output 0: gripper open/close control"
+                  "text": "Tool digital output 0: gripper enable/power (open=true). Grip/release commanded via Modbus TCP reg 1 (0x0500=open, 0x0200=close)"
                 },
                 {
                   "language": "pt",
-                  "text": "Saída digital da ferramenta 0: controle de abertura/fechamento da garra"
+                  "text": "Saída digital da ferramenta 0: enable da garra (abrir=true). Grip/release via Modbus TCP reg 1 (0x0500=abrir, 0x0200=fechar)"
                 }
               ]
             },
@@ -6286,7 +6286,7 @@
                       "description": [
                         {
                           "language": "en",
-                          "text": "DO2 GripperOpen — coil 102 (read/write)"
+                          "text": "DO2 UserDefined — coil 102 (read/write)"
                         }
                       ]
                     },
@@ -6392,7 +6392,7 @@
                       "description": [
                         {
                           "language": "en",
-                          "text": "DO3 GripperClose — coil 103 (read/write)"
+                          "text": "DO3 UserDefined — coil 103 (read/write)"
                         }
                       ]
                     },
