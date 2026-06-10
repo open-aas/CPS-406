@@ -20,6 +20,12 @@ def d2r(*angles):
     return [a * math.pi / 180 for a in angles]
 
 
+def _mb_write(mb: ModbusTcpClient, cmd: int):
+    if not mb.is_socket_open():
+        mb.connect()
+    mb.write_register(GRIPPER_REG, cmd)
+
+
 # Poses em graus: [J1, J2, J3, J4, J5, J6]
 WAYPOINTS = {
     "home":        d2r(  0,  -90,    0,  -90,   0,   0),
@@ -92,9 +98,9 @@ def dance(rtde_c, mb, loops):
                 continue
 
             if name == "wave_a":
-                mb.write_register(GRIPPER_REG, GRIPPER_OPEN)
+                _mb_write(mb, GRIPPER_OPEN)
             elif name == "wave_b":
-                mb.write_register(GRIPPER_REG, GRIPPER_CLOSE)
+                _mb_write(mb, GRIPPER_CLOSE)
 
     print("\n  ♪ Dança concluída!")
 
