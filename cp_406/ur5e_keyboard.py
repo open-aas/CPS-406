@@ -11,12 +11,18 @@ import argparse
 import threading
 import rtde_control
 import rtde_receive
-import rtde_io as rtde_io_mod
+from pymodbus.client import ModbusTcpClient
 
-ROBOT_IP  = "192.168.1.100"
-SPEED     = 0.5   # rad/s inicial
-ACCEL     = 1.0   # rad/s²
-POLL_MS   = 80    # ms — período de polling do curses
+def gripper_write(mb: ModbusTcpClient, cmd: int):
+    mb.write_register(GRIPPER_REG, cmd)
+
+ROBOT_IP     = "192.168.1.100"
+SPEED        = 0.5   # rad/s inicial
+ACCEL        = 1.0   # rad/s²
+POLL_MS      = 80    # ms — período de polling do curses
+GRIPPER_OPEN  = 0x0500   # Schunk EGP Co-act: abrir
+GRIPPER_CLOSE = 0x0200   # Schunk EGP Co-act: fechar
+GRIPPER_REG   = 1        # holding register do control word
 
 LAYOUT = """\
  ┌─────────────────────────────────────────────────┐
@@ -88,7 +94,7 @@ def redraw(stdscr, rtde_r, speed, gripper_state, msg=""):
     stdscr.refresh()
 
 
-def run(stdscr, rtde_c, rtde_r, rtde_io_, speed):
+def run(stdscr, rtde_c, rtde_r, mb, speed):
     curses.curs_set(0)
     stdscr.timeout(POLL_MS)
     gripper_state = "---"
@@ -123,11 +129,11 @@ def run(stdscr, rtde_c, rtde_r, rtde_io_, speed):
             rtde_c.moveJ(HOME, 0.5, 0.8)
 
         elif key == ord('o'):
-            rtde_io_.setToolDigitalOut(0, True)
+            gripper_write(mb, GRIPPER_OPEN)
             gripper_state = "ABERTA"
 
         elif key == ord('c'):
-            rtde_io_.setToolDigitalOut(0, False)
+            gripper_write(mb, GRIPPER_CLOSE)
             gripper_state = "FECHADA"
 
         else:
@@ -144,10 +150,11 @@ def _call_with_timeout(fn, timeout=2.0):
     t.join(timeout=timeout)
 
 
-def _cleanup(rtde_c, rtde_r):
+def _cleanup(rtde_c, rtde_r, mb):
     _call_with_timeout(lambda: rtde_c.stopJ(ACCEL))
     _call_with_timeout(rtde_c.disconnect)
     _call_with_timeout(rtde_r.disconnect)
+    _call_with_timeout(mb.close)
     print("Desconectado.")
 
 
@@ -159,9 +166,11 @@ def main():
 
     print(f"Conectando ao UR5e em {args.ip} ...")
     try:
-        rtde_c   = rtde_control.RTDEControlInterface(args.ip)
-        rtde_r   = rtde_receive.RTDEReceiveInterface(args.ip)
-        rtde_io_ = rtde_io_mod.RTDEIOInterface(args.ip)
+        rtde_c = rtde_control.RTDEControlInterface(args.ip)
+        rtde_r = rtde_receive.RTDEReceiveInterface(args.ip)
+        mb     = ModbusTcpClient(args.ip, port=502)
+        if not mb.connect():
+            raise RuntimeError("Falha ao conectar Modbus TCP (garra)")
     except KeyboardInterrupt:
         print("\nInterrompido.")
         return
@@ -171,13 +180,13 @@ def main():
 
     print("Conectado. Abrindo interface de teclado...")
     try:
-        curses.wrapper(run, rtde_c, rtde_r, rtde_io_, args.speed)
+        curses.wrapper(run, rtde_c, rtde_r, mb, args.speed)
     except KeyboardInterrupt:
         pass
     except Exception as e:
         print(f"Erro: {e}")
     finally:
-        _cleanup(rtde_c, rtde_r)
+        _cleanup(rtde_c, rtde_r, mb)
 
 
 if __name__ == "__main__":

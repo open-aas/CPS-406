@@ -11,8 +11,12 @@ import os
 import rtde_control
 import rtde_receive
 import rtde_io as rtde_io_mod
+from pymodbus.client import ModbusTcpClient
 
-ROBOT_IP = "192.168.1.100"
+ROBOT_IP      = "192.168.1.100"
+GRIPPER_OPEN  = 0x0500
+GRIPPER_CLOSE = 0x0200
+GRIPPER_REG   = 1
 AAS_FILE = os.path.join(os.path.dirname(__file__), "station_cobot.json")
 
 DEFAULT_SPEED       = 0.05
@@ -29,15 +33,15 @@ HELP = """
 ║  home                ║  dout N 0|1  → saída digital (0-7)      ║
 ║  movej J1..J6 (graus)║  aout N V    → saída analógica 0-10V    ║
 ║  movel X Y Z [Rx..Rz]║  tdout N 0|1 → tool digital out (0-1)  ║
-║  stop                ║  sync        → salvar estado no AAS     ║
-║  speed V             ║                                         ║
-║  freedrive / endfree ║  help / quit                            ║
+║  stop                ║  grip        → fechar garra (Modbus)    ║
+║  speed V             ║  release     → abrir  garra (Modbus)    ║
+║  freedrive / endfree ║  sync / help / quit                     ║
 ╚══════════════════════╩═════════════════════════════════════════╝
 Exemplos:
   movej 0 -90 0 -90 0 0      home canônico
   movel 0.3 -0.2 0.4         mover TCP (mantém orientação)
-  tdout 0 1                  abrir garra  (TDO0)
-  tdout 0 0                  fechar garra (TDO0)
+  grip                       fechar garra (Schunk EGP — Modbus)
+  release                    abrir  garra (Schunk EGP — Modbus)
   aout 0 5.0                 saída analógica 0 = 5V
   sync                       atualizar station_cobot.json
 """
@@ -167,6 +171,8 @@ def main():
         rtde_c   = rtde_control.RTDEControlInterface(ROBOT_IP)
         rtde_r   = rtde_receive.RTDEReceiveInterface(ROBOT_IP)
         rtde_io_ = rtde_io_mod.RTDEIOInterface(ROBOT_IP)
+        mb = ModbusTcpClient(ROBOT_IP, port=502)
+        mb.connect()
     except Exception as e:
         print(f"Erro: {e}")
         return
@@ -228,6 +234,14 @@ def main():
                     rtde_io_.setToolDigitalOut(n, v)
                     print(f"  TDO{n} → {'ON' if v else 'off'}")
 
+            elif cmd == "grip":
+                mb.write_register(GRIPPER_REG, GRIPPER_CLOSE)
+                print("  Garra fechada.")
+
+            elif cmd == "release":
+                mb.write_register(GRIPPER_REG, GRIPPER_OPEN)
+                print("  Garra aberta.")
+
             elif cmd == "sync":
                 sync_aas(rtde_r)
 
@@ -288,6 +302,7 @@ def main():
 
     rtde_c.disconnect()
     rtde_r.disconnect()
+    mb.close()
     print("Desconectado.")
 
 

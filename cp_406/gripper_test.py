@@ -1,23 +1,19 @@
 #!/usr/bin/env python3
 """
-Testa cada saída digital que pode controlar a garra.
+Testa abertura e fechamento da garra Schunk Co-act EGP via Modbus TCP.
+Resultado confirmado: reg=1, open=0x0500, close=0x0200.
 Execute:
   python3 cp_406/gripper_test.py --ip 192.168.1.100
 """
 
 import time
 import argparse
-import rtde_receive
-import rtde_io as rtde_io_mod
+from pymodbus.client import ModbusTcpClient
 
-ROBOT_IP = "192.168.1.100"
-
-TESTS = [
-    ("DO2",  "setStandardDigitalOut",  2),
-    ("DO3",  "setStandardDigitalOut",  3),
-    ("TDO0", "setToolDigitalOut",      0),
-    ("TDO1", "setToolDigitalOut",      1),
-]
+ROBOT_IP      = "192.168.1.100"
+GRIPPER_OPEN  = 0x0500
+GRIPPER_CLOSE = 0x0200
+GRIPPER_REG   = 1
 
 
 def main():
@@ -25,31 +21,23 @@ def main():
     parser.add_argument("--ip", default=ROBOT_IP)
     args = parser.parse_args()
 
-    print(f"Conectando em {args.ip} ...")
-    rtde_r   = rtde_receive.RTDEReceiveInterface(args.ip)
-    rtde_io_ = rtde_io_mod.RTDEIOInterface(args.ip)
+    client = ModbusTcpClient(args.ip, port=502)
+    if not client.connect():
+        print("Falha ao conectar Modbus TCP.")
+        return
     print("Conectado.\n")
 
-    for name, method, pin in TESTS:
-        fn = getattr(rtde_io_, method)
-
-        input(f"  [{name}] Pressione ENTER para ativar → ")
-        fn(pin, True)
+    for label, cmd in [("Abrir", GRIPPER_OPEN), ("Fechar", GRIPPER_CLOSE),
+                       ("Abrir", GRIPPER_OPEN)]:
+        input(f"  ENTER → {label} → ")
+        client.write_register(GRIPPER_REG, cmd)
+        status = client.read_holding_registers(0, count=1)
+        sw = status.registers[0] if not status.isError() else "?"
+        print(f"  status=0x{sw:04X}")
         time.sleep(1.5)
 
-        input(f"  [{name}] Pressione ENTER para desativar → ")
-        fn(pin, False)
-        time.sleep(0.5)
-
-        resp = input(f"  [{name}] A garra se moveu? (s/n) → ").strip().lower()
-        if resp == "s":
-            print(f"\n  Garra controlada por: {name}  (método: {method}, pin: {pin})\n")
-            rtde_r.disconnect()
-            return
-
-    print("\n  Nenhuma saída testada moveu a garra.")
-    print("  Possível: Robotiq via Modbus ou URCap — informe o modelo da garra.")
-    rtde_r.disconnect()
+    client.close()
+    print("Desconectado.")
 
 
 if __name__ == "__main__":

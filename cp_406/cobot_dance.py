@@ -9,9 +9,12 @@ import math
 import argparse
 import rtde_control
 import rtde_receive
-import rtde_io as rtde_io_mod
+from pymodbus.client import ModbusTcpClient
 
-ROBOT_IP = "192.168.1.100"
+ROBOT_IP      = "192.168.1.100"
+GRIPPER_OPEN  = 0x0500
+GRIPPER_CLOSE = 0x0200
+GRIPPER_REG   = 1
 
 def d2r(*angles):
     return [a * math.pi / 180 for a in angles]
@@ -78,20 +81,20 @@ DANCE_SEQUENCE = [
 ]
 
 
-def dance(rtde_c, rtde_io_, loops):
+def dance(rtde_c, mb, loops):
     for loop in range(loops):
         print(f"\n  ♪ Loop {loop + 1}/{loops}")
         for name, speed, accel in DANCE_SEQUENCE:
             print(f"    → {name:<12}  vel={speed:.1f} rad/s")
             rtde_c.moveJ(WAYPOINTS[name], speed, accel)
 
-            if rtde_io_ is None:
+            if mb is None:
                 continue
 
             if name == "wave_a":
-                rtde_io_.setToolDigitalOut(0, True)
+                mb.write_register(GRIPPER_REG, GRIPPER_OPEN)
             elif name == "wave_b":
-                rtde_io_.setToolDigitalOut(0, False)
+                mb.write_register(GRIPPER_REG, GRIPPER_CLOSE)
 
     print("\n  ♪ Dança concluída!")
 
@@ -105,9 +108,13 @@ def main():
 
     print(f"Conectando ao UR5e em {args.ip} ...")
     try:
-        rtde_c   = rtde_control.RTDEControlInterface(args.ip)
-        rtde_r   = rtde_receive.RTDEReceiveInterface(args.ip)
-        rtde_io_ = None if args.no_io else rtde_io_mod.RTDEIOInterface(args.ip)
+        rtde_c = rtde_control.RTDEControlInterface(args.ip)
+        rtde_r = rtde_receive.RTDEReceiveInterface(args.ip)
+        mb = None
+        if not args.no_io:
+            mb = ModbusTcpClient(args.ip, port=502)
+            if not mb.connect():
+                raise RuntimeError("Falha ao conectar Modbus TCP (garra)")
     except Exception as e:
         print(f"Erro ao conectar: {e}")
         return
@@ -115,7 +122,7 @@ def main():
     print("Conectado! Iniciando dança...\n")
 
     try:
-        dance(rtde_c, rtde_io_, loops=args.loops)
+        dance(rtde_c, mb, loops=args.loops)
     except KeyboardInterrupt:
         print("\n  Interrompido.")
         rtde_c.stopJ(2.0)
@@ -125,6 +132,8 @@ def main():
     finally:
         rtde_c.disconnect()
         rtde_r.disconnect()
+        if mb:
+            mb.close()
         print("Desconectado.")
 
 
