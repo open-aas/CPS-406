@@ -21,9 +21,14 @@ def d2r(*angles):
 
 
 def _mb_write(mb: ModbusTcpClient, cmd: int):
-    if not mb.is_socket_open():
+    try:
+        if not mb.is_socket_open():
+            mb.connect()
+        mb.write_register(GRIPPER_REG, cmd)
+    except Exception:
+        mb.close()
         mb.connect()
-    mb.write_register(GRIPPER_REG, cmd)
+        mb.write_register(GRIPPER_REG, cmd)
 
 
 # Poses em graus: [J1, J2, J3, J4, J5, J6]

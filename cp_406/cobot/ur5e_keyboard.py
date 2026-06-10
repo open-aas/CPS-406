@@ -14,9 +14,14 @@ import rtde_receive
 from pymodbus.client import ModbusTcpClient
 
 def gripper_write(mb: ModbusTcpClient, cmd: int):
-    if not mb.is_socket_open():
+    try:
+        if not mb.is_socket_open():
+            mb.connect()
+        mb.write_register(GRIPPER_REG, cmd)
+    except Exception:
+        mb.close()
         mb.connect()
-    mb.write_register(GRIPPER_REG, cmd)
+        mb.write_register(GRIPPER_REG, cmd)
 
 ROBOT_IP     = "192.168.1.100"
 SPEED        = 0.5   # rad/s inicial
