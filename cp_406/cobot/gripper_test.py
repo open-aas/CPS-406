@@ -3,7 +3,7 @@
 Testa abertura e fechamento da garra Schunk Co-act EGP via Modbus TCP.
 Resultado confirmado: reg=1, open=0x0500, close=0x0200.
 Execute:
-  python3 cp_406/gripper_test.py --ip 192.168.1.100
+  python3 cp_406/cobot/gripper_test.py --ip 192.168.1.100
 """
 
 import time

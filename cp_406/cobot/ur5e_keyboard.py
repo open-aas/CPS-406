@@ -2,7 +2,7 @@
 """
 Controle manual do UR5e via teclado (modo junta).
 Execute a partir do diretório aas/:
-  python3 cp_406/ur5e_keyboard.py [--ip IP] [--speed V]
+  python3 cp_406/cobot/ur5e_keyboard.py [--ip IP] [--speed V]
 """
 
 import curses

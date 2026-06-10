@@ -15,7 +15,7 @@ Control Word bits:
   0x0100 — Move to position
 
 Execute:
-  python3 cp_406/schunk_egp_test.py --ip 192.168.1.100
+  python3 cp_406/cobot/schunk_egp_test.py --ip 192.168.1.100
 """
 
 import time

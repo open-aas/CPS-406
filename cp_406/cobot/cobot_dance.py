@@ -2,7 +2,7 @@
 """
 Rotina de dança para o cobot UR5e.
 Execute a partir da raiz do repositório:
-  python3 aas/cp_406/cobot_dance.py [--ip IP] [--loops N]
+  python3 aas/cp_406/cobot/cobot_dance.py [--ip IP] [--loops N]
 """
 
 import math

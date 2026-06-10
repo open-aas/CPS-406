@@ -2,7 +2,7 @@
 """
 Controle interativo do UR5e pelo terminal com suporte a I/O e sincronização com AAS.
 Execute a partir da raiz do repositório:
-  python3 aas/cp_406/ur5e_control.py
+  python3 aas/cp_406/cobot/ur5e_control.py
 """
 
 import json
