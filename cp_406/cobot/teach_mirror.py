@@ -20,7 +20,7 @@ import rtde_control
 import rtde_receive
 from pymodbus.client import ModbusTcpClient
 
-ROBOT_IP  = "192.168.1.100"
+ROBOT_IP   = "192.168.1.100"
 SPEED           = 0.3
 ACCEL           = 0.8
 DT              = 1.0 / 125  # período do loop de gravação (125 Hz)
