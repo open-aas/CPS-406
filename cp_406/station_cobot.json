@@ -76,6 +76,24 @@
               "value": "urn:festo:cp-factory:sm:STATION-COBOT:AssetInterfacesDescription"
             }
           ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:STATION-COBOT:CCType"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:STATION-COBOT:CCInstance"
+            }
+          ]
         }
       ]
     }
@@ -7137,6 +7155,1289 @@
                   ]
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:STATION-COBOT:CCType",
+      "idShort": "CCType",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Capability Type"
+        },
+        {
+          "language": "pt",
+          "text": "Tipos de Capacidade"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Capabilities offered by the UR5e cobot at station COBOT (IDTA 02015-1-0)"
+        },
+        {
+          "language": "pt",
+          "text": "Capacidades oferecidas pelo cobot UR5e na estação COBOT (IDTA 02015-1-0)"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/CapabilityType/1/0"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "CapabilitySet",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "MoveJ",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "Capability",
+                  "modelType": "Capability",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityType/Capability/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Move UR5e joints to a target configuration at a given speed"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Mover articulações do UR5e para configuração alvo com velocidade configurável"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "Properties",
+                  "modelType": "SubmodelElementCollection",
+                  "value": [
+                    {
+                      "idShort": "Inputs",
+                      "modelType": "SubmodelElementCollection",
+                      "value": [
+                        {
+                          "idShort": "TargetJoints",
+                          "modelType": "Property",
+                          "valueType": "xs:string",
+                          "value": "[]",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Target joint angles as JSON array of 6 floats [rad]"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Ângulos alvo das juntas como array JSON de 6 floats [rad]"
+                            }
+                          ]
+                        },
+                        {
+                          "idShort": "Speed",
+                          "modelType": "Property",
+                          "valueType": "xs:float",
+                          "value": "0.3",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Joint speed [rad/s]"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Velocidade de junta [rad/s]"
+                            }
+                          ]
+                        },
+                        {
+                          "idShort": "Acceleration",
+                          "modelType": "Property",
+                          "valueType": "xs:float",
+                          "value": "0.5",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Joint acceleration [rad/s²]"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Aceleração de junta [rad/s²]"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "idShort": "Outputs",
+                      "modelType": "SubmodelElementCollection",
+                      "value": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "idShort": "TeachReplay",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "Capability",
+                  "modelType": "Capability",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityType/Capability/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Record a joint trajectory via keyboard and replay it (including J1-mirrored version)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Gravar trajetória via teclado e replicar (incluindo versão espelhada em J1)"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "Properties",
+                  "modelType": "SubmodelElementCollection",
+                  "value": [
+                    {
+                      "idShort": "Inputs",
+                      "modelType": "SubmodelElementCollection",
+                      "value": [
+                        {
+                          "idShort": "SamplingHz",
+                          "modelType": "Property",
+                          "valueType": "xs:int",
+                          "value": "20",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Waypoint sampling rate [Hz]"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Taxa de amostragem dos waypoints [Hz]"
+                            }
+                          ]
+                        },
+                        {
+                          "idShort": "InitialSpeed",
+                          "modelType": "Property",
+                          "valueType": "xs:float",
+                          "value": "0.3",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Initial jogging speed [rad/s]"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Velocidade inicial de jog [rad/s]"
+                            }
+                          ]
+                        },
+                        {
+                          "idShort": "EnableGripper",
+                          "modelType": "Property",
+                          "valueType": "xs:boolean",
+                          "value": "true",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Enable Schunk EGP gripper control during teach"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Habilitar controle da garra Schunk EGP durante ensino"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "idShort": "Outputs",
+                      "modelType": "SubmodelElementCollection",
+                      "value": [
+                        {
+                          "idShort": "WaypointCount",
+                          "modelType": "Property",
+                          "valueType": "xs:int",
+                          "value": "0",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Number of recorded waypoints"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Número de waypoints gravados"
+                            }
+                          ]
+                        },
+                        {
+                          "idShort": "DurationSeconds",
+                          "modelType": "Property",
+                          "valueType": "xs:float",
+                          "value": "0.0",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Trajectory duration [s]"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Duração da trajetória [s]"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "idShort": "GripperOpen",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "Capability",
+                  "modelType": "Capability",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityType/Capability/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Open Schunk EGP gripper to maximum aperture via Modbus TCP MOVE_TO_POSITION"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Abrir garra Schunk EGP para abertura máxima via Modbus TCP MOVE_TO_POSITION"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "Properties",
+                  "modelType": "SubmodelElementCollection",
+                  "value": [
+                    {
+                      "idShort": "Inputs",
+                      "modelType": "SubmodelElementCollection",
+                      "value": [
+                        {
+                          "idShort": "TargetPosition",
+                          "modelType": "Property",
+                          "valueType": "xs:int",
+                          "value": "400",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Target position register value (0=closed, 400=open)"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Valor do registrador de posição alvo (0=fechado, 400=aberto)"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "idShort": "Outputs",
+                      "modelType": "SubmodelElementCollection",
+                      "value": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "idShort": "GripperClose",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "Capability",
+                  "modelType": "Capability",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityType/Capability/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Close Schunk EGP gripper completely via Modbus TCP MOVE_TO_POSITION"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Fechar garra Schunk EGP completamente via Modbus TCP MOVE_TO_POSITION"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "Properties",
+                  "modelType": "SubmodelElementCollection",
+                  "value": [
+                    {
+                      "idShort": "Inputs",
+                      "modelType": "SubmodelElementCollection",
+                      "value": [
+                        {
+                          "idShort": "TargetPosition",
+                          "modelType": "Property",
+                          "valueType": "xs:int",
+                          "value": "0",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Target position register value (0=closed, 400=open)"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Valor do registrador de posição alvo (0=fechado, 400=aberto)"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "idShort": "Outputs",
+                      "modelType": "SubmodelElementCollection",
+                      "value": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "idShort": "HomePosition",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "Capability",
+                  "modelType": "Capability",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityType/Capability/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Return to home joint configuration [0°, -90°, 0°, -90°, 0°, 0°]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Retornar à configuração HOME [0°, -90°, 0°, -90°, 0°, 0°]"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "Properties",
+                  "modelType": "SubmodelElementCollection",
+                  "value": [
+                    {
+                      "idShort": "Inputs",
+                      "modelType": "SubmodelElementCollection",
+                      "value": [
+                        {
+                          "idShort": "Speed",
+                          "modelType": "Property",
+                          "valueType": "xs:float",
+                          "value": "0.3",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Joint speed [rad/s]"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Velocidade de junta [rad/s]"
+                            }
+                          ]
+                        },
+                        {
+                          "idShort": "Acceleration",
+                          "modelType": "Property",
+                          "valueType": "xs:float",
+                          "value": "0.5",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Joint acceleration [rad/s²]"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Aceleração de junta [rad/s²]"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "idShort": "Outputs",
+                      "modelType": "SubmodelElementCollection",
+                      "value": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "idShort": "Dance",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "Capability",
+                  "modelType": "Capability",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityType/Capability/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Execute the choreographed dance sequence with optional gripper control"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Executar sequência de dança coreografada com controle opcional da garra"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "Properties",
+                  "modelType": "SubmodelElementCollection",
+                  "value": [
+                    {
+                      "idShort": "Inputs",
+                      "modelType": "SubmodelElementCollection",
+                      "value": [
+                        {
+                          "idShort": "Loops",
+                          "modelType": "Property",
+                          "valueType": "xs:int",
+                          "value": "1",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Number of dance repetitions"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Número de repetições da dança"
+                            }
+                          ]
+                        },
+                        {
+                          "idShort": "EnableGripper",
+                          "modelType": "Property",
+                          "valueType": "xs:boolean",
+                          "value": "true",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Enable gripper open/close during wave moves"
+                            },
+                            {
+                              "language": "pt",
+                              "text": "Habilitar abertura/fechamento da garra durante os movimentos wave"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "idShort": "Outputs",
+                      "modelType": "SubmodelElementCollection",
+                      "value": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/CapabilityType/CapabilitySet/1/0"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "Set of capabilities provided by the UR5e cobot"
+            },
+            {
+              "language": "pt",
+              "text": "Conjunto de capacidades oferecidas pelo cobot UR5e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:STATION-COBOT:CCInstance",
+      "idShort": "CCInstance",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Capability Instance"
+        },
+        {
+          "language": "pt",
+          "text": "Instância de Capacidade — Estado de Execução"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Runtime execution state of each UR5e cobot capability (IDTA 02016-1-0)"
+        },
+        {
+          "language": "pt",
+          "text": "Estado de execução em tempo real de cada capacidade do cobot UR5e (IDTA 02016-1-0)"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/CapabilityInstance/1/0"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "CapabilityInstanceSet",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "MoveJ",
+              "modelType": "SubmodelElementCollection",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityInstance/1/0"
+                  }
+                ]
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Move UR5e joints to a target configuration at a given speed"
+                },
+                {
+                  "language": "pt",
+                  "text": "Mover articulações do UR5e para configuração alvo com velocidade configurável"
+                }
+              ],
+              "value": [
+                {
+                  "idShort": "State",
+                  "modelType": "Property",
+                  "valueType": "xs:string",
+                  "value": "Idle",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityInstance/State/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Current execution state: Idle | Running | Paused | Aborted | Completed | Error"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Estado atual de execução: Idle | Running | Paused | Aborted | Completed | Error"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "CapabilityTypeRef",
+                  "modelType": "ReferenceElement",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityTypeRef/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Reference to the Capability declaration in CCType"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Referência à declaração de capacidade no CCType"
+                    }
+                  ],
+                  "value": {
+                    "type": "ModelReference",
+                    "keys": [
+                      {
+                        "type": "Submodel",
+                        "value": "urn:festo:cp-factory:sm:STATION-COBOT:CCType"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "CapabilitySet"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "MoveJ"
+                      },
+                      {
+                        "type": "Capability",
+                        "value": "Capability"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "idShort": "LastExecutedAt",
+                  "modelType": "Property",
+                  "valueType": "xs:dateTime",
+                  "value": "",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Timestamp of the last completed execution (ISO 8601)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Timestamp da última execução concluída (ISO 8601)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "idShort": "TeachReplay",
+              "modelType": "SubmodelElementCollection",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityInstance/1/0"
+                  }
+                ]
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Record a joint trajectory via keyboard and replay it (including J1-mirrored version)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Gravar trajetória via teclado e replicar (incluindo versão espelhada em J1)"
+                }
+              ],
+              "value": [
+                {
+                  "idShort": "State",
+                  "modelType": "Property",
+                  "valueType": "xs:string",
+                  "value": "Idle",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityInstance/State/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Current execution state: Idle | Running | Paused | Aborted | Completed | Error"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Estado atual de execução: Idle | Running | Paused | Aborted | Completed | Error"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "CapabilityTypeRef",
+                  "modelType": "ReferenceElement",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityTypeRef/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Reference to the Capability declaration in CCType"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Referência à declaração de capacidade no CCType"
+                    }
+                  ],
+                  "value": {
+                    "type": "ModelReference",
+                    "keys": [
+                      {
+                        "type": "Submodel",
+                        "value": "urn:festo:cp-factory:sm:STATION-COBOT:CCType"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "CapabilitySet"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "TeachReplay"
+                      },
+                      {
+                        "type": "Capability",
+                        "value": "Capability"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "idShort": "LastExecutedAt",
+                  "modelType": "Property",
+                  "valueType": "xs:dateTime",
+                  "value": "",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Timestamp of the last completed execution (ISO 8601)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Timestamp da última execução concluída (ISO 8601)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "idShort": "GripperOpen",
+              "modelType": "SubmodelElementCollection",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityInstance/1/0"
+                  }
+                ]
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Open Schunk EGP gripper to maximum aperture via Modbus TCP MOVE_TO_POSITION"
+                },
+                {
+                  "language": "pt",
+                  "text": "Abrir garra Schunk EGP para abertura máxima via Modbus TCP MOVE_TO_POSITION"
+                }
+              ],
+              "value": [
+                {
+                  "idShort": "State",
+                  "modelType": "Property",
+                  "valueType": "xs:string",
+                  "value": "Idle",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityInstance/State/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Current execution state: Idle | Running | Paused | Aborted | Completed | Error"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Estado atual de execução: Idle | Running | Paused | Aborted | Completed | Error"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "CapabilityTypeRef",
+                  "modelType": "ReferenceElement",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityTypeRef/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Reference to the Capability declaration in CCType"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Referência à declaração de capacidade no CCType"
+                    }
+                  ],
+                  "value": {
+                    "type": "ModelReference",
+                    "keys": [
+                      {
+                        "type": "Submodel",
+                        "value": "urn:festo:cp-factory:sm:STATION-COBOT:CCType"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "CapabilitySet"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "GripperOpen"
+                      },
+                      {
+                        "type": "Capability",
+                        "value": "Capability"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "idShort": "LastExecutedAt",
+                  "modelType": "Property",
+                  "valueType": "xs:dateTime",
+                  "value": "",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Timestamp of the last completed execution (ISO 8601)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Timestamp da última execução concluída (ISO 8601)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "idShort": "GripperClose",
+              "modelType": "SubmodelElementCollection",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityInstance/1/0"
+                  }
+                ]
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Close Schunk EGP gripper completely via Modbus TCP MOVE_TO_POSITION"
+                },
+                {
+                  "language": "pt",
+                  "text": "Fechar garra Schunk EGP completamente via Modbus TCP MOVE_TO_POSITION"
+                }
+              ],
+              "value": [
+                {
+                  "idShort": "State",
+                  "modelType": "Property",
+                  "valueType": "xs:string",
+                  "value": "Idle",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityInstance/State/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Current execution state: Idle | Running | Paused | Aborted | Completed | Error"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Estado atual de execução: Idle | Running | Paused | Aborted | Completed | Error"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "CapabilityTypeRef",
+                  "modelType": "ReferenceElement",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityTypeRef/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Reference to the Capability declaration in CCType"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Referência à declaração de capacidade no CCType"
+                    }
+                  ],
+                  "value": {
+                    "type": "ModelReference",
+                    "keys": [
+                      {
+                        "type": "Submodel",
+                        "value": "urn:festo:cp-factory:sm:STATION-COBOT:CCType"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "CapabilitySet"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "GripperClose"
+                      },
+                      {
+                        "type": "Capability",
+                        "value": "Capability"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "idShort": "LastExecutedAt",
+                  "modelType": "Property",
+                  "valueType": "xs:dateTime",
+                  "value": "",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Timestamp of the last completed execution (ISO 8601)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Timestamp da última execução concluída (ISO 8601)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "idShort": "HomePosition",
+              "modelType": "SubmodelElementCollection",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityInstance/1/0"
+                  }
+                ]
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Return to home joint configuration [0°, -90°, 0°, -90°, 0°, 0°]"
+                },
+                {
+                  "language": "pt",
+                  "text": "Retornar à configuração HOME [0°, -90°, 0°, -90°, 0°, 0°]"
+                }
+              ],
+              "value": [
+                {
+                  "idShort": "State",
+                  "modelType": "Property",
+                  "valueType": "xs:string",
+                  "value": "Idle",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityInstance/State/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Current execution state: Idle | Running | Paused | Aborted | Completed | Error"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Estado atual de execução: Idle | Running | Paused | Aborted | Completed | Error"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "CapabilityTypeRef",
+                  "modelType": "ReferenceElement",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityTypeRef/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Reference to the Capability declaration in CCType"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Referência à declaração de capacidade no CCType"
+                    }
+                  ],
+                  "value": {
+                    "type": "ModelReference",
+                    "keys": [
+                      {
+                        "type": "Submodel",
+                        "value": "urn:festo:cp-factory:sm:STATION-COBOT:CCType"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "CapabilitySet"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "HomePosition"
+                      },
+                      {
+                        "type": "Capability",
+                        "value": "Capability"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "idShort": "LastExecutedAt",
+                  "modelType": "Property",
+                  "valueType": "xs:dateTime",
+                  "value": "",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Timestamp of the last completed execution (ISO 8601)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Timestamp da última execução concluída (ISO 8601)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "idShort": "Dance",
+              "modelType": "SubmodelElementCollection",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityInstance/1/0"
+                  }
+                ]
+              },
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Execute the choreographed dance sequence with optional gripper control"
+                },
+                {
+                  "language": "pt",
+                  "text": "Executar sequência de dança coreografada com controle opcional da garra"
+                }
+              ],
+              "value": [
+                {
+                  "idShort": "State",
+                  "modelType": "Property",
+                  "valueType": "xs:string",
+                  "value": "Idle",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityInstance/State/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Current execution state: Idle | Running | Paused | Aborted | Completed | Error"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Estado atual de execução: Idle | Running | Paused | Aborted | Completed | Error"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "CapabilityTypeRef",
+                  "modelType": "ReferenceElement",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityTypeRef/1/0"
+                      }
+                    ]
+                  },
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Reference to the Capability declaration in CCType"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Referência à declaração de capacidade no CCType"
+                    }
+                  ],
+                  "value": {
+                    "type": "ModelReference",
+                    "keys": [
+                      {
+                        "type": "Submodel",
+                        "value": "urn:festo:cp-factory:sm:STATION-COBOT:CCType"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "CapabilitySet"
+                      },
+                      {
+                        "type": "SubmodelElementCollection",
+                        "value": "Dance"
+                      },
+                      {
+                        "type": "Capability",
+                        "value": "Capability"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "idShort": "LastExecutedAt",
+                  "modelType": "Property",
+                  "valueType": "xs:dateTime",
+                  "value": "",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Timestamp of the last completed execution (ISO 8601)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Timestamp da última execução concluída (ISO 8601)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/CapabilityInstance/CapabilityInstanceSet/1/0"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "Current execution states for each capability"
+            },
+            {
+              "language": "pt",
+              "text": "Estados de execução atuais de cada capacidade"
             }
           ]
         }
