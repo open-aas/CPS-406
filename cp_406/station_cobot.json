@@ -2148,6 +2148,68 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
+          "idShort": "RelatedSubmodels",
+          "value": [
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Robot_Nameplate",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Robot Nameplate (UR5e)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Nameplate do robô (UR5e)"
+                }
+              ],
+              "value": {
+                "type": "ModelReference",
+                "keys": [
+                  {
+                    "type": "Submodel",
+                    "value": "urn:festo:cp-factory:sm:UR5e-COBOT:Nameplate"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Robot_TechnicalData",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Robot Technical Data (UR5e)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Dados técnicos do robô (UR5e)"
+                }
+              ],
+              "value": {
+                "type": "ModelReference",
+                "keys": [
+                  {
+                    "type": "Submodel",
+                    "value": "urn:festo:cp-factory:sm:UR5e-COBOT:TechnicalData"
+                  }
+                ]
+              }
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "References to Nameplate and TechnicalData submodels"
+            },
+            {
+              "language": "pt",
+              "text": "Referências aos submodelos Nameplate e TechnicalData desta estação"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
           "idShort": "InterfaceRTDE",
           "semanticId": {
             "type": "ExternalReference",

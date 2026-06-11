@@ -16,10 +16,22 @@ from pymodbus.client import ModbusTcpClient
 
 # ── Constantes ────────────────────────────────────────────────────────────────
 ROBOT_IP   = "192.168.1.100"
-SPEED      = 0.1          # rad/s inicial — use + para aumentar
-ACCEL      = 0.5          # rad/s²
-DT         = 1.0 / 125    # período do loop de controle (125 Hz)
-STOP_AFTER = 0.6          # s sem tecla antes de parar
+SPEED           = 0.3          # rad/s inicial — use + para aumentar
+ACCEL           = 0.5          # rad/s²
+DT              = 1.0 / 125    # período do loop de controle (125 Hz)
+STOP_AFTER      = 0.6          # s sem tecla antes de parar
+MAX_JOINT_SPEED = 3.3          # rad/s — safety.conf maxJointSpeed (3.3416 rad/s ≈ 191°/s)
+MIN_JOINT_POS   = math.radians(-363.0)  # safety.conf minRevolutions=-2 + fracionário
+MAX_JOINT_POS   = math.radians( 363.0)  # safety.conf maxRevolutions=+1 + fracionário
+JOINT_MARGIN    = math.radians(   5.0)  # margem de soft stop antes do limite
+
+# Planos de segurança ativos (safety.conf): n·p + d >= 0 é zona segura
+SAFETY_PLANES = [
+    ( 0.7357, -0.6770,  0.0130, 0.354),  # plano1 — diagonal XY
+    ( 0.0239, -0.0417,  0.9988, 0.164),  # plano3 — horizontal (TCP z > -164 mm)
+]
+PLANE_MARGIN    = 0.05   # 50 mm — soft wall antes do C152A0
+PLANE_LOOKAHEAD = 0.08   # s — janela FK para detectar direção de aproximação
 GRIPPER_OPEN  = 0x0500
 GRIPPER_CLOSE = 0x0200
 GRIPPER_REG   = 1
@@ -104,6 +116,11 @@ def redraw(stdscr, rtde_r, speed, gripper_state, msg=""):
     stdscr.refresh()
 
 
+def _min_plane_dist(pose):
+    """Menor distância signed do TCP a qualquer plano ativo. Negativo = fora da zona segura."""
+    return min(a*pose[0] + b*pose[1] + c*pose[2] + d for a, b, c, d in SAFETY_PLANES)
+
+
 # ── Loop principal curses ─────────────────────────────────────────────────────
 def run(stdscr, rtde_c, rtde_r, mb, speed):
     """
@@ -137,7 +154,7 @@ def run(stdscr, rtde_c, rtde_r, mb, speed):
                 jogging       = True
 
             elif key in (ord('+'), ord('=')):
-                speed = min(speed + 0.1, 2.0)
+                speed = min(speed + 0.1, MAX_JOINT_SPEED)
 
             elif key == ord('-'):
                 speed = max(speed - 0.1, 0.1)
@@ -166,7 +183,29 @@ def run(stdscr, rtde_c, rtde_r, mb, speed):
 
             # ── Comando de velocidade (125 Hz) ───────────────────────────
             if jogging:
-                vel = [d * speed for d in current_dir]
+                q = rtde_r.getActualQ()
+                vel = []
+                for d, pos in zip(current_dir, q):
+                    v = d * speed
+                    if v > 0 and pos > MAX_JOINT_POS - JOINT_MARGIN:
+                        v = 0.0
+                    elif v < 0 and pos < MIN_JOINT_POS + JOINT_MARGIN:
+                        v = 0.0
+                    vel.append(v)
+
+                # soft wall por junta: zera só as articulações que aproximam do plano
+                pose_now = rtde_r.getActualTCPPose()
+                dist_now = _min_plane_dist(pose_now)
+                if dist_now < PLANE_MARGIN:
+                    for i in range(6):
+                        if vel[i] == 0.0:
+                            continue
+                        q_chk = list(q)
+                        q_chk[i] += vel[i] * PLANE_LOOKAHEAD
+                        pose_chk = rtde_c.getForwardKinematics(q_chk)
+                        if _min_plane_dist(list(pose_chk)) < dist_now:
+                            vel[i] = 0.0
+
                 rtde_c.speedJ(vel, ACCEL, DT)
 
             # ── Redesenho a ~5 Hz ────────────────────────────────────────

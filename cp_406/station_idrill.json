@@ -90,6 +90,15 @@
               "value": "urn:festo:cp-factory:sm:STATION-IDRILL:ProductionOrder"
             }
           ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:festo:cp-factory:sm:STATION-IDRILL:AssetInterfacesDescription"
+            }
+          ]
         }
       ]
     }
@@ -4409,6 +4418,646 @@
             {
               "language": "pt",
               "text": "Catálogo de referência de todas as peças usadas no CP-406 (manual p.42)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelType": "Submodel",
+      "id": "urn:festo:cp-factory:sm:STATION-IDRILL:AssetInterfacesDescription",
+      "idShort": "AssetInterfacesDescription",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Station iDRILL — Industrial Drill"
+        },
+        {
+          "language": "pt",
+          "text": "Estação iDRILL — Furadeira Industrial"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "IDTA 02017-1-0: communication interfaces of iDRILL station (OPC UA / Siemens ET200SP)"
+        },
+        {
+          "language": "pt",
+          "text": "IDTA 02017-1-0: interfaces de comunicação da estação iDRILL (OPC UA / Siemens ET200SP)"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/Submodel"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "RelatedSubmodels",
+          "value": [
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Conveyor_Nameplate",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Conveyor Nameplate (Linear V2)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Nameplate da esteira (Linear V2)"
+                }
+              ],
+              "value": {
+                "type": "ModelReference",
+                "keys": [
+                  {
+                    "type": "Submodel",
+                    "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-iDRILL:Nameplate"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Conveyor_TechnicalData",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Conveyor Technical Data (Linear V2)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Dados técnicos da esteira (Linear V2)"
+                }
+              ],
+              "value": {
+                "type": "ModelReference",
+                "keys": [
+                  {
+                    "type": "Submodel",
+                    "value": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-iDRILL:TechnicalData"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Module_Nameplate",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Module Nameplate (CP-AM-iDRILL)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Nameplate do módulo (CP-AM-iDRILL)"
+                }
+              ],
+              "value": {
+                "type": "ModelReference",
+                "keys": [
+                  {
+                    "type": "Submodel",
+                    "value": "urn:festo:cp-factory:sm:CP-AM-iDRILL:Nameplate"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "ReferenceElement",
+              "idShort": "Module_TechnicalData",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Module Technical Data (CP-AM-iDRILL)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Dados técnicos do módulo (CP-AM-iDRILL)"
+                }
+              ],
+              "value": {
+                "type": "ModelReference",
+                "keys": [
+                  {
+                    "type": "Submodel",
+                    "value": "urn:festo:cp-factory:sm:CP-AM-iDRILL:TechnicalData"
+                  }
+                ]
+              }
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "References to Nameplate and TechnicalData submodels"
+            },
+            {
+              "language": "pt",
+              "text": "Referências aos submodelos Nameplate e TechnicalData desta estação"
+            }
+          ]
+        },
+        {
+          "modelType": "SubmodelElementCollection",
+          "idShort": "InterfaceOPCUA",
+          "value": [
+            {
+              "modelType": "Property",
+              "idShort": "title",
+              "valueType": "xs:string",
+              "value": "OPC UA — iDRILL"
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "EndpointMetadata",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "base",
+                  "valueType": "xs:anyURI",
+                  "value": "opc.tcp://172.21.3.1:4840",
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://www.w3.org/2019/wot/td#baseURI"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "contentType",
+                  "valueType": "xs:string",
+                  "value": "application/opcua"
+                },
+                {
+                  "modelType": "SubmodelElementList",
+                  "idShort": "security",
+                  "typeValueListElement": "Property",
+                  "value": [
+                    {
+                      "modelType": "Property",
+                      "idShort": "nosec",
+                      "valueType": "xs:string",
+                      "value": "nosec_sc"
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://www.w3.org/2019/wot/td#hasSecurityConfiguration"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "modelType": "SubmodelElementCollection",
+                  "idShort": "securityDefinitions",
+                  "value": [
+                    {
+                      "modelType": "SubmodelElementCollection",
+                      "idShort": "nosec_sc",
+                      "value": [
+                        {
+                          "modelType": "Property",
+                          "idShort": "scheme",
+                          "valueType": "xs:string",
+                          "value": "nosec"
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://www.w3.org/2019/wot/security#NoSecurityScheme"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/AssetInterfacesDescription/1/0/EndpointMetadata"
+                  }
+                ]
+              }
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "InteractionMetadata",
+              "value": [
+                {
+                  "modelType": "SubmodelElementCollection",
+                  "idShort": "properties",
+                  "value": [
+                    {
+                      "modelType": "SubmodelElementCollection",
+                      "idShort": "BG1_CarrierPresence",
+                      "value": [
+                        {
+                          "modelType": "Property",
+                          "idShort": "title",
+                          "valueType": "xs:string",
+                          "value": "BG1 Carrier Presence",
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "observable",
+                          "valueType": "xs:boolean",
+                          "value": "true",
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://www.w3.org/2019/wot/td#isObservable"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "type",
+                          "valueType": "xs:string",
+                          "value": "boolean"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "readOnly",
+                          "valueType": "xs:boolean",
+                          "value": "true"
+                        },
+                        {
+                          "modelType": "SubmodelElementList",
+                          "idShort": "forms",
+                          "typeValueListElement": "SubmodelElementCollection",
+                          "value": [
+                            {
+                              "modelType": "SubmodelElementCollection",
+                              "idShort": "form0",
+                              "value": [
+                                {
+                                  "modelType": "Property",
+                                  "idShort": "href",
+                                  "valueType": "xs:anyURI",
+                                  "value": "2:DeviceSet/3:plciDrill/3:Inputs/3:xBG1_BCD0"
+                                },
+                                {
+                                  "modelType": "Property",
+                                  "idShort": "contentType",
+                                  "valueType": "xs:string",
+                                  "value": "application/opcua"
+                                },
+                                {
+                                  "modelType": "Property",
+                                  "idShort": "op",
+                                  "valueType": "xs:string",
+                                  "value": "readproperty observeproperty"
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://www.w3.org/2019/wot/td#hasForm"
+                                  }
+                                ]
+                              }
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://www.w3.org/2019/wot/td#hasForm"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
+                          }
+                        ]
+                      },
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "BG1 Carrier Presence"
+                        },
+                        {
+                          "language": "pt",
+                          "text": "Sensor de presença de portador BG1"
+                        }
+                      ]
+                    },
+                    {
+                      "modelType": "SubmodelElementCollection",
+                      "idShort": "MB20_BeltMotor",
+                      "value": [
+                        {
+                          "modelType": "Property",
+                          "idShort": "title",
+                          "valueType": "xs:string",
+                          "value": "MB20 Belt Motor",
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "observable",
+                          "valueType": "xs:boolean",
+                          "value": "true",
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://www.w3.org/2019/wot/td#isObservable"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "type",
+                          "valueType": "xs:string",
+                          "value": "boolean"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "readOnly",
+                          "valueType": "xs:boolean",
+                          "value": "false"
+                        },
+                        {
+                          "modelType": "SubmodelElementList",
+                          "idShort": "forms",
+                          "typeValueListElement": "SubmodelElementCollection",
+                          "value": [
+                            {
+                              "modelType": "SubmodelElementCollection",
+                              "idShort": "form0",
+                              "value": [
+                                {
+                                  "modelType": "Property",
+                                  "idShort": "href",
+                                  "valueType": "xs:anyURI",
+                                  "value": "2:DeviceSet/3:plciDrill/3:Outputs/3:xQA1_A1"
+                                },
+                                {
+                                  "modelType": "Property",
+                                  "idShort": "contentType",
+                                  "valueType": "xs:string",
+                                  "value": "application/opcua"
+                                },
+                                {
+                                  "modelType": "Property",
+                                  "idShort": "op",
+                                  "valueType": "xs:string",
+                                  "value": "readproperty writeproperty"
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://www.w3.org/2019/wot/td#hasForm"
+                                  }
+                                ]
+                              }
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://www.w3.org/2019/wot/td#hasForm"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
+                          }
+                        ]
+                      },
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "MB20 Belt Motor"
+                        },
+                        {
+                          "language": "pt",
+                          "text": "Motor da esteira MB20"
+                        }
+                      ]
+                    },
+                    {
+                      "modelType": "SubmodelElementCollection",
+                      "idShort": "Y1_StopperCylinder",
+                      "value": [
+                        {
+                          "modelType": "Property",
+                          "idShort": "title",
+                          "valueType": "xs:string",
+                          "value": "Y1 Stopper Cylinder",
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "observable",
+                          "valueType": "xs:boolean",
+                          "value": "true",
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://www.w3.org/2019/wot/td#isObservable"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "type",
+                          "valueType": "xs:string",
+                          "value": "boolean"
+                        },
+                        {
+                          "modelType": "Property",
+                          "idShort": "readOnly",
+                          "valueType": "xs:boolean",
+                          "value": "false"
+                        },
+                        {
+                          "modelType": "SubmodelElementList",
+                          "idShort": "forms",
+                          "typeValueListElement": "SubmodelElementCollection",
+                          "value": [
+                            {
+                              "modelType": "SubmodelElementCollection",
+                              "idShort": "form0",
+                              "value": [
+                                {
+                                  "modelType": "Property",
+                                  "idShort": "href",
+                                  "valueType": "xs:anyURI",
+                                  "value": "2:DeviceSet/3:plciDrill/3:Outputs/3:xMB1"
+                                },
+                                {
+                                  "modelType": "Property",
+                                  "idShort": "contentType",
+                                  "valueType": "xs:string",
+                                  "value": "application/opcua"
+                                },
+                                {
+                                  "modelType": "Property",
+                                  "idShort": "op",
+                                  "valueType": "xs:string",
+                                  "value": "readproperty writeproperty"
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://www.w3.org/2019/wot/td#hasForm"
+                                  }
+                                ]
+                              }
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://www.w3.org/2019/wot/td#hasForm"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
+                          }
+                        ]
+                      },
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Y1 Stopper Cylinder"
+                        },
+                        {
+                          "language": "pt",
+                          "text": "Cilindro bloqueador Y1"
+                        }
+                      ]
+                    }
+                  ],
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Mapped I/O signals"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Sinais de E/S mapeados"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://www.w3.org/2019/wot/td#"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "OPC UA interface to the Siemens ET200SP PLC at 172.21.3.1"
+            },
+            {
+              "language": "pt",
+              "text": "Interface OPC UA para o CLP Siemens ET200SP em 172.21.3.1"
+            }
+          ],
+          "displayName": [
+            {
+              "language": "en",
+              "text": "OPC UA — plciDrill"
+            },
+            {
+              "language": "pt",
+              "text": "OPC UA — plciDrill"
             }
           ]
         }
