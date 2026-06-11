@@ -18,6 +18,7 @@ import argparse
 import threading
 import rtde_control
 import rtde_receive
+from pymodbus.client import ModbusTcpClient
 
 ROBOT_IP  = "192.168.1.100"
 SPEED           = 0.3
@@ -39,6 +40,10 @@ RECORD_HZ      = 20   # Hz de amostragem durante gravação
 SERVO_T   = 1.0 / RECORD_HZ
 LOOKAHEAD = 0.1
 GAIN      = 300
+
+GRIPPER_OPEN  = 0x0500
+GRIPPER_CLOSE = 0x0200
+GRIPPER_REG   = 1
 
 KEY_VEL = {
     ord('q'): ( 1, 0, 0, 0, 0, 0),
@@ -66,10 +71,26 @@ LAYOUT = """\
  │  t / g        │  J5  +/−   pulso 2                   │
  │  y / h        │  J6  +/−   pulso 3 (ferramenta)      │
  ├───────────────┼──────────────────────────────────────┤
+ │  o            │  garra abrir                         │
+ │  c            │  garra fechar                        │
+ ├───────────────┼──────────────────────────────────────┤
  │  + / -        │  aumentar / reduzir velocidade       │
  │  ENTER        │  parar gravação e avançar            │
  │  ESC          │  cancelar e sair                     │
  └───────────────┴──────────────────────────────────────┘"""
+
+
+def gripper_write(mb, cmd):
+    if mb is None:
+        return
+    try:
+        if not mb.is_socket_open():
+            mb.connect()
+        mb.write_register(GRIPPER_REG, cmd)
+    except Exception:
+        mb.close()
+        mb.connect()
+        mb.write_register(GRIPPER_REG, cmd)
 
 
 def _min_plane_dist(pose):
@@ -100,12 +121,14 @@ def _call_with_timeout(fn, timeout=2.0):
 
 # ── Fase 1: gravar via teclado (125 Hz — padrão initPeriod/waitPeriod) ────────
 
-def record_keyboard(stdscr, rtde_c, rtde_r, initial_speed, hz):
+def record_keyboard(stdscr, rtde_c, rtde_r, mb, initial_speed, hz):
     curses.curs_set(0)
     stdscr.timeout(0)           # non-blocking, igual ao ur5e_keyboard
 
     interval       = 1.0 / hz
     waypoints      = []
+    gripper_states = []         # True=aberta, False=fechada, None=desconhecida
+    gripper_open   = None
     last_rec       = time.monotonic()
     last_key_time  = 0.0
     current_dir    = [0.0] * 6
@@ -116,15 +139,17 @@ def record_keyboard(stdscr, rtde_c, rtde_r, initial_speed, hz):
     layout_rows = LAYOUT.count('\n') + 1
 
     def redraw(msg=""):
-        joints = rtde_r.getActualQ()
-        pose   = rtde_r.getActualTCPPose()
-        dur    = len(waypoints) / hz if waypoints else 0.0
+        joints   = rtde_r.getActualQ()
+        pose     = rtde_r.getActualTCPPose()
+        dur      = len(waypoints) / hz if waypoints else 0.0
+        g_label  = ("ABERTA" if gripper_open else "FECHADA") if gripper_open is not None else "---"
         stdscr.clear()
         for i, line in enumerate(LAYOUT.splitlines()):
             safe_addstr(stdscr, i, 0, line)
         row = layout_rows + 1
         safe_addstr(stdscr, row, 0,
-            f"  Vel: {speed:.2f} rad/s   Pontos: {len(waypoints)}  ({dur:.1f} s gravados)")
+            f"  Vel: {speed:.2f} rad/s   Garra: {g_label}   "
+            f"Pontos: {len(waypoints)}  ({dur:.1f} s)")
         safe_addstr(stdscr, row+1, 0,
             "  Juntas: " + "  ".join(
                 f"J{i+1}={math.degrees(j):+.1f}°" for i, j in enumerate(joints)))
@@ -142,9 +167,10 @@ def record_keyboard(stdscr, rtde_c, rtde_r, initial_speed, hz):
             now     = time.monotonic()
             key     = stdscr.getch()
 
-            # ── Sample ──────────────────────────────────────────────────
+            # ── Sample (juntas + estado da garra) ────────────────────────
             if now - last_rec >= interval:
                 waypoints.append(list(rtde_r.getActualQ()))
+                gripper_states.append(gripper_open)
                 last_rec = now
 
             # ── Teclas ──────────────────────────────────────────────────
@@ -160,6 +186,14 @@ def record_keyboard(stdscr, rtde_c, rtde_r, initial_speed, hz):
                 last_key_time = now
                 current_dir   = list(KEY_VEL[key])
                 jogging       = True
+
+            elif key == ord('o'):
+                gripper_write(mb, GRIPPER_OPEN)
+                gripper_open = True
+
+            elif key == ord('c'):
+                gripper_write(mb, GRIPPER_CLOSE)
+                gripper_open = False
 
             elif key in (ord('+'), ord('=')):
                 speed = min(speed + 0.1, MAX_JOINT_SPEED)
@@ -211,12 +245,12 @@ def record_keyboard(stdscr, rtde_c, rtde_r, initial_speed, hz):
         if jogging:
             rtde_c.speedStop(ACCEL)
 
-    return waypoints
+    return waypoints, gripper_states
 
 
 # ── Fase 2/3: replay ────────────────────────────────────────────────────────
 
-def replay(rtde_c, rtde_r, waypoints, label):
+def replay(rtde_c, rtde_r, mb, waypoints, gripper_states, label):
     if not waypoints:
         return
     total = len(waypoints)
@@ -226,15 +260,22 @@ def replay(rtde_c, rtde_r, waypoints, label):
     rtde_c.moveJ(waypoints[0], 0.5, 0.8)
     print(f"  {label}: {total} pontos  ({dur:.1f} s)  — Ctrl+C para cancelar")
 
-    t0 = time.monotonic()
+    t0           = time.monotonic()
+    prev_gripper = None     # envia comando apenas quando o estado muda
+
     try:
-        for i, q in enumerate(waypoints):
+        for i, (q, g) in enumerate(zip(waypoints, gripper_states)):
             rtde_c.servoJ(q, 0.0, 0.0, SERVO_T, LOOKAHEAD, GAIN)
+
+            # aciona garra se estado mudou
+            if g is not None and g != prev_gripper:
+                gripper_write(mb, GRIPPER_OPEN if g else GRIPPER_CLOSE)
+                prev_gripper = g
 
             # progresso a cada segundo
             if i % max(1, int(1.0 / SERVO_T)) == 0:
                 elapsed = time.monotonic() - t0
-                pct = 100 * i // total
+                pct     = 100 * i // total
                 print(f"\r    {pct:3d}%  {elapsed:.1f}/{dur:.1f} s", end="", flush=True)
 
             target = (i + 1) * SERVO_T
@@ -263,6 +304,8 @@ def main():
                         help=f"Taxa de amostragem Hz (padrão {RECORD_HZ})")
     parser.add_argument("--speed", type=float, default=SPEED,
                         help=f"Velocidade inicial rad/s (padrão {SPEED})")
+    parser.add_argument("--no-io", action="store_true",
+                        help="Desativa controle da garra (sem Modbus TCP)")
     args = parser.parse_args()
 
     RECORD_HZ = args.hz
@@ -272,22 +315,30 @@ def main():
     try:
         rtde_c = rtde_control.RTDEControlInterface(args.ip)
         rtde_r = rtde_receive.RTDEReceiveInterface(args.ip)
+        mb = None
+        if not args.no_io:
+            mb = ModbusTcpClient(args.ip, port=502)
+            if not mb.connect():
+                print("  Aviso: falha ao conectar Modbus TCP (garra desativada)")
+                mb = None
     except Exception as e:
         print(f"Erro: {e}")
         return
 
     print("Conectado.\n")
 
-    waypoints = None
+    waypoints = gripper_states = None
     try:
         # ── Fase 1: Ensinar ────────────────────────────────────────────────
         print("=== FASE 1: ENSINAR ===")
         print("Abrindo interface de teclado...")
-        waypoints = curses.wrapper(record_keyboard, rtde_c, rtde_r, args.speed, args.hz)
+        result = curses.wrapper(record_keyboard, rtde_c, rtde_r, mb, args.speed, args.hz)
 
-        if waypoints is None:
+        if result is None:
             print("Cancelado pelo usuário.")
             return
+
+        waypoints, gripper_states = result
 
         if len(waypoints) < 2:
             print("Trajetória muito curta. Encerrando.")
@@ -298,13 +349,13 @@ def main():
         # ── Fase 2: Replicar ───────────────────────────────────────────────
         print("\n=== FASE 2: REPLICAR ===")
         input("Pressione ENTER para replicar a trajetória...")
-        replay(rtde_c, rtde_r, waypoints, label="Replicando")
+        replay(rtde_c, rtde_r, mb, waypoints, gripper_states, label="Replicando")
 
         # ── Fase 3: Espelho ────────────────────────────────────────────────
         print("\n=== FASE 3: ESPELHO ===")
         input("Pressione ENTER para replicar como ESPELHO (J1 negado)...")
         mirrored = [mirror_q(q) for q in waypoints]
-        replay(rtde_c, rtde_r, mirrored, label="Espelho")
+        replay(rtde_c, rtde_r, mb, mirrored, gripper_states, label="Espelho")
 
     except KeyboardInterrupt:
         print("\nInterrompido.")
@@ -315,6 +366,8 @@ def main():
     finally:
         _call_with_timeout(rtde_c.disconnect)
         _call_with_timeout(rtde_r.disconnect)
+        if mb:
+            _call_with_timeout(mb.close)
         print("Desconectado.")
 
 
