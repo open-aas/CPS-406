@@ -22,8 +22,8 @@ import rtde_receive
 ROBOT_IP  = "192.168.1.100"
 SPEED           = 0.3
 ACCEL           = 0.8
-POLL_MS         = 50     # ms — polling do curses
-STOP_AFTER      = 0.55   # segundos sem tecla antes de parar
+DT              = 1.0 / 125  # período do loop de gravação (125 Hz)
+STOP_AFTER      = 0.55       # segundos sem tecla antes de parar
 MAX_JOINT_SPEED = 3.3    # rad/s — safety.conf maxJointSpeed (3.3416 rad/s ≈ 191°/s)
 MIN_JOINT_POS   = math.radians(-363.0)
 MAX_JOINT_POS   = math.radians( 363.0)
@@ -98,116 +98,155 @@ def _call_with_timeout(fn, timeout=2.0):
     t.join(timeout=timeout)
 
 
-# ── Fase 1: gravar via teclado ──────────────────────────────────────────────
+# ── Fase 1: gravar via teclado (125 Hz — padrão initPeriod/waitPeriod) ────────
 
-def record_keyboard(stdscr, rtde_c, rtde_r, speed, hz):
+def record_keyboard(stdscr, rtde_c, rtde_r, initial_speed, hz):
     curses.curs_set(0)
-    stdscr.timeout(POLL_MS)
+    stdscr.timeout(0)           # non-blocking, igual ao ur5e_keyboard
 
     interval       = 1.0 / hz
     waypoints      = []
-    recording      = True
     last_rec       = time.monotonic()
-    last_move_time = time.monotonic()
-    last_vel       = [0.0] * 6
-    stopped        = True
+    last_key_time  = 0.0
+    current_dir    = [0.0] * 6
+    jogging        = False
+    redraw_counter = 0
+    speed          = initial_speed
 
     layout_rows = LAYOUT.count('\n') + 1
 
     def redraw(msg=""):
         joints = rtde_r.getActualQ()
+        pose   = rtde_r.getActualTCPPose()
+        dur    = len(waypoints) / hz if waypoints else 0.0
         stdscr.clear()
         for i, line in enumerate(LAYOUT.splitlines()):
             safe_addstr(stdscr, i, 0, line)
         row = layout_rows + 1
-        safe_addstr(stdscr, row,   0,
-            f"  Vel: {speed:.2f} rad/s   Pontos gravados: {len(waypoints)}")
+        safe_addstr(stdscr, row, 0,
+            f"  Vel: {speed:.2f} rad/s   Pontos: {len(waypoints)}  ({dur:.1f} s gravados)")
         safe_addstr(stdscr, row+1, 0,
             "  Juntas: " + "  ".join(
-                f"J{i+1}={math.degrees(j):+.1f}°" for i, j in enumerate(joints)
-            ))
+                f"J{i+1}={math.degrees(j):+.1f}°" for i, j in enumerate(joints)))
+        safe_addstr(stdscr, row+2, 0,
+            f"  TCP:  X={pose[0]:+.3f}  Y={pose[1]:+.3f}  Z={pose[2]:+.3f}")
         if msg:
-            safe_addstr(stdscr, row+3, 0, f"  {msg}")
+            safe_addstr(stdscr, row+4, 0, f"  {msg}")
         stdscr.refresh()
 
-    redraw("Gravando... mova o robô e pressione ENTER para finalizar.")
+    redraw("Gravando... mova o robô. ENTER = finalizar  ESC = cancelar")
 
-    while recording:
-        now = time.monotonic()
-        if now - last_rec >= interval:
-            waypoints.append(list(rtde_r.getActualQ()))
-            last_rec = now
+    try:
+        while True:
+            t_start = rtde_c.initPeriod()
+            now     = time.monotonic()
+            key     = stdscr.getch()
 
-        key = stdscr.getch()
+            # ── Sample ──────────────────────────────────────────────────
+            if now - last_rec >= interval:
+                waypoints.append(list(rtde_r.getActualQ()))
+                last_rec = now
 
-        if key == 27:           # ESC — cancela
-            return None
+            # ── Teclas ──────────────────────────────────────────────────
+            if key == 27:                     # ESC — cancela
+                rtde_c.speedStop(ACCEL)
+                return None
 
-        elif key in (10, 13):   # ENTER — finaliza gravação
-            rtde_c.stopJ(ACCEL)
-            recording = False
+            elif key in (10, 13):             # ENTER — finaliza
+                rtde_c.speedStop(ACCEL)
+                break
 
-        elif key in KEY_VEL:
-            last_move_time = now
-            stopped = False
-            q = rtde_r.getActualQ()
-            vel = []
-            for d, pos in zip(KEY_VEL[key], q):
-                v = d * speed
-                if v > 0 and pos > MAX_JOINT_POS - JOINT_MARGIN:
-                    v = 0.0
-                elif v < 0 and pos < MIN_JOINT_POS + JOINT_MARGIN:
-                    v = 0.0
-                vel.append(v)
-            pose_now = rtde_r.getActualTCPPose()
-            dist_now = _min_plane_dist(pose_now)
-            if dist_now < PLANE_MARGIN:
-                for i in range(6):
-                    if vel[i] == 0.0:
-                        continue
-                    q_chk = list(q)
-                    q_chk[i] += vel[i] * PLANE_LOOKAHEAD
-                    pose_chk = rtde_c.getForwardKinematics(q_chk)
-                    if _min_plane_dist(list(pose_chk)) < dist_now:
-                        vel[i] = 0.0
-            if vel != last_vel:
-                rtde_c.speedJ(vel, ACCEL, 0)
-                last_vel = vel
+            elif key in KEY_VEL:
+                last_key_time = now
+                current_dir   = list(KEY_VEL[key])
+                jogging       = True
 
-        elif key in (ord('+'), ord('=')):
-            speed = min(speed + 0.1, MAX_JOINT_SPEED)
+            elif key in (ord('+'), ord('=')):
+                speed = min(speed + 0.1, MAX_JOINT_SPEED)
 
-        elif key == ord('-'):
-            speed = max(speed - 0.1, 0.1)
+            elif key == ord('-'):
+                speed = max(speed - 0.1, 0.1)
 
-        if not stopped and (now - last_move_time) > STOP_AFTER:
+            # ── Timeout de parada ────────────────────────────────────────
+            if jogging and (now - last_key_time) > STOP_AFTER:
+                rtde_c.speedStop(ACCEL)
+                jogging     = False
+                current_dir = [0.0] * 6
+
+            # ── speedJ + safety por junta ────────────────────────────────
+            if jogging:
+                q = rtde_r.getActualQ()
+                vel = []
+                for d, pos in zip(current_dir, q):
+                    v = d * speed
+                    if v > 0 and pos > MAX_JOINT_POS - JOINT_MARGIN:
+                        v = 0.0
+                    elif v < 0 and pos < MIN_JOINT_POS + JOINT_MARGIN:
+                        v = 0.0
+                    vel.append(v)
+
+                pose_now = rtde_r.getActualTCPPose()
+                dist_now = _min_plane_dist(pose_now)
+                if dist_now < PLANE_MARGIN:
+                    for i in range(6):
+                        if vel[i] == 0.0:
+                            continue
+                        q_chk = list(q)
+                        q_chk[i] += vel[i] * PLANE_LOOKAHEAD
+                        pose_chk = rtde_c.getForwardKinematics(q_chk)
+                        if _min_plane_dist(list(pose_chk)) < dist_now:
+                            vel[i] = 0.0
+
+                rtde_c.speedJ(vel, ACCEL, DT)
+
+            # ── Redraw ~5 Hz ─────────────────────────────────────────────
+            redraw_counter += 1
+            if redraw_counter >= 25:
+                redraw()
+                redraw_counter = 0
+
+            rtde_c.waitPeriod(t_start)
+
+    finally:
+        if jogging:
             rtde_c.speedStop(ACCEL)
-            stopped = True
-            last_vel = [0.0] * 6
-
-        redraw()
 
     return waypoints
 
 
 # ── Fase 2/3: replay ────────────────────────────────────────────────────────
 
-def replay(rtde_c, waypoints, label):
+def replay(rtde_c, rtde_r, waypoints, label):
     if not waypoints:
         return
+    total = len(waypoints)
+    dur   = total * SERVO_T
+
     print(f"\n  {label}: movendo para posição inicial...")
     rtde_c.moveJ(waypoints[0], 0.5, 0.8)
-    print(f"  {label}: reproduzindo {len(waypoints)} pontos ({len(waypoints)/RECORD_HZ:.1f} s)...")
+    print(f"  {label}: {total} pontos  ({dur:.1f} s)  — Ctrl+C para cancelar")
 
     t0 = time.monotonic()
-    for i, q in enumerate(waypoints):
-        rtde_c.servoJ(q, 0.0, 0.0, SERVO_T, LOOKAHEAD, GAIN)
-        target = (i + 1) * SERVO_T
-        sleep  = (t0 + target) - time.monotonic()
-        if sleep > 0:
-            time.sleep(sleep)
+    try:
+        for i, q in enumerate(waypoints):
+            rtde_c.servoJ(q, 0.0, 0.0, SERVO_T, LOOKAHEAD, GAIN)
+
+            # progresso a cada segundo
+            if i % max(1, int(1.0 / SERVO_T)) == 0:
+                elapsed = time.monotonic() - t0
+                pct = 100 * i // total
+                print(f"\r    {pct:3d}%  {elapsed:.1f}/{dur:.1f} s", end="", flush=True)
+
+            target = (i + 1) * SERVO_T
+            sleep  = (t0 + target) - time.monotonic()
+            if sleep > 0:
+                time.sleep(sleep)
+
+    except KeyboardInterrupt:
+        pass
 
     rtde_c.servoStop()
+    print(f"\r    100%  {dur:.1f}/{dur:.1f} s")
     print(f"  {label} concluído.")
 
 
@@ -259,13 +298,13 @@ def main():
         # ── Fase 2: Replicar ───────────────────────────────────────────────
         print("\n=== FASE 2: REPLICAR ===")
         input("Pressione ENTER para replicar a trajetória...")
-        replay(rtde_c, waypoints, label="Replicando")
+        replay(rtde_c, rtde_r, waypoints, label="Replicando")
 
         # ── Fase 3: Espelho ────────────────────────────────────────────────
         print("\n=== FASE 3: ESPELHO ===")
         input("Pressione ENTER para replicar como ESPELHO (J1 negado)...")
         mirrored = [mirror_q(q) for q in waypoints]
-        replay(rtde_c, mirrored, label="Espelho")
+        replay(rtde_c, rtde_r, mirrored, label="Espelho")
 
     except KeyboardInterrupt:
         print("\nInterrompido.")
