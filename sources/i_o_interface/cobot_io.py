@@ -221,8 +221,8 @@ class CobotIOInterface(ISubmodelExtension):
         do_bits    = await loop.run_in_executor(None, r.getActualDigitalOutputBits)
         robot_mode = await loop.run_in_executor(None, r.getRobotMode)
         safe_mode  = await loop.run_in_executor(None, r.getSafetyMode)
-        prog_run   = await loop.run_in_executor(None, r.isProgramRunning)
         runtime    = await loop.run_in_executor(None, r.getRuntimeState)
+        prog_run   = (runtime == 2)  # 2 = Playing
 
         for path, val in zip(_Q_PATHS, actual_q):
             await self._set(path, float(val))
