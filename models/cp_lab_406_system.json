@@ -3,7 +3,7 @@
     {
       "modelType": "AssetAdministrationShell",
       "id": "urn:festo:cp-factory:aas:CP-LAB-406",
-      "idShort": "AAS_CP_LAB_406",
+      "idShort": "aas_cp_lab_406",
       "displayName": [
         {
           "language": "en",
@@ -84,7 +84,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-LAB-406:Nameplate",
-      "idShort": "Nameplate",
+      "idShort": "nameplate",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -97,7 +97,7 @@
       "submodelElements": [
         {
           "modelType": "Property",
-          "idShort": "ManufacturerName",
+          "idShort": "manufacturername",
           "semanticId": {
             "type": "ExternalReference",
             "keys": [
@@ -123,7 +123,7 @@
         },
         {
           "modelType": "Property",
-          "idShort": "ManufacturerProductDesignation",
+          "idShort": "manufacturerproductdesignation",
           "semanticId": {
             "type": "ExternalReference",
             "keys": [
@@ -149,7 +149,7 @@
         },
         {
           "modelType": "Property",
-          "idShort": "ManufacturerArticleNumber",
+          "idShort": "manufacturerarticlenumber",
           "semanticId": {
             "type": "ExternalReference",
             "keys": [
@@ -175,7 +175,7 @@
         },
         {
           "modelType": "Property",
-          "idShort": "ManufacturerOrderCode",
+          "idShort": "manufacturerordercode",
           "semanticId": {
             "type": "ExternalReference",
             "keys": [
@@ -220,7 +220,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-LAB-406:TechnicalData",
-      "idShort": "TechnicalData",
+      "idShort": "technicaldata",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -233,11 +233,11 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "GeneralInformation",
+          "idShort": "generalinformation",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "ProductFamily",
+              "idShort": "productfamily",
               "valueType": "xs:string",
               "value": "CP Lab",
               "description": [
@@ -254,7 +254,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "ProductCategory",
+              "idShort": "productcategory",
               "valueType": "xs:string",
               "value": "Complete system",
               "description": [
@@ -271,7 +271,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "SystemDesignation",
+              "idShort": "systemdesignation",
               "valueType": "xs:string",
               "value": "SC CP LAB STD CFG 6",
               "description": [
@@ -288,7 +288,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Description",
+              "idShort": "description",
               "valueType": "xs:string",
               "value": "Networked production platform with six pallet transfer systems. Executes: material provisioning, quality inspection, machining, assembly, pressing, and output.",
               "description": [
@@ -305,7 +305,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "NumberOfStations",
+              "idShort": "numberofstations",
               "valueType": "xs:int",
               "value": "6",
               "description": [
@@ -322,7 +322,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "BatchSize1_Support",
+              "idShort": "batchsize1_support",
               "valueType": "xs:boolean",
               "value": "true",
               "description": [
@@ -339,7 +339,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "CountryOfOrigin",
+              "idShort": "countryoforigin",
               "valueType": "xs:string",
               "value": "Canada",
               "description": [
@@ -356,7 +356,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "ServicePortal",
+              "idShort": "serviceportal",
               "valueType": "xs:string",
               "value": "https://ip.festo-didactic.com",
               "description": [
@@ -385,11 +385,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "Electrics",
+          "idShort": "electrics",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "OperatingVoltage_AC",
+              "idShort": "operatingvoltage_ac",
               "valueType": "xs:string",
               "value": "1-phase 230 V AC ±10%, 50 Hz",
               "description": [
@@ -406,7 +406,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "PowerSupplySystem",
+              "idShort": "powersupplysystem",
               "valueType": "xs:string",
               "value": "TNC-S (L1, L2, L3, N, PE)",
               "description": [
@@ -423,7 +423,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "FullLoadPower_A",
+              "idShort": "fullloadpower_a",
               "valueType": "xs:float",
               "value": "1.0",
               "description": [
@@ -440,7 +440,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "ControlVoltage_DC",
+              "idShort": "controlvoltage_dc",
               "valueType": "xs:string",
               "value": "24 V DC PELV (Protective extra-low voltage)",
               "description": [
@@ -457,7 +457,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "PowerSupplyConnector",
+              "idShort": "powersupplyconnector",
               "valueType": "xs:string",
               "value": "IEC 60309, CEE 16 A",
               "description": [
@@ -474,7 +474,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "MaxBackupFuse_A",
+              "idShort": "maxbackupfuse_a",
               "valueType": "xs:int",
               "value": "16",
               "description": [
@@ -491,7 +491,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "LeakageCurrent_mA_max",
+              "idShort": "leakagecurrent_ma_max",
               "valueType": "xs:float",
               "value": "18.0",
               "description": [
@@ -508,7 +508,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "ProtectionClass",
+              "idShort": "protectionclass",
               "valueType": "xs:string",
               "value": "I — protective grounding required",
               "description": [
@@ -525,7 +525,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "OvervoltageCategory",
+              "idShort": "overvoltagecategory",
               "valueType": "xs:string",
               "value": "CAT II — building installation only",
               "description": [
@@ -542,7 +542,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "SCCR_kA",
+              "idShort": "sccr_ka",
               "valueType": "xs:int",
               "value": "10",
               "description": [
@@ -571,11 +571,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "CompressedAir",
+          "idShort": "compressedair",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "SupplyPressure_bar",
+              "idShort": "supplypressure_bar",
               "valueType": "xs:float",
               "value": "6.0",
               "description": [
@@ -592,7 +592,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "SupplyPressure_psi",
+              "idShort": "supplypressure_psi",
               "valueType": "xs:int",
               "value": "90",
               "description": [
@@ -609,7 +609,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "SupplyRate_lmin_min",
+              "idShort": "supplyrate_lmin_min",
               "valueType": "xs:int",
               "value": "40",
               "description": [
@@ -626,7 +626,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "AirQualityStandard",
+              "idShort": "airqualitystandard",
               "valueType": "xs:string",
               "value": "EN ISO 8573-1",
               "description": [
@@ -643,7 +643,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "PressureDewPoint_Class",
+              "idShort": "pressuredewpoint_class",
               "valueType": "xs:string",
               "value": "Class 4 (≤ +3°C)",
               "description": [
@@ -672,11 +672,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "AmbientConditions",
+          "idShort": "ambientconditions",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "OperatingEnvironment",
+              "idShort": "operatingenvironment",
               "valueType": "xs:string",
               "value": "Indoor use only",
               "description": [
@@ -693,7 +693,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "AmbientTemp_min_degC",
+              "idShort": "ambienttemp_min_degc",
               "valueType": "xs:int",
               "value": "5",
               "description": [
@@ -710,7 +710,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "AmbientTemp_max_degC",
+              "idShort": "ambienttemp_max_degc",
               "valueType": "xs:int",
               "value": "40",
               "description": [
@@ -727,7 +727,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "RelHumidity_pct_at_31C",
+              "idShort": "relhumidity_pct_at_31c",
               "valueType": "xs:int",
               "value": "80",
               "description": [
@@ -744,7 +744,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "PollutionDegree",
+              "idShort": "pollutiondegree",
               "valueType": "xs:string",
               "value": "2 — Dry, non-conductive contamination",
               "description": [
@@ -761,7 +761,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "MaxOperatingHeight_m",
+              "idShort": "maxoperatingheight_m",
               "valueType": "xs:int",
               "value": "2000",
               "description": [
@@ -778,7 +778,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "NoiseEmission_LpA_dB_max",
+              "idShort": "noiseemission_lpa_db_max",
               "valueType": "xs:int",
               "value": "70",
               "description": [
@@ -807,11 +807,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "Certification",
+          "idShort": "certification",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "CEMarking",
+              "idShort": "cemarking",
               "valueType": "xs:boolean",
               "value": "true",
               "description": [
@@ -828,7 +828,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Directive_MachineryDirective",
+              "idShort": "directive_machinerydirective",
               "valueType": "xs:string",
               "value": "2006/42/EC — EN 60204-1:2018",
               "description": [
@@ -845,7 +845,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Directive_EMC",
+              "idShort": "directive_emc",
               "valueType": "xs:string",
               "value": "2014/30/EU — EN 61326-1:2013-01",
               "description": [
@@ -862,7 +862,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Directive_RoHS",
+              "idShort": "directive_rohs",
               "valueType": "xs:string",
               "value": "2011/65/EU — EN 63000:2016-10",
               "description": [
@@ -879,7 +879,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "EMC_Environment",
+              "idShort": "emc_environment",
               "valueType": "xs:string",
               "value": "Industrial, Class A (EN 55011)",
               "description": [
@@ -896,7 +896,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "UKCAMarking",
+              "idShort": "ukcamarking",
               "valueType": "xs:boolean",
               "value": "true",
               "description": [
@@ -925,11 +925,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "ProcessCapabilities",
+          "idShort": "processcapabilities",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "FeedingComponents",
+              "idShort": "feedingcomponents",
               "valueType": "xs:boolean",
               "value": "true",
               "description": [
@@ -946,7 +946,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "QualityInspection_SPC",
+              "idShort": "qualityinspection_spc",
               "valueType": "xs:boolean",
               "value": "true",
               "description": [
@@ -963,7 +963,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "FlexibleProduction_Parameters",
+              "idShort": "flexibleproduction_parameters",
               "valueType": "xs:boolean",
               "value": "true",
               "description": [
@@ -980,7 +980,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "FeedingComponents_Assembly",
+              "idShort": "feedingcomponents_assembly",
               "valueType": "xs:boolean",
               "value": "true",
               "description": [
@@ -997,7 +997,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "ConnectingComponents_Assembly",
+              "idShort": "connectingcomponents_assembly",
               "valueType": "xs:boolean",
               "value": "true",
               "description": [
@@ -1014,7 +1014,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "FlexibleHandling_Logistics",
+              "idShort": "flexiblehandling_logistics",
               "valueType": "xs:boolean",
               "value": "true",
               "description": [
@@ -1031,7 +1031,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "RFID_ProductTracking",
+              "idShort": "rfid_producttracking",
               "valueType": "xs:boolean",
               "value": "true",
               "description": [
@@ -1048,7 +1048,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "MES_Integration",
+              "idShort": "mes_integration",
               "valueType": "xs:boolean",
               "value": "true",
               "description": [
@@ -1096,7 +1096,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy",
-      "idShort": "Hierarchy",
+      "idShort": "hierarchy",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1109,11 +1109,11 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "ArchiveNode",
+          "idShort": "archivenode",
           "value": [
             {
               "modelType": "ReferenceElement",
-              "idShort": "SelfReference",
+              "idShort": "selfreference",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -1157,7 +1157,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "Station_01_magfront",
+          "idShort": "station_01_magfront",
           "description": [
             {
               "language": "en",
@@ -1171,7 +1171,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "StationNumber",
+              "idShort": "stationnumber",
               "valueType": "xs:int",
               "value": "1",
               "description": [
@@ -1188,7 +1188,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationName",
+              "idShort": "stationname",
               "valueType": "xs:string",
               "value": "magfront",
               "description": [
@@ -1205,7 +1205,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationRole",
+              "idShort": "stationrole",
               "valueType": "xs:string",
               "value": "Material Provisioning - Front Covers",
               "description": [
@@ -1222,7 +1222,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Station",
+              "idShort": "station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -1256,7 +1256,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "Station_02_meas",
+          "idShort": "station_02_meas",
           "description": [
             {
               "language": "en",
@@ -1270,7 +1270,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "StationNumber",
+              "idShort": "stationnumber",
               "valueType": "xs:int",
               "value": "2",
               "description": [
@@ -1287,7 +1287,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationName",
+              "idShort": "stationname",
               "valueType": "xs:string",
               "value": "meas",
               "description": [
@@ -1304,7 +1304,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationRole",
+              "idShort": "stationrole",
               "valueType": "xs:string",
               "value": "Quality Inspection",
               "description": [
@@ -1321,7 +1321,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Station",
+              "idShort": "station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -1355,7 +1355,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "Station_03_idrill",
+          "idShort": "station_03_idrill",
           "description": [
             {
               "language": "en",
@@ -1369,7 +1369,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "StationNumber",
+              "idShort": "stationnumber",
               "valueType": "xs:int",
               "value": "3",
               "description": [
@@ -1386,7 +1386,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationName",
+              "idShort": "stationname",
               "valueType": "xs:string",
               "value": "idrill",
               "description": [
@@ -1403,7 +1403,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationRole",
+              "idShort": "stationrole",
               "valueType": "xs:string",
               "value": "Machining / Drilling",
               "description": [
@@ -1420,7 +1420,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Station",
+              "idShort": "station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -1454,7 +1454,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "Station_04_magback",
+          "idShort": "station_04_magback",
           "description": [
             {
               "language": "en",
@@ -1468,7 +1468,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "StationNumber",
+              "idShort": "stationnumber",
               "valueType": "xs:int",
               "value": "4",
               "description": [
@@ -1485,7 +1485,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationName",
+              "idShort": "stationname",
               "valueType": "xs:string",
               "value": "magback",
               "description": [
@@ -1502,7 +1502,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationRole",
+              "idShort": "stationrole",
               "valueType": "xs:string",
               "value": "Material Provisioning - Back Covers",
               "description": [
@@ -1519,7 +1519,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Station",
+              "idShort": "station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -1553,7 +1553,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "Station_05_mpress",
+          "idShort": "station_05_mpress",
           "description": [
             {
               "language": "en",
@@ -1567,7 +1567,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "StationNumber",
+              "idShort": "stationnumber",
               "valueType": "xs:int",
               "value": "5",
               "description": [
@@ -1584,7 +1584,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationName",
+              "idShort": "stationname",
               "valueType": "xs:string",
               "value": "mpress",
               "description": [
@@ -1601,7 +1601,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationRole",
+              "idShort": "stationrole",
               "valueType": "xs:string",
               "value": "Assembly / Pressing",
               "description": [
@@ -1618,7 +1618,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Station",
+              "idShort": "station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -1652,7 +1652,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "Station_06_out",
+          "idShort": "station_06_out",
           "description": [
             {
               "language": "en",
@@ -1666,7 +1666,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "StationNumber",
+              "idShort": "stationnumber",
               "valueType": "xs:int",
               "value": "6",
               "description": [
@@ -1683,7 +1683,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationName",
+              "idShort": "stationname",
               "valueType": "xs:string",
               "value": "out",
               "description": [
@@ -1700,7 +1700,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationRole",
+              "idShort": "stationrole",
               "valueType": "xs:string",
               "value": "Output / Retrieval",
               "description": [
@@ -1717,7 +1717,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Station",
+              "idShort": "station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -1751,7 +1751,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "Station_07_cobot",
+          "idShort": "station_07_cobot",
           "description": [
             {
               "language": "en",
@@ -1765,7 +1765,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "StationNumber",
+              "idShort": "stationnumber",
               "valueType": "xs:int",
               "value": "7",
               "description": [
@@ -1782,7 +1782,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationName",
+              "idShort": "stationname",
               "valueType": "xs:string",
               "value": "cobot",
               "description": [
@@ -1799,7 +1799,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StationRole",
+              "idShort": "stationrole",
               "valueType": "xs:string",
               "value": "Pick and Place / Assembly",
               "description": [
@@ -1816,7 +1816,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Station",
+              "idShort": "station",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -1869,7 +1869,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-LAB-406:ProductionProcess",
-      "idShort": "ProductionProcess",
+      "idShort": "productionprocess",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1882,7 +1882,7 @@
       "submodelElements": [
         {
           "modelType": "Property",
-          "idShort": "ProcessName",
+          "idShort": "processname",
           "valueType": "xs:string",
           "value": "Housing Assembly Batch-1",
           "description": [
@@ -1899,7 +1899,7 @@
         },
         {
           "modelType": "Property",
-          "idShort": "BatchSize",
+          "idShort": "batchsize",
           "valueType": "xs:int",
           "value": "1",
           "description": [
@@ -1916,11 +1916,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "ProcessSteps",
+          "idShort": "processsteps",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Step_01_MAGFRONT",
+              "idShort": "step_01_magfront",
               "valueType": "xs:string",
               "value": "[MAGFRONT] Magazine feeds front cover onto conveyor pallet",
               "description": [
@@ -1937,7 +1937,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Step_02_MEAS",
+              "idShort": "step_02_meas",
               "valueType": "xs:string",
               "value": "[MEAS] Measuring station performs length-difference QC; signals result via signal light",
               "description": [
@@ -1954,7 +1954,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Step_03_iDRILL",
+              "idShort": "step_03_idrill",
               "valueType": "xs:string",
               "value": "[iDRILL] Drilling station drills 4 holes based on order data (CPS)",
               "description": [
@@ -1971,7 +1971,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Step_04_MAGBACK",
+              "idShort": "step_04_magback",
               "valueType": "xs:string",
               "value": "[MAGBACK] Magazine feeds back cover onto front cover on pallet",
               "description": [
@@ -1988,7 +1988,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Step_05_MPRESS",
+              "idShort": "step_05_mpress",
               "valueType": "xs:string",
               "value": "[MPRESS] Press station presses back cover onto front cover",
               "description": [
@@ -2005,7 +2005,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Step_06_OUT",
+              "idShort": "step_06_out",
               "valueType": "xs:string",
               "value": "[OUT] Output station transfers finished workpiece to roller slide",
               "description": [
@@ -2053,7 +2053,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-LAB-406:Documentation",
-      "idShort": "Documentation",
+      "idShort": "documentation",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -2066,11 +2066,11 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "SystemManual",
+          "idShort": "systemmanual",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Title",
+              "idShort": "title",
               "valueType": "xs:string",
               "value": "CP-L-406-1 System Operating Manual",
               "description": [
@@ -2087,7 +2087,7 @@
             },
             {
               "modelType": "File",
-              "idShort": "ManualFile",
+              "idShort": "manualfile",
               "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-406-1/files/manual_en.pdf",
               "contentType": "application/pdf",
               "description": [
@@ -2115,11 +2115,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "MaintenanceManual",
+          "idShort": "maintenancemanual",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Title",
+              "idShort": "title",
               "valueType": "xs:string",
               "value": "CP Factory Maintenance Manual 2023",
               "description": [
@@ -2136,7 +2136,7 @@
             },
             {
               "modelType": "File",
-              "idShort": "MaintenanceFile",
+              "idShort": "maintenancefile",
               "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf",
               "contentType": "application/pdf",
               "description": [
@@ -2183,7 +2183,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-LAB-406:Maintenance",
-      "idShort": "Maintenance",
+      "idShort": "maintenance",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -2196,11 +2196,11 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "VisualInspection_Daily",
+          "idShort": "visualinspection_daily",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Activity",
+              "idShort": "activity",
               "valueType": "xs:string",
               "value": "Visual inspection of all components: damage, pollution, cable condition, connectors, safety markings",
               "description": [
@@ -2217,7 +2217,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Interval",
+              "idShort": "interval",
               "valueType": "xs:string",
               "value": "1 day",
               "description": [
@@ -2234,7 +2234,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Criteria",
+              "idShort": "criteria",
               "valueType": "xs:string",
               "value": "visual inspection",
               "description": [
@@ -2251,7 +2251,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Standard",
+              "idShort": "standard",
               "valueType": "xs:string",
               "value": "DIN EN 50699",
               "description": [
@@ -2280,11 +2280,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "SafetyChecklist_EmergencyStop",
+          "idShort": "safetychecklist_emergencystop",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Activity",
+              "idShort": "activity",
               "valueType": "xs:string",
               "value": "Cyclical function test of each emergency stop button. Press button, verify chain triggers, acknowledge with reset, verify all components unlock.",
               "description": [
@@ -2301,7 +2301,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Interval",
+              "idShort": "interval",
               "valueType": "xs:string",
               "value": "1 month",
               "description": [
@@ -2318,7 +2318,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Criteria",
+              "idShort": "criteria",
               "valueType": "xs:string",
               "value": "function test",
               "description": [
@@ -2347,11 +2347,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "SafetyChecklist_OperatorSafety",
+          "idShort": "safetychecklist_operatorsafety",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Activity",
+              "idShort": "activity",
               "valueType": "xs:string",
               "value": "Cyclical function test of each safety door switch and safe inductive proximity sensor. Open safety door during operation to trigger safety stop.",
               "description": [
@@ -2368,7 +2368,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Interval",
+              "idShort": "interval",
               "valueType": "xs:string",
               "value": "1 month",
               "description": [
@@ -2385,7 +2385,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Criteria",
+              "idShort": "criteria",
               "valueType": "xs:string",
               "value": "function test",
               "description": [
@@ -2414,11 +2414,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "RCD_Test_NonStationary",
+          "idShort": "rcd_test_nonstationary",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Activity",
+              "idShort": "activity",
               "valueType": "xs:string",
               "value": "RCD functional test by pressing test button in non-stationary operation",
               "description": [
@@ -2435,7 +2435,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Interval",
+              "idShort": "interval",
               "valueType": "xs:string",
               "value": "1 day",
               "description": [
@@ -2452,7 +2452,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Criteria",
+              "idShort": "criteria",
               "valueType": "xs:string",
               "value": "function test",
               "description": [
@@ -2481,11 +2481,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "RCD_Test_Stationary",
+          "idShort": "rcd_test_stationary",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Activity",
+              "idShort": "activity",
               "valueType": "xs:string",
               "value": "RCD functional test by pressing test button in stationary operation",
               "description": [
@@ -2502,7 +2502,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Interval",
+              "idShort": "interval",
               "valueType": "xs:string",
               "value": "6 months",
               "description": [
@@ -2519,7 +2519,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Criteria",
+              "idShort": "criteria",
               "valueType": "xs:string",
               "value": "function test",
               "description": [
@@ -2548,11 +2548,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "RCD_Effectiveness_Test",
+          "idShort": "rcd_effectiveness_test",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Activity",
+              "idShort": "activity",
               "valueType": "xs:string",
               "value": "RCD effectiveness test by qualified electrician using RCD testing equipment",
               "description": [
@@ -2569,7 +2569,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Interval",
+              "idShort": "interval",
               "valueType": "xs:string",
               "value": "1 month",
               "description": [
@@ -2586,7 +2586,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Criteria",
+              "idShort": "criteria",
               "valueType": "xs:string",
               "value": "effectiveness",
               "description": [
@@ -2615,11 +2615,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "ConveyorBelts_Inspection",
+          "idShort": "conveyorbelts_inspection",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Activity",
+              "idShort": "activity",
               "valueType": "xs:string",
               "value": "Visually inspect belt condition for erosion (fraying/small cracks). Check centering between guide rails. Align if necessary using adjustment screws on deflection heads.",
               "description": [
@@ -2636,7 +2636,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Interval",
+              "idShort": "interval",
               "valueType": "xs:string",
               "value": "3 weeks",
               "description": [
@@ -2653,7 +2653,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Criteria",
+              "idShort": "criteria",
               "valueType": "xs:string",
               "value": "visual inspection",
               "description": [
@@ -2670,7 +2670,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "AppliesTo",
+              "idShort": "appliesto",
               "valueType": "xs:string",
               "value": "CP-L-LINEAR-V2 (all conveyor stations)",
               "description": [
@@ -2699,11 +2699,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "Stopper_Inspection",
+          "idShort": "stopper_inspection",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Activity",
+              "idShort": "activity",
               "valueType": "xs:string",
               "value": "Check stopper reaches end positions in approx. 200 ms (verify via HMI). Adjust pressure or throttling if needed. Clean cylinder surface and seal with dry cloth.",
               "description": [
@@ -2720,7 +2720,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Interval",
+              "idShort": "interval",
               "valueType": "xs:string",
               "value": "3 weeks",
               "description": [
@@ -2737,7 +2737,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Criteria",
+              "idShort": "criteria",
               "valueType": "xs:string",
               "value": "visual inspection",
               "description": [
@@ -2754,7 +2754,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StopperResponseTime_ms_target",
+              "idShort": "stopperresponsetime_ms_target",
               "valueType": "xs:int",
               "value": "200",
               "description": [
@@ -2771,7 +2771,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "AppliesTo",
+              "idShort": "appliesto",
               "valueType": "xs:string",
               "value": "CP-L-LINEAR-V2 (all conveyor stations)",
               "description": [
@@ -2800,11 +2800,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "LinearAxes_Inspection",
+          "idShort": "linearaxes_inspection",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Activity",
+              "idShort": "activity",
               "valueType": "xs:string",
               "value": "Check linear axes for pollution and clean with dry cloth if necessary",
               "description": [
@@ -2821,7 +2821,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Interval",
+              "idShort": "interval",
               "valueType": "xs:string",
               "value": "3 weeks",
               "description": [
@@ -2838,7 +2838,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Criteria",
+              "idShort": "criteria",
               "valueType": "xs:string",
               "value": "visual inspection",
               "description": [
@@ -2855,7 +2855,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "AppliesTo",
+              "idShort": "appliesto",
               "valueType": "xs:string",
               "value": "CP-AM-iDRILL (axes X and Z)",
               "description": [
@@ -2884,11 +2884,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "Fan_Cleaning",
+          "idShort": "fan_cleaning",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Activity",
+              "idShort": "activity",
               "valueType": "xs:string",
               "value": "Clean ventilation grilles of all fans (robot controller, MES-PC, etc.)",
               "description": [
@@ -2905,7 +2905,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Interval",
+              "idShort": "interval",
               "valueType": "xs:string",
               "value": "6 months",
               "description": [
@@ -2922,7 +2922,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Criteria",
+              "idShort": "criteria",
               "valueType": "xs:string",
               "value": "visual inspection",
               "description": [
@@ -2951,11 +2951,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "Compressor_CondensateDrain",
+          "idShort": "compressor_condensatedrain",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Activity",
+              "idShort": "activity",
               "valueType": "xs:string",
               "value": "Drain condensation water from compressor/service unit",
               "description": [
@@ -2972,7 +2972,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Interval",
+              "idShort": "interval",
               "valueType": "xs:string",
               "value": "1 week",
               "description": [
@@ -2989,7 +2989,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Criteria",
+              "idShort": "criteria",
               "valueType": "xs:string",
               "value": "period",
               "description": [

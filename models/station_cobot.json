@@ -3,7 +3,7 @@
     {
       "modelType": "AssetAdministrationShell",
       "id": "urn:festo:cp-factory:aas:STATION-COBOT",
-      "idShort": "AAS_STATION_COBOT",
+      "idShort": "aas_station_cobot",
       "displayName": [
         {
           "language": "en",
@@ -102,7 +102,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:UR5e-COBOT:Nameplate",
-      "idShort": "Robot_Nameplate",
+      "idShort": "robot_nameplate",
       "description": [
         {
           "language": "en",
@@ -125,7 +125,7 @@
       "submodelElements": [
         {
           "modelType": "Property",
-          "idShort": "ManufacturerName",
+          "idShort": "manufacturername",
           "valueType": "xs:string",
           "value": "Universal Robots A/S",
           "semanticId": {
@@ -151,7 +151,7 @@
         },
         {
           "modelType": "Property",
-          "idShort": "ManufacturerProductDesignation",
+          "idShort": "manufacturerproductdesignation",
           "valueType": "xs:string",
           "value": "UR5e e-Series Collaborative Robot",
           "description": [
@@ -168,7 +168,7 @@
         },
         {
           "modelType": "Property",
-          "idShort": "ManufacturerArticleNumber",
+          "idShort": "manufacturerarticlenumber",
           "valueType": "xs:string",
           "value": "UR5e",
           "description": [
@@ -185,7 +185,7 @@
         },
         {
           "modelType": "Property",
-          "idShort": "ManufacturerOrderCode",
+          "idShort": "manufacturerordercode",
           "valueType": "xs:string",
           "value": "UR5e-CB3",
           "description": [
@@ -202,7 +202,7 @@
         },
         {
           "modelType": "Property",
-          "idShort": "InstanceName",
+          "idShort": "instancename",
           "valueType": "xs:string",
           "value": "COBOT",
           "description": [
@@ -219,7 +219,7 @@
         },
         {
           "modelType": "Property",
-          "idShort": "StationRole",
+          "idShort": "stationrole",
           "valueType": "xs:string",
           "value": "Pick and Place / Assembly",
           "description": [
@@ -236,7 +236,7 @@
         },
         {
           "modelType": "Property",
-          "idShort": "CountryOfOrigin",
+          "idShort": "countryoforigin",
           "valueType": "xs:string",
           "value": "Denmark",
           "description": [
@@ -253,7 +253,7 @@
         },
         {
           "modelType": "Property",
-          "idShort": "ServicePortal",
+          "idShort": "serviceportal",
           "valueType": "xs:string",
           "value": "https://www.universal-robots.com/support",
           "description": [
@@ -273,7 +273,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:UR5e-COBOT:TechnicalData",
-      "idShort": "Robot_TechnicalData",
+      "idShort": "robot_technicaldata",
       "description": [
         {
           "language": "en",
@@ -296,7 +296,7 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "GeneralInformation",
+          "idShort": "generalinformation",
           "description": [
             {
               "language": "en",
@@ -310,7 +310,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "ProductFamily",
+              "idShort": "productfamily",
               "valueType": "xs:string",
               "value": "e-Series",
               "description": [
@@ -327,7 +327,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "ProductCategory",
+              "idShort": "productcategory",
               "valueType": "xs:string",
               "value": "Collaborative Robot (Cobot)",
               "description": [
@@ -344,7 +344,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Function",
+              "idShort": "function",
               "valueType": "xs:string",
               "value": "Pick and place, assembly, and handling of CP workpieces",
               "description": [
@@ -363,7 +363,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "KinematicProperties",
+          "idShort": "kinematicproperties",
           "description": [
             {
               "language": "en",
@@ -377,7 +377,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "DegreesOfFreedom",
+              "idShort": "degreesoffreedom",
               "valueType": "xs:int",
               "value": "6",
               "description": [
@@ -394,7 +394,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Payload_kg",
+              "idShort": "payload_kg",
               "valueType": "xs:float",
               "value": "5.0",
               "description": [
@@ -411,7 +411,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Reach_mm",
+              "idShort": "reach_mm",
               "valueType": "xs:int",
               "value": "850",
               "description": [
@@ -428,7 +428,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Repeatability_mm",
+              "idShort": "repeatability_mm",
               "valueType": "xs:float",
               "value": "0.03",
               "description": [
@@ -445,7 +445,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "RobotWeight_kg",
+              "idShort": "robotweight_kg",
               "valueType": "xs:float",
               "value": "20.6",
               "description": [
@@ -462,7 +462,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "MaxSpeed_m_s",
+              "idShort": "maxspeed_m_s",
               "valueType": "xs:float",
               "value": "1.0",
               "description": [
@@ -481,7 +481,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "ElectricalProperties",
+          "idShort": "electricalproperties",
           "description": [
             {
               "language": "en",
@@ -495,7 +495,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "InputVoltage",
+              "idShort": "inputvoltage",
               "valueType": "xs:string",
               "value": "100-240 VAC, 50/60 Hz",
               "description": [
@@ -512,7 +512,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "PowerConsumption_W",
+              "idShort": "powerconsumption_w",
               "valueType": "xs:int",
               "value": "200",
               "description": [
@@ -529,7 +529,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "ControllerModel",
+              "idShort": "controllermodel",
               "valueType": "xs:string",
               "value": "CB5 (e-Series)",
               "description": [
@@ -546,7 +546,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "OperatingTemperature",
+              "idShort": "operatingtemperature",
               "valueType": "xs:string",
               "value": "0 – 50 °C",
               "description": [
@@ -565,7 +565,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "CommunicationInterfaces",
+          "idShort": "communicationinterfaces",
           "description": [
             {
               "language": "en",
@@ -579,7 +579,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Ethernet",
+              "idShort": "ethernet",
               "valueType": "xs:string",
               "value": "1 Gbit/s RJ45 — primary network interface",
               "description": [
@@ -596,7 +596,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "ModbusTCP",
+              "idShort": "modbustcp",
               "valueType": "xs:string",
               "value": "Modbus TCP client/server — port 502",
               "description": [
@@ -613,7 +613,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "PROFINET",
+              "idShort": "profinet",
               "valueType": "xs:string",
               "value": "PROFINET IO device (via URCap or adapter)",
               "description": [
@@ -630,7 +630,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "EtherNetIP",
+              "idShort": "ethernetip",
               "valueType": "xs:string",
               "value": "EtherNet/IP adapter",
               "description": [
@@ -647,7 +647,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "OPC_UA",
+              "idShort": "opc_ua",
               "valueType": "xs:string",
               "value": "OPC UA server — port 4840",
               "description": [
@@ -664,7 +664,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "RTDE",
+              "idShort": "rtde",
               "valueType": "xs:string",
               "value": "Real-Time Data Exchange — port 30004",
               "description": [
@@ -683,7 +683,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "SafetyFeatures",
+          "idShort": "safetyfeatures",
           "description": [
             {
               "language": "en",
@@ -697,7 +697,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "SafetyRating",
+              "idShort": "safetyrating",
               "valueType": "xs:string",
               "value": "PLd Cat.3 (ISO 13849)",
               "description": [
@@ -714,7 +714,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "ForceTorqueSensor",
+              "idShort": "forcetorquesensor",
               "valueType": "xs:string",
               "value": "Built-in 6-axis F/T sensor at wrist",
               "description": [
@@ -731,7 +731,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "CollisionDetection",
+              "idShort": "collisiondetection",
               "valueType": "xs:string",
               "value": "Configurable force threshold — robot stops automatically on contact",
               "description": [
@@ -748,7 +748,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "SafetyInputs",
+              "idShort": "safetyinputs",
               "valueType": "xs:int",
               "value": "8",
               "description": [
@@ -765,7 +765,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "SafetyOutputs",
+              "idShort": "safetyoutputs",
               "valueType": "xs:int",
               "value": "4",
               "description": [
@@ -787,7 +787,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:UR5e-COBOT:Documentation",
-      "idShort": "Robot_Documentation",
+      "idShort": "robot_documentation",
       "description": [
         {
           "language": "en",
@@ -810,7 +810,7 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "UserManual_EN",
+          "idShort": "usermanual_en",
           "description": [
             {
               "language": "en",
@@ -824,7 +824,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Title",
+              "idShort": "title",
               "valueType": "xs:string",
               "value": "UR5e User Manual (English) — SW5.19",
               "description": [
@@ -841,7 +841,7 @@
             },
             {
               "modelType": "File",
-              "idShort": "ManualFile_EN",
+              "idShort": "manualfile_en",
               "value": "https://www.universal-robots.com/manuals/EN/PDF/SW5_19/user-manual-UR5e-PDF_online/710-965-00_UR5e_User_Manual_en_Global.pdf",
               "contentType": "application/pdf",
               "description": [
@@ -859,7 +859,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "UserManual_PT",
+          "idShort": "usermanual_pt",
           "description": [
             {
               "language": "en",
@@ -873,7 +873,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Title",
+              "idShort": "title",
               "valueType": "xs:string",
               "value": "UR5e PolyScopeX User Manual (Portuguese) — SW10.12",
               "description": [
@@ -890,7 +890,7 @@
             },
             {
               "modelType": "File",
-              "idShort": "ManualFile_PT",
+              "idShort": "manualfile_pt",
               "value": "https://www.universal-robots.com/manuals/pt/PDF/SW10_12/user-manual-UR5e-PolyX-PDF_online/718-749-00_UR5e%20PolyScope%20X_User_Manual_PolyScopeX_pt_Global.pdf",
               "contentType": "application/pdf",
               "description": [
@@ -908,7 +908,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "DataSheet",
+          "idShort": "datasheet",
           "description": [
             {
               "language": "en",
@@ -922,7 +922,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Title",
+              "idShort": "title",
               "valueType": "xs:string",
               "value": "UR5e e-Series Datasheet",
               "description": [
@@ -939,7 +939,7 @@
             },
             {
               "modelType": "File",
-              "idShort": "DataSheetFile",
+              "idShort": "datasheetfile",
               "value": "https://www.universal-robots.com/media/1807465/ur5e_e-series_datasheets_web.pdf",
               "contentType": "application/pdf",
               "description": [
@@ -957,7 +957,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "FactSheet_PT",
+          "idShort": "factsheet_pt",
           "description": [
             {
               "language": "en",
@@ -971,7 +971,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "Title",
+              "idShort": "title",
               "valueType": "xs:string",
               "value": "UR5e Fact Sheet (Portuguese)",
               "description": [
@@ -988,7 +988,7 @@
             },
             {
               "modelType": "File",
-              "idShort": "FactSheetFile_PT",
+              "idShort": "factsheetfile_pt",
               "value": "https://www.universal-robots.com/media/1820977/07_2021_ur5e_fact_sheet_pt_web.pdf",
               "contentType": "application/pdf",
               "description": [
@@ -1009,7 +1009,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:STATION-COBOT:IOInterface",
-      "idShort": "IOInterface",
+      "idShort": "iointerface",
       "displayName": [
         {
           "language": "en",
@@ -1042,7 +1042,7 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "ControllerIO",
+          "idShort": "controllerio",
           "description": [
             {
               "language": "en",
@@ -1056,7 +1056,7 @@
           "value": [
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "DigitalInputs",
+              "idShort": "digitalinputs",
               "description": [
                 {
                   "language": "en",
@@ -1070,7 +1070,7 @@
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "DI0_EmergencyStop",
+                  "idShort": "di0_emergencystop",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1087,7 +1087,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DI1_SafeguardStop",
+                  "idShort": "di1_safeguardstop",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1104,7 +1104,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DI2_ProgramStart",
+                  "idShort": "di2_programstart",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1121,7 +1121,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DI3_ProgramPause",
+                  "idShort": "di3_programpause",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1138,7 +1138,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DI4_PalletPresent",
+                  "idShort": "di4_palletpresent",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1155,7 +1155,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DI5_GripperFeedback",
+                  "idShort": "di5_gripperfeedback",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1172,7 +1172,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DI6_ConveyorReady",
+                  "idShort": "di6_conveyorready",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1189,7 +1189,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DI7_UserDefined",
+                  "idShort": "di7_userdefined",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1208,7 +1208,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "DigitalOutputs",
+              "idShort": "digitaloutputs",
               "description": [
                 {
                   "language": "en",
@@ -1222,7 +1222,7 @@
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "DO0_RobotReady",
+                  "idShort": "do0_robotready",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1239,7 +1239,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO1_CycleComplete",
+                  "idShort": "do1_cyclecomplete",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1256,7 +1256,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO2_UserDefined",
+                  "idShort": "do2_userdefined",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1273,7 +1273,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO3_UserDefined",
+                  "idShort": "do3_userdefined",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1290,7 +1290,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO4_ReleasePallet",
+                  "idShort": "do4_releasepallet",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1307,7 +1307,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO5_FaultSignal",
+                  "idShort": "do5_faultsignal",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1324,7 +1324,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO6_UserDefined",
+                  "idShort": "do6_userdefined",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1341,7 +1341,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO7_UserDefined",
+                  "idShort": "do7_userdefined",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1360,7 +1360,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "AnalogInputs",
+              "idShort": "analoginputs",
               "description": [
                 {
                   "language": "en",
@@ -1374,7 +1374,7 @@
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "AI0_UserDefined",
+                  "idShort": "ai0_userdefined",
                   "valueType": "xs:float",
                   "value": "-0.0",
                   "description": [
@@ -1391,7 +1391,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "AI1_UserDefined",
+                  "idShort": "ai1_userdefined",
                   "valueType": "xs:float",
                   "value": "-0.0",
                   "description": [
@@ -1410,7 +1410,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "AnalogOutputs",
+              "idShort": "analogoutputs",
               "description": [
                 {
                   "language": "en",
@@ -1424,7 +1424,7 @@
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "AO0_UserDefined",
+                  "idShort": "ao0_userdefined",
                   "valueType": "xs:float",
                   "value": "0.004",
                   "description": [
@@ -1441,7 +1441,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "AO1_UserDefined",
+                  "idShort": "ao1_userdefined",
                   "valueType": "xs:float",
                   "value": "0.004",
                   "description": [
@@ -1462,7 +1462,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "ToolIO",
+          "idShort": "toolio",
           "description": [
             {
               "language": "en",
@@ -1476,7 +1476,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "TDI0_GripperStatus",
+              "idShort": "tdi0_gripperstatus",
               "valueType": "xs:boolean",
               "value": "false",
               "description": [
@@ -1493,7 +1493,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "TDI1_UserDefined",
+              "idShort": "tdi1_userdefined",
               "valueType": "xs:boolean",
               "value": "true",
               "description": [
@@ -1510,7 +1510,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "TDO0_GripperEnable",
+              "idShort": "tdo0_gripperenable",
               "valueType": "xs:boolean",
               "value": "false",
               "description": [
@@ -1527,7 +1527,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "TDO1_UserDefined",
+              "idShort": "tdo1_userdefined",
               "valueType": "xs:boolean",
               "value": "false",
               "description": [
@@ -1544,7 +1544,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "TAI0_ForceFeedback",
+              "idShort": "tai0_forcefeedback",
               "valueType": "xs:float",
               "value": "0.0",
               "description": [
@@ -1561,7 +1561,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "TAI1_UserDefined",
+              "idShort": "tai1_userdefined",
               "valueType": "xs:float",
               "value": "0.0",
               "description": [
@@ -1580,7 +1580,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "RobotState",
+          "idShort": "robotstate",
           "description": [
             {
               "language": "en",
@@ -1594,7 +1594,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "RobotMode",
+              "idShort": "robotmode",
               "valueType": "xs:string",
               "value": "IDLE",
               "description": [
@@ -1611,7 +1611,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "SafetyMode",
+              "idShort": "safetymode",
               "valueType": "xs:string",
               "value": "NORMAL",
               "description": [
@@ -1628,7 +1628,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "TCPForce_N",
+              "idShort": "tcpforce_n",
               "valueType": "xs:float",
               "value": "3.3498",
               "description": [
@@ -1645,7 +1645,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "ProgramRunning",
+              "idShort": "programrunning",
               "valueType": "xs:boolean",
               "value": "false",
               "description": [
@@ -1667,7 +1667,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:STATION-COBOT:ProductionOrder",
-      "idShort": "ProductionOrder",
+      "idShort": "productionorder",
       "displayName": [
         {
           "language": "en",
@@ -1700,7 +1700,7 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "CurrentOrder",
+          "idShort": "currentorder",
           "description": [
             {
               "language": "en",
@@ -1714,7 +1714,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "OrderNumber",
+              "idShort": "ordernumber",
               "valueType": "xs:string",
               "value": "0",
               "description": [
@@ -1731,7 +1731,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "OrderPosition",
+              "idShort": "orderposition",
               "valueType": "xs:int",
               "value": "0",
               "description": [
@@ -1748,7 +1748,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "OperationNumber",
+              "idShort": "operationnumber",
               "valueType": "xs:int",
               "value": "130",
               "description": [
@@ -1765,7 +1765,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "OperationName",
+              "idShort": "operationname",
               "valueType": "xs:string",
               "value": "Pick and Place / Assembly",
               "description": [
@@ -1782,7 +1782,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Resource",
+              "idShort": "resource",
               "valueType": "xs:string",
               "value": "0",
               "description": [
@@ -1799,7 +1799,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "CarrierID",
+              "idShort": "carrierid",
               "valueType": "xs:string",
               "value": "0",
               "description": [
@@ -1816,7 +1816,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "StateCode",
+              "idShort": "statecode",
               "valueType": "xs:int",
               "value": "0",
               "description": [
@@ -1833,7 +1833,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Parameter1",
+              "idShort": "parameter1",
               "valueType": "xs:int",
               "value": "0",
               "description": [
@@ -1850,7 +1850,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "Parameter2",
+              "idShort": "parameter2",
               "valueType": "xs:int",
               "value": "0",
               "description": [
@@ -1869,7 +1869,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "CurrentWorkpiece",
+          "idShort": "currentworkpiece",
           "description": [
             {
               "language": "en",
@@ -1883,7 +1883,7 @@
           "value": [
             {
               "modelType": "Property",
-              "idShort": "PartNumber",
+              "idShort": "partnumber",
               "valueType": "xs:int",
               "value": "0",
               "description": [
@@ -1900,7 +1900,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "PartDescription",
+              "idShort": "partdescription",
               "valueType": "xs:string",
               "value": "CP workpiece",
               "description": [
@@ -1917,7 +1917,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "QualityResult",
+              "idShort": "qualityresult",
               "valueType": "xs:string",
               "value": "pending",
               "description": [
@@ -1936,7 +1936,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "WorkpieceCatalog",
+          "idShort": "workpiececatalog",
           "description": [
             {
               "language": "en",
@@ -1950,7 +1950,7 @@
           "value": [
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "Part_101",
+              "idShort": "part_101",
               "description": [
                 {
                   "language": "en",
@@ -1964,7 +1964,7 @@
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "PartNumber",
+                  "idShort": "partnumber",
                   "valueType": "xs:int",
                   "value": "101",
                   "description": [
@@ -1981,7 +1981,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DescriptionEN",
+                  "idShort": "descriptionen",
                   "valueType": "xs:string",
                   "value": "CP raw material black",
                   "description": [
@@ -1998,7 +1998,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DescriptionPT",
+                  "idShort": "descriptionpt",
                   "valueType": "xs:string",
                   "value": "CP matéria-prima preta",
                   "description": [
@@ -2017,7 +2017,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "Part_110",
+              "idShort": "part_110",
               "description": [
                 {
                   "language": "en",
@@ -2031,7 +2031,7 @@
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "PartNumber",
+                  "idShort": "partnumber",
                   "valueType": "xs:int",
                   "value": "110",
                   "description": [
@@ -2048,7 +2048,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DescriptionEN",
+                  "idShort": "descriptionen",
                   "valueType": "xs:string",
                   "value": "CP front cover black",
                   "description": [
@@ -2065,7 +2065,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DescriptionPT",
+                  "idShort": "descriptionpt",
                   "valueType": "xs:string",
                   "value": "CP tampa frontal preta",
                   "description": [
@@ -2084,7 +2084,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "Part_111",
+              "idShort": "part_111",
               "description": [
                 {
                   "language": "en",
@@ -2098,7 +2098,7 @@
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "PartNumber",
+                  "idShort": "partnumber",
                   "valueType": "xs:int",
                   "value": "111",
                   "description": [
@@ -2115,7 +2115,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DescriptionEN",
+                  "idShort": "descriptionen",
                   "valueType": "xs:string",
                   "value": "CP back cover black",
                   "description": [
@@ -2132,7 +2132,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DescriptionPT",
+                  "idShort": "descriptionpt",
                   "valueType": "xs:string",
                   "value": "CP tampa traseira preta",
                   "description": [
@@ -2151,7 +2151,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "Part_1200",
+              "idShort": "part_1200",
               "description": [
                 {
                   "language": "en",
@@ -2165,7 +2165,7 @@
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "PartNumber",
+                  "idShort": "partnumber",
                   "valueType": "xs:int",
                   "value": "1200",
                   "description": [
@@ -2182,7 +2182,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DescriptionEN",
+                  "idShort": "descriptionen",
                   "valueType": "xs:string",
                   "value": "CP black complete without board",
                   "description": [
@@ -2199,7 +2199,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DescriptionPT",
+                  "idShort": "descriptionpt",
                   "valueType": "xs:string",
                   "value": "CP preto completo sem placa",
                   "description": [
@@ -2223,7 +2223,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:STATION-COBOT:AssetInterfacesDescription",
-      "idShort": "AssetInterfacesDescription",
+      "idShort": "assetinterfacesdescription",
       "displayName": [
         {
           "language": "en",
@@ -2256,11 +2256,11 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "RelatedSubmodels",
+          "idShort": "relatedsubmodels",
           "value": [
             {
               "modelType": "ReferenceElement",
-              "idShort": "Robot_Nameplate",
+              "idShort": "robot_nameplate",
               "description": [
                 {
                   "language": "en",
@@ -2283,7 +2283,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "Robot_TechnicalData",
+              "idShort": "robot_technicaldata",
               "description": [
                 {
                   "language": "en",
@@ -2318,7 +2318,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "InterfaceRTDE",
+          "idShort": "interfacertde",
           "semanticId": {
             "type": "ExternalReference",
             "keys": [
@@ -2358,7 +2358,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "EndpointMetadata",
+              "idShort": "endpointmetadata",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -2387,7 +2387,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "contentType",
+                  "idShort": "contenttype",
                   "valueType": "xs:string",
                   "value": "application/octet-stream",
                   "category": "VARIABLE"
@@ -2418,7 +2418,7 @@
                 },
                 {
                   "modelType": "SubmodelElementCollection",
-                  "idShort": "securityDefinitions",
+                  "idShort": "securitydefinitions",
                   "value": [
                     {
                       "modelType": "SubmodelElementCollection",
@@ -2439,7 +2439,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "InteractionMetadata",
+              "idShort": "interactionmetadata",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -2465,7 +2465,7 @@
                   "value": [
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "RobotMode",
+                      "idShort": "robotmode",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -2551,7 +2551,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -2581,7 +2581,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "SafetyMode",
+                      "idShort": "safetymode",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -2667,7 +2667,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -2697,7 +2697,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "IsProgramRunning",
+                      "idShort": "isprogramrunning",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -2783,7 +2783,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -2809,7 +2809,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "ActualTCPPose",
+                      "idShort": "actualtcppose",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -2902,7 +2902,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -2932,7 +2932,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "ActualQ",
+                      "idShort": "actualq",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -3025,7 +3025,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -3055,7 +3055,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "ActualTCPForce",
+                      "idShort": "actualtcpforce",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -3148,7 +3148,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -3178,7 +3178,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "ActualDigitalInputBits",
+                      "idShort": "actualdigitalinputbits",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -3264,7 +3264,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -3294,7 +3294,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "ActualDigitalOutputBits",
+                      "idShort": "actualdigitaloutputbits",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -3380,7 +3380,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -3410,7 +3410,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "StandardAnalogInput0",
+                      "idShort": "standardanaloginput0",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -3503,7 +3503,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -3533,7 +3533,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "StandardAnalogInput1",
+                      "idShort": "standardanaloginput1",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -3626,7 +3626,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -3656,7 +3656,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "StandardAnalogOutput0",
+                      "idShort": "standardanalogoutput0",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -3749,7 +3749,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -3779,7 +3779,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "StandardAnalogOutput1",
+                      "idShort": "standardanalogoutput1",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -3872,7 +3872,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -3902,7 +3902,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "ToolAnalogInput0",
+                      "idShort": "toolanaloginput0",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -3995,7 +3995,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -4031,7 +4031,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "InterfaceDashboard",
+          "idShort": "interfacedashboard",
           "semanticId": {
             "type": "ExternalReference",
             "keys": [
@@ -4071,7 +4071,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "EndpointMetadata",
+              "idShort": "endpointmetadata",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -4100,7 +4100,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "contentType",
+                  "idShort": "contenttype",
                   "valueType": "xs:string",
                   "value": "text/plain",
                   "category": "VARIABLE"
@@ -4131,7 +4131,7 @@
                 },
                 {
                   "modelType": "SubmodelElementCollection",
-                  "idShort": "securityDefinitions",
+                  "idShort": "securitydefinitions",
                   "value": [
                     {
                       "modelType": "SubmodelElementCollection",
@@ -4152,7 +4152,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "InteractionMetadata",
+              "idShort": "interactionmetadata",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -4178,7 +4178,7 @@
                   "value": [
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "RobotMode",
+                      "idShort": "robotmode",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -4264,7 +4264,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "text/plain",
                                   "category": "VARIABLE"
@@ -4290,7 +4290,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "SafetyMode",
+                      "idShort": "safetymode",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -4376,7 +4376,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "text/plain",
                                   "category": "VARIABLE"
@@ -4402,7 +4402,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "ProgramState",
+                      "idShort": "programstate",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -4488,7 +4488,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "text/plain",
                                   "category": "VARIABLE"
@@ -4514,7 +4514,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "LoadedProgram",
+                      "idShort": "loadedprogram",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -4600,7 +4600,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "text/plain",
                                   "category": "VARIABLE"
@@ -4641,7 +4641,7 @@
                   "value": [
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "Play",
+                      "idShort": "play",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -4704,7 +4704,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "text/plain",
                                   "category": "VARIABLE"
@@ -4734,7 +4734,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "Stop",
+                      "idShort": "stop",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -4797,7 +4797,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "text/plain",
                                   "category": "VARIABLE"
@@ -4827,7 +4827,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "Pause",
+                      "idShort": "pause",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -4890,7 +4890,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "text/plain",
                                   "category": "VARIABLE"
@@ -4920,7 +4920,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "PowerOn",
+                      "idShort": "poweron",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -4983,7 +4983,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "text/plain",
                                   "category": "VARIABLE"
@@ -5013,7 +5013,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "PowerOff",
+                      "idShort": "poweroff",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -5076,7 +5076,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "text/plain",
                                   "category": "VARIABLE"
@@ -5106,7 +5106,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "BrakeRelease",
+                      "idShort": "brakerelease",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -5169,7 +5169,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "text/plain",
                                   "category": "VARIABLE"
@@ -5199,7 +5199,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "LoadProgram",
+                      "idShort": "loadprogram",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -5262,7 +5262,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "text/plain",
                                   "category": "VARIABLE"
@@ -5298,7 +5298,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "InterfaceModbusTCP",
+          "idShort": "interfacemodbustcp",
           "semanticId": {
             "type": "ExternalReference",
             "keys": [
@@ -5338,7 +5338,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "EndpointMetadata",
+              "idShort": "endpointmetadata",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -5367,7 +5367,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "contentType",
+                  "idShort": "contenttype",
                   "valueType": "xs:string",
                   "value": "application/octet-stream",
                   "category": "VARIABLE"
@@ -5398,7 +5398,7 @@
                 },
                 {
                   "modelType": "SubmodelElementCollection",
-                  "idShort": "securityDefinitions",
+                  "idShort": "securitydefinitions",
                   "value": [
                     {
                       "modelType": "SubmodelElementCollection",
@@ -5419,7 +5419,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "InteractionMetadata",
+              "idShort": "interactionmetadata",
               "semanticId": {
                 "type": "ExternalReference",
                 "keys": [
@@ -5445,7 +5445,7 @@
                   "value": [
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalInput0",
+                      "idShort": "digitalinput0",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -5531,7 +5531,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -5561,7 +5561,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalInput1",
+                      "idShort": "digitalinput1",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -5647,7 +5647,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -5673,7 +5673,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalInput2",
+                      "idShort": "digitalinput2",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -5759,7 +5759,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -5785,7 +5785,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalInput3",
+                      "idShort": "digitalinput3",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -5871,7 +5871,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -5897,7 +5897,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalInput4",
+                      "idShort": "digitalinput4",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -5983,7 +5983,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -6009,7 +6009,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalInput5",
+                      "idShort": "digitalinput5",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -6095,7 +6095,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -6121,7 +6121,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalInput6",
+                      "idShort": "digitalinput6",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -6207,7 +6207,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -6233,7 +6233,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalInput7",
+                      "idShort": "digitalinput7",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -6319,7 +6319,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -6345,7 +6345,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalOutput0",
+                      "idShort": "digitaloutput0",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -6431,7 +6431,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -6457,7 +6457,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalOutput1",
+                      "idShort": "digitaloutput1",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -6543,7 +6543,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -6569,7 +6569,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalOutput2",
+                      "idShort": "digitaloutput2",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -6655,7 +6655,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -6681,7 +6681,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalOutput3",
+                      "idShort": "digitaloutput3",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -6767,7 +6767,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -6793,7 +6793,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalOutput4",
+                      "idShort": "digitaloutput4",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -6879,7 +6879,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -6905,7 +6905,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "DigitalOutput5",
+                      "idShort": "digitaloutput5",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -6991,7 +6991,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -7017,7 +7017,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "AnalogInput0",
+                      "idShort": "analoginput0",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -7110,7 +7110,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -7140,7 +7140,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "AnalogInput1",
+                      "idShort": "analoginput1",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -7233,7 +7233,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -7263,7 +7263,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "AnalogOutput0",
+                      "idShort": "analogoutput0",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -7356,7 +7356,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -7386,7 +7386,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "AnalogOutput1",
+                      "idShort": "analogoutput1",
                       "semanticId": {
                         "type": "ExternalReference",
                         "keys": [
@@ -7479,7 +7479,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contentType",
+                                  "idShort": "contenttype",
                                   "valueType": "xs:string",
                                   "value": "application/octet-stream",
                                   "category": "VARIABLE"
@@ -7518,7 +7518,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:STATION-COBOT:CCType",
-      "idShort": "CCType",
+      "idShort": "cctype",
       "displayName": [
         {
           "language": "en",
@@ -7550,15 +7550,15 @@
       },
       "submodelElements": [
         {
-          "idShort": "CapabilitySet",
+          "idShort": "capabilityset",
           "modelType": "SubmodelElementCollection",
           "value": [
             {
-              "idShort": "MoveJ",
+              "idShort": "movej",
               "modelType": "SubmodelElementCollection",
               "value": [
                 {
-                  "idShort": "Capability",
+                  "idShort": "capability",
                   "modelType": "Capability",
                   "semanticId": {
                     "type": "ExternalReference",
@@ -7581,15 +7581,15 @@
                   ]
                 },
                 {
-                  "idShort": "Properties",
+                  "idShort": "properties",
                   "modelType": "SubmodelElementCollection",
                   "value": [
                     {
-                      "idShort": "Inputs",
+                      "idShort": "inputs",
                       "modelType": "SubmodelElementCollection",
                       "value": [
                         {
-                          "idShort": "TargetJoints",
+                          "idShort": "targetjoints",
                           "modelType": "Property",
                           "valueType": "xs:string",
                           "value": "[]",
@@ -7606,7 +7606,7 @@
                           "category": "VARIABLE"
                         },
                         {
-                          "idShort": "Speed",
+                          "idShort": "speed",
                           "modelType": "Property",
                           "valueType": "xs:float",
                           "value": "0.3",
@@ -7623,7 +7623,7 @@
                           "category": "VARIABLE"
                         },
                         {
-                          "idShort": "Acceleration",
+                          "idShort": "acceleration",
                           "modelType": "Property",
                           "valueType": "xs:float",
                           "value": "0.5",
@@ -7642,7 +7642,7 @@
                       ]
                     },
                     {
-                      "idShort": "Outputs",
+                      "idShort": "outputs",
                       "modelType": "SubmodelElementCollection",
                       "value": []
                     }
@@ -7651,11 +7651,11 @@
               ]
             },
             {
-              "idShort": "TeachReplay",
+              "idShort": "teachreplay",
               "modelType": "SubmodelElementCollection",
               "value": [
                 {
-                  "idShort": "Capability",
+                  "idShort": "capability",
                   "modelType": "Capability",
                   "semanticId": {
                     "type": "ExternalReference",
@@ -7678,15 +7678,15 @@
                   ]
                 },
                 {
-                  "idShort": "Properties",
+                  "idShort": "properties",
                   "modelType": "SubmodelElementCollection",
                   "value": [
                     {
-                      "idShort": "Inputs",
+                      "idShort": "inputs",
                       "modelType": "SubmodelElementCollection",
                       "value": [
                         {
-                          "idShort": "SamplingHz",
+                          "idShort": "samplinghz",
                           "modelType": "Property",
                           "valueType": "xs:int",
                           "value": "20",
@@ -7703,7 +7703,7 @@
                           "category": "VARIABLE"
                         },
                         {
-                          "idShort": "InitialSpeed",
+                          "idShort": "initialspeed",
                           "modelType": "Property",
                           "valueType": "xs:float",
                           "value": "0.3",
@@ -7720,7 +7720,7 @@
                           "category": "VARIABLE"
                         },
                         {
-                          "idShort": "EnableGripper",
+                          "idShort": "enablegripper",
                           "modelType": "Property",
                           "valueType": "xs:boolean",
                           "value": "true",
@@ -7739,11 +7739,11 @@
                       ]
                     },
                     {
-                      "idShort": "Outputs",
+                      "idShort": "outputs",
                       "modelType": "SubmodelElementCollection",
                       "value": [
                         {
-                          "idShort": "WaypointCount",
+                          "idShort": "waypointcount",
                           "modelType": "Property",
                           "valueType": "xs:int",
                           "value": "0",
@@ -7760,7 +7760,7 @@
                           "category": "VARIABLE"
                         },
                         {
-                          "idShort": "DurationSeconds",
+                          "idShort": "durationseconds",
                           "modelType": "Property",
                           "valueType": "xs:float",
                           "value": "0.0",
@@ -7783,11 +7783,11 @@
               ]
             },
             {
-              "idShort": "GripperOpen",
+              "idShort": "gripperopen",
               "modelType": "SubmodelElementCollection",
               "value": [
                 {
-                  "idShort": "Capability",
+                  "idShort": "capability",
                   "modelType": "Capability",
                   "semanticId": {
                     "type": "ExternalReference",
@@ -7810,15 +7810,15 @@
                   ]
                 },
                 {
-                  "idShort": "Properties",
+                  "idShort": "properties",
                   "modelType": "SubmodelElementCollection",
                   "value": [
                     {
-                      "idShort": "Inputs",
+                      "idShort": "inputs",
                       "modelType": "SubmodelElementCollection",
                       "value": [
                         {
-                          "idShort": "TargetPosition",
+                          "idShort": "targetposition",
                           "modelType": "Property",
                           "valueType": "xs:int",
                           "value": "400",
@@ -7837,7 +7837,7 @@
                       ]
                     },
                     {
-                      "idShort": "Outputs",
+                      "idShort": "outputs",
                       "modelType": "SubmodelElementCollection",
                       "value": []
                     }
@@ -7846,11 +7846,11 @@
               ]
             },
             {
-              "idShort": "GripperClose",
+              "idShort": "gripperclose",
               "modelType": "SubmodelElementCollection",
               "value": [
                 {
-                  "idShort": "Capability",
+                  "idShort": "capability",
                   "modelType": "Capability",
                   "semanticId": {
                     "type": "ExternalReference",
@@ -7873,15 +7873,15 @@
                   ]
                 },
                 {
-                  "idShort": "Properties",
+                  "idShort": "properties",
                   "modelType": "SubmodelElementCollection",
                   "value": [
                     {
-                      "idShort": "Inputs",
+                      "idShort": "inputs",
                       "modelType": "SubmodelElementCollection",
                       "value": [
                         {
-                          "idShort": "TargetPosition",
+                          "idShort": "targetposition",
                           "modelType": "Property",
                           "valueType": "xs:int",
                           "value": "0",
@@ -7900,7 +7900,7 @@
                       ]
                     },
                     {
-                      "idShort": "Outputs",
+                      "idShort": "outputs",
                       "modelType": "SubmodelElementCollection",
                       "value": []
                     }
@@ -7909,11 +7909,11 @@
               ]
             },
             {
-              "idShort": "HomePosition",
+              "idShort": "homeposition",
               "modelType": "SubmodelElementCollection",
               "value": [
                 {
-                  "idShort": "Capability",
+                  "idShort": "capability",
                   "modelType": "Capability",
                   "semanticId": {
                     "type": "ExternalReference",
@@ -7936,15 +7936,15 @@
                   ]
                 },
                 {
-                  "idShort": "Properties",
+                  "idShort": "properties",
                   "modelType": "SubmodelElementCollection",
                   "value": [
                     {
-                      "idShort": "Inputs",
+                      "idShort": "inputs",
                       "modelType": "SubmodelElementCollection",
                       "value": [
                         {
-                          "idShort": "Speed",
+                          "idShort": "speed",
                           "modelType": "Property",
                           "valueType": "xs:float",
                           "value": "0.3",
@@ -7961,7 +7961,7 @@
                           "category": "VARIABLE"
                         },
                         {
-                          "idShort": "Acceleration",
+                          "idShort": "acceleration",
                           "modelType": "Property",
                           "valueType": "xs:float",
                           "value": "0.5",
@@ -7980,7 +7980,7 @@
                       ]
                     },
                     {
-                      "idShort": "Outputs",
+                      "idShort": "outputs",
                       "modelType": "SubmodelElementCollection",
                       "value": []
                     }
@@ -7989,11 +7989,11 @@
               ]
             },
             {
-              "idShort": "Dance",
+              "idShort": "dance",
               "modelType": "SubmodelElementCollection",
               "value": [
                 {
-                  "idShort": "Capability",
+                  "idShort": "capability",
                   "modelType": "Capability",
                   "semanticId": {
                     "type": "ExternalReference",
@@ -8016,15 +8016,15 @@
                   ]
                 },
                 {
-                  "idShort": "Properties",
+                  "idShort": "properties",
                   "modelType": "SubmodelElementCollection",
                   "value": [
                     {
-                      "idShort": "Inputs",
+                      "idShort": "inputs",
                       "modelType": "SubmodelElementCollection",
                       "value": [
                         {
-                          "idShort": "Loops",
+                          "idShort": "loops",
                           "modelType": "Property",
                           "valueType": "xs:int",
                           "value": "1",
@@ -8041,7 +8041,7 @@
                           "category": "VARIABLE"
                         },
                         {
-                          "idShort": "EnableGripper",
+                          "idShort": "enablegripper",
                           "modelType": "Property",
                           "valueType": "xs:boolean",
                           "value": "true",
@@ -8060,7 +8060,7 @@
                       ]
                     },
                     {
-                      "idShort": "Outputs",
+                      "idShort": "outputs",
                       "modelType": "SubmodelElementCollection",
                       "value": []
                     }
@@ -8094,7 +8094,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:STATION-COBOT:CCInstance",
-      "idShort": "CCInstance",
+      "idShort": "ccinstance",
       "displayName": [
         {
           "language": "en",
@@ -8126,11 +8126,11 @@
       },
       "submodelElements": [
         {
-          "idShort": "CapabilityInstanceSet",
+          "idShort": "capabilityinstanceset",
           "modelType": "SubmodelElementCollection",
           "value": [
             {
-              "idShort": "MoveJ",
+              "idShort": "movej",
               "modelType": "SubmodelElementCollection",
               "semanticId": {
                 "type": "ExternalReference",
@@ -8153,7 +8153,7 @@
               ],
               "value": [
                 {
-                  "idShort": "State",
+                  "idShort": "state",
                   "modelType": "Property",
                   "valueType": "xs:string",
                   "value": "Idle",
@@ -8179,7 +8179,7 @@
                   "category": "VARIABLE"
                 },
                 {
-                  "idShort": "CapabilityTypeRef",
+                  "idShort": "capabilitytyperef",
                   "modelType": "ReferenceElement",
                   "semanticId": {
                     "type": "ExternalReference",
@@ -8209,21 +8209,21 @@
                       },
                       {
                         "type": "SubmodelElementCollection",
-                        "value": "CapabilitySet"
+                        "value": "capabilityset"
                       },
                       {
                         "type": "SubmodelElementCollection",
-                        "value": "MoveJ"
+                        "value": "movej"
                       },
                       {
                         "type": "Capability",
-                        "value": "Capability"
+                        "value": "capability"
                       }
                     ]
                   }
                 },
                 {
-                  "idShort": "LastExecutedAt",
+                  "idShort": "lastexecutedat",
                   "modelType": "Property",
                   "valueType": "xs:dateTime",
                   "value": "",
@@ -8242,7 +8242,7 @@
               ]
             },
             {
-              "idShort": "TeachReplay",
+              "idShort": "teachreplay",
               "modelType": "SubmodelElementCollection",
               "semanticId": {
                 "type": "ExternalReference",
@@ -8265,7 +8265,7 @@
               ],
               "value": [
                 {
-                  "idShort": "State",
+                  "idShort": "state",
                   "modelType": "Property",
                   "valueType": "xs:string",
                   "value": "Idle",
@@ -8291,7 +8291,7 @@
                   "category": "VARIABLE"
                 },
                 {
-                  "idShort": "CapabilityTypeRef",
+                  "idShort": "capabilitytyperef",
                   "modelType": "ReferenceElement",
                   "semanticId": {
                     "type": "ExternalReference",
@@ -8321,21 +8321,21 @@
                       },
                       {
                         "type": "SubmodelElementCollection",
-                        "value": "CapabilitySet"
+                        "value": "capabilityset"
                       },
                       {
                         "type": "SubmodelElementCollection",
-                        "value": "TeachReplay"
+                        "value": "teachreplay"
                       },
                       {
                         "type": "Capability",
-                        "value": "Capability"
+                        "value": "capability"
                       }
                     ]
                   }
                 },
                 {
-                  "idShort": "LastExecutedAt",
+                  "idShort": "lastexecutedat",
                   "modelType": "Property",
                   "valueType": "xs:dateTime",
                   "value": "",
@@ -8354,7 +8354,7 @@
               ]
             },
             {
-              "idShort": "GripperOpen",
+              "idShort": "gripperopen",
               "modelType": "SubmodelElementCollection",
               "semanticId": {
                 "type": "ExternalReference",
@@ -8377,7 +8377,7 @@
               ],
               "value": [
                 {
-                  "idShort": "State",
+                  "idShort": "state",
                   "modelType": "Property",
                   "valueType": "xs:string",
                   "value": "Idle",
@@ -8403,7 +8403,7 @@
                   "category": "VARIABLE"
                 },
                 {
-                  "idShort": "CapabilityTypeRef",
+                  "idShort": "capabilitytyperef",
                   "modelType": "ReferenceElement",
                   "semanticId": {
                     "type": "ExternalReference",
@@ -8433,21 +8433,21 @@
                       },
                       {
                         "type": "SubmodelElementCollection",
-                        "value": "CapabilitySet"
+                        "value": "capabilityset"
                       },
                       {
                         "type": "SubmodelElementCollection",
-                        "value": "GripperOpen"
+                        "value": "gripperopen"
                       },
                       {
                         "type": "Capability",
-                        "value": "Capability"
+                        "value": "capability"
                       }
                     ]
                   }
                 },
                 {
-                  "idShort": "LastExecutedAt",
+                  "idShort": "lastexecutedat",
                   "modelType": "Property",
                   "valueType": "xs:dateTime",
                   "value": "",
@@ -8466,7 +8466,7 @@
               ]
             },
             {
-              "idShort": "GripperClose",
+              "idShort": "gripperclose",
               "modelType": "SubmodelElementCollection",
               "semanticId": {
                 "type": "ExternalReference",
@@ -8489,7 +8489,7 @@
               ],
               "value": [
                 {
-                  "idShort": "State",
+                  "idShort": "state",
                   "modelType": "Property",
                   "valueType": "xs:string",
                   "value": "Idle",
@@ -8515,7 +8515,7 @@
                   "category": "VARIABLE"
                 },
                 {
-                  "idShort": "CapabilityTypeRef",
+                  "idShort": "capabilitytyperef",
                   "modelType": "ReferenceElement",
                   "semanticId": {
                     "type": "ExternalReference",
@@ -8545,21 +8545,21 @@
                       },
                       {
                         "type": "SubmodelElementCollection",
-                        "value": "CapabilitySet"
+                        "value": "capabilityset"
                       },
                       {
                         "type": "SubmodelElementCollection",
-                        "value": "GripperClose"
+                        "value": "gripperclose"
                       },
                       {
                         "type": "Capability",
-                        "value": "Capability"
+                        "value": "capability"
                       }
                     ]
                   }
                 },
                 {
-                  "idShort": "LastExecutedAt",
+                  "idShort": "lastexecutedat",
                   "modelType": "Property",
                   "valueType": "xs:dateTime",
                   "value": "",
@@ -8578,7 +8578,7 @@
               ]
             },
             {
-              "idShort": "HomePosition",
+              "idShort": "homeposition",
               "modelType": "SubmodelElementCollection",
               "semanticId": {
                 "type": "ExternalReference",
@@ -8601,7 +8601,7 @@
               ],
               "value": [
                 {
-                  "idShort": "State",
+                  "idShort": "state",
                   "modelType": "Property",
                   "valueType": "xs:string",
                   "value": "Idle",
@@ -8627,7 +8627,7 @@
                   "category": "VARIABLE"
                 },
                 {
-                  "idShort": "CapabilityTypeRef",
+                  "idShort": "capabilitytyperef",
                   "modelType": "ReferenceElement",
                   "semanticId": {
                     "type": "ExternalReference",
@@ -8657,21 +8657,21 @@
                       },
                       {
                         "type": "SubmodelElementCollection",
-                        "value": "CapabilitySet"
+                        "value": "capabilityset"
                       },
                       {
                         "type": "SubmodelElementCollection",
-                        "value": "HomePosition"
+                        "value": "homeposition"
                       },
                       {
                         "type": "Capability",
-                        "value": "Capability"
+                        "value": "capability"
                       }
                     ]
                   }
                 },
                 {
-                  "idShort": "LastExecutedAt",
+                  "idShort": "lastexecutedat",
                   "modelType": "Property",
                   "valueType": "xs:dateTime",
                   "value": "",
@@ -8690,7 +8690,7 @@
               ]
             },
             {
-              "idShort": "Dance",
+              "idShort": "dance",
               "modelType": "SubmodelElementCollection",
               "semanticId": {
                 "type": "ExternalReference",
@@ -8713,7 +8713,7 @@
               ],
               "value": [
                 {
-                  "idShort": "State",
+                  "idShort": "state",
                   "modelType": "Property",
                   "valueType": "xs:string",
                   "value": "Idle",
@@ -8739,7 +8739,7 @@
                   "category": "VARIABLE"
                 },
                 {
-                  "idShort": "CapabilityTypeRef",
+                  "idShort": "capabilitytyperef",
                   "modelType": "ReferenceElement",
                   "semanticId": {
                     "type": "ExternalReference",
@@ -8769,21 +8769,21 @@
                       },
                       {
                         "type": "SubmodelElementCollection",
-                        "value": "CapabilitySet"
+                        "value": "capabilityset"
                       },
                       {
                         "type": "SubmodelElementCollection",
-                        "value": "Dance"
+                        "value": "dance"
                       },
                       {
                         "type": "Capability",
-                        "value": "Capability"
+                        "value": "capability"
                       }
                     ]
                   }
                 },
                 {
-                  "idShort": "LastExecutedAt",
+                  "idShort": "lastexecutedat",
                   "modelType": "Property",
                   "valueType": "xs:dateTime",
                   "value": "",
