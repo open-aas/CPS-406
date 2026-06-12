@@ -19,6 +19,7 @@ from .mag_back_io  import MagBackIOInterface
 from .idrill_io    import IDrillIOInterface
 from .mpress_io    import MPressIOInterface
 from .out_io       import OutIOInterface
+from .cobot_io     import CobotIOInterface
 
 # ── Mapa aas_id_short → handler ───────────────────────────────────────────────
 _HANDLERS = {
@@ -28,6 +29,7 @@ _HANDLERS = {
     "aas_station_idrill":   IDrillIOInterface,
     "aas_station_mpress":   MPressIOInterface,
     "aas_station_out":      OutIOInterface,
+    "aas_station_cobot":    CobotIOInterface,
 }
 
 
