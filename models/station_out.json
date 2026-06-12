@@ -3,7 +3,7 @@
     {
       "modelType": "AssetAdministrationShell",
       "id": "urn:festo:cp-factory:aas:STATION-OUT",
-      "idShort": "aas_station_out",
+      "idShort": "AAS_STATION_OUT",
       "displayName": [
         {
           "language": "en",
@@ -107,7 +107,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-OUT:Nameplate",
-      "idShort": "conveyor_nameplate",
+      "idShort": "Conveyor_Nameplate",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -120,7 +120,7 @@
       "submodelElements": [
         {
           "modelType": "Property",
-          "idShort": "manufacturername",
+          "idShort": "ManufacturerName",
           "valueType": "xs:string",
           "value": "Festo Didactic SE",
           "semanticId": {
@@ -136,56 +136,56 @@
         },
         {
           "modelType": "Property",
-          "idShort": "manufacturerproductdesignation",
+          "idShort": "ManufacturerProductDesignation",
           "valueType": "xs:string",
           "value": "Linear V2 Conveyor",
           "category": "VARIABLE"
         },
         {
           "modelType": "Property",
-          "idShort": "manufacturerarticlenumber",
+          "idShort": "ManufacturerArticleNumber",
           "valueType": "xs:string",
           "value": "D12501",
           "category": "VARIABLE"
         },
         {
           "modelType": "Property",
-          "idShort": "manufacturerordercode",
+          "idShort": "ManufacturerOrderCode",
           "valueType": "xs:string",
           "value": "CP-L-LINEAR-V2-C11M0",
           "category": "VARIABLE"
         },
         {
           "modelType": "Property",
-          "idShort": "instancename",
+          "idShort": "InstanceName",
           "valueType": "xs:string",
           "value": "LINEAR-OUT",
           "category": "VARIABLE"
         },
         {
           "modelType": "Property",
-          "idShort": "stationnumber",
+          "idShort": "StationNumber",
           "valueType": "xs:int",
           "value": "6",
           "category": "VARIABLE"
         },
         {
           "modelType": "Property",
-          "idShort": "stationrole",
+          "idShort": "StationRole",
           "valueType": "xs:string",
           "value": "Workpiece Output",
           "category": "VARIABLE"
         },
         {
           "modelType": "Property",
-          "idShort": "countryoforigin",
+          "idShort": "CountryOfOrigin",
           "valueType": "xs:string",
           "value": "Canada",
           "category": "VARIABLE"
         },
         {
           "modelType": "Property",
-          "idShort": "serviceportal",
+          "idShort": "ServicePortal",
           "valueType": "xs:string",
           "value": "https://ip.festo-didactic.com",
           "category": "VARIABLE"
@@ -195,7 +195,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-OUT:TechnicalData",
-      "idShort": "conveyor_technicaldata",
+      "idShort": "Conveyor_TechnicalData",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -208,25 +208,25 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "generalinformation",
+          "idShort": "GeneralInformation",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "productfamily",
+              "idShort": "ProductFamily",
               "valueType": "xs:string",
               "value": "CP Lab",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "productcategory",
+              "idShort": "ProductCategory",
               "valueType": "xs:string",
               "value": "Base module / Conveyor",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "schematicsdocument",
+              "idShort": "SchematicsDocument",
               "valueType": "xs:string",
               "value": "8167762 Rev V08",
               "category": "VARIABLE"
@@ -235,39 +235,39 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "technicalproperties",
+          "idShort": "TechnicalProperties",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "operatingvoltage_dc",
+              "idShort": "OperatingVoltage_DC",
               "valueType": "xs:string",
               "value": "24 VDC",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "operatingpressure_bar",
+              "idShort": "OperatingPressure_bar",
               "valueType": "xs:float",
               "value": "6.0",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "dimensionheight_mm",
+              "idShort": "DimensionHeight_mm",
               "valueType": "xs:int",
               "value": "700",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "dimensionwidth_mm",
+              "idShort": "DimensionWidth_mm",
               "valueType": "xs:int",
               "value": "350",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "dimensiondepth_mm",
+              "idShort": "DimensionDepth_mm",
               "valueType": "xs:int",
               "value": "205",
               "category": "VARIABLE"
@@ -276,74 +276,74 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "plchardware",
+          "idShort": "PLCHardware",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "cpu_model",
+              "idShort": "CPU_Model",
               "valueType": "xs:string",
               "value": "Siemens ET200SP CPU 1512SP F-1PN",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "cpu_ordercode",
+              "idShort": "CPU_OrderCode",
               "valueType": "xs:string",
               "value": "6ES7512-1SK00-0AB0",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "cpu_networkaddress",
+              "idShort": "CPU_NetworkAddress",
               "valueType": "xs:string",
               "value": "192.168.0.1",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "di_module_1",
+              "idShort": "DI_Module_1",
               "valueType": "xs:string",
               "value": "Siemens DI 8x24VDC (6ES7131-6BF00-0CA0)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "di_module_2",
+              "idShort": "DI_Module_2",
               "valueType": "xs:string",
               "value": "Siemens DI 8x24VDC (6ES7131-6BF00-0CA0)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "dq_module_1",
+              "idShort": "DQ_Module_1",
               "valueType": "xs:string",
               "value": "Siemens DQ 8x24VDC 0.5A (6ES7132-6BF00-0CA0)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "dq_module_2",
+              "idShort": "DQ_Module_2",
               "valueType": "xs:string",
               "value": "Siemens DQ 8x24VDC 0.5A (6ES7132-6BF00-0CA0)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "iolink_cm",
+              "idShort": "IOLink_CM",
               "valueType": "xs:string",
               "value": "Siemens CM 4x IO-Link ST (6ES7137-6BD00-0BA0)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "ethernetswitch",
+              "idShort": "EthernetSwitch",
               "valueType": "xs:string",
               "value": "Siemens Scalance XB008 - 8x RJ45 10/100Mbit unmanaged",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "powersupply",
+              "idShort": "PowerSupply",
               "valueType": "xs:string",
               "value": "24 VDC / 2 A",
               "category": "VARIABLE"
@@ -352,39 +352,39 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "hmi",
+          "idShort": "HMI",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "model",
+              "idShort": "Model",
               "valueType": "xs:string",
               "value": "Siemens SIMATIC MTP700",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "articlenumber",
+              "idShort": "ArticleNumber",
               "valueType": "xs:string",
               "value": "8189692",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "interface",
+              "idShort": "Interface",
               "valueType": "xs:string",
               "value": "Ethernet (X5), USB (X6)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "buttons",
+              "idShort": "Buttons",
               "valueType": "xs:string",
               "value": "SF1-SF5 (Start, Stop, F1, F2, Reset)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "indicators",
+              "idShort": "Indicators",
               "valueType": "xs:string",
               "value": "PF1-PF4 (signal lamps)",
               "category": "VARIABLE"
@@ -393,60 +393,60 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "rfid",
+          "idShort": "RFID",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "model",
+              "idShort": "Model",
               "valueType": "xs:string",
               "value": "Siemens RF210R",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "protocol",
+              "idShort": "Protocol",
               "valueType": "xs:string",
               "value": "IO-Link V1.1",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "iolink_port",
+              "idShort": "IOLink_Port",
               "valueType": "xs:int",
               "value": "1",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "io_bytesize",
+              "idShort": "IO_ByteSize",
               "valueType": "xs:int",
               "value": "32",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "readpayload_b",
+              "idShort": "ReadPayload_B",
               "valueType": "xs:int",
               "value": "28",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "statusbits",
+              "idShort": "StatusBits",
               "valueType": "xs:string",
               "value": "TagPresent (%I40.0), Error (%I40.1), Done (%I40.2)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "cmdwrite",
+              "idShort": "CmdWrite",
               "valueType": "xs:string",
               "value": "%Q40.0 + 28 byte payload",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "cmdread",
+              "idShort": "CmdRead",
               "valueType": "xs:string",
               "value": "%Q40.1",
               "category": "VARIABLE"
@@ -455,60 +455,60 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "motorencoder",
+          "idShort": "MotorEncoder",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "motor_model",
+              "idShort": "Motor_Model",
               "valueType": "xs:string",
               "value": "OTT#SWM4033438-3",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "motor_voltage",
+              "idShort": "Motor_Voltage",
               "valueType": "xs:string",
               "value": "24 VDC bidirectional (normal/reduced speed)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "encoder_model",
+              "idShort": "Encoder_Model",
               "valueType": "xs:string",
               "value": "Festo FES.102796",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "encoder_pulsesperch",
+              "idShort": "Encoder_PulsesPerCh",
               "valueType": "xs:int",
               "value": "8",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "encoder_mmperrotation",
+              "idShort": "Encoder_mmPerRotation",
               "valueType": "xs:float",
               "value": "94.2",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "encoder_calculation",
+              "idShort": "Encoder_Calculation",
               "valueType": "xs:string",
               "value": "30mm dia × π = 94.2 mm/rotation at 8 pulses/ch",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "encoder_connector_a",
+              "idShort": "Encoder_Connector_A",
               "valueType": "xs:string",
               "value": "BNC X18 (channel A - BG7)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "encoder_connector_b",
+              "idShort": "Encoder_Connector_B",
               "valueType": "xs:string",
               "value": "BNC X19 (channel B - BG8)",
               "category": "VARIABLE"
@@ -517,32 +517,32 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "pneumatics",
+          "idShort": "Pneumatics",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "stoppervalve_model",
+              "idShort": "StopperValve_Model",
               "valueType": "xs:string",
               "value": "VUVG-L10-M52-MT-M5-1P3",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "stoppervalve_festopn",
+              "idShort": "StopperValve_FestoPN",
               "valueType": "xs:string",
               "value": "FES.574351",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "stoppervalve_type",
+              "idShort": "StopperValve_Type",
               "valueType": "xs:string",
               "value": "5/2 monostable, 24 VDC solenoid",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "stoppersensor_bg9",
+              "idShort": "StopperSensor_BG9",
               "valueType": "xs:string",
               "value": "Lower/press position sensor → %I42.7",
               "category": "VARIABLE"
@@ -551,11 +551,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "io_configuration",
+          "idShort": "IO_Configuration",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "digitalinputs_byte0",
+              "idShort": "DigitalInputs_Byte0",
               "valueType": "xs:int",
               "value": "8",
               "semanticId": {
@@ -571,7 +571,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "digitalinputs_byte1",
+              "idShort": "DigitalInputs_Byte1",
               "valueType": "xs:int",
               "value": "8",
               "semanticId": {
@@ -587,7 +587,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "digitalinputs_byte42",
+              "idShort": "DigitalInputs_Byte42",
               "valueType": "xs:int",
               "value": "8",
               "semanticId": {
@@ -603,7 +603,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "digitaloutputs_byte0",
+              "idShort": "DigitalOutputs_Byte0",
               "valueType": "xs:int",
               "value": "8",
               "semanticId": {
@@ -619,7 +619,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "digitaloutputs_byte1",
+              "idShort": "DigitalOutputs_Byte1",
               "valueType": "xs:int",
               "value": "8",
               "semanticId": {
@@ -635,7 +635,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "digitaloutputs_byte42",
+              "idShort": "DigitalOutputs_Byte42",
               "valueType": "xs:int",
               "value": "8",
               "semanticId": {
@@ -651,7 +651,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "analoginputs_wordiw43",
+              "idShort": "AnalogInputs_WordIW43",
               "valueType": "xs:int",
               "value": "1",
               "semanticId": {
@@ -667,7 +667,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "analoginputs_wordiw46",
+              "idShort": "AnalogInputs_WordIW46",
               "valueType": "xs:int",
               "value": "1",
               "semanticId": {
@@ -683,7 +683,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "analogoutputs_wordqw43",
+              "idShort": "AnalogOutputs_WordQW43",
               "valueType": "xs:int",
               "value": "1",
               "semanticId": {
@@ -699,7 +699,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "analogoutputs_wordqw45",
+              "idShort": "AnalogOutputs_WordQW45",
               "valueType": "xs:int",
               "value": "1",
               "semanticId": {
@@ -717,120 +717,120 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "io_mapping",
+          "idShort": "IO_Mapping",
           "value": [
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "byte0_applicationinterface",
+              "idShort": "Byte0_ApplicationInterface",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "i0_0_app_di0",
+                  "idShort": "I0_0_App_DI0",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i0_1_app_di1",
+                  "idShort": "I0_1_App_DI1",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i0_2_app_di2",
+                  "idShort": "I0_2_App_DI2",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i0_3_app_di3",
+                  "idShort": "I0_3_App_DI3",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i0_4_app_di4",
+                  "idShort": "I0_4_App_DI4",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i0_5_app_di5",
+                  "idShort": "I0_5_App_DI5",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i0_6_app_di6",
+                  "idShort": "I0_6_App_DI6",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i0_7_app_di7",
+                  "idShort": "I0_7_App_DI7",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q0_0_app_dq0",
+                  "idShort": "Q0_0_App_DQ0",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q0_1_app_dq1",
+                  "idShort": "Q0_1_App_DQ1",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q0_2_app_dq2",
+                  "idShort": "Q0_2_App_DQ2",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q0_3_app_dq3",
+                  "idShort": "Q0_3_App_DQ3",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q0_4_app_dq4",
+                  "idShort": "Q0_4_App_DQ4",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q0_5_app_dq5",
+                  "idShort": "Q0_5_App_DQ5",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q0_6_app_dq6",
+                  "idShort": "Q0_6_App_DQ6",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q0_7_app_dq7",
+                  "idShort": "Q0_7_App_DQ7",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
@@ -839,116 +839,116 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "byte1_controlpanel",
+              "idShort": "Byte1_ControlPanel",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "i1_0_start",
+                  "idShort": "I1_0_Start",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i1_1_stop",
+                  "idShort": "I1_1_Stop",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i1_2_f1",
+                  "idShort": "I1_2_F1",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i1_3_f2",
+                  "idShort": "I1_3_F2",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i1_4_reset",
+                  "idShort": "I1_4_Reset",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i1_5_automatic",
+                  "idShort": "I1_5_Automatic",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i1_6_ri",
+                  "idShort": "I1_6_RI",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i1_7_auto",
+                  "idShort": "I1_7_Auto",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q1_0_io_lamp",
+                  "idShort": "Q1_0_IO_Lamp",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q1_1_pf1_lamp",
+                  "idShort": "Q1_1_PF1_Lamp",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q1_2_pf2_lamp",
+                  "idShort": "Q1_2_PF2_Lamp",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q1_3_pf3_lamp",
+                  "idShort": "Q1_3_PF3_Lamp",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q1_4_pf4_lamp",
+                  "idShort": "Q1_4_PF4_Lamp",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q1_5_conveyor_fwd",
+                  "idShort": "Q1_5_Conveyor_Fwd",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q1_6_conveyor_bwd",
+                  "idShort": "Q1_6_Conveyor_Bwd",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q1_7_mb1",
+                  "idShort": "Q1_7_MB1",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
@@ -957,116 +957,116 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "byte42_iolink_sensors",
+              "idShort": "Byte42_IOLink_Sensors",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "i42_0_bg1_carrierpos1",
+                  "idShort": "I42_0_BG1_CarrierPos1",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i42_1_bg2_carrierpos2",
+                  "idShort": "I42_1_BG2_CarrierPos2",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i42_2_bg3_carrierpos3",
+                  "idShort": "I42_2_BG3_CarrierPos3",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i42_3_bg4_carrierpos4",
+                  "idShort": "I42_3_BG4_CarrierPos4",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i42_4_kg1_couplingin",
+                  "idShort": "I42_4_KG1_CouplingIn",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i42_5_kg2_couplingout",
+                  "idShort": "I42_5_KG2_CouplingOut",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i42_6_gf1_couplingset",
+                  "idShort": "I42_6_GF1_CouplingSet",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "i42_7_bg9_stopperdown",
+                  "idShort": "I42_7_BG9_StopperDown",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q42_0_bg1_bcddisplay_b0",
+                  "idShort": "Q42_0_BG1_BCDDisplay_b0",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q42_1_bg2_bcddisplay_b0",
+                  "idShort": "Q42_1_BG2_BCDDisplay_b0",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q42_2_bg3_bcddisplay_b0",
+                  "idShort": "Q42_2_BG3_BCDDisplay_b0",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q42_3_bg4_bcddisplay_b0",
+                  "idShort": "Q42_3_BG4_BCDDisplay_b0",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q42_4_couplingin_act",
+                  "idShort": "Q42_4_CouplingIn_Act",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q42_5_couplingout_act",
+                  "idShort": "Q42_5_CouplingOut_Act",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q42_6_gf1_release",
+                  "idShort": "Q42_6_GF1_Release",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "q42_7_stopper_retract",
+                  "idShort": "Q42_7_Stopper_Retract",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
@@ -1075,32 +1075,32 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "words_analoginterface",
+              "idShort": "Words_AnalogInterface",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "iw43_app_ai0",
+                  "idShort": "IW43_App_AI0",
                   "valueType": "xs:int",
                   "value": "0",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "iw46_app_ai1",
+                  "idShort": "IW46_App_AI1",
                   "valueType": "xs:int",
                   "value": "0",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "qw43_app_ao0",
+                  "idShort": "QW43_App_AO0",
                   "valueType": "xs:int",
                   "value": "0",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "qw45_app_ao1",
+                  "idShort": "QW45_App_AO1",
                   "valueType": "xs:int",
                   "value": "0",
                   "category": "VARIABLE"
@@ -1111,25 +1111,25 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "communicationprotocols",
+          "idShort": "CommunicationProtocols",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "profinet",
+              "idShort": "PROFINET",
               "valueType": "xs:string",
               "value": "Siemens ET200SP via Scalance XB008 switch",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "iolink",
+              "idShort": "IOLink",
               "valueType": "xs:string",
               "value": "IO-Link V1.1 via CM 4x IO-Link ST (4 ports)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "intermodulecoupling",
+              "idShort": "InterModuleCoupling",
               "valueType": "xs:string",
               "value": "Optical 2-bit coupling (KG1/KG2 in, GF1/GF2 out)",
               "category": "VARIABLE"
@@ -1141,7 +1141,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-L-LINEAR-V2-OUT:Documentation",
-      "idShort": "conveyor_documentation",
+      "idShort": "Conveyor_Documentation",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1154,18 +1154,18 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "operatingmanual",
+          "idShort": "OperatingManual",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "title",
+              "idShort": "Title",
               "valueType": "xs:string",
               "value": "CP-L-LINEAR-V2 Operating Manual",
               "category": "VARIABLE"
             },
             {
               "modelType": "File",
-              "idShort": "manualfile",
+              "idShort": "ManualFile",
               "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-LINEAR-V2/files/manual_en.pdf",
               "contentType": "application/pdf"
             }
@@ -1173,25 +1173,25 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "schematics",
+          "idShort": "Schematics",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "title",
+              "idShort": "Title",
               "valueType": "xs:string",
               "value": "CP-L-LINEAR-V2 Electrical Schematics (8167762 Rev V08)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "schematicsrevision",
+              "idShort": "SchematicsRevision",
               "valueType": "xs:string",
               "value": "V08",
               "category": "VARIABLE"
             },
             {
               "modelType": "File",
-              "idShort": "schematicsfile",
+              "idShort": "SchematicsFile",
               "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-L-LINEAR-V2/files_C11M0/schematics.pdf",
               "contentType": "application/pdf"
             }
@@ -1199,18 +1199,18 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "maintenancemanual",
+          "idShort": "MaintenanceManual",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "title",
+              "idShort": "Title",
               "valueType": "xs:string",
               "value": "CP Factory Maintenance Manual 2023",
               "category": "VARIABLE"
             },
             {
               "modelType": "File",
-              "idShort": "maintenancefile",
+              "idShort": "MaintenanceFile",
               "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf",
               "contentType": "application/pdf"
             }
@@ -1221,7 +1221,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-AM-OUT:Nameplate",
-      "idShort": "module_nameplate",
+      "idShort": "Module_Nameplate",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1234,7 +1234,7 @@
       "submodelElements": [
         {
           "modelType": "Property",
-          "idShort": "manufacturername",
+          "idShort": "ManufacturerName",
           "semanticId": {
             "type": "ExternalReference",
             "keys": [
@@ -1250,21 +1250,21 @@
         },
         {
           "modelType": "Property",
-          "idShort": "manufacturerproductdesignation",
+          "idShort": "ManufacturerProductDesignation",
           "valueType": "xs:string",
           "value": "Work piece output",
           "category": "VARIABLE"
         },
         {
           "modelType": "Property",
-          "idShort": "manufacturerarticlenumber",
+          "idShort": "ManufacturerArticleNumber",
           "valueType": "xs:string",
           "value": "D13018",
           "category": "VARIABLE"
         },
         {
           "modelType": "Property",
-          "idShort": "manufacturerordercode",
+          "idShort": "ManufacturerOrderCode",
           "valueType": "xs:string",
           "value": "CP-AM-OUT",
           "category": "VARIABLE"
@@ -1274,7 +1274,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-AM-OUT:TechnicalData",
-      "idShort": "module_technicaldata",
+      "idShort": "Module_TechnicalData",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1287,25 +1287,25 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "generalinformation",
+          "idShort": "GeneralInformation",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "productfamily",
+              "idShort": "ProductFamily",
               "valueType": "xs:string",
               "value": "CP Systems",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "productcategory",
+              "idShort": "ProductCategory",
               "valueType": "xs:string",
               "value": "Application module",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "function",
+              "idShort": "Function",
               "valueType": "xs:string",
               "value": "Two-axis handling system outputs cubic workpieces onto two roller slides; manual pickup station",
               "category": "VARIABLE"
@@ -1314,53 +1314,53 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "technicalproperties",
+          "idShort": "TechnicalProperties",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "operatingvoltage",
+              "idShort": "OperatingVoltage",
               "valueType": "xs:string",
               "value": "24 VDC",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "operatingpressure",
+              "idShort": "OperatingPressure",
               "valueType": "xs:string",
               "value": "6 bar",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "electricalconnector",
+              "idShort": "ElectricalConnector",
               "valueType": "xs:string",
               "value": "24-pin IEEE 488 female (SysLink)",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "pneumaticconnector",
+              "idShort": "PneumaticConnector",
               "valueType": "xs:string",
               "value": "4 mm OD tube",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "dimensionheight_mm",
+              "idShort": "DimensionHeight_mm",
               "valueType": "xs:int",
               "value": "600",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "dimensionwidth_mm",
+              "idShort": "DimensionWidth_mm",
               "valueType": "xs:int",
               "value": "460",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "dimensiondepth_mm",
+              "idShort": "DimensionDepth_mm",
               "valueType": "xs:int",
               "value": "300",
               "category": "VARIABLE"
@@ -1369,25 +1369,25 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "actuators",
+          "idShort": "Actuators",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "axisx",
+              "idShort": "AxisX",
               "valueType": "xs:string",
               "value": "Stepper motor with separate controller",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "axisz",
+              "idShort": "AxisZ",
               "valueType": "xs:string",
               "value": "Pneumatic linear",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "gripper",
+              "idShort": "Gripper",
               "valueType": "xs:string",
               "value": "Pneumatic parallel gripper",
               "category": "VARIABLE"
@@ -1396,18 +1396,18 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "io_configuration",
+          "idShort": "IO_Configuration",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "digitalinputs",
+              "idShort": "DigitalInputs",
               "valueType": "xs:int",
               "value": "8",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
-              "idShort": "digitaloutputs",
+              "idShort": "DigitalOutputs",
               "valueType": "xs:int",
               "value": "8",
               "category": "VARIABLE"
@@ -1416,64 +1416,64 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "io_mapping",
+          "idShort": "IO_Mapping",
           "value": [
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "inputs",
+              "idShort": "Inputs",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "di_axisz_top",
+                  "idShort": "DI_AxisZ_Top",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "di_axisz_bottom",
+                  "idShort": "DI_AxisZ_Bottom",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "di_gripper_open",
+                  "idShort": "DI_Gripper_Open",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "di_gripper_closed",
+                  "idShort": "DI_Gripper_Closed",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "di_slidepos1_occupied",
+                  "idShort": "DI_SlidePos1_Occupied",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "di_slidepos2_occupied",
+                  "idShort": "DI_SlidePos2_Occupied",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "di_axisx_homed",
+                  "idShort": "DI_AxisX_Homed",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "di_axisx_targetreached",
+                  "idShort": "DI_AxisX_TargetReached",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
@@ -1482,60 +1482,60 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "outputs",
+              "idShort": "Outputs",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "do_axisz_up",
+                  "idShort": "DO_AxisZ_Up",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "do_axisz_down",
+                  "idShort": "DO_AxisZ_Down",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "do_endstoprelease",
+                  "idShort": "DO_EndstopRelease",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "do_gripper_open",
+                  "idShort": "DO_Gripper_Open",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "do_controllerenable",
+                  "idShort": "DO_ControllerEnable",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "do_moveregister_select0",
+                  "idShort": "DO_MoveRegister_Select0",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "do_moveregister_select1",
+                  "idShort": "DO_MoveRegister_Select1",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "do_movestart",
+                  "idShort": "DO_MoveStart",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "category": "VARIABLE"
@@ -1549,7 +1549,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:CP-AM-OUT:Documentation",
-      "idShort": "module_documentation",
+      "idShort": "Module_Documentation",
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
@@ -1562,18 +1562,18 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "operatingmanual",
+          "idShort": "OperatingManual",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "title",
+              "idShort": "Title",
               "valueType": "xs:string",
               "value": "CP-AM-OUT Operating Manual",
               "category": "VARIABLE"
             },
             {
               "modelType": "File",
-              "idShort": "manualfile",
+              "idShort": "ManualFile",
               "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-OUT/files/manual_en.pdf",
               "contentType": "application/pdf"
             }
@@ -1581,18 +1581,18 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "schematics",
+          "idShort": "Schematics",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "title",
+              "idShort": "Title",
               "valueType": "xs:string",
               "value": "CP-AM-OUT Electrical Schematics",
               "category": "VARIABLE"
             },
             {
               "modelType": "File",
-              "idShort": "schematicsfile",
+              "idShort": "SchematicsFile",
               "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/CP-AM-OUT/files/schematics.pdf",
               "contentType": "application/pdf"
             }
@@ -1600,18 +1600,18 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "maintenancemanual",
+          "idShort": "MaintenanceManual",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "title",
+              "idShort": "Title",
               "valueType": "xs:string",
               "value": "CP Factory Maintenance Manual 2023",
               "category": "VARIABLE"
             },
             {
               "modelType": "File",
-              "idShort": "maintenancefile",
+              "idShort": "MaintenanceFile",
               "value": "https://ip.festo-didactic.com/Infoportal/CPFactoryLab/data/common/files/CP-Maintenance_Manual-2023.07-en.pdf",
               "contentType": "application/pdf"
             }
@@ -1622,7 +1622,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:STATION-OUT:IOInterface",
-      "idShort": "iointerface",
+      "idShort": "IOInterface",
       "displayName": [
         {
           "language": "en",
@@ -1655,15 +1655,15 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "conveyor",
+          "idShort": "Conveyor",
           "value": [
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "sensors",
+              "idShort": "Sensors",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "bg1_carrierpresence",
+                  "idShort": "BG1_CarrierPresence",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1680,7 +1680,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "bg21_stopperpos1",
+                  "idShort": "BG21_StopperPos1",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1697,7 +1697,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "bg22_stopperpos2",
+                  "idShort": "BG22_StopperPos2",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1714,7 +1714,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "bg23_stopperpos3",
+                  "idShort": "BG23_StopperPos3",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1731,7 +1731,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "bg24_stopperpos4",
+                  "idShort": "BG24_StopperPos4",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1748,7 +1748,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "tf80_rfid_tagpresent",
+                  "idShort": "TF80_RFID_TagPresent",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1765,7 +1765,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "tf80_rfid_carrierid",
+                  "idShort": "TF80_RFID_CarrierID",
                   "valueType": "xs:string",
                   "value": "0",
                   "description": [
@@ -1782,7 +1782,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "tf80_rfid_statecode",
+                  "idShort": "TF80_RFID_StateCode",
                   "valueType": "xs:int",
                   "value": "0",
                   "description": [
@@ -1811,11 +1811,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "actuators",
+              "idShort": "Actuators",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "mb20_beltmotor",
+                  "idShort": "MB20_BeltMotor",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1832,7 +1832,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "y1_stoppercylinder",
+                  "idShort": "Y1_StopperCylinder",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1873,15 +1873,15 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "module",
+          "idShort": "Module",
           "value": [
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "sensors",
+              "idShort": "Sensors",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "b1_gripperopen",
+                  "idShort": "B1_GripperOpen",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1898,7 +1898,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "b2_gripperclosed",
+                  "idShort": "B2_GripperClosed",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1915,7 +1915,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "b3_armup",
+                  "idShort": "B3_ArmUp",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1932,7 +1932,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "b4_armdown",
+                  "idShort": "B4_ArmDown",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1949,7 +1949,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "b5_armhome",
+                  "idShort": "B5_ArmHome",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1966,7 +1966,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "b6_workpiecepresent",
+                  "idShort": "B6_WorkpiecePresent",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -1995,11 +1995,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "actuators",
+              "idShort": "Actuators",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "y1_gripper",
+                  "idShort": "Y1_Gripper",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -2016,7 +2016,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "y2_armvertical",
+                  "idShort": "Y2_ArmVertical",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -2033,7 +2033,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "y3_armhorizontal",
+                  "idShort": "Y3_ArmHorizontal",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
@@ -2050,7 +2050,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "y4_slideselector",
+                  "idShort": "Y4_SlideSelector",
                   "valueType": "xs:int",
                   "value": "0",
                   "description": [
@@ -2094,7 +2094,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:STATION-OUT:ProductionOrder",
-      "idShort": "productionorder",
+      "idShort": "ProductionOrder",
       "displayName": [
         {
           "language": "en",
@@ -2127,11 +2127,11 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "currentorder",
+          "idShort": "CurrentOrder",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "ordernumber",
+              "idShort": "OrderNumber",
               "valueType": "xs:string",
               "value": "0",
               "description": [
@@ -2148,7 +2148,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "orderposition",
+              "idShort": "OrderPosition",
               "valueType": "xs:int",
               "value": "0",
               "description": [
@@ -2165,7 +2165,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "operationnumber",
+              "idShort": "OperationNumber",
               "valueType": "xs:int",
               "value": "205",
               "description": [
@@ -2182,7 +2182,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "operationname",
+              "idShort": "OperationName",
               "valueType": "xs:string",
               "value": "Deliver part",
               "description": [
@@ -2199,7 +2199,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "resource",
+              "idShort": "Resource",
               "valueType": "xs:string",
               "value": "0",
               "description": [
@@ -2216,7 +2216,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "statecode",
+              "idShort": "StateCode",
               "valueType": "xs:int",
               "value": "0",
               "description": [
@@ -2233,7 +2233,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "carrierid",
+              "idShort": "CarrierID",
               "valueType": "xs:string",
               "value": "0",
               "description": [
@@ -2250,7 +2250,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "parameter1",
+              "idShort": "Parameter1",
               "valueType": "xs:int",
               "value": "0",
               "description": [
@@ -2267,7 +2267,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "parameter2",
+              "idShort": "Parameter2",
               "valueType": "xs:int",
               "value": "0",
               "description": [
@@ -2284,7 +2284,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "parameter3",
+              "idShort": "Parameter3",
               "valueType": "xs:int",
               "value": "0",
               "description": [
@@ -2301,7 +2301,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "parameter4",
+              "idShort": "Parameter4",
               "valueType": "xs:int",
               "value": "0",
               "description": [
@@ -2330,11 +2330,11 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "currentworkpiece",
+          "idShort": "CurrentWorkpiece",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "partnumber",
+              "idShort": "PartNumber",
               "valueType": "xs:int",
               "value": "1200",
               "description": [
@@ -2351,7 +2351,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "partdescription",
+              "idShort": "PartDescription",
               "valueType": "xs:string",
               "value": "CP black complete without board",
               "description": [
@@ -2368,7 +2368,7 @@
             },
             {
               "modelType": "Property",
-              "idShort": "qualityresult",
+              "idShort": "QualityResult",
               "valueType": "xs:string",
               "value": "pending",
               "description": [
@@ -2397,15 +2397,15 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "workpiececatalog",
+          "idShort": "WorkpieceCatalog",
           "value": [
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_101",
+              "idShort": "Part_101",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "101",
                   "description": [
@@ -2422,7 +2422,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP raw material black",
                   "description": [
@@ -2439,7 +2439,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP matéria-prima preta",
                   "description": [
@@ -2468,11 +2468,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_102",
+              "idShort": "Part_102",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "102",
                   "description": [
@@ -2489,7 +2489,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP raw material grey",
                   "description": [
@@ -2506,7 +2506,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP matéria-prima cinza",
                   "description": [
@@ -2535,11 +2535,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_103",
+              "idShort": "Part_103",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "103",
                   "description": [
@@ -2556,7 +2556,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP raw material blue",
                   "description": [
@@ -2573,7 +2573,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP matéria-prima azul",
                   "description": [
@@ -2602,11 +2602,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_104",
+              "idShort": "Part_104",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "104",
                   "description": [
@@ -2623,7 +2623,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP raw material red",
                   "description": [
@@ -2640,7 +2640,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP matéria-prima vermelha",
                   "description": [
@@ -2669,11 +2669,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_107",
+              "idShort": "Part_107",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "107",
                   "description": [
@@ -2690,7 +2690,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover red",
                   "description": [
@@ -2707,7 +2707,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa frontal vermelha",
                   "description": [
@@ -2736,11 +2736,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_108",
+              "idShort": "Part_108",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "108",
                   "description": [
@@ -2757,7 +2757,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover blue",
                   "description": [
@@ -2774,7 +2774,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa frontal azul",
                   "description": [
@@ -2803,11 +2803,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_109",
+              "idShort": "Part_109",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "109",
                   "description": [
@@ -2824,7 +2824,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover grey",
                   "description": [
@@ -2841,7 +2841,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa frontal cinza",
                   "description": [
@@ -2870,11 +2870,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_110",
+              "idShort": "Part_110",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "110",
                   "description": [
@@ -2891,7 +2891,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover black",
                   "description": [
@@ -2908,7 +2908,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa frontal preta",
                   "description": [
@@ -2937,11 +2937,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_111",
+              "idShort": "Part_111",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "111",
                   "description": [
@@ -2958,7 +2958,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP back cover black",
                   "description": [
@@ -2975,7 +2975,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa traseira preta",
                   "description": [
@@ -3004,11 +3004,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_112",
+              "idShort": "Part_112",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "112",
                   "description": [
@@ -3025,7 +3025,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP back cover grey",
                   "description": [
@@ -3042,7 +3042,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa traseira cinza",
                   "description": [
@@ -3071,11 +3071,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_113",
+              "idShort": "Part_113",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "113",
                   "description": [
@@ -3092,7 +3092,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP back cover blue",
                   "description": [
@@ -3109,7 +3109,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa traseira azul",
                   "description": [
@@ -3138,11 +3138,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_114",
+              "idShort": "Part_114",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "114",
                   "description": [
@@ -3159,7 +3159,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP back cover red",
                   "description": [
@@ -3176,7 +3176,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa traseira vermelha",
                   "description": [
@@ -3205,11 +3205,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_120",
+              "idShort": "Part_120",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "120",
                   "description": [
@@ -3226,7 +3226,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP board",
                   "description": [
@@ -3243,7 +3243,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP placa de circuito",
                   "description": [
@@ -3272,11 +3272,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_130",
+              "idShort": "Part_130",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "130",
                   "description": [
@@ -3293,7 +3293,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP fuse",
                   "description": [
@@ -3310,7 +3310,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP fusível",
                   "description": [
@@ -3339,11 +3339,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_210",
+              "idShort": "Part_210",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "210",
                   "description": [
@@ -3360,7 +3360,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover black (production part)",
                   "description": [
@@ -3377,7 +3377,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa frontal preta (peça produzida)",
                   "description": [
@@ -3406,11 +3406,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_211",
+              "idShort": "Part_211",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "211",
                   "description": [
@@ -3427,7 +3427,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover black without fuses",
                   "description": [
@@ -3444,7 +3444,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa frontal preta sem fusíveis",
                   "description": [
@@ -3473,11 +3473,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_212",
+              "idShort": "Part_212",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "212",
                   "description": [
@@ -3494,7 +3494,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover black with fuse left",
                   "description": [
@@ -3511,7 +3511,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa frontal preta com fusível esquerdo",
                   "description": [
@@ -3540,11 +3540,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_213",
+              "idShort": "Part_213",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "213",
                   "description": [
@@ -3561,7 +3561,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover black with fuse right",
                   "description": [
@@ -3578,7 +3578,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa frontal preta com fusível direito",
                   "description": [
@@ -3607,11 +3607,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_214",
+              "idShort": "Part_214",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "214",
                   "description": [
@@ -3628,7 +3628,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP front cover black with both fuses",
                   "description": [
@@ -3645,7 +3645,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP tampa frontal preta com ambos fusíveis",
                   "description": [
@@ -3674,11 +3674,11 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "part_1200",
+              "idShort": "Part_1200",
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "partnumber",
+                  "idShort": "PartNumber",
                   "valueType": "xs:int",
                   "value": "1200",
                   "description": [
@@ -3695,7 +3695,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionen",
+                  "idShort": "DescriptionEN",
                   "valueType": "xs:string",
                   "value": "CP black complete without board",
                   "description": [
@@ -3712,7 +3712,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "descriptionpt",
+                  "idShort": "DescriptionPT",
                   "valueType": "xs:string",
                   "value": "CP preto completo sem placa",
                   "description": [
@@ -3756,7 +3756,7 @@
     {
       "modelType": "Submodel",
       "id": "urn:festo:cp-factory:sm:STATION-OUT:AssetInterfacesDescription",
-      "idShort": "assetinterfacesdescription",
+      "idShort": "AssetInterfacesDescription",
       "displayName": [
         {
           "language": "en",
@@ -3789,11 +3789,11 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "relatedsubmodels",
+          "idShort": "RelatedSubmodels",
           "value": [
             {
               "modelType": "ReferenceElement",
-              "idShort": "conveyor_nameplate",
+              "idShort": "Conveyor_Nameplate",
               "description": [
                 {
                   "language": "en",
@@ -3816,7 +3816,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "conveyor_technicaldata",
+              "idShort": "Conveyor_TechnicalData",
               "description": [
                 {
                   "language": "en",
@@ -3839,7 +3839,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "module_nameplate",
+              "idShort": "Module_Nameplate",
               "description": [
                 {
                   "language": "en",
@@ -3862,7 +3862,7 @@
             },
             {
               "modelType": "ReferenceElement",
-              "idShort": "module_technicaldata",
+              "idShort": "Module_TechnicalData",
               "description": [
                 {
                   "language": "en",
@@ -3897,7 +3897,7 @@
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "interfaceopcua",
+          "idShort": "InterfaceOPCUA",
           "value": [
             {
               "modelType": "Property",
@@ -3908,7 +3908,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "endpointmetadata",
+              "idShort": "EndpointMetadata",
               "value": [
                 {
                   "modelType": "Property",
@@ -3928,7 +3928,7 @@
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "contenttype",
+                  "idShort": "contentType",
                   "valueType": "xs:string",
                   "value": "application/opcua",
                   "category": "VARIABLE"
@@ -3958,7 +3958,7 @@
                 },
                 {
                   "modelType": "SubmodelElementCollection",
-                  "idShort": "securitydefinitions",
+                  "idShort": "securityDefinitions",
                   "value": [
                     {
                       "modelType": "SubmodelElementCollection",
@@ -3997,7 +3997,7 @@
             },
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "interactionmetadata",
+              "idShort": "InteractionMetadata",
               "value": [
                 {
                   "modelType": "SubmodelElementCollection",
@@ -4005,7 +4005,7 @@
                   "value": [
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "b5_armhome",
+                      "idShort": "B5_ArmHome",
                       "value": [
                         {
                           "modelType": "Property",
@@ -4048,7 +4048,7 @@
                         },
                         {
                           "modelType": "Property",
-                          "idShort": "readonly",
+                          "idShort": "readOnly",
                           "valueType": "xs:boolean",
                           "value": "true",
                           "category": "VARIABLE"
@@ -4071,7 +4071,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contenttype",
+                                  "idShort": "contentType",
                                   "valueType": "xs:string",
                                   "value": "application/opcua",
                                   "category": "VARIABLE"
@@ -4128,7 +4128,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "b3_armup",
+                      "idShort": "B3_ArmUp",
                       "value": [
                         {
                           "modelType": "Property",
@@ -4171,7 +4171,7 @@
                         },
                         {
                           "modelType": "Property",
-                          "idShort": "readonly",
+                          "idShort": "readOnly",
                           "valueType": "xs:boolean",
                           "value": "true",
                           "category": "VARIABLE"
@@ -4194,7 +4194,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contenttype",
+                                  "idShort": "contentType",
                                   "valueType": "xs:string",
                                   "value": "application/opcua",
                                   "category": "VARIABLE"
@@ -4251,7 +4251,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "y3_armhorizontal",
+                      "idShort": "Y3_ArmHorizontal",
                       "value": [
                         {
                           "modelType": "Property",
@@ -4294,7 +4294,7 @@
                         },
                         {
                           "modelType": "Property",
-                          "idShort": "readonly",
+                          "idShort": "readOnly",
                           "valueType": "xs:boolean",
                           "value": "false",
                           "category": "VARIABLE"
@@ -4317,7 +4317,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contenttype",
+                                  "idShort": "contentType",
                                   "valueType": "xs:string",
                                   "value": "application/opcua",
                                   "category": "VARIABLE"
@@ -4374,7 +4374,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "y2_armvertical",
+                      "idShort": "Y2_ArmVertical",
                       "value": [
                         {
                           "modelType": "Property",
@@ -4417,7 +4417,7 @@
                         },
                         {
                           "modelType": "Property",
-                          "idShort": "readonly",
+                          "idShort": "readOnly",
                           "valueType": "xs:boolean",
                           "value": "false",
                           "category": "VARIABLE"
@@ -4440,7 +4440,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contenttype",
+                                  "idShort": "contentType",
                                   "valueType": "xs:string",
                                   "value": "application/opcua",
                                   "category": "VARIABLE"
@@ -4497,7 +4497,7 @@
                     },
                     {
                       "modelType": "SubmodelElementCollection",
-                      "idShort": "y1_gripper",
+                      "idShort": "Y1_Gripper",
                       "value": [
                         {
                           "modelType": "Property",
@@ -4540,7 +4540,7 @@
                         },
                         {
                           "modelType": "Property",
-                          "idShort": "readonly",
+                          "idShort": "readOnly",
                           "valueType": "xs:boolean",
                           "value": "false",
                           "category": "VARIABLE"
@@ -4563,7 +4563,7 @@
                                 },
                                 {
                                   "modelType": "Property",
-                                  "idShort": "contenttype",
+                                  "idShort": "contentType",
                                   "valueType": "xs:string",
                                   "value": "application/opcua",
                                   "category": "VARIABLE"
