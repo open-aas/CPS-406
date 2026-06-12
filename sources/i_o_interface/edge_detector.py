@@ -33,8 +33,12 @@ class EdgeDetector:
 
         if self.state == State.LOW and new_state == State.HIGH:
             edge = EdgeType.RISING
+            print(edge, name)
+        
         elif self.state == State.HIGH and new_state == State.LOW:
             edge = EdgeType.FALLING
+            print(edge, name)
+
         else:
             edge = None
 
@@ -65,8 +69,10 @@ class SensorEventHandler:
     async def datachange_notification(self, node: Node, val, data):
         name = str(node.nodeid)
         value = int(val)
+
         for detector in self.edge_detectors:
             if node.nodeid == detector.node_id:
+                print(f"Data change detected on {name}: {value}")
                 detector.update(value, name)
 
     async def event_notification(self, event):
