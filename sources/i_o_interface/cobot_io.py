@@ -16,6 +16,7 @@ from typing import List, Optional
 
 import rtde_receive
 from pymodbus.client import ModbusTcpClient
+from asyncua.ua import Variant, VariantType as UA_VT
 
 from aiofase.microservice import MicroService
 from faaster.extensions.interfaces import ISubmodelExtension
@@ -283,6 +284,10 @@ class CobotIOInterface(ISubmodelExtension):
         meta = self._ctx.get_node(path)
         if meta:
             try:
+                # xs:float AAS properties are OPC UA Float (32-bit, type 10);
+                # Python float is Double (64-bit, type 11) — wrap explicitly.
+                if isinstance(value, float):
+                    value = Variant(value, UA_VT.Float)
                 await self._ctx.address_space.set_value(meta.node, value)
             except Exception as exc:
                 logger.debug("cobot.aas_mirror.error", path=path, error=str(exc))
