@@ -1013,21 +1013,21 @@
       "displayName": [
         {
           "language": "en",
-          "text": "I/O Interface — Station COBOT (UR5e)"
+          "text": "IO Interface"
         },
         {
           "language": "pt",
-          "text": "Interface E/S — Estação COBOT (UR5e)"
+          "text": "Interface de E/S"
         }
       ],
       "description": [
         {
           "language": "en",
-          "text": "Digital, analog and safety I/O signals of the UR5e robot controller"
+          "text": "Real-time I/O signals of the UR5e cobot: RTDE joint/TCP data, digital/analog I/O, safety status and Schunk EGP gripper (Modbus TCP). (IDTA 02021-1-0)"
         },
         {
           "language": "pt",
-          "text": "Sinais de E/S digitais, analógicos e de segurança do controlador do robô UR5e"
+          "text": "Sinais de E/S em tempo real do cobot UR5e: dados de junta/TCP via RTDE, E/S digitais e analógicas, status de segurança e garra Schunk EGP (Modbus TCP). (IDTA 02021-1-0)"
         }
       ],
       "semanticId": {
@@ -1042,623 +1042,1045 @@
       "submodelElements": [
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "ControllerIO",
-          "description": [
-            {
-              "language": "en",
-              "text": "Standard I/O on the CB5 controller"
-            },
-            {
-              "language": "pt",
-              "text": "E/S padrão no controlador CB5"
-            }
-          ],
+          "idShort": "Robot",
           "value": [
             {
               "modelType": "SubmodelElementCollection",
-              "idShort": "DigitalInputs",
+              "idShort": "JointState",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "ActualQ_J1",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual joint 1 position [rad]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Posição real da junta 1 [rad]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ActualQ_J2",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual joint 2 position [rad]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Posição real da junta 2 [rad]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ActualQ_J3",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual joint 3 position [rad]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Posição real da junta 3 [rad]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ActualQ_J4",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual joint 4 position [rad]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Posição real da junta 4 [rad]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ActualQ_J5",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual joint 5 position [rad]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Posição real da junta 5 [rad]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ActualQ_J6",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual joint 6 position [rad]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Posição real da junta 6 [rad]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ActualQd_J1",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual joint 1 velocity [rad/s]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Velocidade real da junta 1 [rad/s]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ActualQd_J2",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual joint 2 velocity [rad/s]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Velocidade real da junta 2 [rad/s]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ActualQd_J3",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual joint 3 velocity [rad/s]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Velocidade real da junta 3 [rad/s]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ActualQd_J4",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual joint 4 velocity [rad/s]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Velocidade real da junta 4 [rad/s]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ActualQd_J5",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual joint 5 velocity [rad/s]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Velocidade real da junta 5 [rad/s]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ActualQd_J6",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual joint 6 velocity [rad/s]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Velocidade real da junta 6 [rad/s]"
+                    }
+                  ]
+                }
+              ],
               "description": [
                 {
                   "language": "en",
-                  "text": "Digital inputs on the controller (DI0–DI7)"
+                  "text": "Actual joint positions and velocities (RTDE actual_q / actual_qd)"
                 },
                 {
                   "language": "pt",
-                  "text": "Entradas digitais no controlador (DI0–DI7)"
+                  "text": "Posições e velocidades reais das juntas (RTDE actual_q / actual_qd)"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "TCPPose",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "X",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual TCP TCP X position [m]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "TCP real Posição TCP X [m]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Y",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual TCP TCP Y position [m]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "TCP real Posição TCP Y [m]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Z",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual TCP TCP Z position [m]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "TCP real Posição TCP Z [m]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Rx",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual TCP TCP X-axis rotation [rad]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "TCP real Rotação TCP eixo X [rad]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Ry",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual TCP TCP Y-axis rotation [rad]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "TCP real Rotação TCP eixo Y [rad]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Rz",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual TCP TCP Z-axis rotation [rad]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "TCP real Rotação TCP eixo Z [rad]"
+                    }
+                  ]
                 }
               ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Actual TCP pose [m, rad] (RTDE actual_TCP_pose)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Pose real do TCP [m, rad] (RTDE actual_TCP_pose)"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "TCPForce",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "Fx",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual TCP Force X [N]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "TCP real Força X [N]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Fy",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual TCP Force Y [N]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "TCP real Força Y [N]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Fz",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual TCP Force Z [N]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "TCP real Força Z [N]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Tx",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual TCP Torque X [Nm]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "TCP real Torque X [Nm]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Ty",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual TCP Torque Y [Nm]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "TCP real Torque Y [Nm]"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "Tz",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "0.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Actual TCP Torque Z [Nm]"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "TCP real Torque Z [Nm]"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Actual TCP force/torque [N, Nm] (RTDE actual_TCP_force)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Força/torque real do TCP [N, Nm] (RTDE actual_TCP_force)"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "DigitalInputs",
               "value": [
                 {
                   "modelType": "Property",
                   "idShort": "DI0_EmergencyStop",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "External emergency stop input"
+                      "text": "Emergency stop input"
                     },
                     {
                       "language": "pt",
-                      "text": "Entrada de parada de emergência externa"
+                      "text": "Emergency stop input"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
                   "idShort": "DI1_SafeguardStop",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Safeguard stop input (protective stop)"
+                      "text": "Safeguard stop input"
                     },
                     {
                       "language": "pt",
-                      "text": "Entrada de parada de proteção (protective stop)"
+                      "text": "Safeguard stop input"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DI2_ProgramStart",
+                  "idShort": "DI2_ReducedMode",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "External signal to start the robot program"
+                      "text": "Reduced mode input"
                     },
                     {
                       "language": "pt",
-                      "text": "Sinal externo para iniciar o programa do robô"
+                      "text": "Reduced mode input"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DI3_ProgramPause",
+                  "idShort": "DI3_OperationalMode",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "External signal to pause the robot program"
+                      "text": "Operational mode selection"
                     },
                     {
                       "language": "pt",
-                      "text": "Sinal externo para pausar o programa do robô"
+                      "text": "Operational mode selection"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DI4_PalletPresent",
+                  "idShort": "DI4_UserDefined",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Inductive sensor: pallet carrier arrived at robot pick position"
+                      "text": "User-defined DI 4"
                     },
                     {
                       "language": "pt",
-                      "text": "Sensor indutivo: portador de pallete chegou na posição de pick do robô"
+                      "text": "User-defined DI 4"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DI5_GripperFeedback",
+                  "idShort": "DI5_UserDefined",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Gripper feedback: workpiece gripped (true) / open (false)"
+                      "text": "User-defined DI 5"
                     },
                     {
                       "language": "pt",
-                      "text": "Feedback da garra: peça agarrada (true) / aberta (false)"
+                      "text": "User-defined DI 5"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DI6_ConveyorReady",
+                  "idShort": "DI6_UserDefined",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Signal from conveyor: ready to receive or release pallet"
+                      "text": "User-defined DI 6"
                     },
                     {
                       "language": "pt",
-                      "text": "Sinal da esteira: pronta para receber ou liberar pallete"
+                      "text": "User-defined DI 6"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
                   "idShort": "DI7_UserDefined",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Configurable digital input for application-specific use"
+                      "text": "User-defined DI 7"
                     },
                     {
                       "language": "pt",
-                      "text": "Entrada digital configurável para uso específico da aplicação"
+                      "text": "User-defined DI 7"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Standard digital inputs 0–7 (RTDE actual_digital_input_bits)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Entradas digitais padrão 0–7 (RTDE actual_digital_input_bits)"
                 }
               ]
             },
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "DigitalOutputs",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Digital outputs on the controller (DO0–DO7)"
-                },
-                {
-                  "language": "pt",
-                  "text": "Saídas digitais no controlador (DO0–DO7)"
-                }
-              ],
               "value": [
                 {
                   "modelType": "Property",
                   "idShort": "DO0_RobotReady",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Output: robot ready and waiting for pallet"
+                      "text": "Robot ready signal"
                     },
                     {
                       "language": "pt",
-                      "text": "Saída: robô pronto e aguardando pallete"
+                      "text": "Robot ready signal"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO1_CycleComplete",
+                  "idShort": "DO1_ProgramRunning",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Output: robot cycle completed successfully"
+                      "text": "Program running signal"
                     },
                     {
                       "language": "pt",
-                      "text": "Saída: ciclo do robô concluído com sucesso"
+                      "text": "Program running signal"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO2_UserDefined",
+                  "idShort": "DO2_CycleComplete",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Digital output 2: user defined"
+                      "text": "Cycle complete signal"
                     },
                     {
                       "language": "pt",
-                      "text": "Saída digital 2: uso livre"
+                      "text": "Cycle complete signal"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO3_UserDefined",
+                  "idShort": "DO3_FaultSignal",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Digital output 3: user defined"
+                      "text": "Fault / error signal"
                     },
                     {
                       "language": "pt",
-                      "text": "Saída digital 3: uso livre"
+                      "text": "Fault / error signal"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO4_ReleasePallet",
+                  "idShort": "DO4_UserDefined",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Output: signal to release pallet stopper on conveyor"
+                      "text": "User-defined DO 4"
                     },
                     {
                       "language": "pt",
-                      "text": "Saída: sinal para liberar o batente do pallete na esteira"
+                      "text": "User-defined DO 4"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "DO5_FaultSignal",
+                  "idShort": "DO5_UserDefined",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Output: robot fault or error active"
+                      "text": "User-defined DO 5"
                     },
                     {
                       "language": "pt",
-                      "text": "Saída: falha ou erro do robô ativo"
+                      "text": "User-defined DO 5"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
                   "idShort": "DO6_UserDefined",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Configurable digital output for application-specific use"
+                      "text": "User-defined DO 6"
                     },
                     {
                       "language": "pt",
-                      "text": "Saída digital configurável para uso específico da aplicação"
+                      "text": "User-defined DO 6"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
                   "idShort": "DO7_UserDefined",
+                  "category": "VARIABLE",
                   "valueType": "xs:boolean",
                   "value": "false",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Configurable digital output for application-specific use"
+                      "text": "User-defined DO 7"
                     },
                     {
                       "language": "pt",
-                      "text": "Saída digital configurável para uso específico da aplicação"
+                      "text": "User-defined DO 7"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Standard digital outputs 0–7 (RTDE actual_digital_output_bits)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Saídas digitais padrão 0–7 (RTDE actual_digital_output_bits)"
                 }
               ]
             },
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "AnalogInputs",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Analog inputs on the controller (AI0–AI1, 0-10V or 4-20mA)"
-                },
-                {
-                  "language": "pt",
-                  "text": "Entradas analógicas no controlador (AI0–AI1, 0-10V ou 4-20mA)"
-                }
-              ],
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "AI0_UserDefined",
+                  "idShort": "AI0",
+                  "category": "VARIABLE",
                   "valueType": "xs:float",
-                  "value": "-0.0",
+                  "value": "0.0",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Analog input 0 — configurable 0-10V / 4-20mA"
+                      "text": "Analog input 0 [V or mA] (RTDE analog_input0)"
                     },
                     {
                       "language": "pt",
-                      "text": "Entrada analógica 0 — configurável 0-10V / 4-20mA"
+                      "text": "Entrada analógica 0 [V ou mA] (RTDE analog_input0)"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "AI1_UserDefined",
+                  "idShort": "AI1",
+                  "category": "VARIABLE",
                   "valueType": "xs:float",
-                  "value": "-0.0",
+                  "value": "0.0",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Analog input 1 — configurable 0-10V / 4-20mA"
+                      "text": "Analog input 1 [V or mA] (RTDE analog_input1)"
                     },
                     {
                       "language": "pt",
-                      "text": "Entrada analógica 1 — configurável 0-10V / 4-20mA"
+                      "text": "Entrada analógica 1 [V ou mA] (RTDE analog_input1)"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Controller analog inputs"
+                },
+                {
+                  "language": "pt",
+                  "text": "Entradas analógicas do controlador"
                 }
               ]
             },
             {
               "modelType": "SubmodelElementCollection",
               "idShort": "AnalogOutputs",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Analog outputs on the controller (AO0–AO1, 0-10V or 4-20mA)"
-                },
-                {
-                  "language": "pt",
-                  "text": "Saídas analógicas no controlador (AO0–AO1, 0-10V ou 4-20mA)"
-                }
-              ],
               "value": [
                 {
                   "modelType": "Property",
-                  "idShort": "AO0_UserDefined",
+                  "idShort": "AO0",
+                  "category": "VARIABLE",
                   "valueType": "xs:float",
-                  "value": "0.004",
+                  "value": "0.0",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Analog output 0 — configurable 0-10V / 4-20mA"
+                      "text": "Analog output 0 [V or mA] (RTDE analog_output0)"
                     },
                     {
                       "language": "pt",
-                      "text": "Saída analógica 0 — configurável 0-10V / 4-20mA"
+                      "text": "Saída analógica 0 [V ou mA] (RTDE analog_output0)"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
                 },
                 {
                   "modelType": "Property",
-                  "idShort": "AO1_UserDefined",
+                  "idShort": "AO1",
+                  "category": "VARIABLE",
                   "valueType": "xs:float",
-                  "value": "0.004",
+                  "value": "0.0",
                   "description": [
                     {
                       "language": "en",
-                      "text": "Analog output 1 — configurable 0-10V / 4-20mA"
+                      "text": "Analog output 1 [V or mA] (RTDE analog_output1)"
                     },
                     {
                       "language": "pt",
-                      "text": "Saída analógica 1 — configurável 0-10V / 4-20mA"
+                      "text": "Saída analógica 1 [V ou mA] (RTDE analog_output1)"
                     }
-                  ],
-                  "category": "VARIABLE"
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Controller analog outputs"
+                },
+                {
+                  "language": "pt",
+                  "text": "Saídas analógicas do controlador"
+                }
+              ]
+            },
+            {
+              "modelType": "SubmodelElementCollection",
+              "idShort": "Status",
+              "value": [
+                {
+                  "modelType": "Property",
+                  "idShort": "RobotMode",
+                  "category": "VARIABLE",
+                  "valueType": "xs:int",
+                  "value": "6",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Robot mode (0=NoCtrl 1=Disconnected 2=ConfirmSafety 3=Booting 4=PowerOff 5=PowerOn 6=Idle 7=Backdrive 8=Running 9=Updating)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Modo do robô (6=Idle 8=Running ...)"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "SafetyMode",
+                  "category": "VARIABLE",
+                  "valueType": "xs:int",
+                  "value": "1",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Safety mode (1=Normal 2=Reduced 3=ProtectiveStop 4=Recovery 5=SafeguardStop 6=SystemEmergStop 7=RobotEmergStop 8=Violation 9=Fault)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Modo de segurança (1=Normal 3=ParadaProtetiva ...)"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "ProgramRunning",
+                  "category": "VARIABLE",
+                  "valueType": "xs:boolean",
+                  "value": "false",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "True when a program is running on the controller"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "True quando há um programa em execução no controlador"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "SpeedScaling",
+                  "category": "VARIABLE",
+                  "valueType": "xs:float",
+                  "value": "1.0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Current TCP speed scaling factor 0.0–1.0 (RTDE speed_scaling)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Fator de escala de velocidade atual 0.0–1.0 (RTDE speed_scaling)"
+                    }
+                  ]
+                },
+                {
+                  "modelType": "Property",
+                  "idShort": "RuntimeState",
+                  "category": "VARIABLE",
+                  "valueType": "xs:int",
+                  "value": "0",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Runtime state (0=Stopping 1=Stopped 2=Playing 3=Pausing 4=Paused 5=Resuming)"
+                    },
+                    {
+                      "language": "pt",
+                      "text": "Estado de runtime (0=Parando 1=Parado 2=Executando ...)"
+                    }
+                  ]
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Robot controller status (RTDE)"
+                },
+                {
+                  "language": "pt",
+                  "text": "Status do controlador do robô (RTDE)"
                 }
               ]
             }
-          ]
-        },
-        {
-          "modelType": "SubmodelElementCollection",
-          "idShort": "ToolIO",
+          ],
           "description": [
             {
               "language": "en",
-              "text": "I/O at the robot tool flange (TCP)"
+              "text": "UR5e robot interface via RTDE (172.21.0.210:30004)"
             },
             {
               "language": "pt",
-              "text": "E/S na flange da ferramenta do robô (TCP)"
-            }
-          ],
-          "value": [
-            {
-              "modelType": "Property",
-              "idShort": "TDI0_GripperStatus",
-              "valueType": "xs:boolean",
-              "value": "false",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Tool digital input 0: gripper status feedback"
-                },
-                {
-                  "language": "pt",
-                  "text": "Entrada digital da ferramenta 0: feedback de status da garra"
-                }
-              ],
-              "category": "VARIABLE"
-            },
-            {
-              "modelType": "Property",
-              "idShort": "TDI1_UserDefined",
-              "valueType": "xs:boolean",
-              "value": "true",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Tool digital input 1: configurable"
-                },
-                {
-                  "language": "pt",
-                  "text": "Entrada digital da ferramenta 1: configurável"
-                }
-              ],
-              "category": "VARIABLE"
-            },
-            {
-              "modelType": "Property",
-              "idShort": "TDO0_GripperEnable",
-              "valueType": "xs:boolean",
-              "value": "false",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Tool digital output 0: gripper enable/power (open=true). Grip/release commanded via Modbus TCP reg 1 (0x0500=open, 0x0200=close)"
-                },
-                {
-                  "language": "pt",
-                  "text": "Saída digital da ferramenta 0: enable da garra (abrir=true). Grip/release via Modbus TCP reg 1 (0x0500=abrir, 0x0200=fechar)"
-                }
-              ],
-              "category": "VARIABLE"
-            },
-            {
-              "modelType": "Property",
-              "idShort": "TDO1_UserDefined",
-              "valueType": "xs:boolean",
-              "value": "false",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Tool digital output 1: configurable"
-                },
-                {
-                  "language": "pt",
-                  "text": "Saída digital da ferramenta 1: configurável"
-                }
-              ],
-              "category": "VARIABLE"
-            },
-            {
-              "modelType": "Property",
-              "idShort": "TAI0_ForceFeedback",
-              "valueType": "xs:float",
-              "value": "0.0",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Tool analog input 0: force/torque sensor data"
-                },
-                {
-                  "language": "pt",
-                  "text": "Entrada analógica da ferramenta 0: dados do sensor de força/torque"
-                }
-              ],
-              "category": "VARIABLE"
-            },
-            {
-              "modelType": "Property",
-              "idShort": "TAI1_UserDefined",
-              "valueType": "xs:float",
-              "value": "0.0",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Tool analog input 1: configurable"
-                },
-                {
-                  "language": "pt",
-                  "text": "Entrada analógica da ferramenta 1: configurável"
-                }
-              ],
-              "category": "VARIABLE"
+              "text": "Interface do robô UR5e via RTDE (172.21.0.210:30004)"
             }
           ]
         },
         {
           "modelType": "SubmodelElementCollection",
-          "idShort": "RobotState",
-          "description": [
-            {
-              "language": "en",
-              "text": "Real-time robot state variables (via RTDE or OPC UA)"
-            },
-            {
-              "language": "pt",
-              "text": "Variáveis de estado do robô em tempo real (via RTDE ou OPC UA)"
-            }
-          ],
+          "idShort": "Gripper",
           "value": [
             {
               "modelType": "Property",
-              "idShort": "RobotMode",
-              "valueType": "xs:string",
-              "value": "IDLE",
+              "idShort": "PositionFeedback",
+              "category": "VARIABLE",
+              "valueType": "xs:int",
+              "value": "1020",
               "description": [
                 {
                   "language": "en",
-                  "text": "Current robot mode: IDLE / RUNNING / FAULT / STOPPED"
+                  "text": "Current gripper position — reg[1] read: 512=fully closed, 1020=fully open"
                 },
                 {
                   "language": "pt",
-                  "text": "Modo atual do robô: IDLE / RUNNING / FAULT / STOPPED"
+                  "text": "Posição atual da garra — reg[1] leitura: 512=fechado, 1020=aberto"
                 }
-              ],
-              "category": "VARIABLE"
+              ]
             },
             {
               "modelType": "Property",
-              "idShort": "SafetyMode",
-              "valueType": "xs:string",
-              "value": "NORMAL",
+              "idShort": "CommandWord",
+              "category": "VARIABLE",
+              "valueType": "xs:int",
+              "value": "768",
               "description": [
                 {
                   "language": "en",
-                  "text": "Safety mode: NORMAL / REDUCED / PROTECTIVE_STOP / RECOVERY"
+                  "text": "Command register — reg[1] write: 0x0300 (768) = MOVE_TO_POSITION"
                 },
                 {
                   "language": "pt",
-                  "text": "Modo de segurança: NORMAL / REDUCED / PROTECTIVE_STOP / RECOVERY"
+                  "text": "Registrador de comando — reg[1] escrita: 0x0300 (768) = MOVE_TO_POSITION"
                 }
-              ],
-              "category": "VARIABLE"
+              ]
             },
             {
               "modelType": "Property",
-              "idShort": "TCPForce_N",
-              "valueType": "xs:float",
-              "value": "3.3498",
+              "idShort": "TargetPosition",
+              "category": "VARIABLE",
+              "valueType": "xs:int",
+              "value": "400",
               "description": [
                 {
                   "language": "en",
-                  "text": "Current TCP contact force [N]"
+                  "text": "Target position — reg[2] write: 0=fully closed, 400=fully open"
                 },
                 {
                   "language": "pt",
-                  "text": "Força de contato atual no TCP [N]"
+                  "text": "Posição alvo — reg[2] escrita: 0=fechado total, 400=aberto total"
                 }
-              ],
-              "category": "VARIABLE"
+              ]
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Schunk EGP gripper via Modbus TCP (172.21.0.210:502, reg 0–3)"
             },
             {
-              "modelType": "Property",
-              "idShort": "ProgramRunning",
-              "valueType": "xs:boolean",
-              "value": "false",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Indicates if a program is currently executing"
-                },
-                {
-                  "language": "pt",
-                  "text": "Indica se um programa está em execução"
-                }
-              ],
-              "category": "VARIABLE"
+              "language": "pt",
+              "text": "Garra Schunk EGP via Modbus TCP (172.21.0.210:502, reg 0–3)"
             }
           ]
         }
@@ -2373,7 +2795,7 @@
                   "modelType": "Property",
                   "idShort": "base",
                   "valueType": "xs:anyURI",
-                  "value": "tcp://192.168.1.100:30004",
+                  "value": "tcp://172.21.0.210:30004",
                   "semanticId": {
                     "type": "ExternalReference",
                     "keys": [
@@ -4086,7 +4508,7 @@
                   "modelType": "Property",
                   "idShort": "base",
                   "valueType": "xs:anyURI",
-                  "value": "tcp://192.168.1.100:29999",
+                  "value": "tcp://172.21.0.210:29999",
                   "semanticId": {
                     "type": "ExternalReference",
                     "keys": [
@@ -5353,7 +5775,7 @@
                   "modelType": "Property",
                   "idShort": "base",
                   "valueType": "xs:anyURI",
-                  "value": "modbus+tcp://192.168.1.100:502",
+                  "value": "modbus+tcp://172.21.0.210:502",
                   "semanticId": {
                     "type": "ExternalReference",
                     "keys": [
@@ -5526,7 +5948,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/0",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/0",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -5642,7 +6064,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/1",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/1",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -5754,7 +6176,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/2",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/2",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -5866,7 +6288,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/3",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/3",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -5978,7 +6400,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/4",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/4",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -6090,7 +6512,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/5",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/5",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -6202,7 +6624,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/6",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/6",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -6314,7 +6736,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/7",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/7",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -6426,7 +6848,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/100",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/100",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -6538,7 +6960,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/101",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/101",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -6650,7 +7072,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/102",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/102",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -6762,7 +7184,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/103",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/103",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -6874,7 +7296,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/104",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/104",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -6986,7 +7408,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/105",
+                                  "value": "modbus+tcp://172.21.0.210:502/coil/105",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -7105,7 +7527,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/holdingRegister/400",
+                                  "value": "modbus+tcp://172.21.0.210:502/holdingRegister/400",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -7228,7 +7650,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/holdingRegister/401",
+                                  "value": "modbus+tcp://172.21.0.210:502/holdingRegister/401",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -7351,7 +7773,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/holdingRegister/402",
+                                  "value": "modbus+tcp://172.21.0.210:502/holdingRegister/402",
                                   "category": "VARIABLE"
                                 },
                                 {
@@ -7474,7 +7896,7 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/holdingRegister/403",
+                                  "value": "modbus+tcp://172.21.0.210:502/holdingRegister/403",
                                   "category": "VARIABLE"
                                 },
                                 {
