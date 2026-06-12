@@ -131,55 +131,64 @@
                 "value": "0173-1#02-AAO677#002"
               }
             ]
-          }
+          },
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
           "idShort": "ManufacturerProductDesignation",
           "valueType": "xs:string",
-          "value": "Linear V2 Conveyor"
+          "value": "Linear V2 Conveyor",
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
           "idShort": "ManufacturerArticleNumber",
           "valueType": "xs:string",
-          "value": "D12501"
+          "value": "D12501",
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
           "idShort": "ManufacturerOrderCode",
           "valueType": "xs:string",
-          "value": "CP-L-LINEAR-V2-C11M0"
+          "value": "CP-L-LINEAR-V2-C11M0",
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
           "idShort": "InstanceName",
           "valueType": "xs:string",
-          "value": "LINEAR-MPRESS"
+          "value": "LINEAR-MPRESS",
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
           "idShort": "StationNumber",
           "valueType": "xs:int",
-          "value": "5"
+          "value": "5",
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
           "idShort": "StationRole",
           "valueType": "xs:string",
-          "value": "Assembly - Press Fitting"
+          "value": "Assembly - Press Fitting",
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
           "idShort": "CountryOfOrigin",
           "valueType": "xs:string",
-          "value": "Canada"
+          "value": "Canada",
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
           "idShort": "ServicePortal",
           "valueType": "xs:string",
-          "value": "https://ip.festo-didactic.com"
+          "value": "https://ip.festo-didactic.com",
+          "category": "VARIABLE"
         }
       ]
     },
@@ -205,19 +214,22 @@
               "modelType": "Property",
               "idShort": "ProductFamily",
               "valueType": "xs:string",
-              "value": "CP Lab"
+              "value": "CP Lab",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "ProductCategory",
               "valueType": "xs:string",
-              "value": "Base module / Conveyor"
+              "value": "Base module / Conveyor",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "SchematicsDocument",
               "valueType": "xs:string",
-              "value": "8167762 Rev V08"
+              "value": "8167762 Rev V08",
+              "category": "VARIABLE"
             }
           ]
         },
@@ -229,31 +241,36 @@
               "modelType": "Property",
               "idShort": "OperatingVoltage_DC",
               "valueType": "xs:string",
-              "value": "24 VDC"
+              "value": "24 VDC",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "OperatingPressure_bar",
               "valueType": "xs:float",
-              "value": "6.0"
+              "value": "6.0",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "DimensionHeight_mm",
               "valueType": "xs:int",
-              "value": "700"
+              "value": "700",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "DimensionWidth_mm",
               "valueType": "xs:int",
-              "value": "350"
+              "value": "350",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "DimensionDepth_mm",
               "valueType": "xs:int",
-              "value": "205"
+              "value": "205",
+              "category": "VARIABLE"
             }
           ]
         },
@@ -265,61 +282,71 @@
               "modelType": "Property",
               "idShort": "CPU_Model",
               "valueType": "xs:string",
-              "value": "Siemens ET200SP CPU 1512SP F-1PN"
+              "value": "Siemens ET200SP CPU 1512SP F-1PN",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "CPU_OrderCode",
               "valueType": "xs:string",
-              "value": "6ES7512-1SK00-0AB0"
+              "value": "6ES7512-1SK00-0AB0",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "CPU_NetworkAddress",
               "valueType": "xs:string",
-              "value": "192.168.0.1"
+              "value": "192.168.0.1",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "DI_Module_1",
               "valueType": "xs:string",
-              "value": "Siemens DI 8x24VDC (6ES7131-6BF00-0CA0)"
+              "value": "Siemens DI 8x24VDC (6ES7131-6BF00-0CA0)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "DI_Module_2",
               "valueType": "xs:string",
-              "value": "Siemens DI 8x24VDC (6ES7131-6BF00-0CA0)"
+              "value": "Siemens DI 8x24VDC (6ES7131-6BF00-0CA0)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "DQ_Module_1",
               "valueType": "xs:string",
-              "value": "Siemens DQ 8x24VDC 0.5A (6ES7132-6BF00-0CA0)"
+              "value": "Siemens DQ 8x24VDC 0.5A (6ES7132-6BF00-0CA0)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "DQ_Module_2",
               "valueType": "xs:string",
-              "value": "Siemens DQ 8x24VDC 0.5A (6ES7132-6BF00-0CA0)"
+              "value": "Siemens DQ 8x24VDC 0.5A (6ES7132-6BF00-0CA0)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "IOLink_CM",
               "valueType": "xs:string",
-              "value": "Siemens CM 4x IO-Link ST (6ES7137-6BD00-0BA0)"
+              "value": "Siemens CM 4x IO-Link ST (6ES7137-6BD00-0BA0)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "EthernetSwitch",
               "valueType": "xs:string",
-              "value": "Siemens Scalance XB008 - 8x RJ45 10/100Mbit unmanaged"
+              "value": "Siemens Scalance XB008 - 8x RJ45 10/100Mbit unmanaged",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "PowerSupply",
               "valueType": "xs:string",
-              "value": "24 VDC / 2 A"
+              "value": "24 VDC / 2 A",
+              "category": "VARIABLE"
             }
           ]
         },
@@ -331,31 +358,36 @@
               "modelType": "Property",
               "idShort": "Model",
               "valueType": "xs:string",
-              "value": "Siemens SIMATIC MTP700"
+              "value": "Siemens SIMATIC MTP700",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "ArticleNumber",
               "valueType": "xs:string",
-              "value": "8189692"
+              "value": "8189692",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "Interface",
               "valueType": "xs:string",
-              "value": "Ethernet (X5), USB (X6)"
+              "value": "Ethernet (X5), USB (X6)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "Buttons",
               "valueType": "xs:string",
-              "value": "SF1-SF5 (Start, Stop, F1, F2, Reset)"
+              "value": "SF1-SF5 (Start, Stop, F1, F2, Reset)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "Indicators",
               "valueType": "xs:string",
-              "value": "PF1-PF4 (signal lamps)"
+              "value": "PF1-PF4 (signal lamps)",
+              "category": "VARIABLE"
             }
           ]
         },
@@ -367,49 +399,57 @@
               "modelType": "Property",
               "idShort": "Model",
               "valueType": "xs:string",
-              "value": "Siemens RF210R"
+              "value": "Siemens RF210R",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "Protocol",
               "valueType": "xs:string",
-              "value": "IO-Link V1.1"
+              "value": "IO-Link V1.1",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "IOLink_Port",
               "valueType": "xs:int",
-              "value": "1"
+              "value": "1",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "IO_ByteSize",
               "valueType": "xs:int",
-              "value": "32"
+              "value": "32",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "ReadPayload_B",
               "valueType": "xs:int",
-              "value": "28"
+              "value": "28",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StatusBits",
               "valueType": "xs:string",
-              "value": "TagPresent (%I40.0), Error (%I40.1), Done (%I40.2)"
+              "value": "TagPresent (%I40.0), Error (%I40.1), Done (%I40.2)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "CmdWrite",
               "valueType": "xs:string",
-              "value": "%Q40.0 + 28 byte payload"
+              "value": "%Q40.0 + 28 byte payload",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "CmdRead",
               "valueType": "xs:string",
-              "value": "%Q40.1"
+              "value": "%Q40.1",
+              "category": "VARIABLE"
             }
           ]
         },
@@ -421,49 +461,57 @@
               "modelType": "Property",
               "idShort": "Motor_Model",
               "valueType": "xs:string",
-              "value": "OTT#SWM4033438-3"
+              "value": "OTT#SWM4033438-3",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "Motor_Voltage",
               "valueType": "xs:string",
-              "value": "24 VDC bidirectional (normal/reduced speed)"
+              "value": "24 VDC bidirectional (normal/reduced speed)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "Encoder_Model",
               "valueType": "xs:string",
-              "value": "Festo FES.102796"
+              "value": "Festo FES.102796",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "Encoder_PulsesPerCh",
               "valueType": "xs:int",
-              "value": "8"
+              "value": "8",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "Encoder_mmPerRotation",
               "valueType": "xs:float",
-              "value": "94.2"
+              "value": "94.2",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "Encoder_Calculation",
               "valueType": "xs:string",
-              "value": "30mm dia × π = 94.2 mm/rotation at 8 pulses/ch"
+              "value": "30mm dia × π = 94.2 mm/rotation at 8 pulses/ch",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "Encoder_Connector_A",
               "valueType": "xs:string",
-              "value": "BNC X18 (channel A - BG7)"
+              "value": "BNC X18 (channel A - BG7)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "Encoder_Connector_B",
               "valueType": "xs:string",
-              "value": "BNC X19 (channel B - BG8)"
+              "value": "BNC X19 (channel B - BG8)",
+              "category": "VARIABLE"
             }
           ]
         },
@@ -475,25 +523,29 @@
               "modelType": "Property",
               "idShort": "StopperValve_Model",
               "valueType": "xs:string",
-              "value": "VUVG-L10-M52-MT-M5-1P3"
+              "value": "VUVG-L10-M52-MT-M5-1P3",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StopperValve_FestoPN",
               "valueType": "xs:string",
-              "value": "FES.574351"
+              "value": "FES.574351",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StopperValve_Type",
               "valueType": "xs:string",
-              "value": "5/2 monostable, 24 VDC solenoid"
+              "value": "5/2 monostable, 24 VDC solenoid",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StopperSensor_BG9",
               "valueType": "xs:string",
-              "value": "Lower/press position sensor → %I42.7"
+              "value": "Lower/press position sensor → %I42.7",
+              "category": "VARIABLE"
             }
           ]
         },
@@ -514,7 +566,8 @@
                     "value": "App inputs DI0-DI7 from KF2"
                   }
                 ]
-              }
+              },
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -529,7 +582,8 @@
                     "value": "Control panel inputs from KF3"
                   }
                 ]
-              }
+              },
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -544,7 +598,8 @@
                     "value": "IO-Link sensors BG1-BG4, KG1-KG2, GF1, BG9"
                   }
                 ]
-              }
+              },
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -559,7 +614,8 @@
                     "value": "App outputs DQ0-DQ7 from KF4"
                   }
                 ]
-              }
+              },
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -574,7 +630,8 @@
                     "value": "Control panel outputs from KF5"
                   }
                 ]
-              }
+              },
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -589,7 +646,8 @@
                     "value": "IO-Link actuator outputs"
                   }
                 ]
-              }
+              },
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -604,7 +662,8 @@
                     "value": "App_AI0 (IO-Link analog)"
                   }
                 ]
-              }
+              },
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -619,7 +678,8 @@
                     "value": "App_AI1 (IO-Link analog)"
                   }
                 ]
-              }
+              },
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -634,7 +694,8 @@
                     "value": "App_AO0 (IO-Link analog)"
                   }
                 ]
-              }
+              },
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -649,7 +710,8 @@
                     "value": "App_AO1 (IO-Link analog)"
                   }
                 ]
-              }
+              },
+              "category": "VARIABLE"
             }
           ]
         },
@@ -665,97 +727,113 @@
                   "modelType": "Property",
                   "idShort": "I0_0_App_DI0",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I0_1_App_DI1",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I0_2_App_DI2",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I0_3_App_DI3",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I0_4_App_DI4",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I0_5_App_DI5",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I0_6_App_DI6",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I0_7_App_DI7",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q0_0_App_DQ0",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q0_1_App_DQ1",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q0_2_App_DQ2",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q0_3_App_DQ3",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q0_4_App_DQ4",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q0_5_App_DQ5",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q0_6_App_DQ6",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q0_7_App_DQ7",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -767,97 +845,113 @@
                   "modelType": "Property",
                   "idShort": "I1_0_Start",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I1_1_Stop",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I1_2_F1",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I1_3_F2",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I1_4_Reset",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I1_5_Automatic",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I1_6_RI",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I1_7_Auto",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q1_0_IO_Lamp",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q1_1_PF1_Lamp",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q1_2_PF2_Lamp",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q1_3_PF3_Lamp",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q1_4_PF4_Lamp",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q1_5_Conveyor_Fwd",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q1_6_Conveyor_Bwd",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q1_7_MB1",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -869,97 +963,113 @@
                   "modelType": "Property",
                   "idShort": "I42_0_BG1_CarrierPos1",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I42_1_BG2_CarrierPos2",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I42_2_BG3_CarrierPos3",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I42_3_BG4_CarrierPos4",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I42_4_KG1_CouplingIn",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I42_5_KG2_CouplingOut",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I42_6_GF1_CouplingSet",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "I42_7_BG9_StopperDown",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q42_0_BG1_BCDDisplay_b0",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q42_1_BG2_BCDDisplay_b0",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q42_2_BG3_BCDDisplay_b0",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q42_3_BG4_BCDDisplay_b0",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q42_4_CouplingIn_Act",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q42_5_CouplingOut_Act",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q42_6_GF1_Release",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "Q42_7_Stopper_Retract",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -971,25 +1081,29 @@
                   "modelType": "Property",
                   "idShort": "IW43_App_AI0",
                   "valueType": "xs:int",
-                  "value": "0"
+                  "value": "0",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "IW46_App_AI1",
                   "valueType": "xs:int",
-                  "value": "0"
+                  "value": "0",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "QW43_App_AO0",
                   "valueType": "xs:int",
-                  "value": "0"
+                  "value": "0",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "QW45_App_AO1",
                   "valueType": "xs:int",
-                  "value": "0"
+                  "value": "0",
+                  "category": "VARIABLE"
                 }
               ]
             }
@@ -1003,19 +1117,22 @@
               "modelType": "Property",
               "idShort": "PROFINET",
               "valueType": "xs:string",
-              "value": "Siemens ET200SP via Scalance XB008 switch"
+              "value": "Siemens ET200SP via Scalance XB008 switch",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "IOLink",
               "valueType": "xs:string",
-              "value": "IO-Link V1.1 via CM 4x IO-Link ST (4 ports)"
+              "value": "IO-Link V1.1 via CM 4x IO-Link ST (4 ports)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "InterModuleCoupling",
               "valueType": "xs:string",
-              "value": "Optical 2-bit coupling (KG1/KG2 in, GF1/GF2 out)"
+              "value": "Optical 2-bit coupling (KG1/KG2 in, GF1/GF2 out)",
+              "category": "VARIABLE"
             }
           ]
         }
@@ -1043,7 +1160,8 @@
               "modelType": "Property",
               "idShort": "Title",
               "valueType": "xs:string",
-              "value": "CP-L-LINEAR-V2 Operating Manual"
+              "value": "CP-L-LINEAR-V2 Operating Manual",
+              "category": "VARIABLE"
             },
             {
               "modelType": "File",
@@ -1061,13 +1179,15 @@
               "modelType": "Property",
               "idShort": "Title",
               "valueType": "xs:string",
-              "value": "CP-L-LINEAR-V2 Electrical Schematics (8167762 Rev V08)"
+              "value": "CP-L-LINEAR-V2 Electrical Schematics (8167762 Rev V08)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "SchematicsRevision",
               "valueType": "xs:string",
-              "value": "V08"
+              "value": "V08",
+              "category": "VARIABLE"
             },
             {
               "modelType": "File",
@@ -1085,7 +1205,8 @@
               "modelType": "Property",
               "idShort": "Title",
               "valueType": "xs:string",
-              "value": "CP Factory Maintenance Manual 2023"
+              "value": "CP Factory Maintenance Manual 2023",
+              "category": "VARIABLE"
             },
             {
               "modelType": "File",
@@ -1124,31 +1245,36 @@
             ]
           },
           "valueType": "xs:string",
-          "value": "Festo Didactic SE"
+          "value": "Festo Didactic SE",
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
           "idShort": "ManufacturerProductDesignation",
           "valueType": "xs:string",
-          "value": "Muscle Press (MPRESS)"
+          "value": "Muscle Press (MPRESS)",
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
           "idShort": "ManufacturerArticleNumber",
           "valueType": "xs:string",
-          "value": "8038567"
+          "value": "8038567",
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
           "idShort": "ManufacturerOrderCode",
           "valueType": "xs:string",
-          "value": "CP-AM-MPRESS"
+          "value": "CP-AM-MPRESS",
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
           "idShort": "InstanceName",
           "valueType": "xs:string",
-          "value": "MPRESS"
+          "value": "MPRESS",
+          "category": "VARIABLE"
         }
       ]
     },
@@ -1174,25 +1300,29 @@
               "modelType": "Property",
               "idShort": "ProductFamily",
               "valueType": "xs:string",
-              "value": "CP Systems"
+              "value": "CP Systems",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "ProductCategory",
               "valueType": "xs:string",
-              "value": "Application module"
+              "value": "Application module",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "Function",
               "valueType": "xs:string",
-              "value": "Presses back covers onto front covers via pneumatic muscle actuator (Complexity: simple, electro-pneumatic)"
+              "value": "Presses back covers onto front covers via pneumatic muscle actuator (Complexity: simple, electro-pneumatic)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "ActuatorType",
               "valueType": "xs:string",
-              "value": "Pneumatic muscle (fluidic muscle)"
+              "value": "Pneumatic muscle (fluidic muscle)",
+              "category": "VARIABLE"
             }
           ]
         },
@@ -1204,43 +1334,50 @@
               "modelType": "Property",
               "idShort": "OperatingVoltage",
               "valueType": "xs:string",
-              "value": "24 VDC"
+              "value": "24 VDC",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "OperatingPressure",
               "valueType": "xs:string",
-              "value": "6 bar"
+              "value": "6 bar",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "ElectricalConnector",
               "valueType": "xs:string",
-              "value": "24-pin IEEE 488 female (SysLink)"
+              "value": "24-pin IEEE 488 female (SysLink)",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "PneumaticConnector",
               "valueType": "xs:string",
-              "value": "4 mm OD tube"
+              "value": "4 mm OD tube",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "DimensionHeight_mm",
               "valueType": "xs:int",
-              "value": "525"
+              "value": "525",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "DimensionWidth_mm",
               "valueType": "xs:int",
-              "value": "240"
+              "value": "240",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "DimensionDepth_mm",
               "valueType": "xs:int",
-              "value": "180"
+              "value": "180",
+              "category": "VARIABLE"
             }
           ]
         },
@@ -1252,13 +1389,15 @@
               "modelType": "Property",
               "idShort": "DigitalInputs",
               "valueType": "xs:int",
-              "value": "3"
+              "value": "3",
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "DigitalOutputs",
               "valueType": "xs:int",
-              "value": "2"
+              "value": "2",
+              "category": "VARIABLE"
             }
           ]
         },
@@ -1274,19 +1413,22 @@
                   "modelType": "Property",
                   "idShort": "DI_Cylinder_TopPosition",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "DI_Cylinder_PressPosition",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "DI_BackCoverPresent",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -1298,13 +1440,15 @@
                   "modelType": "Property",
                   "idShort": "DO_Cylinder_MoveUp",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "DO_Cylinder_MoveDown",
                   "valueType": "xs:boolean",
-                  "value": "false"
+                  "value": "false",
+                  "category": "VARIABLE"
                 }
               ]
             }
@@ -1334,7 +1478,8 @@
               "modelType": "Property",
               "idShort": "Title",
               "valueType": "xs:string",
-              "value": "CP-AM-PRESS Operating Manual"
+              "value": "CP-AM-PRESS Operating Manual",
+              "category": "VARIABLE"
             },
             {
               "modelType": "File",
@@ -1352,7 +1497,8 @@
               "modelType": "Property",
               "idShort": "Title",
               "valueType": "xs:string",
-              "value": "CP-AM-PRESS Electrical Schematics"
+              "value": "CP-AM-PRESS Electrical Schematics",
+              "category": "VARIABLE"
             },
             {
               "modelType": "File",
@@ -1370,7 +1516,8 @@
               "modelType": "Property",
               "idShort": "Title",
               "valueType": "xs:string",
-              "value": "CP Factory Maintenance Manual 2023"
+              "value": "CP Factory Maintenance Manual 2023",
+              "category": "VARIABLE"
             },
             {
               "modelType": "File",
@@ -1438,7 +1585,8 @@
                       "language": "pt",
                       "text": "Sensor indutivo: portador de peça presente na posição de parada"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1454,7 +1602,8 @@
                       "language": "pt",
                       "text": "Sensor indutivo: cilindro de parada posição 1 (cima / bloqueando)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1470,7 +1619,8 @@
                       "language": "pt",
                       "text": "Sensor indutivo: cilindro de parada posição 2"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1486,7 +1636,8 @@
                       "language": "pt",
                       "text": "Sensor indutivo: cilindro de parada posição 3"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1502,7 +1653,8 @@
                       "language": "pt",
                       "text": "Sensor indutivo: cilindro de parada posição 4 (baixo / liberado)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1518,7 +1670,8 @@
                       "language": "pt",
                       "text": "Leitor RFID: tag do portador de pallete detectada"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1534,7 +1687,8 @@
                       "language": "pt",
                       "text": "RFID: identificador do portador de pallete"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1550,7 +1704,8 @@
                       "language": "pt",
                       "text": "RFID: código de estado atual do portador"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -1582,7 +1737,8 @@
                       "language": "pt",
                       "text": "Motor da correia: acionamento da esteira ligado/desligado"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1598,7 +1754,8 @@
                       "language": "pt",
                       "text": "Cilindro de parada: false=cima/bloquear portador, true=baixo/liberar portador"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -1646,7 +1803,8 @@
                       "language": "pt",
                       "text": "Sensor: prensa na posição superior (inicial)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1662,7 +1820,8 @@
                       "language": "pt",
                       "text": "Sensor: prensa na posição inferior máxima"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1678,7 +1837,8 @@
                       "language": "pt",
                       "text": "Sensor: peça presente no pallete sob a prensa"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1694,7 +1854,8 @@
                       "language": "pt",
                       "text": "Entrada analógica: força de prensagem medida [N]"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -1726,7 +1887,8 @@
                       "language": "pt",
                       "text": "Músculo pneumático: contrair para prensar a tampa traseira sobre a frontal"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1742,7 +1904,8 @@
                       "language": "pt",
                       "text": "Cilindro de fixação: travar pallete durante a prensagem"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -1822,7 +1985,8 @@
                   "language": "pt",
                   "text": "Número da ordem de produção no MES (ONo)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1838,7 +2002,8 @@
                   "language": "pt",
                   "text": "Posição dentro da ordem de produção (OPos)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1854,7 +2019,8 @@
                   "language": "pt",
                   "text": "Operação nesta estação: Prensagem com regulação de força"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1870,7 +2036,8 @@
                   "language": "pt",
                   "text": "Descrição legível da operação"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1886,7 +2053,8 @@
                   "language": "pt",
                   "text": "Identificador de recurso MES para esta estação"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1902,7 +2070,8 @@
                   "language": "pt",
                   "text": "Código de estado atual do portador lido do transponder RFID"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1918,7 +2087,8 @@
                   "language": "pt",
                   "text": "Identificador do portador de pallete lido do transponder RFID"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1934,7 +2104,8 @@
                   "language": "pt",
                   "text": "Parâmetro de operação 1 (específico da aplicação, ver manual §8.13)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1950,7 +2121,8 @@
                   "language": "pt",
                   "text": "Parâmetro de operação 2 (específico da aplicação)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1966,7 +2138,8 @@
                   "language": "pt",
                   "text": "Parâmetro de operação 3 (específico da aplicação)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1982,7 +2155,8 @@
                   "language": "pt",
                   "text": "Parâmetro de operação 4 (específico da aplicação)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             }
           ],
           "description": [
@@ -2014,7 +2188,8 @@
                   "language": "pt",
                   "text": "Número da peça no pallete (PNo)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -2030,7 +2205,8 @@
                   "language": "pt",
                   "text": "Montagem CP (tampa frontal + traseira)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -2046,7 +2222,8 @@
                   "language": "pt",
                   "text": "Resultado da última operação de qualidade: pendente / OK / NOK"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             }
           ],
           "description": [
@@ -2082,7 +2259,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2098,7 +2276,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2114,7 +2293,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2146,7 +2326,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2162,7 +2343,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2178,7 +2360,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2210,7 +2393,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2226,7 +2410,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2242,7 +2427,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2274,7 +2460,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2290,7 +2477,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2306,7 +2494,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2338,7 +2527,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2354,7 +2544,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2370,7 +2561,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2402,7 +2594,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2418,7 +2611,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2434,7 +2628,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2466,7 +2661,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2482,7 +2678,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2498,7 +2695,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2530,7 +2728,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2546,7 +2745,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2562,7 +2762,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2594,7 +2795,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2610,7 +2812,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2626,7 +2829,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2658,7 +2862,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2674,7 +2879,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2690,7 +2896,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2722,7 +2929,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2738,7 +2946,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2754,7 +2963,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2786,7 +2996,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2802,7 +3013,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2818,7 +3030,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2850,7 +3063,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2866,7 +3080,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2882,7 +3097,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2914,7 +3130,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2930,7 +3147,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2946,7 +3164,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -2978,7 +3197,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2994,7 +3214,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -3010,7 +3231,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -3042,7 +3264,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -3058,7 +3281,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -3074,7 +3298,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -3106,7 +3331,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -3122,7 +3348,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -3138,7 +3365,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -3170,7 +3398,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -3186,7 +3415,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -3202,7 +3432,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -3234,7 +3465,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -3250,7 +3482,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -3266,7 +3499,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -3298,7 +3532,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -3314,7 +3549,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -3330,7 +3566,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ],
               "description": [
@@ -3508,7 +3745,8 @@
               "modelType": "Property",
               "idShort": "title",
               "valueType": "xs:string",
-              "value": "OPC UA — MPRESS"
+              "value": "OPC UA — MPRESS",
+              "category": "VARIABLE"
             },
             {
               "modelType": "SubmodelElementCollection",
@@ -3527,13 +3765,15 @@
                         "value": "https://www.w3.org/2019/wot/td#baseURI"
                       }
                     ]
-                  }
+                  },
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "contentType",
                   "valueType": "xs:string",
-                  "value": "application/opcua"
+                  "value": "application/opcua",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "SubmodelElementList",
@@ -3544,7 +3784,8 @@
                       "modelType": "Property",
                       "idShort": "nosec",
                       "valueType": "xs:string",
-                      "value": "nosec_sc"
+                      "value": "nosec_sc",
+                      "category": "VARIABLE"
                     }
                   ],
                   "semanticId": {
@@ -3569,7 +3810,8 @@
                           "modelType": "Property",
                           "idShort": "scheme",
                           "valueType": "xs:string",
-                          "value": "nosec"
+                          "value": "nosec",
+                          "category": "VARIABLE"
                         }
                       ],
                       "semanticId": {
@@ -3620,7 +3862,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -3635,19 +3878,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "readOnly",
                           "valueType": "xs:boolean",
-                          "value": "true"
+                          "value": "true",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -3662,19 +3908,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "2:DeviceSet/3:plcPress/3:Inputs/3:xBG1"
+                                  "value": "2:DeviceSet/3:plcPress/3:Inputs/3:xBG1",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/opcua"
+                                  "value": "application/opcua",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty observeproperty"
+                                  "value": "readproperty observeproperty",
+                                  "category": "VARIABLE"
                                 }
                               ],
                               "semanticId": {
@@ -3736,7 +3985,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -3751,19 +4001,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "readOnly",
                           "valueType": "xs:boolean",
-                          "value": "true"
+                          "value": "true",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -3778,19 +4031,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "2:DeviceSet/3:plcPress/3:Inputs/3:xHL_BG8"
+                                  "value": "2:DeviceSet/3:plcPress/3:Inputs/3:xHL_BG8",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/opcua"
+                                  "value": "application/opcua",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty observeproperty"
+                                  "value": "readproperty observeproperty",
+                                  "category": "VARIABLE"
                                 }
                               ],
                               "semanticId": {
@@ -3852,7 +4108,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -3867,19 +4124,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "readOnly",
                           "valueType": "xs:boolean",
-                          "value": "false"
+                          "value": "false",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -3894,19 +4154,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "2:DeviceSet/3:plcPress/3:Outputs/3:xQA1_A1"
+                                  "value": "2:DeviceSet/3:plcPress/3:Outputs/3:xQA1_A1",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/opcua"
+                                  "value": "application/opcua",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty writeproperty"
+                                  "value": "readproperty writeproperty",
+                                  "category": "VARIABLE"
                                 }
                               ],
                               "semanticId": {
@@ -3968,7 +4231,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -3983,19 +4247,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "readOnly",
                           "valueType": "xs:boolean",
-                          "value": "false"
+                          "value": "false",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4010,19 +4277,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "2:DeviceSet/3:plcPress/3:Outputs/3:xMB1"
+                                  "value": "2:DeviceSet/3:plcPress/3:Outputs/3:xMB1",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/opcua"
+                                  "value": "application/opcua",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty writeproperty"
+                                  "value": "readproperty writeproperty",
+                                  "category": "VARIABLE"
                                 }
                               ],
                               "semanticId": {
@@ -4084,7 +4354,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -4099,19 +4370,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "readOnly",
                           "valueType": "xs:boolean",
-                          "value": "false"
+                          "value": "false",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4126,19 +4400,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "2:DeviceSet/3:plcPress/3:Outputs/3:xHL_MB1"
+                                  "value": "2:DeviceSet/3:plcPress/3:Outputs/3:xHL_MB1",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/opcua"
+                                  "value": "application/opcua",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty writeproperty"
+                                  "value": "readproperty writeproperty",
+                                  "category": "VARIABLE"
                                 }
                               ],
                               "semanticId": {
@@ -4200,7 +4477,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#PropertyAffordance"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -4215,19 +4493,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "readOnly",
                           "valueType": "xs:boolean",
-                          "value": "false"
+                          "value": "false",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4242,19 +4523,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "2:DeviceSet/3:plcPress/3:Outputs/3:xHL_MB2"
+                                  "value": "2:DeviceSet/3:plcPress/3:Outputs/3:xHL_MB2",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/opcua"
+                                  "value": "application/opcua",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty writeproperty"
+                                  "value": "readproperty writeproperty",
+                                  "category": "VARIABLE"
                                 }
                               ],
                               "semanticId": {

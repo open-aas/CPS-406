@@ -146,7 +146,8 @@
               "language": "pt",
               "text": "Nome do fabricante do robô"
             }
-          ]
+          ],
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
@@ -162,7 +163,8 @@
               "language": "pt",
               "text": "Designação do produto do robô colaborativo"
             }
-          ]
+          ],
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
@@ -178,7 +180,8 @@
               "language": "pt",
               "text": "Número de artigo do fabricante"
             }
-          ]
+          ],
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
@@ -194,7 +197,8 @@
               "language": "pt",
               "text": "Código de pedido do UR5e com controlador CB3"
             }
-          ]
+          ],
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
@@ -210,7 +214,8 @@
               "language": "pt",
               "text": "Nome da instância no sistema CP-406"
             }
-          ]
+          ],
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
@@ -226,7 +231,8 @@
               "language": "pt",
               "text": "Papel desta estação no processo de produção"
             }
-          ]
+          ],
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
@@ -242,7 +248,8 @@
               "language": "pt",
               "text": "País onde o robô foi fabricado"
             }
-          ]
+          ],
+          "category": "VARIABLE"
         },
         {
           "modelType": "Property",
@@ -258,7 +265,8 @@
               "language": "pt",
               "text": "Portal de suporte online do fabricante"
             }
-          ]
+          ],
+          "category": "VARIABLE"
         }
       ]
     },
@@ -314,7 +322,8 @@
                   "language": "pt",
                   "text": "Família de produtos UR"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -330,7 +339,8 @@
                   "language": "pt",
                   "text": "Categoria do robô"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -346,7 +356,8 @@
                   "language": "pt",
                   "text": "Função principal do robô no sistema CP-406"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             }
           ]
         },
@@ -378,7 +389,8 @@
                   "language": "pt",
                   "text": "Número de juntas rotativas (graus de liberdade)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -394,7 +406,8 @@
                   "language": "pt",
                   "text": "Capacidade máxima de carga [kg]"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -410,7 +423,8 @@
                   "language": "pt",
                   "text": "Raio máximo de alcance [mm]"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -426,7 +440,8 @@
                   "language": "pt",
                   "text": "Repetibilidade posicional ± [mm]"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -442,7 +457,8 @@
                   "language": "pt",
                   "text": "Peso do braço robótico (sem controlador)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -458,7 +474,8 @@
                   "language": "pt",
                   "text": "Velocidade máxima do TCP [m/s]"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             }
           ]
         },
@@ -490,7 +507,8 @@
                   "language": "pt",
                   "text": "Faixa de tensão de entrada do controlador"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -506,7 +524,8 @@
                   "language": "pt",
                   "text": "Consumo de energia típico [W]"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -522,7 +541,8 @@
                   "language": "pt",
                   "text": "Modelo do controlador do robô"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -538,7 +558,8 @@
                   "language": "pt",
                   "text": "Faixa de temperatura ambiente de operação"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             }
           ]
         },
@@ -570,7 +591,8 @@
                   "language": "pt",
                   "text": "Porta Ethernet principal no controlador"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -586,7 +608,8 @@
                   "language": "pt",
                   "text": "Modbus TCP para integração com CLPs"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -602,7 +625,8 @@
                   "language": "pt",
                   "text": "Suporte a dispositivo PROFINET IO"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -618,7 +642,8 @@
                   "language": "pt",
                   "text": "Suporte a adaptador EtherNet/IP"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -634,7 +659,8 @@
                   "language": "pt",
                   "text": "Servidor OPC UA para troca de dados com MES/SCADA"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -650,7 +676,8 @@
                   "language": "pt",
                   "text": "Interface RTDE proprietária da UR para streaming de dados em alta frequência"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             }
           ]
         },
@@ -682,7 +709,8 @@
                   "language": "pt",
                   "text": "Nível de integridade de segurança do sistema de segurança do robô"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -698,7 +726,8 @@
                   "language": "pt",
                   "text": "Sensor de força/torque integrado para movimento de complacência e detecção de colisão"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -714,7 +743,8 @@
                   "language": "pt",
                   "text": "Mecanismo para colaboração segura humano-robô"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -730,7 +760,8 @@
                   "language": "pt",
                   "text": "Número de entradas digitais de segurança"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -746,7 +777,8 @@
                   "language": "pt",
                   "text": "Número de saídas digitais de segurança"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             }
           ]
         }
@@ -804,7 +836,8 @@
                   "language": "pt",
                   "text": "Título do documento"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "File",
@@ -852,7 +885,8 @@
                   "language": "pt",
                   "text": "Título do documento"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "File",
@@ -900,7 +934,8 @@
                   "language": "pt",
                   "text": "Título do documento"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "File",
@@ -948,7 +983,8 @@
                   "language": "pt",
                   "text": "Título do documento"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "File",
@@ -1046,7 +1082,8 @@
                       "language": "pt",
                       "text": "Entrada de parada de emergência externa"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1062,7 +1099,8 @@
                       "language": "pt",
                       "text": "Entrada de parada de proteção (protective stop)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1078,7 +1116,8 @@
                       "language": "pt",
                       "text": "Sinal externo para iniciar o programa do robô"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1094,7 +1133,8 @@
                       "language": "pt",
                       "text": "Sinal externo para pausar o programa do robô"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1110,7 +1150,8 @@
                       "language": "pt",
                       "text": "Sensor indutivo: portador de pallete chegou na posição de pick do robô"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1126,7 +1167,8 @@
                       "language": "pt",
                       "text": "Feedback da garra: peça agarrada (true) / aberta (false)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1142,7 +1184,8 @@
                       "language": "pt",
                       "text": "Sinal da esteira: pronta para receber ou liberar pallete"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1158,7 +1201,8 @@
                       "language": "pt",
                       "text": "Entrada digital configurável para uso específico da aplicação"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -1190,7 +1234,8 @@
                       "language": "pt",
                       "text": "Saída: robô pronto e aguardando pallete"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1206,7 +1251,8 @@
                       "language": "pt",
                       "text": "Saída: ciclo do robô concluído com sucesso"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1222,7 +1268,8 @@
                       "language": "pt",
                       "text": "Saída digital 2: uso livre"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1238,7 +1285,8 @@
                       "language": "pt",
                       "text": "Saída digital 3: uso livre"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1254,7 +1302,8 @@
                       "language": "pt",
                       "text": "Saída: sinal para liberar o batente do pallete na esteira"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1270,7 +1319,8 @@
                       "language": "pt",
                       "text": "Saída: falha ou erro do robô ativo"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1286,7 +1336,8 @@
                       "language": "pt",
                       "text": "Saída digital configurável para uso específico da aplicação"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1302,7 +1353,8 @@
                       "language": "pt",
                       "text": "Saída digital configurável para uso específico da aplicação"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -1334,7 +1386,8 @@
                       "language": "pt",
                       "text": "Entrada analógica 0 — configurável 0-10V / 4-20mA"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1350,7 +1403,8 @@
                       "language": "pt",
                       "text": "Entrada analógica 1 — configurável 0-10V / 4-20mA"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -1382,7 +1436,8 @@
                       "language": "pt",
                       "text": "Saída analógica 0 — configurável 0-10V / 4-20mA"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1398,7 +1453,8 @@
                       "language": "pt",
                       "text": "Saída analógica 1 — configurável 0-10V / 4-20mA"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             }
@@ -1432,7 +1488,8 @@
                   "language": "pt",
                   "text": "Entrada digital da ferramenta 0: feedback de status da garra"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1448,7 +1505,8 @@
                   "language": "pt",
                   "text": "Entrada digital da ferramenta 1: configurável"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1464,7 +1522,8 @@
                   "language": "pt",
                   "text": "Saída digital da ferramenta 0: enable da garra (abrir=true). Grip/release via Modbus TCP reg 1 (0x0500=abrir, 0x0200=fechar)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1480,7 +1539,8 @@
                   "language": "pt",
                   "text": "Saída digital da ferramenta 1: configurável"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1496,7 +1556,8 @@
                   "language": "pt",
                   "text": "Entrada analógica da ferramenta 0: dados do sensor de força/torque"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1512,7 +1573,8 @@
                   "language": "pt",
                   "text": "Entrada analógica da ferramenta 1: configurável"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             }
           ]
         },
@@ -1544,7 +1606,8 @@
                   "language": "pt",
                   "text": "Modo atual do robô: IDLE / RUNNING / FAULT / STOPPED"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1560,7 +1623,8 @@
                   "language": "pt",
                   "text": "Modo de segurança: NORMAL / REDUCED / PROTECTIVE_STOP / RECOVERY"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1576,7 +1640,8 @@
                   "language": "pt",
                   "text": "Força de contato atual no TCP [N]"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1592,7 +1657,8 @@
                   "language": "pt",
                   "text": "Indica se um programa está em execução"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             }
           ]
         }
@@ -1660,7 +1726,8 @@
                   "language": "pt",
                   "text": "Número da ordem de produção no MES (ONo)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1676,7 +1743,8 @@
                   "language": "pt",
                   "text": "Posição dentro da ordem de produção (OPos)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1692,7 +1760,8 @@
                   "language": "pt",
                   "text": "Operação nesta estação: Pick and Place / Montagem pelo robô colaborativo"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1708,7 +1777,8 @@
                   "language": "pt",
                   "text": "Descrição legível da operação"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1724,7 +1794,8 @@
                   "language": "pt",
                   "text": "Identificador de recurso MES para esta estação"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1740,7 +1811,8 @@
                   "language": "pt",
                   "text": "Identificador do portador de pallete (lido do RFID ou handshake da esteira)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1756,7 +1828,8 @@
                   "language": "pt",
                   "text": "Código de estado atual do portador"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1772,7 +1845,8 @@
                   "language": "pt",
                   "text": "Parâmetro de operação 1 (ex.: ID do programa do robô)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1788,7 +1862,8 @@
                   "language": "pt",
                   "text": "Parâmetro de operação 2 (específico da aplicação)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             }
           ]
         },
@@ -1820,7 +1895,8 @@
                   "language": "pt",
                   "text": "Número da peça sendo manipulada (PNo)"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1836,7 +1912,8 @@
                   "language": "pt",
                   "text": "Descrição da peça sendo manipulada"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             },
             {
               "modelType": "Property",
@@ -1852,7 +1929,8 @@
                   "language": "pt",
                   "text": "Resultado da última operação do robô: pendente / OK / NOK"
                 }
-              ]
+              ],
+              "category": "VARIABLE"
             }
           ]
         },
@@ -1898,7 +1976,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1914,7 +1993,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1930,7 +2010,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -1962,7 +2043,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1978,7 +2060,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -1994,7 +2077,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -2026,7 +2110,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2042,7 +2127,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2058,7 +2144,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -2090,7 +2177,8 @@
                       "language": "pt",
                       "text": "Número da peça no MES"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2106,7 +2194,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (inglês)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
@@ -2122,7 +2211,8 @@
                       "language": "pt",
                       "text": "Descrição da peça (português)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             }
@@ -2263,7 +2353,8 @@
               "modelType": "Property",
               "idShort": "title",
               "valueType": "xs:string",
-              "value": "UR5e RTDE Interface"
+              "value": "UR5e RTDE Interface",
+              "category": "VARIABLE"
             },
             {
               "modelType": "SubmodelElementCollection",
@@ -2291,13 +2382,15 @@
                         "value": "https://www.w3.org/2019/wot/td#baseURI"
                       }
                     ]
-                  }
+                  },
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "contentType",
                   "valueType": "xs:string",
-                  "value": "application/octet-stream"
+                  "value": "application/octet-stream",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "SubmodelElementList",
@@ -2318,7 +2411,8 @@
                       "modelType": "Property",
                       "idShort": "",
                       "valueType": "xs:string",
-                      "value": "nosec_sc"
+                      "value": "nosec_sc",
+                      "category": "VARIABLE"
                     }
                   ]
                 },
@@ -2334,7 +2428,8 @@
                           "modelType": "Property",
                           "idShort": "scheme",
                           "valueType": "xs:string",
-                          "value": "nosec"
+                          "value": "nosec",
+                          "category": "VARIABLE"
                         }
                       ]
                     }
@@ -2394,7 +2489,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -2409,13 +2505,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "integer"
+                          "value": "integer",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -2448,19 +2546,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.RobotMode"
+                                  "value": "RTDE.RobotMode",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -2504,7 +2605,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -2519,13 +2621,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "integer"
+                          "value": "integer",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -2558,19 +2662,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.SafetyMode"
+                                  "value": "RTDE.SafetyMode",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -2614,7 +2721,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -2629,13 +2737,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -2668,19 +2778,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.IsProgramRunning"
+                                  "value": "RTDE.IsProgramRunning",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -2720,7 +2833,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -2735,19 +2849,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "array"
+                          "value": "array",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "unit",
                           "valueType": "xs:string",
-                          "value": "m/rad"
+                          "value": "m/rad",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -2780,19 +2897,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.ActualTCPPose"
+                                  "value": "RTDE.ActualTCPPose",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -2836,7 +2956,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -2851,19 +2972,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "array"
+                          "value": "array",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "unit",
                           "valueType": "xs:string",
-                          "value": "rad"
+                          "value": "rad",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -2896,19 +3020,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.ActualQ"
+                                  "value": "RTDE.ActualQ",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -2952,7 +3079,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -2967,19 +3095,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "array"
+                          "value": "array",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "unit",
                           "valueType": "xs:string",
-                          "value": "N"
+                          "value": "N",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -3012,19 +3143,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.ActualTCPForce"
+                                  "value": "RTDE.ActualTCPForce",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -3068,7 +3202,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -3083,13 +3218,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "integer"
+                          "value": "integer",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -3122,19 +3259,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.ActualDigitalInputBits"
+                                  "value": "RTDE.ActualDigitalInputBits",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -3178,7 +3318,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -3193,13 +3334,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "integer"
+                          "value": "integer",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -3232,19 +3375,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.ActualDigitalOutputBits"
+                                  "value": "RTDE.ActualDigitalOutputBits",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readwriteproperty"
+                                  "value": "readwriteproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -3288,7 +3434,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -3303,19 +3450,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "number"
+                          "value": "number",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "unit",
                           "valueType": "xs:string",
-                          "value": "V"
+                          "value": "V",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -3348,19 +3498,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.StandardAnalogInput0"
+                                  "value": "RTDE.StandardAnalogInput0",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -3404,7 +3557,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -3419,19 +3573,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "number"
+                          "value": "number",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "unit",
                           "valueType": "xs:string",
-                          "value": "V"
+                          "value": "V",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -3464,19 +3621,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.StandardAnalogInput1"
+                                  "value": "RTDE.StandardAnalogInput1",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -3520,7 +3680,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -3535,19 +3696,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "number"
+                          "value": "number",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "unit",
                           "valueType": "xs:string",
-                          "value": "V"
+                          "value": "V",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -3580,19 +3744,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.StandardAnalogOutput0"
+                                  "value": "RTDE.StandardAnalogOutput0",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readwriteproperty"
+                                  "value": "readwriteproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -3636,7 +3803,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -3651,19 +3819,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "number"
+                          "value": "number",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "unit",
                           "valueType": "xs:string",
-                          "value": "V"
+                          "value": "V",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -3696,19 +3867,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.StandardAnalogOutput1"
+                                  "value": "RTDE.StandardAnalogOutput1",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readwriteproperty"
+                                  "value": "readwriteproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -3752,7 +3926,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -3767,19 +3942,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "number"
+                          "value": "number",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "unit",
                           "valueType": "xs:string",
-                          "value": "V"
+                          "value": "V",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -3812,19 +3990,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "RTDE.ToolAnalogInput0"
+                                  "value": "RTDE.ToolAnalogInput0",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -3885,7 +4066,8 @@
               "modelType": "Property",
               "idShort": "title",
               "valueType": "xs:string",
-              "value": "UR5e Dashboard Server"
+              "value": "UR5e Dashboard Server",
+              "category": "VARIABLE"
             },
             {
               "modelType": "SubmodelElementCollection",
@@ -3913,13 +4095,15 @@
                         "value": "https://www.w3.org/2019/wot/td#baseURI"
                       }
                     ]
-                  }
+                  },
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "contentType",
                   "valueType": "xs:string",
-                  "value": "text/plain"
+                  "value": "text/plain",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "SubmodelElementList",
@@ -3940,7 +4124,8 @@
                       "modelType": "Property",
                       "idShort": "",
                       "valueType": "xs:string",
-                      "value": "nosec_sc"
+                      "value": "nosec_sc",
+                      "category": "VARIABLE"
                     }
                   ]
                 },
@@ -3956,7 +4141,8 @@
                           "modelType": "Property",
                           "idShort": "scheme",
                           "valueType": "xs:string",
-                          "value": "nosec"
+                          "value": "nosec",
+                          "category": "VARIABLE"
                         }
                       ]
                     }
@@ -4016,7 +4202,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -4031,13 +4218,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "string"
+                          "value": "string",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4070,19 +4259,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "robotmode"
+                                  "value": "robotmode",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "text/plain"
+                                  "value": "text/plain",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -4122,7 +4314,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -4137,13 +4330,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "string"
+                          "value": "string",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4176,19 +4371,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "safetymode"
+                                  "value": "safetymode",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "text/plain"
+                                  "value": "text/plain",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -4228,7 +4426,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -4243,13 +4442,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "string"
+                          "value": "string",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4282,19 +4483,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "programstate"
+                                  "value": "programstate",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "text/plain"
+                                  "value": "text/plain",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -4334,7 +4538,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -4349,13 +4554,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "string"
+                          "value": "string",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4388,19 +4595,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "get loaded program"
+                                  "value": "get loaded program",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "text/plain"
+                                  "value": "text/plain",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -4455,7 +4665,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4488,19 +4699,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "play"
+                                  "value": "play",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "text/plain"
+                                  "value": "text/plain",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "invokeaction"
+                                  "value": "invokeaction",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -4544,7 +4758,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4577,19 +4792,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "stop"
+                                  "value": "stop",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "text/plain"
+                                  "value": "text/plain",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "invokeaction"
+                                  "value": "invokeaction",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -4633,7 +4851,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4666,19 +4885,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "pause"
+                                  "value": "pause",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "text/plain"
+                                  "value": "text/plain",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "invokeaction"
+                                  "value": "invokeaction",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -4722,7 +4944,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4755,19 +4978,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "power on"
+                                  "value": "power on",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "text/plain"
+                                  "value": "text/plain",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "invokeaction"
+                                  "value": "invokeaction",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -4811,7 +5037,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4844,19 +5071,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "power off"
+                                  "value": "power off",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "text/plain"
+                                  "value": "text/plain",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "invokeaction"
+                                  "value": "invokeaction",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -4900,7 +5130,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -4933,19 +5164,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "brake release"
+                                  "value": "brake release",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "text/plain"
+                                  "value": "text/plain",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "invokeaction"
+                                  "value": "invokeaction",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -4989,7 +5223,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -5022,19 +5257,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "load {name}"
+                                  "value": "load {name}",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "text/plain"
+                                  "value": "text/plain",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "invokeaction"
+                                  "value": "invokeaction",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -5095,7 +5333,8 @@
               "modelType": "Property",
               "idShort": "title",
               "valueType": "xs:string",
-              "value": "UR5e Modbus TCP Interface"
+              "value": "UR5e Modbus TCP Interface",
+              "category": "VARIABLE"
             },
             {
               "modelType": "SubmodelElementCollection",
@@ -5123,13 +5362,15 @@
                         "value": "https://www.w3.org/2019/wot/td#baseURI"
                       }
                     ]
-                  }
+                  },
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "Property",
                   "idShort": "contentType",
                   "valueType": "xs:string",
-                  "value": "application/octet-stream"
+                  "value": "application/octet-stream",
+                  "category": "VARIABLE"
                 },
                 {
                   "modelType": "SubmodelElementList",
@@ -5150,7 +5391,8 @@
                       "modelType": "Property",
                       "idShort": "",
                       "valueType": "xs:string",
-                      "value": "nosec_sc"
+                      "value": "nosec_sc",
+                      "category": "VARIABLE"
                     }
                   ]
                 },
@@ -5166,7 +5408,8 @@
                           "modelType": "Property",
                           "idShort": "scheme",
                           "valueType": "xs:string",
-                          "value": "nosec"
+                          "value": "nosec",
+                          "category": "VARIABLE"
                         }
                       ]
                     }
@@ -5226,7 +5469,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -5241,13 +5485,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -5280,19 +5526,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/0"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/0",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -5336,7 +5585,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -5351,13 +5601,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -5390,19 +5642,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/1"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/1",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -5442,7 +5697,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -5457,13 +5713,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -5496,19 +5754,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/2"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/2",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -5548,7 +5809,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -5563,13 +5825,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -5602,19 +5866,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/3"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/3",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -5654,7 +5921,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -5669,13 +5937,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -5708,19 +5978,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/4"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/4",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -5760,7 +6033,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -5775,13 +6049,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -5814,19 +6090,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/5"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/5",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -5866,7 +6145,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -5881,13 +6161,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -5920,19 +6202,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/6"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/6",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -5972,7 +6257,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -5987,13 +6273,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -6026,19 +6314,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/7"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/7",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -6078,7 +6369,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -6093,13 +6385,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -6132,19 +6426,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/100"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/100",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readwriteproperty"
+                                  "value": "readwriteproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -6184,7 +6481,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -6199,13 +6497,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -6238,19 +6538,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/101"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/101",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readwriteproperty"
+                                  "value": "readwriteproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -6290,7 +6593,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -6305,13 +6609,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -6344,19 +6650,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/102"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/102",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readwriteproperty"
+                                  "value": "readwriteproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -6396,7 +6705,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -6411,13 +6721,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -6450,19 +6762,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/103"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/103",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readwriteproperty"
+                                  "value": "readwriteproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -6502,7 +6817,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -6517,13 +6833,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -6556,19 +6874,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/104"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/104",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readwriteproperty"
+                                  "value": "readwriteproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -6608,7 +6929,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -6623,13 +6945,15 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "boolean"
+                          "value": "boolean",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -6662,19 +6986,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/coil/105"
+                                  "value": "modbus+tcp://192.168.1.100:502/coil/105",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readwriteproperty"
+                                  "value": "readwriteproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -6714,7 +7041,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -6729,19 +7057,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "number"
+                          "value": "number",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "unit",
                           "valueType": "xs:string",
-                          "value": "V"
+                          "value": "V",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -6774,19 +7105,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/holdingRegister/400"
+                                  "value": "modbus+tcp://192.168.1.100:502/holdingRegister/400",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -6830,7 +7164,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -6845,19 +7180,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "number"
+                          "value": "number",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "unit",
                           "valueType": "xs:string",
-                          "value": "V"
+                          "value": "V",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -6890,19 +7228,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/holdingRegister/401"
+                                  "value": "modbus+tcp://192.168.1.100:502/holdingRegister/401",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readproperty"
+                                  "value": "readproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -6946,7 +7287,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -6961,19 +7303,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "number"
+                          "value": "number",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "unit",
                           "valueType": "xs:string",
-                          "value": "V"
+                          "value": "V",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -7006,19 +7351,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/holdingRegister/402"
+                                  "value": "modbus+tcp://192.168.1.100:502/holdingRegister/402",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readwriteproperty"
+                                  "value": "readwriteproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -7062,7 +7410,8 @@
                                 "value": "https://www.w3.org/2019/wot/td#title"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
@@ -7077,19 +7426,22 @@
                                 "value": "https://www.w3.org/2019/wot/td#isObservable"
                               }
                             ]
-                          }
+                          },
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "type",
                           "valueType": "xs:string",
-                          "value": "number"
+                          "value": "number",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "Property",
                           "idShort": "unit",
                           "valueType": "xs:string",
-                          "value": "V"
+                          "value": "V",
+                          "category": "VARIABLE"
                         },
                         {
                           "modelType": "SubmodelElementList",
@@ -7122,19 +7474,22 @@
                                   "modelType": "Property",
                                   "idShort": "href",
                                   "valueType": "xs:anyURI",
-                                  "value": "modbus+tcp://192.168.1.100:502/holdingRegister/403"
+                                  "value": "modbus+tcp://192.168.1.100:502/holdingRegister/403",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "contentType",
                                   "valueType": "xs:string",
-                                  "value": "application/octet-stream"
+                                  "value": "application/octet-stream",
+                                  "category": "VARIABLE"
                                 },
                                 {
                                   "modelType": "Property",
                                   "idShort": "op",
                                   "valueType": "xs:string",
-                                  "value": "readwriteproperty"
+                                  "value": "readwriteproperty",
+                                  "category": "VARIABLE"
                                 }
                               ]
                             }
@@ -7247,7 +7602,8 @@
                               "language": "pt",
                               "text": "Ângulos alvo das juntas como array JSON de 6 floats [rad]"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         },
                         {
                           "idShort": "Speed",
@@ -7263,7 +7619,8 @@
                               "language": "pt",
                               "text": "Velocidade de junta [rad/s]"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         },
                         {
                           "idShort": "Acceleration",
@@ -7279,7 +7636,8 @@
                               "language": "pt",
                               "text": "Aceleração de junta [rad/s²]"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         }
                       ]
                     },
@@ -7341,7 +7699,8 @@
                               "language": "pt",
                               "text": "Taxa de amostragem dos waypoints [Hz]"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         },
                         {
                           "idShort": "InitialSpeed",
@@ -7357,7 +7716,8 @@
                               "language": "pt",
                               "text": "Velocidade inicial de jog [rad/s]"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         },
                         {
                           "idShort": "EnableGripper",
@@ -7373,7 +7733,8 @@
                               "language": "pt",
                               "text": "Habilitar controle da garra Schunk EGP durante ensino"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         }
                       ]
                     },
@@ -7395,7 +7756,8 @@
                               "language": "pt",
                               "text": "Número de waypoints gravados"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         },
                         {
                           "idShort": "DurationSeconds",
@@ -7411,7 +7773,8 @@
                               "language": "pt",
                               "text": "Duração da trajetória [s]"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         }
                       ]
                     }
@@ -7468,7 +7831,8 @@
                               "language": "pt",
                               "text": "Valor do registrador de posição alvo (0=fechado, 400=aberto)"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         }
                       ]
                     },
@@ -7530,7 +7894,8 @@
                               "language": "pt",
                               "text": "Valor do registrador de posição alvo (0=fechado, 400=aberto)"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         }
                       ]
                     },
@@ -7592,7 +7957,8 @@
                               "language": "pt",
                               "text": "Velocidade de junta [rad/s]"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         },
                         {
                           "idShort": "Acceleration",
@@ -7608,7 +7974,8 @@
                               "language": "pt",
                               "text": "Aceleração de junta [rad/s²]"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         }
                       ]
                     },
@@ -7670,7 +8037,8 @@
                               "language": "pt",
                               "text": "Número de repetições da dança"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         },
                         {
                           "idShort": "EnableGripper",
@@ -7686,7 +8054,8 @@
                               "language": "pt",
                               "text": "Habilitar abertura/fechamento da garra durante os movimentos wave"
                             }
-                          ]
+                          ],
+                          "category": "VARIABLE"
                         }
                       ]
                     },
@@ -7806,7 +8175,8 @@
                       "language": "pt",
                       "text": "Estado atual de execução: Idle | Running | Paused | Aborted | Completed | Error"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "idShort": "CapabilityTypeRef",
@@ -7866,7 +8236,8 @@
                       "language": "pt",
                       "text": "Timestamp da última execução concluída (ISO 8601)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -7916,7 +8287,8 @@
                       "language": "pt",
                       "text": "Estado atual de execução: Idle | Running | Paused | Aborted | Completed | Error"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "idShort": "CapabilityTypeRef",
@@ -7976,7 +8348,8 @@
                       "language": "pt",
                       "text": "Timestamp da última execução concluída (ISO 8601)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -8026,7 +8399,8 @@
                       "language": "pt",
                       "text": "Estado atual de execução: Idle | Running | Paused | Aborted | Completed | Error"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "idShort": "CapabilityTypeRef",
@@ -8086,7 +8460,8 @@
                       "language": "pt",
                       "text": "Timestamp da última execução concluída (ISO 8601)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -8136,7 +8511,8 @@
                       "language": "pt",
                       "text": "Estado atual de execução: Idle | Running | Paused | Aborted | Completed | Error"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "idShort": "CapabilityTypeRef",
@@ -8196,7 +8572,8 @@
                       "language": "pt",
                       "text": "Timestamp da última execução concluída (ISO 8601)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -8246,7 +8623,8 @@
                       "language": "pt",
                       "text": "Estado atual de execução: Idle | Running | Paused | Aborted | Completed | Error"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "idShort": "CapabilityTypeRef",
@@ -8306,7 +8684,8 @@
                       "language": "pt",
                       "text": "Timestamp da última execução concluída (ISO 8601)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             },
@@ -8356,7 +8735,8 @@
                       "language": "pt",
                       "text": "Estado atual de execução: Idle | Running | Paused | Aborted | Completed | Error"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 },
                 {
                   "idShort": "CapabilityTypeRef",
@@ -8416,7 +8796,8 @@
                       "language": "pt",
                       "text": "Timestamp da última execução concluída (ISO 8601)"
                     }
-                  ]
+                  ],
+                  "category": "VARIABLE"
                 }
               ]
             }
