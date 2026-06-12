@@ -3,7 +3,7 @@
     {
       "modelType": "AssetAdministrationShell",
       "id": "urn:festo:cp-factory:aas:STATION-OUT",
-      "idShort": "AAS_STATION_OUT",
+      "idShort": "aas_station_out",
       "displayName": [
         {
           "language": "en",

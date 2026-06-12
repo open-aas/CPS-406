@@ -3,7 +3,7 @@
     {
       "modelType": "AssetAdministrationShell",
       "id": "urn:festo:cp-factory:aas:STATION-IDRILL",
-      "idShort": "AAS_STATION_IDRILL",
+      "idShort": "aas_station_idrill",
       "displayName": [
         {
           "language": "en",

@@ -3,7 +3,7 @@
     {
       "modelType": "AssetAdministrationShell",
       "id": "urn:festo:cp-factory:aas:STATION-MAGFRONT",
-      "idShort": "AAS_STATION_MAGFRONT",
+      "idShort": "aas_station_magfront",
       "displayName": [
         {
           "language": "en",

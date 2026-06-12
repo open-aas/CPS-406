@@ -3,7 +3,7 @@
     {
       "modelType": "AssetAdministrationShell",
       "id": "urn:festo:cp-factory:aas:STATION-MAGBACK",
-      "idShort": "AAS_STATION_MAGBACK",
+      "idShort": "aas_station_magback",
       "displayName": [
         {
           "language": "en",

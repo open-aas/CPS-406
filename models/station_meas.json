@@ -3,7 +3,7 @@
     {
       "modelType": "AssetAdministrationShell",
       "id": "urn:festo:cp-factory:aas:STATION-MEAS",
-      "idShort": "AAS_STATION_MEAS",
+      "idShort": "aas_station_meas",
       "displayName": [
         {
           "language": "en",

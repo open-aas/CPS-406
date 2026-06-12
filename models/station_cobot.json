@@ -3,7 +3,7 @@
     {
       "modelType": "AssetAdministrationShell",
       "id": "urn:festo:cp-factory:aas:STATION-COBOT",
-      "idShort": "AAS_STATION_COBOT",
+      "idShort": "aas_station_cobot",
       "displayName": [
         {
           "language": "en",

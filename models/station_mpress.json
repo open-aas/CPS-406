@@ -3,7 +3,7 @@
     {
       "modelType": "AssetAdministrationShell",
       "id": "urn:festo:cp-factory:aas:STATION-MPRESS",
-      "idShort": "AAS_STATION_MPRESS",
+      "idShort": "aas_station_mpress",
       "displayName": [
         {
           "language": "en",

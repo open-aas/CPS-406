@@ -3,7 +3,7 @@
     {
       "modelType": "AssetAdministrationShell",
       "id": "urn:festo:cp-factory:aas:CP-LAB-406",
-      "idShort": "AAS_CP_LAB_406",
+      "idShort": "aas_cp_lab_406",
       "displayName": [
         {
           "language": "en",
