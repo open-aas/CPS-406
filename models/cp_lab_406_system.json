@@ -1102,62 +1102,99 @@
         "keys": [
           {
             "type": "GlobalReference",
-            "value": "https://admin-shell.io/idta/HierarchicalStructures/1/0/Submodel"
+            "value": "https://admin-shell.io/idta/HierarchicalStructures/1/1/Submodel"
           }
         ]
       },
       "submodelElements": [
         {
-          "modelType": "SubmodelElementCollection",
-          "idShort": "ArchiveNode",
-          "value": [
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "SelfReference",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/SelfManagedEntity/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:CP-LAB-406"
-                  }
-                ]
-              },
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Self-reference to the system AAS"
-                },
-                {
-                  "language": "pt",
-                  "text": "Autorreferência ao AAS do sistema"
-                }
-              ]
-            }
-          ],
+          "modelType": "Property",
+          "idShort": "ArcheType",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/ArcheType/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "OneDown",
           "description": [
             {
               "language": "en",
-              "text": "System root reference node (self-managed entity)"
+              "text": "Hierarchical structure archetype: system declares its parts (OneDown)"
             },
             {
               "language": "pt",
-              "text": "Nó raiz de referência do sistema (entidade autogerenciada)"
+              "text": "Arquétipo da estrutura hierárquica: sistema declara suas partes (OneDown)"
             }
           ]
         },
         {
-          "modelType": "SubmodelElementCollection",
+          "modelType": "Entity",
+          "idShort": "EntryNode",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/EntryNode/1/1"
+              }
+            ]
+          },
+          "entityType": "SelfManagedEntity",
+          "globalAssetId": "urn:festo:cp-factory:asset:CP-LAB-406",
+          "statements": [],
+          "description": [
+            {
+              "language": "en",
+              "text": "Root entry node representing the complete CP-LAB-406 system"
+            },
+            {
+              "language": "pt",
+              "text": "Nó raiz representando o sistema completo CP-LAB-406"
+            }
+          ]
+        },
+        {
+          "modelType": "Entity",
           "idShort": "Station_01_magfront",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/Node/1/1"
+              }
+            ]
+          },
+          "entityType": "SelfManagedEntity",
+          "globalAssetId": "urn:festo:cp-factory:asset:STATION-MAGFRONT",
+          "statements": [
+            {
+              "modelType": "Property",
+              "idShort": "StationNumber",
+              "valueType": "xs:int",
+              "value": "1",
+              "category": "VARIABLE"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StationName",
+              "valueType": "xs:string",
+              "value": "magfront",
+              "category": "VARIABLE"
+            },
+            {
+              "modelType": "Property",
+              "idShort": "StationRole",
+              "valueType": "xs:string",
+              "value": "Material Provisioning - Front Covers",
+              "category": "VARIABLE"
+            }
+          ],
           "description": [
             {
               "language": "en",
@@ -1167,96 +1204,45 @@
               "language": "pt",
               "text": "Estação 1: Alimentação de tampa frontal (MAGFRONT)"
             }
-          ],
-          "value": [
+          ]
+        },
+        {
+          "modelType": "Entity",
+          "idShort": "Station_02_meas",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/Node/1/1"
+              }
+            ]
+          },
+          "entityType": "SelfManagedEntity",
+          "globalAssetId": "urn:festo:cp-factory:asset:STATION-MEAS",
+          "statements": [
             {
               "modelType": "Property",
               "idShort": "StationNumber",
               "valueType": "xs:int",
-              "value": "1",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station number in the production sequence"
-                },
-                {
-                  "language": "pt",
-                  "text": "Número da estação na sequência de produção"
-                }
-              ],
+              "value": "2",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StationName",
               "valueType": "xs:string",
-              "value": "magfront",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station identifier (used in MES and HMI)"
-                },
-                {
-                  "language": "pt",
-                  "text": "Identificador da estação (usado no MES e HMI)"
-                }
-              ],
+              "value": "meas",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StationRole",
               "valueType": "xs:string",
-              "value": "Material Provisioning - Front Covers",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Functional role of the station in the process"
-                },
-                {
-                  "language": "pt",
-                  "text": "Função da estação no processo"
-                }
-              ],
+              "value": "Quality Inspection",
               "category": "VARIABLE"
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "Station",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:STATION-MAGFRONT"
-                  }
-                ]
-              },
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Reference to the station AAS"
-                },
-                {
-                  "language": "pt",
-                  "text": "Referência ao AAS da estação"
-                }
-              ]
             }
-          ]
-        },
-        {
-          "modelType": "SubmodelElementCollection",
-          "idShort": "Station_02_meas",
+          ],
           "description": [
             {
               "language": "en",
@@ -1266,96 +1252,45 @@
               "language": "pt",
               "text": "Estação 2: Inspeção de qualidade (MEAS)"
             }
-          ],
-          "value": [
+          ]
+        },
+        {
+          "modelType": "Entity",
+          "idShort": "Station_03_idrill",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/Node/1/1"
+              }
+            ]
+          },
+          "entityType": "SelfManagedEntity",
+          "globalAssetId": "urn:festo:cp-factory:asset:STATION-IDRILL",
+          "statements": [
             {
               "modelType": "Property",
               "idShort": "StationNumber",
               "valueType": "xs:int",
-              "value": "2",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station number in the production sequence"
-                },
-                {
-                  "language": "pt",
-                  "text": "Número da estação na sequência de produção"
-                }
-              ],
+              "value": "3",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StationName",
               "valueType": "xs:string",
-              "value": "meas",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station identifier (used in MES and HMI)"
-                },
-                {
-                  "language": "pt",
-                  "text": "Identificador da estação (usado no MES e HMI)"
-                }
-              ],
+              "value": "idrill",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StationRole",
               "valueType": "xs:string",
-              "value": "Quality Inspection",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Functional role of the station in the process"
-                },
-                {
-                  "language": "pt",
-                  "text": "Função da estação no processo"
-                }
-              ],
+              "value": "Machining / Drilling",
               "category": "VARIABLE"
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "Station",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:STATION-MEAS"
-                  }
-                ]
-              },
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Reference to the station AAS"
-                },
-                {
-                  "language": "pt",
-                  "text": "Referência ao AAS da estação"
-                }
-              ]
             }
-          ]
-        },
-        {
-          "modelType": "SubmodelElementCollection",
-          "idShort": "Station_03_idrill",
+          ],
           "description": [
             {
               "language": "en",
@@ -1365,96 +1300,45 @@
               "language": "pt",
               "text": "Estação 3: Usinagem — furação (iDRILL)"
             }
-          ],
-          "value": [
+          ]
+        },
+        {
+          "modelType": "Entity",
+          "idShort": "Station_04_magback",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/Node/1/1"
+              }
+            ]
+          },
+          "entityType": "SelfManagedEntity",
+          "globalAssetId": "urn:festo:cp-factory:asset:STATION-MAGBACK",
+          "statements": [
             {
               "modelType": "Property",
               "idShort": "StationNumber",
               "valueType": "xs:int",
-              "value": "3",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station number in the production sequence"
-                },
-                {
-                  "language": "pt",
-                  "text": "Número da estação na sequência de produção"
-                }
-              ],
+              "value": "4",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StationName",
               "valueType": "xs:string",
-              "value": "idrill",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station identifier (used in MES and HMI)"
-                },
-                {
-                  "language": "pt",
-                  "text": "Identificador da estação (usado no MES e HMI)"
-                }
-              ],
+              "value": "magback",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StationRole",
               "valueType": "xs:string",
-              "value": "Machining / Drilling",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Functional role of the station in the process"
-                },
-                {
-                  "language": "pt",
-                  "text": "Função da estação no processo"
-                }
-              ],
+              "value": "Material Provisioning - Back Covers",
               "category": "VARIABLE"
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "Station",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:STATION-IDRILL"
-                  }
-                ]
-              },
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Reference to the station AAS"
-                },
-                {
-                  "language": "pt",
-                  "text": "Referência ao AAS da estação"
-                }
-              ]
             }
-          ]
-        },
-        {
-          "modelType": "SubmodelElementCollection",
-          "idShort": "Station_04_magback",
+          ],
           "description": [
             {
               "language": "en",
@@ -1464,96 +1348,45 @@
               "language": "pt",
               "text": "Estação 4: Alimentação de tampa traseira (MAGBACK)"
             }
-          ],
-          "value": [
+          ]
+        },
+        {
+          "modelType": "Entity",
+          "idShort": "Station_05_mpress",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/Node/1/1"
+              }
+            ]
+          },
+          "entityType": "SelfManagedEntity",
+          "globalAssetId": "urn:festo:cp-factory:asset:STATION-MPRESS",
+          "statements": [
             {
               "modelType": "Property",
               "idShort": "StationNumber",
               "valueType": "xs:int",
-              "value": "4",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station number in the production sequence"
-                },
-                {
-                  "language": "pt",
-                  "text": "Número da estação na sequência de produção"
-                }
-              ],
+              "value": "5",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StationName",
               "valueType": "xs:string",
-              "value": "magback",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station identifier (used in MES and HMI)"
-                },
-                {
-                  "language": "pt",
-                  "text": "Identificador da estação (usado no MES e HMI)"
-                }
-              ],
+              "value": "mpress",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StationRole",
               "valueType": "xs:string",
-              "value": "Material Provisioning - Back Covers",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Functional role of the station in the process"
-                },
-                {
-                  "language": "pt",
-                  "text": "Função da estação no processo"
-                }
-              ],
+              "value": "Assembly / Pressing",
               "category": "VARIABLE"
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "Station",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:STATION-MAGBACK"
-                  }
-                ]
-              },
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Reference to the station AAS"
-                },
-                {
-                  "language": "pt",
-                  "text": "Referência ao AAS da estação"
-                }
-              ]
             }
-          ]
-        },
-        {
-          "modelType": "SubmodelElementCollection",
-          "idShort": "Station_05_mpress",
+          ],
           "description": [
             {
               "language": "en",
@@ -1563,96 +1396,45 @@
               "language": "pt",
               "text": "Estação 5: Montagem — prensagem (MPRESS)"
             }
-          ],
-          "value": [
+          ]
+        },
+        {
+          "modelType": "Entity",
+          "idShort": "Station_06_out",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/Node/1/1"
+              }
+            ]
+          },
+          "entityType": "SelfManagedEntity",
+          "globalAssetId": "urn:festo:cp-factory:asset:STATION-OUT",
+          "statements": [
             {
               "modelType": "Property",
               "idShort": "StationNumber",
               "valueType": "xs:int",
-              "value": "5",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station number in the production sequence"
-                },
-                {
-                  "language": "pt",
-                  "text": "Número da estação na sequência de produção"
-                }
-              ],
+              "value": "6",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StationName",
               "valueType": "xs:string",
-              "value": "mpress",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station identifier (used in MES and HMI)"
-                },
-                {
-                  "language": "pt",
-                  "text": "Identificador da estação (usado no MES e HMI)"
-                }
-              ],
+              "value": "out",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StationRole",
               "valueType": "xs:string",
-              "value": "Assembly / Pressing",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Functional role of the station in the process"
-                },
-                {
-                  "language": "pt",
-                  "text": "Função da estação no processo"
-                }
-              ],
+              "value": "Output / Retrieval",
               "category": "VARIABLE"
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "Station",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:STATION-MPRESS"
-                  }
-                ]
-              },
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Reference to the station AAS"
-                },
-                {
-                  "language": "pt",
-                  "text": "Referência ao AAS da estação"
-                }
-              ]
             }
-          ]
-        },
-        {
-          "modelType": "SubmodelElementCollection",
-          "idShort": "Station_06_out",
+          ],
           "description": [
             {
               "language": "en",
@@ -1662,96 +1444,45 @@
               "language": "pt",
               "text": "Estação 6: Saída de peça acabada (OUT)"
             }
-          ],
-          "value": [
+          ]
+        },
+        {
+          "modelType": "Entity",
+          "idShort": "Station_07_cobot",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/Node/1/1"
+              }
+            ]
+          },
+          "entityType": "SelfManagedEntity",
+          "globalAssetId": "urn:festo:cp-factory:asset:STATION-COBOT",
+          "statements": [
             {
               "modelType": "Property",
               "idShort": "StationNumber",
               "valueType": "xs:int",
-              "value": "6",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station number in the production sequence"
-                },
-                {
-                  "language": "pt",
-                  "text": "Número da estação na sequência de produção"
-                }
-              ],
+              "value": "7",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StationName",
               "valueType": "xs:string",
-              "value": "out",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station identifier (used in MES and HMI)"
-                },
-                {
-                  "language": "pt",
-                  "text": "Identificador da estação (usado no MES e HMI)"
-                }
-              ],
+              "value": "cobot",
               "category": "VARIABLE"
             },
             {
               "modelType": "Property",
               "idShort": "StationRole",
               "valueType": "xs:string",
-              "value": "Output / Retrieval",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Functional role of the station in the process"
-                },
-                {
-                  "language": "pt",
-                  "text": "Função da estação no processo"
-                }
-              ],
+              "value": "Pick and Place / Assembly",
               "category": "VARIABLE"
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "Station",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
-              },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:STATION-OUT"
-                  }
-                ]
-              },
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Reference to the station AAS"
-                },
-                {
-                  "language": "pt",
-                  "text": "Referência ao AAS da estação"
-                }
-              ]
             }
-          ]
-        },
-        {
-          "modelType": "SubmodelElementCollection",
-          "idShort": "Station_07_cobot",
+          ],
           "description": [
             {
               "language": "en",
@@ -1761,90 +1492,348 @@
               "language": "pt",
               "text": "Estação 7: Robô Colaborativo UR5e (COBOT)"
             }
-          ],
-          "value": [
-            {
-              "modelType": "Property",
-              "idShort": "StationNumber",
-              "valueType": "xs:int",
-              "value": "7",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station number in the production sequence"
-                },
-                {
-                  "language": "pt",
-                  "text": "Número da estação na sequência de produção"
-                }
-              ],
-              "category": "VARIABLE"
-            },
-            {
-              "modelType": "Property",
-              "idShort": "StationName",
-              "valueType": "xs:string",
-              "value": "cobot",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Station identifier (used in MES and HMI)"
-                },
-                {
-                  "language": "pt",
-                  "text": "Identificador da estação (usado no MES e HMI)"
-                }
-              ],
-              "category": "VARIABLE"
-            },
-            {
-              "modelType": "Property",
-              "idShort": "StationRole",
-              "valueType": "xs:string",
-              "value": "Pick and Place / Assembly",
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Functional role of the station in the process"
-                },
-                {
-                  "language": "pt",
-                  "text": "Função da estação no processo"
-                }
-              ],
-              "category": "VARIABLE"
-            },
-            {
-              "modelType": "ReferenceElement",
-              "idShort": "Station",
-              "semanticId": {
-                "type": "ExternalReference",
-                "keys": [
-                  {
-                    "type": "GlobalReference",
-                    "value": "https://admin-shell.io/idta/HierarchicalStructures/isPartOf/1/0"
-                  }
-                ]
+          ]
+        },
+        {
+          "modelType": "RelationshipElement",
+          "idShort": "HasPart_Station_01_magfront",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/HasPart/1/1"
+              }
+            ]
+          },
+          "first": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
               },
-              "value": {
-                "type": "ModelReference",
-                "keys": [
-                  {
-                    "type": "AssetAdministrationShell",
-                    "value": "urn:festo:cp-factory:aas:STATION-COBOT"
-                  }
-                ]
+              {
+                "type": "Entity",
+                "value": "EntryNode"
+              }
+            ]
+          },
+          "second": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
               },
-              "description": [
-                {
-                  "language": "en",
-                  "text": "Reference to the station AAS"
-                },
-                {
-                  "language": "pt",
-                  "text": "Referência ao AAS da estação"
-                }
-              ]
+              {
+                "type": "Entity",
+                "value": "Station_01_magfront"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "System CP-LAB-406 has part: Station 1: Front cover feed (MAGFRONT)"
+            },
+            {
+              "language": "pt",
+              "text": "Sistema CP-LAB-406 tem parte: Estação 1: Alimentação de tampa frontal (MAGFRONT)"
+            }
+          ]
+        },
+        {
+          "modelType": "RelationshipElement",
+          "idShort": "HasPart_Station_02_meas",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/HasPart/1/1"
+              }
+            ]
+          },
+          "first": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
+              },
+              {
+                "type": "Entity",
+                "value": "EntryNode"
+              }
+            ]
+          },
+          "second": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
+              },
+              {
+                "type": "Entity",
+                "value": "Station_02_meas"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "System CP-LAB-406 has part: Station 2: Quality inspection (MEAS)"
+            },
+            {
+              "language": "pt",
+              "text": "Sistema CP-LAB-406 tem parte: Estação 2: Inspeção de qualidade (MEAS)"
+            }
+          ]
+        },
+        {
+          "modelType": "RelationshipElement",
+          "idShort": "HasPart_Station_03_idrill",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/HasPart/1/1"
+              }
+            ]
+          },
+          "first": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
+              },
+              {
+                "type": "Entity",
+                "value": "EntryNode"
+              }
+            ]
+          },
+          "second": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
+              },
+              {
+                "type": "Entity",
+                "value": "Station_03_idrill"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "System CP-LAB-406 has part: Station 3: Machining - drilling (iDRILL)"
+            },
+            {
+              "language": "pt",
+              "text": "Sistema CP-LAB-406 tem parte: Estação 3: Usinagem — furação (iDRILL)"
+            }
+          ]
+        },
+        {
+          "modelType": "RelationshipElement",
+          "idShort": "HasPart_Station_04_magback",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/HasPart/1/1"
+              }
+            ]
+          },
+          "first": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
+              },
+              {
+                "type": "Entity",
+                "value": "EntryNode"
+              }
+            ]
+          },
+          "second": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
+              },
+              {
+                "type": "Entity",
+                "value": "Station_04_magback"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "System CP-LAB-406 has part: Station 4: Back cover feed (MAGBACK)"
+            },
+            {
+              "language": "pt",
+              "text": "Sistema CP-LAB-406 tem parte: Estação 4: Alimentação de tampa traseira (MAGBACK)"
+            }
+          ]
+        },
+        {
+          "modelType": "RelationshipElement",
+          "idShort": "HasPart_Station_05_mpress",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/HasPart/1/1"
+              }
+            ]
+          },
+          "first": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
+              },
+              {
+                "type": "Entity",
+                "value": "EntryNode"
+              }
+            ]
+          },
+          "second": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
+              },
+              {
+                "type": "Entity",
+                "value": "Station_05_mpress"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "System CP-LAB-406 has part: Station 5: Assembly - pressing (MPRESS)"
+            },
+            {
+              "language": "pt",
+              "text": "Sistema CP-LAB-406 tem parte: Estação 5: Montagem — prensagem (MPRESS)"
+            }
+          ]
+        },
+        {
+          "modelType": "RelationshipElement",
+          "idShort": "HasPart_Station_06_out",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/HasPart/1/1"
+              }
+            ]
+          },
+          "first": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
+              },
+              {
+                "type": "Entity",
+                "value": "EntryNode"
+              }
+            ]
+          },
+          "second": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
+              },
+              {
+                "type": "Entity",
+                "value": "Station_06_out"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "System CP-LAB-406 has part: Station 6: Finished workpiece output (OUT)"
+            },
+            {
+              "language": "pt",
+              "text": "Sistema CP-LAB-406 tem parte: Estação 6: Saída de peça acabada (OUT)"
+            }
+          ]
+        },
+        {
+          "modelType": "RelationshipElement",
+          "idShort": "HasPart_Station_07_cobot",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/HierarchicalStructures/HasPart/1/1"
+              }
+            ]
+          },
+          "first": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
+              },
+              {
+                "type": "Entity",
+                "value": "EntryNode"
+              }
+            ]
+          },
+          "second": {
+            "type": "ModelReference",
+            "keys": [
+              {
+                "type": "Submodel",
+                "value": "urn:festo:cp-factory:sm:CP-LAB-406:Hierarchy"
+              },
+              {
+                "type": "Entity",
+                "value": "Station_07_cobot"
+              }
+            ]
+          },
+          "description": [
+            {
+              "language": "en",
+              "text": "System CP-LAB-406 has part: Station 7: Collaborative Robot UR5e (COBOT)"
+            },
+            {
+              "language": "pt",
+              "text": "Sistema CP-LAB-406 tem parte: Estação 7: Robô Colaborativo UR5e (COBOT)"
             }
           ]
         }
